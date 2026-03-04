@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1600" viewBox="0 0 1200 1600">
+  <defs>
+    <linearGradient id="g" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#e9dec9"/>
+      <stop offset="1" stop-color="#cfe0dc"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="1600" fill="url(#g)"/>
+  <rect x="72" y="128" width="1056" height="1344" rx="28" fill="rgba(255,255,255,0.55)" stroke="rgba(40,40,40,0.15)" />
+  <text x="50%" y="46%" font-family="Georgia,serif" font-size="72" fill="#2a2a2a" text-anchor="middle">Book cover placeholder</text>
+  <text x="50%" y="54%" font-family="Georgia,serif" font-size="33" fill="#4b4b4b" text-anchor="middle">Replace this file in /assets</text>
+</svg>
