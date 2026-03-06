@@ -9,7 +9,7 @@ This is a clean, traditional, responsive static website template for **The Presc
 
 ## Quick customization
 1. Replace placeholder images:
-   - `assets/cover-art.jpg` (book cover)
+   - `assets/book-cover.jpg` (book cover)
    - `assets/author-photo.jpg` (author photo)
    - `assets/illustration-1.svg` etc.
 
