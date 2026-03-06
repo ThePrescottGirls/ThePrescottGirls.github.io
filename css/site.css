@@ -228,3 +228,23 @@ footer{
   background: color-mix(in srgb, var(--paper) 90%, transparent);
   color:var(--muted);
 }
+
+/* Downloadables section styling */
+
+.download-item p {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  font-size: 1.2rem;
+  margin: 0.35rem 0;
+}
+
+.download-item strong {
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+
+.download-item a {
+  margin-left: 20px;
+  text-decoration: underline;
+}
