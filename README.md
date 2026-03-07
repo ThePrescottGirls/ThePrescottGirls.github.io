@@ -3,7 +3,7 @@
 This is a clean, traditional, responsive static website template for **The Prescott Girls**.
 
 ## What’s included
-- 6 pages: Home, Book, About, Illustrations, Events & Press, Contact
+- 7 pages: Home, Book, Author, Illustrations, Teachers, Events, Contact
 - Simple CSS (no build tools)
 - SVG placeholder images in `/assets` you can replace
 
