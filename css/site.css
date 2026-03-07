@@ -74,7 +74,13 @@ header{
 .brand .subtitle{font-size:14px; color:var(--muted); display:none;}
 @media(min-width:820px){ .brand .subtitle{display:inline;} }
 
-nav{display:flex; gap:14px; flex-wrap:nowrap; justify-content:flex-end;}
+nav{
+  display:flex;
+  gap:14px;
+  flex-wrap:nowrap;
+  justify-content:flex-end;
+}
+
 nav a{
   padding:8px 10px;
   border-radius:12px;
@@ -82,11 +88,27 @@ nav a{
   color:var(--ink);
   border:1px solid transparent;
 }
+
 nav a[aria-current="page"]{
   border-color:var(--rule);
   background: color-mix(in srgb, var(--paper) 80%, transparent);
 }
-nav a:hover{border-color:var(--rule); background: color-mix(in srgb, var(--paper) 70%, transparent);}
+
+nav a:hover{
+  border-color:var(--rule);
+  background: color-mix(in srgb, var(--paper) 70%, transparent);
+}
+
+/* iPhone / small screens */
+
+@media (max-width: 640px){
+
+  nav{
+    flex-wrap:wrap;
+    justify-content:flex-start;
+  }
+
+}
 
 main{padding:34px 0 54px;}
 
