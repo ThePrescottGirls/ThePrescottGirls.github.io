@@ -144,6 +144,16 @@ h1{margin:6px 0 8px; font-size: clamp(32px, 4vw, 46px); line-height:1.1;}
   color:var(--ink);
   text-decoration:none;
 }
+
+h3 {
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+  font-size: 1.1em;
+  letter-spacing: 0.03em;
+  font-weight: 600;
+}
+
+
 .button.primary{
   border-color: color-mix(in srgb, var(--accent) 35%, var(--rule));
   background: linear-gradient(180deg, color-mix(in srgb, var(--accent) 12%, var(--paper)), var(--paper));
@@ -285,6 +295,17 @@ footer{
   font-size: inherit;
   font-weight: 600;
 }
+
+.download-item.featured {
+  margin-bottom: 0.75em;   /* tighten */
+}
+
+hr {
+  margin-top: 0.75em;
+  margin-bottom: 1em;
+}
+
+
 
 
 .imprint h2,
