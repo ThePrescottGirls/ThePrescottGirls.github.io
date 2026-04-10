@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="robots" content="noindex">
-  <title>Redirecting...</title>
+  <title>Preparing download...</title>
 
   <script src="https://cdn.counter.dev/script.js"
     data-id="800e0f07-e8c7-43c4-bdaf-617aab5c0504"
@@ -12,16 +12,25 @@
     defer></script>
 </head>
 <body>
-  <a id="dl" href="/assets/downloads/An%20Overview%20%E2%80%93%20Using%20the%20Study%20Guides.pdf" download hidden>Download</a>
+  <p>Preparing download...</p>
+  <p>If nothing happens, <a id="fallback" href="/assets/downloads/An%20Overview%20%E2%80%93%20Using%20the%20Study%20Guides.pdf" download>click here</a>.</p>
 
   <script>
-    document.getElementById('dl').click();
-  </script>
+    const pdfUrl = "/assets/downloads/An%20Overview%20%E2%80%93%20Using%20the%20Study%20Guides.pdf";
+    const returnUrl = "/teachers.html";
 
-  <p>If the download does not start,
-    <a href="/assets/downloads/An%20Overview%20%E2%80%93%20Using%20the%20Study%20Guides.pdf" download>
-      click here
-    </a>.
-  </p>
+    window.addEventListener("load", function () {
+      const a = document.createElement("a");
+      a.href = pdfUrl;
+      a.setAttribute("download", "");
+      a.style.display = "none";
+      document.body.appendChild(a);
+      a.click();
+
+      setTimeout(function () {
+        window.location.replace(returnUrl);
+      }, 700);
+    });
+  </script>
 </body>
 </html>
