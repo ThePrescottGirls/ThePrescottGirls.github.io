@@ -20,16 +20,18 @@
     const returnUrl = "/teachers.html";
 
     window.addEventListener("load", function () {
-      const a = document.createElement("a");
-      a.href = pdfUrl;
-      a.setAttribute("download", "");
-      a.style.display = "none";
-      document.body.appendChild(a);
-      a.click();
+      setTimeout(function () {
+        const a = document.createElement("a");
+        a.href = pdfUrl;
+        a.setAttribute("download", "");
+        a.style.display = "none";
+        document.body.appendChild(a);
+        a.click();
+      }, 400);
 
       setTimeout(function () {
         window.location.replace(returnUrl);
-      }, 700);
+      }, 2500);
     });
   </script>
 </body>
