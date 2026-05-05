@@ -211,6 +211,14 @@ main{padding:34px 0 54px;}
   }
 }
 
+.section .study-guides-intro {
+  font-size: 1.1rem;
+  line-height: 1.5;
+  margin: 0.5rem 0 1rem 0;
+  color: var(--ink);
+  max-width: 65ch;
+}
+
 
 .full-bleed{
   position: relative;
