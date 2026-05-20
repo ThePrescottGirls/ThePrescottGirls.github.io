@@ -22,24 +22,39 @@
       <meta name="twitter:card" content="summary_large_image">
       <meta name="twitter:image" content="https://www.theprescottgirls.com/assets/book-cover.jpg">
 
-      <!-- Structured data -->
-      <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "Book",
-        "name": "The Prescott Girls",
-        "author": {
-          "@type": "Person",
-          "name": "Aric Wilmunder"
-        },
-        "publisher": {
-          "@type": "Organization",
-          "name": "A Well-Regulated Press"
-        },
-        "image": "https://www.theprescottgirls.com/assets/book-cover.jpg",
-        "url": "https://www.theprescottgirls.com/"
-      }
-      </script>
+          <!-- ProfilePage structured data -->
+          <script type="application/ld+json">
+          {
+            "@context": "https://schema.org",
+            "@type": "ProfilePage",
+            "name": "Author | The Prescott Girls",
+            "description": "About Aric Wilmunder, author of The Prescott Girls: A Letter from Philadelphia.",
+            "url": "https://www.theprescottgirls.com/author.html",
+            "mainEntity": {
+              "@type": "Person",
+              "name": "Aric Wilmunder",
+              "jobTitle": "Author",
+              "image": "https://www.theprescottgirls.com/assets/author-photo.jpg",
+              "description": "Aric Wilmunder is a writer, technologist, and historical researcher whose work bridges storytelling, history, and craftsmanship.",
+              "worksFor": {
+                "@type": "Organization",
+                "name": "A Well-Regulated Press"
+              },
+              "knowsAbout": [
+                "Historical fiction",
+                "Needlework samplers",
+                "1830s Maine",
+                "Historical research",
+                "Interactive media",
+                "Historical visualization"
+              ],
+              "authorOf": {
+                "@type": "Book",
+                "name": "The Prescott Girls: A Letter from Philadelphia"
+              }
+            }
+          }
+          </script>
 
       <!-- Icons -->
       <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16.png">
