@@ -274,6 +274,16 @@ main{padding:34px 0 54px;}
   letter-spacing:.08em;
   font-size:14px;
 }
+
+.award-note{
+  margin-top: .6rem;
+  font-size: .85rem;
+  line-height: 1.5;
+  color: #1a171f;
+  letter-spacing: .02em;
+}
+
+
 h1{margin:6px 0 8px; font-size: clamp(32px, 4vw, 46px); line-height:1.1;}
 .lede{margin:0; color:var(--muted); font-size:18px; max-width:60ch;}
 .cta{display:flex; gap:12px; flex-wrap:wrap; margin-top:16px;}
