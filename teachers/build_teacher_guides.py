@@ -52,7 +52,7 @@ def remove_google_doc_images(markdown: str) -> str:
         flags=re.MULTILINE,
     )
 
-    markdown = markdown.replace("\\.", ".")
+    markdown = re.sub(r"\\([\\`*_{}\[\]()#+\-.!])", r"\1", markdown)
     markdown = re.sub(r"\n{3,}", "\n\n", markdown)
     return markdown.strip()
 
