@@ -436,6 +436,11 @@ footer{
   margin: 0.35rem 0;
 }
 
+
+.download-item a.guide-title {
+  margin-left: 0;
+}
+
 .download-item strong {
   font-weight: 600;
   font-size: 1.25rem;
