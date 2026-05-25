@@ -439,6 +439,7 @@ footer{
 
 .download-item a.guide-title {
   margin-left: 0;
+  white-space: normal;
 }
 
 .download-item strong {
