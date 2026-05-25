@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Maine Map from 1833 | The Prescott Girls</title>
+  <meta name="description" content="Preview and download a printable 1833 Maine map for The Prescott Girls teacher resources.">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Georgia, "Times New Roman", serif;
+      background: #f7f3ea;
+      color: #2d261f;
+      line-height: 1.6;
+    }
+
+    .page {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 32px 20px 56px;
+    }
+
+    .back-link a {
+      color: #244a4a;
+      text-decoration: underline;
+    }
+
+    h1 {
+      font-size: clamp(2rem, 4vw, 3rem);
+      line-height: 1.15;
+      margin: 16px 0 8px;
+    }
+
+    .subtitle {
+      font-size: 1.15rem;
+      margin: 0 0 24px;
+    }
+
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin: 20px 0 28px;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 10px 16px;
+      border-radius: 6px;
+      background: #244a4a;
+      color: #fff;
+      text-decoration: none;
+      font-family: Arial, sans-serif;
+      font-size: 0.95rem;
+    }
+
+    .pdf-viewer {
+      background: #fff;
+      border: 1px solid #d2c8b8;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+      margin-bottom: 32px;
+    }
+
+    .pdf-viewer object {
+      width: 100%;
+      height: 86vh;
+      min-height: 640px;
+      border: 0;
+      display: block;
+    }
+
+    .pdf-fallback {
+      padding: 24px;
+    }
+
+    footer {
+      margin-top: 36px;
+      font-size: 0.95rem;
+      color: #5f554a;
+    }
+
+    @media (max-width: 700px) {
+      .pdf-viewer object {
+        height: 75vh;
+        min-height: 500px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main class="page">
+    <header>
+      <p class="back-link">
+        <a href="./teachers.html" onclick="if (history.length > 1) { history.back(); return false; }">← Back to Teacher Resources</a>
+      </p>
+
+      <h1>Maine Map from 1833</h1>
+      <p class="subtitle">Preview the historical Maine map below, or download the PDF for classroom use.</p>
+
+      <div class="actions">
+        <a class="button" href="Maine_Map.pdf" download>Download PDF</a>
+      </div>
+    </header>
+
+    <section class="pdf-viewer" aria-label="PDF preview">
+      <object data="Maine_Map.pdf" type="application/pdf">
+        <div class="pdf-fallback">
+          <p>Your browser does not support embedded PDFs.</p>
+          <p><a href="Maine_Map.pdf">Download the PDF instead.</a></p>
+        </div>
+      </object>
+    </section>
+
+    <footer>
+      From <em>The Prescott Girls</em> Teacher Resources.
+    </footer>
+  </main>
+</body>
+</html>
