@@ -3,66 +3,63 @@
 
   <!-- Core Pages -->
   <url><loc>https://www.theprescottgirls.com/</loc></url>
-  <url><loc>https://www.theprescottgirls.com/book.html</loc></url>
-  <url><loc>https://www.theprescottgirls.com/illustrations.html</loc></url>
-  <url><loc>https://www.theprescottgirls.com/interpretations.html</loc></url>
   <url><loc>https://www.theprescottgirls.com/author.html</loc></url>
-  <url><loc>https://www.theprescottgirls.com/teachers.html</loc></url>
+  <url><loc>https://www.theprescottgirls.com/book.html</loc></url>
+  <url><loc>https://www.theprescottgirls.com/contact.html</loc></url>
   <url><loc>https://www.theprescottgirls.com/events.html</loc></url>
   <url><loc>https://www.theprescottgirls.com/faq.html</loc></url>
-  <url><loc>https://www.theprescottgirls.com/contact.html</loc></url>
+  <url><loc>https://www.theprescottgirls.com/illustrations.html</loc></url>
+  <url><loc>https://www.theprescottgirls.com/interpretations.html</loc></url>
+  <url><loc>https://www.theprescottgirls.com/teachers.html</loc></url>
 
-  <!-- Teacher Resources PDFs -->
-  <url><loc>https://www.theprescottgirls.com/assets/downloads/An%20Overview%20-%20Using%20the%20Study%20Guides.pdf</loc></url>
+  <!-- Press Materials -->
+  <url><loc>https://www.theprescottgirls.com/assets/downloads/Press%20Release%20-%20May%2022nd%202026.pdf</loc></url>
+  <url><loc>https://www.theprescottgirls.com/assets/downloads/The%20Prescott%20Girls%20-%20Press%20Kit.pdf</loc></url>
 
-  <url><loc>https://www.theprescottgirls.com/assets/downloads/Study%20Guide%20-%20Discussion%20Questions%20(Teachers).pdf</loc></url>
-  <url><loc>https://www.theprescottgirls.com/assets/downloads/Study%20Guide%20-%20Discussion%20Questions%20(Students).pdf</loc></url>
+  <!-- Teacher Resources -->
+  <url><loc>https://www.theprescottgirls.com/teachers/An%20Overview%20-%20Using%20the%20Study%20Guides.html</loc></url>
+  <url><loc>https://www.theprescottgirls.com/teachers/An%20Overview%20-%20Using%20the%20Study%20Guides.pdf</loc></url>
 
-  <url><loc>https://www.theprescottgirls.com/assets/downloads/The%20Prescott%20Girls%20-%20Facts%20and%20Fiction.pdf</loc></url>
-  <url><loc>https://www.theprescottgirls.com/assets/downloads/Study%20Guide%20-%20Beckie%27s%20Sampler.pdf</loc></url>
-  <url><loc>https://www.theprescottgirls.com/assets/downloads/Study%20Guide%20-%20Needlework%20and%20Education.pdf</loc></url>
-  <url><loc>https://www.theprescottgirls.com/assets/downloads/Study%20Guide%20-%20The%20Sugar%20Boycott.pdf</loc></url>
-  <url><loc>https://www.theprescottgirls.com/assets/downloads/Study%20Guide%20-%20How%20Historians%20Trace%20Artifacts.pdf</loc></url>
-  <url><loc>https://www.theprescottgirls.com/assets/downloads/Study%20Guide%20-%20Life%20in%201830s%20Maine.pdf</loc></url>
-  <url><loc>https://www.theprescottgirls.com/assets/downloads/Study%20Guide%20-%20Letters%20and%20Communication%20in%20the%201830s.pdf</loc></url>
-  <url><loc>https://www.theprescottgirls.com/assets/downloads/Study%20Guide%20-%20Family%20Trees.pdf</loc></url>
-  <url><loc>https://www.theprescottgirls.com/assets/downloads/Study%20Guide%20-%20Creating%20the%20Illustrations.pdf</loc></url>
-  <url><loc>https://www.theprescottgirls.com/assets/downloads/Study%20Guide%20-%20The%20Old%20Pownalborough%20Court%20House.pdf</loc></url>
-  <url><loc>https://www.theprescottgirls.com/assets/downloads/Study%20Guide%20-%20Geography.pdf</loc></url>
-  <url><loc>https://www.theprescottgirls.com/assets/downloads/Maine_Map.pdf</loc></url>
-  
-  
-  
-  <!-- Teacher Resource Preview Pages -->
+  <url><loc>https://www.theprescottgirls.com/teachers/Maine_Map.html</loc></url>
+  <url><loc>https://www.theprescottgirls.com/teachers/Maine_Map.pdf</loc></url>
 
-    <url><loc>https://www.theprescottgirls.com/teachers/overview-using-the-study-guides/AnOverviewUsingtheStudyGuides.html</loc></url>
+  <url><loc>https://www.theprescottgirls.com/teachers/Study%20Guide%20-%20Beckie%20Prescott%27s%20Sampler.html</loc></url>
+  <url><loc>https://www.theprescottgirls.com/teachers/Study%20Guide%20-%20Beckie%20Prescott%27s%20Sampler.pdf</loc></url>
 
-    <url><loc>https://www.theprescottgirls.com/teachers/discussion-questions-teachers/StudyGuideDiscussionQuestions_Teachers_.html</loc></url>
+  <url><loc>https://www.theprescottgirls.com/teachers/Study%20Guide%20-%20Creating%20the%20Illustrations.html</loc></url>
+  <url><loc>https://www.theprescottgirls.com/teachers/Study%20Guide%20-%20Creating%20the%20Illustrations.pdf</loc></url>
 
-    <url><loc>https://www.theprescottgirls.com/teachers/discussion-questions-students/StudyGuideDiscussionQuestions_Students_.html</loc></url>
+  <url><loc>https://www.theprescottgirls.com/teachers/Study%20Guide%20-%20Discussion%20Questions%20%28Students%29.html</loc></url>
+  <url><loc>https://www.theprescottgirls.com/teachers/Study%20Guide%20-%20Discussion%20Questions%20%28Students%29.pdf</loc></url>
 
-    <url><loc>https://www.theprescottgirls.com/teachers/facts-and-fiction/ThePrescottGirlsFactsandFiction.html</loc></url>
+  <url><loc>https://www.theprescottgirls.com/teachers/Study%20Guide%20-%20Discussion%20Questions%20%28Teachers%29.html</loc></url>
+  <url><loc>https://www.theprescottgirls.com/teachers/Study%20Guide%20-%20Discussion%20Questions%20%28Teachers%29.pdf</loc></url>
 
-    <url><loc>https://www.theprescottgirls.com/teachers/beckie-prescotts-sampler/StudyGuideBeckiePrescottsSampler.html</loc></url>
+  <url><loc>https://www.theprescottgirls.com/teachers/Study%20Guide%20-%20Family%20Trees.html</loc></url>
+  <url><loc>https://www.theprescottgirls.com/teachers/Study%20Guide%20-%20Family%20Trees.pdf</loc></url>
 
-    <url><loc>https://www.theprescottgirls.com/teachers/needlework-and-education/StudyGuideNeedleworkandEducation.html</loc></url>
+  <url><loc>https://www.theprescottgirls.com/teachers/Study%20Guide%20-%20Geography.html</loc></url>
+  <url><loc>https://www.theprescottgirls.com/teachers/Study%20Guide%20-%20Geography.pdf</loc></url>
 
-    <url><loc>https://www.theprescottgirls.com/teachers/sugar-boycott/StudyGuideTheSugarBoycott.html</loc></url>
+  <url><loc>https://www.theprescottgirls.com/teachers/Study%20Guide%20-%20How%20Historians%20Trace%20Artifacts.html</loc></url>
+  <url><loc>https://www.theprescottgirls.com/teachers/Study%20Guide%20-%20How%20Historians%20Trace%20Artifacts.pdf</loc></url>
 
-    <url><loc>https://www.theprescottgirls.com/teachers/how-historians-trace-artifacts/StudyGuideHowHistoriansTraceArtifacts.html</loc></url>
+  <url><loc>https://www.theprescottgirls.com/teachers/Study%20Guide%20-%20Letters%20and%20Communications%20in%20the%201830s.html</loc></url>
+  <url><loc>https://www.theprescottgirls.com/teachers/Study%20Guide%20-%20Letters%20and%20Communications%20in%20the%201830s.pdf</loc></url>
 
-    <url><loc>https://www.theprescottgirls.com/teachers/life-in-1830s-maine/StudyGuideLifein1830sMaine.html</loc></url>
+  <url><loc>https://www.theprescottgirls.com/teachers/Study%20Guide%20-%20Life%20in%201830s%20Maine.html</loc></url>
+  <url><loc>https://www.theprescottgirls.com/teachers/Study%20Guide%20-%20Life%20in%201830s%20Maine.pdf</loc></url>
 
-    <url><loc>https://www.theprescottgirls.com/teachers/letters-and-communications/StudyGuideLettersandCommunicationsinthe1830s.html</loc></url>
+  <url><loc>https://www.theprescottgirls.com/teachers/Study%20Guide%20-%20Needlework%20and%20Education.html</loc></url>
+  <url><loc>https://www.theprescottgirls.com/teachers/Study%20Guide%20-%20Needlework%20and%20Education.pdf</loc></url>
 
-    <url><loc>https://www.theprescottgirls.com/teachers/family-trees/StudyGuideFamilyTrees.html</loc></url>
+  <url><loc>https://www.theprescottgirls.com/teachers/Study%20Guide%20-%20The%20Old%20Pownalborough%20Court%20House.html</loc></url>
+  <url><loc>https://www.theprescottgirls.com/teachers/Study%20Guide%20-%20The%20Old%20Pownalborough%20Court%20House.pdf</loc></url>
 
-    <url><loc>https://www.theprescottgirls.com/teachers/creating-the-illustrations/StudyGuideCreatingtheIllustrations.html</loc></url>
+  <url><loc>https://www.theprescottgirls.com/teachers/Study%20Guide%20-%20The%20Sugar%20Boycott.html</loc></url>
+  <url><loc>https://www.theprescottgirls.com/teachers/Study%20Guide%20-%20The%20Sugar%20Boycott.pdf</loc></url>
 
-    <url><loc>https://www.theprescottgirls.com/teachers/the-old-pownalborough-court-house/StudyGuideTheOldPownalboroughCourtHouse.html</loc></url>
-
-    <url><loc>https://www.theprescottgirls.com/teachers/geography/StudyGuideGeography.html</loc></url>
-  
-  
+  <url><loc>https://www.theprescottgirls.com/teachers/The%20Prescott%20Girls%20-%20Facts%20and%20Fiction.html</loc></url>
+  <url><loc>https://www.theprescottgirls.com/teachers/The%20Prescott%20Girls%20-%20Facts%20and%20Fiction.pdf</loc></url>
 
 </urlset>
