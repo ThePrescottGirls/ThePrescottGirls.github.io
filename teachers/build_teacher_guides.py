@@ -149,12 +149,63 @@ def markdown_to_basic_html(markdown: str) -> str:
     close_lists()
     return "\n".join(output)
 
+def title_has_resource_type(title: str) -> bool:
+    title_lower = title.lower()
+    return any(term in title_lower for term in [
+        "study guide",
+        "discussion questions",
+        "teacher guide",
+        "student guide",
+        "overview",
+        "guide",
+    ])
+
 
 def title_from_markdown(markdown: str) -> tuple[str, str]:
     lines = markdown.splitlines()
-    h1 = next((strip_markdown_markup(line) for line in lines if line.startswith("# ")), "The Prescott Girls – Study Guide")
-    h2 = next((strip_markdown_markup(line) for line in lines if line.startswith("## ")), "")
-    display_title = h2 or h1
+
+    headings = []
+
+    for line in lines:
+        match = re.match(r"^(#{1,6})\s+(.*)$", line.strip())
+        if match:
+            level = len(match.group(1))
+            text = strip_markdown_markup(match.group(2))
+
+            # Ignore numbered section headings like:
+            # "1. Leaving New Sharon"
+            if re.match(r"^\d+[\.\)]\s+", text):
+                continue
+
+            headings.append((level, text))
+
+    h1 = next((text for level, text in headings if level == 1), "")
+    h2 = next((text for level, text in headings if level == 2), "")
+
+    # Prefer the H1 unless it is generic.
+    if h1:
+        generic_titles = {
+            "the prescott girls",
+            "study guide",
+            "teacher guide",
+            "teacher resources",
+        }
+
+        if h1.lower().strip() in generic_titles and h2:
+            display_title = h2
+        else:
+            display_title = h1
+
+    elif h2:
+        display_title = h2
+    else:
+        display_title = "Teacher Resource"
+
+    # Avoid "Study Guide Study Guide"
+    if title_has_resource_type(display_title):
+        page_title = f"{display_title} | {SITE_NAME}"
+        return display_title, page_title
+
     page_title = f"{display_title} Study Guide | {SITE_NAME}"
     return display_title, page_title
 
@@ -204,7 +255,7 @@ def build_page(md_path: Path) -> Path:
   <main class="page">
     <header>
       <p class="back-link"><a href="{html.escape(TEACHER_RESOURCES_PATH)}" onclick="if (history.length > 1) {{ history.back(); return false; }}">← Back to Teacher Resources</a></p>
-      <h1>{html.escape(display_title)} Study Guide</h1>
+<h1>{html.escape(display_title if title_has_resource_type(display_title) else display_title + " Study Guide")}</h1>
       <p class="subtitle">Preview the printable study guide below, or download the PDF for classroom use.</p>
       <div class="actions">
         <a class="button" href="{html.escape(pdf_name)}" download>Download PDF</a>
