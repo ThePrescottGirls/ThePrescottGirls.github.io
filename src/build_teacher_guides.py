@@ -25,6 +25,8 @@ import re
 SITE_NAME = "The Prescott Girls"
 TEACHER_RESOURCES_PATH = "../teachers.html"
 
+OUTPUT_DIR = "../teachers"
+
 
 def remove_google_doc_images(markdown: str) -> str:
     """Remove Google Docs Markdown image embeds and base64 image references."""
@@ -285,7 +287,7 @@ def build_page(md_path: Path) -> Path:
 </html>
 '''
 
-    out_path = md_path.with_suffix(".html")
+    out_path = Path(OUTPUT_DIR) / html_name
     out_path.write_text(page, encoding="utf-8")
     return out_path
 
