@@ -492,7 +492,13 @@ hr {
 }
 
 
+.louisa-image {
+    margin: 1.25rem auto 1rem;
+}
 
+.404-button-group {
+  margin-top: 0.75rem;
+}
 
 .imprint h2,
 .imprint p {
