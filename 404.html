@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Page Not Found | The Prescott Girls</title>
+
+  <meta name="robots" content="noindex">
+
+  <style>
+    body {
+      margin: 0;
+      padding: 40px 20px;
+      background-color: #f7f3ec;
+      color: #3b342c;
+      font-family: Georgia, serif;
+      line-height: 1.7;
+      text-align: center;
+    }
+
+    .container {
+      max-width: 760px;
+      margin: 0 auto;
+    }
+
+    h1 {
+      font-size: 2.2rem;
+      margin-bottom: 1rem;
+      font-weight: normal;
+    }
+
+    p {
+      font-size: 1.08rem;
+      margin-bottom: 1.2rem;
+    }
+
+    .louisa-image {
+      margin: 2.5rem auto;
+    }
+
+    .louisa-image img {
+      width: 100%;
+      max-width: 320px;
+      height: auto;
+      border-radius: 4px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+    }
+
+    .button-group {
+      margin-top: 2rem;
+    }
+
+    .button {
+      display: inline-block;
+      margin: 0.5rem;
+      padding: 12px 22px;
+      background-color: #8b5a2b;
+      color: #ffffff;
+      text-decoration: none;
+      border-radius: 4px;
+      transition: background-color 0.2s ease;
+    }
+
+    .button:hover {
+      background-color: #6f4721;
+    }
+
+    .small-note {
+      margin-top: 2rem;
+      font-size: 0.95rem;
+      color: #6d6257;
+      font-style: italic;
+    }
+
+    @media (max-width: 600px) {
+      body {
+        padding: 30px 16px;
+      }
+
+      h1 {
+        font-size: 1.8rem;
+      }
+
+      p {
+        font-size: 1rem;
+      }
+
+      .louisa-image img {
+        max-width: 260px;
+      }
+    }
+  </style>
+
+  <script>
+    // If an old teacher resource URL is requested,
+    // automatically guide visitors back to the Teachers page.
+    if (window.location.pathname.includes("/teachers/")) {
+      setTimeout(function () {
+        window.location.replace("/teachers.html");
+      }, 4000);
+    }
+  </script>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <h1>This Page Could Not Be Found</h1>
+
+    <p>
+      The page you were seeking may have been moved or reorganized,
+      much like an old letter misplaced among courthouse records.
+    </p>
+
+    <div class="louisa-image">
+      <img
+        src="assets/images/20_Louisas_Secret.jpg"
+        alt="Louisa Prescott reading a letter by lantern light">
+    </div>
+
+    <div class="button-group">
+      <a class="button" href="teachers.html">
+        Teacher Resources
+      </a>
+
+      <a class="button" href="/">
+        Return Home
+      </a>
+    </div>
+
+    <p class="small-note">
+      Louisa is still searching...
+    </p>
+
+  </div>
+
+</body>
+</html>
