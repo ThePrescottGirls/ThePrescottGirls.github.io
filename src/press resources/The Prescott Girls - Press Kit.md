@@ -84,7 +84,7 @@ The Prescott Girls website provides downloadable educational materials for class
 
 These materials are available at:
 
-**theprescottgirls.com/teachers.html**
+[**theprescottgirls.com/teachers.html**](http://theprescottgirls.com/teachers.html) 
 
 ---
 
@@ -105,6 +105,6 @@ Images may be used freely for event promotion with attribution.
 For interviews, school visits, or event invitations:
 
 **Email:** [aric@awellregulatedpress.com](mailto:aric@awellregulatedpress.com)   
-**Website:** theprescottgirls.com
+**Website:** [theprescottgirls.com](http://theprescottgirls.com) 
 
 Publisher: **A Well-Regulated Press**
