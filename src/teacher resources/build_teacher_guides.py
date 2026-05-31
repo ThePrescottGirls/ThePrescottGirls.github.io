@@ -232,6 +232,11 @@ def build_page(md_path: Path) -> Path:
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{html.escape(page_title)}</title>
   <meta name="description" content="{html.escape(meta_description)}">
+  
+  <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon-16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32.png">
+  <link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
+  
   <style>
     body {{ margin: 0; font-family: Georgia, "Times New Roman", serif; background: #f7f3ea; color: #2d261f; line-height: 1.6; }}
     .page {{ max-width: 1100px; margin: 0 auto; padding: 32px 20px 56px; }}
