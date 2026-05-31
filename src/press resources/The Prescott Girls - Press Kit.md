@@ -9,6 +9,7 @@
 Genre: **Middle-Grade Historical Fiction**  
 Recommended Age: **8-12**  
 Author: **Aric Wilmunder**  
+Email: [**aric@awellregulatedpress.com**](mailto:aric@awellregulatedpress.com)   
 Publisher: **A Well-Regulated Press**  
 Website: [**theprescottgirls.com**](http://theprescottgirls.com)
 
@@ -103,7 +104,7 @@ Images may be used freely for event promotion with attribution.
 
 For interviews, school visits, or event invitations:
 
-**Email:** ThePrescottGirls@Outlook.com  
+**Email:** [aric@awellregulatedpress.com](mailto:aric@awellregulatedpress.com)   
 **Website:** theprescottgirls.com
 
 Publisher: **A Well-Regulated Press**

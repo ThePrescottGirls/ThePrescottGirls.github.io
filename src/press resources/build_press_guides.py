@@ -276,7 +276,7 @@ def build_page(md_path: Path) -> Path:
     <details class="transcript">
       <summary>Accessible text version</summary>
       <div class="transcript-content">
-        <p class="transcript-note">This text version is provided for accessibility, classroom copying, and search.</p>
+        <p class="transcript-note">This text version is provided for accessibility and search.</p>
 {transcript_html}
       </div>
     </details>
