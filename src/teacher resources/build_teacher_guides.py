@@ -25,7 +25,7 @@ import re
 SITE_NAME = "The Prescott Girls"
 TEACHER_RESOURCES_PATH = "../teachers.html"
 
-OUTPUT_DIR = "../teachers"
+OUTPUT_DIR = "../../teachers"
 
 
 def remove_google_doc_images(markdown: str) -> str:
