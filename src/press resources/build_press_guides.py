@@ -1,14 +1,14 @@
 #!/usr/bin/env python3
 """
-Generate HTML preview/download pages for The Prescott Girls Press Releases.
+Generate HTML preview/download pages for The Prescott Girls press resources.
 
 Usage:
-  cd path/to/press
-  python3 build_teacher_guides.py
+  cd path/to/press/markdown/source
+  python3 build_press_guides.py
 
 For every Markdown file in the current directory, this creates a matching
 HTML file with the same basename. The PDF is assumed to have the same
-basename and live in the same folder.
+basename and live in the same folder as the generated HTML page.
 
 Example:
   The Prescott Girls - Press Kit.md
@@ -23,8 +23,7 @@ import html
 import re
 
 SITE_NAME = "The Prescott Girls"
-TEACHER_RESOURCES_PATH = "../press.html"
-
+PRESS_RESOURCES_PATH = "../press.html"
 OUTPUT_DIR = "../../press"
 
 
@@ -61,13 +60,24 @@ def remove_google_doc_images(markdown: str) -> str:
 
 def strip_markdown_markup(text: str) -> str:
     text = re.sub(r"^[#\s]+", "", text).strip()
+    text = re.sub(r"\[([^\]]+)\]\(([^)]+)\)", r"\1", text)
     text = re.sub(r"\*\*(.*?)\*\*", r"\1", text)
     text = re.sub(r"\*(.*?)\*", r"\1", text)
     return text.strip()
 
 
 def inline_markdown_to_html(text: str) -> str:
+    """Convert a small subset of inline Markdown to HTML safely."""
+    # Escape first so arbitrary HTML in the Markdown cannot pass through.
     text = html.escape(text, quote=False)
+
+    # Convert Markdown links after escaping. Ordinary Markdown punctuation remains.
+    text = re.sub(
+        r"\[([^\]]+)\]\(([^)]+)\)",
+        lambda m: f'<a href="{html.escape(m.group(2), quote=True)}">{m.group(1)}</a>',
+        text,
+    )
+
     text = re.sub(r"\*\*(.*?)\*\*", r"<strong>\1</strong>", text)
     text = re.sub(r"\*(.*?)\*", r"<em>\1</em>", text)
     return text
@@ -121,7 +131,7 @@ def markdown_to_basic_html(markdown: str) -> str:
             output.append(f"<h{level}>{inline_markdown_to_html(heading_text)}</h{level}>")
             continue
 
-        bullet = re.match(r"^•\s+(.*)$", line)
+        bullet = re.match(r"^[-*•]\s+(.*)$", line)
         if bullet:
             flush_paragraph()
             if in_ol:
@@ -151,9 +161,15 @@ def markdown_to_basic_html(markdown: str) -> str:
     close_lists()
     return "\n".join(output)
 
+
 def title_has_resource_type(title: str) -> bool:
     title_lower = title.lower()
     return any(term in title_lower for term in [
+        "press release",
+        "press kit",
+        "media kit",
+        "media resources",
+        "press resources",
         "study guide",
         "discussion questions",
         "teacher guide",
@@ -163,10 +179,16 @@ def title_has_resource_type(title: str) -> bool:
     ])
 
 
-def title_from_markdown(markdown: str) -> tuple[str, str]:
-    lines = markdown.splitlines()
+def prettify_filename_title(stem: str) -> str:
+    """Fallback title from filename, with common separators cleaned up."""
+    title = re.sub(r"[_-]+", " ", stem).strip()
+    title = re.sub(r"\s+", " ", title)
+    return title or "Press Resource"
 
-    headings = []
+
+def title_from_markdown(markdown: str, basename: str) -> tuple[str, str]:
+    lines = markdown.splitlines()
+    headings: list[tuple[int, str]] = []
 
     for line in lines:
         match = re.match(r"^(#{1,6})\s+(.*)$", line.strip())
@@ -174,9 +196,8 @@ def title_from_markdown(markdown: str) -> tuple[str, str]:
             level = len(match.group(1))
             text = strip_markdown_markup(match.group(2))
 
-            # Ignore numbered section headings like:
-            # "1. Leaving New Sharon"
-            if re.match(r"^\d+[\.\)]\s+", text):
+            # Ignore numbered section headings like "1. Leaving New Sharon".
+            if re.match(r"^\d+[\.)]\s+", text):
                 continue
 
             headings.append((level, text))
@@ -184,32 +205,43 @@ def title_from_markdown(markdown: str) -> tuple[str, str]:
     h1 = next((text for level, text in headings if level == 1), "")
     h2 = next((text for level, text in headings if level == 2), "")
 
-    # Prefer the H1 unless it is generic.
-    if h1:
-        generic_titles = {
-            "the prescott girls",
-            "study guide",
-            "teacher guide",
-            "teacher resources",
-        }
+    generic_titles = {
+        "the prescott girls",
+        "press resource",
+        "press resources",
+        "study guide",
+        "teacher guide",
+        "teacher resources",
+    }
 
-        if h1.lower().strip() in generic_titles and h2:
-            display_title = h2
-        else:
-            display_title = h1
-
-    elif h2:
+    if h1 and h1.lower().strip() not in generic_titles:
+        display_title = h1
+    elif h2 and h2.lower().strip() not in generic_titles:
         display_title = h2
+    elif h1:
+        display_title = h1
     else:
-        display_title = "Press Resource"
+        display_title = prettify_filename_title(basename)
 
-    # Avoid "Study Guide Study Guide"
+    # Prefer filename fallback if the extracted title is too generic.
+    if display_title.lower().strip() in {"press resource", "press resources"}:
+        display_title = prettify_filename_title(basename)
+
     if title_has_resource_type(display_title):
         page_title = f"{display_title} | {SITE_NAME}"
-        return display_title, page_title
+    else:
+        page_title = f"{display_title} Press Release | {SITE_NAME}"
 
-    page_title = f"{display_title} Press Release | {SITE_NAME}"
     return display_title, page_title
+
+
+def meta_description_for(display_title: str) -> str:
+    title_lower = display_title.lower()
+    if "press kit" in title_lower or "media kit" in title_lower:
+        return f"Preview and download the {display_title} for {SITE_NAME}."
+    if "press release" in title_lower:
+        return f"Preview and download the {display_title} from {SITE_NAME} press resources."
+    return f"Preview and download the {display_title} press resource from {SITE_NAME}."
 
 
 def build_page(md_path: Path) -> Path:
@@ -218,12 +250,9 @@ def build_page(md_path: Path) -> Path:
     html_name = basename + ".html"
 
     markdown = remove_google_doc_images(md_path.read_text(encoding="utf-8"))
-    display_title, page_title = title_from_markdown(markdown)
+    display_title, page_title = title_from_markdown(markdown, basename)
     transcript_html = markdown_to_basic_html(markdown)
-    meta_description = (
-        f"Preview and download the {display_title} Press Release "
-        f"from {SITE_NAME} press resources."
-    )
+    meta_description = meta_description_for(display_title)
 
     page = f'''<!DOCTYPE html>
 <html lang="en">
@@ -261,9 +290,9 @@ def build_page(md_path: Path) -> Path:
 <body>
   <main class="page">
     <header>
-      <p class="back-link"><a href="{html.escape(TEACHER_RESOURCES_PATH)}" onclick="if (history.length > 1) {{ history.back(); return false; }}">← Back to Press Resources</a></p>
-<h1>{html.escape(display_title)}</h1>
-      <p class="subtitle">Preview the printable Press Resources below, or download the PDF.</p>
+      <p class="back-link"><a href="{html.escape(PRESS_RESOURCES_PATH)}" onclick="if (history.length > 1) {{ history.back(); return false; }}">← Back to Press Resources</a></p>
+      <h1>{html.escape(display_title)}</h1>
+      <p class="subtitle">Preview the press resource below, or download the PDF.</p>
       <div class="actions">
         <a class="button" href="{html.escape(pdf_name)}" download>Download PDF</a>
       </div>
