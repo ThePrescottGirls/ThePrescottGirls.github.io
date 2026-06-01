@@ -63,11 +63,21 @@ def strip_markdown_markup(text: str) -> str:
     text = re.sub(r"^[#\s]+", "", text).strip()
     text = re.sub(r"\*\*(.*?)\*\*", r"\1", text)
     text = re.sub(r"\*(.*?)\*", r"\1", text)
+    text = re.sub(r"\[([^\]]+)\]\([^)]+\)", r"\1", text)
     return text.strip()
 
 
 def inline_markdown_to_html(text: str) -> str:
     text = html.escape(text, quote=False)
+
+    # Convert simple Markdown links after escaping the line. The link text is already
+    # escaped; escape href attributes with quote=True before inserting them.
+    def replace_link(match: re.Match[str]) -> str:
+        label = match.group(1)
+        href = html.escape(match.group(2), quote=True)
+        return f'<a href="{href}">{label}</a>'
+
+    text = re.sub(r"\[([^\]]+)\]\(([^)]+)\)", replace_link, text)
     text = re.sub(r"\*\*(.*?)\*\*", r"<strong>\1</strong>", text)
     text = re.sub(r"\*(.*?)\*", r"<em>\1</em>", text)
     return text
@@ -151,8 +161,18 @@ def markdown_to_basic_html(markdown: str) -> str:
     close_lists()
     return "\n".join(output)
 
+
+def normalize_title(title: str) -> str:
+    """Normalize titles so generic H1 variants compare reliably."""
+    title = strip_markdown_markup(title)
+    title = title.replace("—", "-").replace("–", "-").replace("\\-", "-")
+    title = re.sub(r"\s+", " ", title)
+    title = re.sub(r"\s*-\s*", " - ", title)
+    return title.lower().strip()
+
+
 def title_has_resource_type(title: str) -> bool:
-    title_lower = title.lower()
+    title_lower = normalize_title(title)
     return any(term in title_lower for term in [
         "study guide",
         "discussion questions",
@@ -163,10 +183,16 @@ def title_has_resource_type(title: str) -> bool:
     ])
 
 
+def display_h1_from_title(display_title: str) -> str:
+    """Use a descriptive visible H1, adding 'Study Guide' only when needed."""
+    if title_has_resource_type(display_title):
+        return display_title
+    return f"{display_title} Study Guide"
+
+
 def title_from_markdown(markdown: str) -> tuple[str, str]:
     lines = markdown.splitlines()
-
-    headings = []
+    headings: list[tuple[int, str]] = []
 
     for line in lines:
         match = re.match(r"^(#{1,6})\s+(.*)$", line.strip())
@@ -176,7 +202,7 @@ def title_from_markdown(markdown: str) -> tuple[str, str]:
 
             # Ignore numbered section headings like:
             # "1. Leaving New Sharon"
-            if re.match(r"^\d+[\.\)]\s+", text):
+            if re.match(r"^\d+[\.)]\s+", text):
                 continue
 
             headings.append((level, text))
@@ -184,32 +210,93 @@ def title_from_markdown(markdown: str) -> tuple[str, str]:
     h1 = next((text for level, text in headings if level == 1), "")
     h2 = next((text for level, text in headings if level == 2), "")
 
-    # Prefer the H1 unless it is generic.
-    if h1:
-        generic_titles = {
-            "the prescott girls",
-            "study guide",
-            "teacher guide",
-            "teacher resources",
-        }
+    generic_titles = {
+        "the prescott girls",
+        "the prescott girls - study guide",
+        "study guide",
+        "teacher guide",
+        "teacher resources",
+    }
 
-        if h1.lower().strip() in generic_titles and h2:
-            display_title = h2
-        else:
-            display_title = h1
-
+    # Most individual guide Markdown files use a generic H1 and a specific H2.
+    # Promote the H2 for page titles, meta descriptions, and the visible page H1.
+    if h1 and normalize_title(h1) in generic_titles and h2:
+        display_title = h2
+    elif h1:
+        display_title = h1
     elif h2:
         display_title = h2
     else:
         display_title = "Teacher Resource"
 
-    # Avoid "Study Guide Study Guide"
+    # Avoid "Study Guide Study Guide" and similar duplicate resource labels.
     if title_has_resource_type(display_title):
         page_title = f"{display_title} | {SITE_NAME}"
-        return display_title, page_title
+    else:
+        page_title = f"{display_title} Study Guide | {SITE_NAME}"
 
-    page_title = f"{display_title} Study Guide | {SITE_NAME}"
     return display_title, page_title
+
+
+def clean_meta_text(text: str) -> str:
+    text = strip_markdown_markup(text)
+    text = re.sub(r"^!\[[^\]]*\].*$", "", text)
+    text = re.sub(r"\s+", " ", text)
+    return text.strip(" -–—")
+
+
+def first_useful_paragraph(markdown: str) -> str:
+    """Find the first substantial paragraph for a more descriptive meta snippet."""
+    blocks = re.split(r"\n\s*\n", markdown)
+    for block in blocks:
+        lines = []
+        for line in block.splitlines():
+            stripped = line.strip()
+            if not stripped:
+                continue
+            if stripped.startswith("#"):
+                continue
+            if stripped.startswith("!"):
+                continue
+            if re.fullmatch(r"---+", stripped):
+                continue
+            if stripped.startswith("•"):
+                continue
+            lines.append(stripped)
+
+        candidate = clean_meta_text(" ".join(lines))
+        # Skip short labels such as "Artifact Overview".
+        if len(candidate) >= 80:
+            return candidate
+
+    return ""
+
+
+def truncate_meta(text: str, max_length: int = 155) -> str:
+    text = re.sub(r"\s+", " ", text).strip()
+    if len(text) <= max_length:
+        return text
+
+    truncated = text[: max_length + 1]
+    if " " in truncated:
+        truncated = truncated.rsplit(" ", 1)[0]
+    return truncated.rstrip(".,;:") + "…"
+
+
+def meta_description_from_markdown(display_title: str, markdown: str) -> str:
+    intro = first_useful_paragraph(markdown)
+
+    if intro:
+        return truncate_meta(intro)
+
+    if title_has_resource_type(display_title):
+        return truncate_meta(
+            f"Preview and download {display_title} from {SITE_NAME} teacher resources."
+        )
+
+    return truncate_meta(
+        f"Preview and download the {display_title} study guide from {SITE_NAME} teacher resources."
+    )
 
 
 def build_page(md_path: Path) -> Path:
@@ -219,11 +306,9 @@ def build_page(md_path: Path) -> Path:
 
     markdown = remove_google_doc_images(md_path.read_text(encoding="utf-8"))
     display_title, page_title = title_from_markdown(markdown)
+    visible_h1 = display_h1_from_title(display_title)
     transcript_html = markdown_to_basic_html(markdown)
-    meta_description = (
-        f"Preview and download the {display_title} teacher study guide "
-        f"from {SITE_NAME} teacher resources."
-    )
+    meta_description = meta_description_from_markdown(display_title, markdown)
 
     page = f'''<!DOCTYPE html>
 <html lang="en">
@@ -262,7 +347,7 @@ def build_page(md_path: Path) -> Path:
   <main class="page">
     <header>
       <p class="back-link"><a href="{html.escape(TEACHER_RESOURCES_PATH)}" onclick="if (history.length > 1) {{ history.back(); return false; }}">← Back to Teacher Resources</a></p>
-<h1>{html.escape(display_title if title_has_resource_type(display_title) else display_title + " Study Guide")}</h1>
+<h1>{html.escape(visible_h1)}</h1>
       <p class="subtitle">Preview the printable study guide below, or download the PDF for classroom use.</p>
       <div class="actions">
         <a class="button" href="{html.escape(pdf_name)}" download>Download PDF</a>
