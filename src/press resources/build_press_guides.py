@@ -208,7 +208,7 @@ def title_from_markdown(markdown: str) -> tuple[str, str]:
         page_title = f"{display_title} | {SITE_NAME}"
         return display_title, page_title
 
-    page_title = f"{display_title} Study Guide | {SITE_NAME}"
+    page_title = f"{display_title} Press Release | {SITE_NAME}"
     return display_title, page_title
 
 
@@ -221,8 +221,8 @@ def build_page(md_path: Path) -> Path:
     display_title, page_title = title_from_markdown(markdown)
     transcript_html = markdown_to_basic_html(markdown)
     meta_description = (
-        f"Preview and download the {display_title} teacher study guide "
-        f"from {SITE_NAME} teacher resources."
+        f"Preview and download the {display_title} Press Release "
+        f"from {SITE_NAME} press resources."
     )
 
     page = f'''<!DOCTYPE html>
