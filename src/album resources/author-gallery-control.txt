@@ -35,7 +35,7 @@ gps=
 location=Pownalborough Court House, Dresden, Maine
 location_confidence=visual
 title=Pownalborough Court House
-caption=The Pownalborough Court House in Dresden, Maine, where the Prescott sisters lived in the 1830s and where Beckie's, Sallie's and Mother's samplers were returned.
+caption=The Pownalborough Court House in Dresden, Maine, where the Prescott sisters lived in the 1830s and where Beckie's, Sallie's, and Mother's samplers were returned.
 draft=yes
 
 [PHOTO]
@@ -46,7 +46,7 @@ gps=
 location=Pownalborough Court House, Dresden, Maine
 location_confidence=visual
 title=Samplers Returned to the Courthouse
-caption=Descendants and supporters gather at the Pownalborough Court House as Prescott family samplers return to the place where the girls once lived.
+caption=Lincoln County Historical Association staff gather at the Pownalborough Court House as the samplers return to the place where the Prescott girls stitched them 200 years earlier.
 draft=yes
 
 [PHOTO]
@@ -107,8 +107,8 @@ time=16:00:15
 gps=44.104211,-69.767808
 location=Dresden, Maine
 location_confidence=metadata+visual
-title=Sarah Prescott Grave Marker
-caption=The grave marker of Sarah Prescott, one of the Prescott sisters whose life and family context helped shape the historical research behind the book.
+title=Sallie (Sarah) Prescott Grave Marker
+caption=The grave marker of Sallie Prescott, one of the Prescott sisters whose life and family context helped shape the historical research behind the book.
 draft=yes
 
 
@@ -136,7 +136,7 @@ gps=38.57428,-121.50617
 location=Sacramento, California
 location_confidence=metadata
 title=Visit to Antiques Roadshow
-caption=Lori discussing one of her other samplers with Leigh Keno during the filming of Antiques Roadshow
+caption=Lori discussing one of her other samplers with Leigh Keno during the filming of Antiques Roadshow.
 draft=yes
 
 [PHOTO]
@@ -144,10 +144,10 @@ file=IMG_1040.jpeg
 date=2022-08-30
 time=08:50:10
 gps=38.89326,-77.03731
-location=Washington, DC
+location=Washington, DC.
 location_confidence=metadata
 title=Historic Samplers at the DAR
-caption=Studying historic needlework and sampler examples at the Daughters of the American Revolution Museum in Washington DC
+caption=caption=Studying historic needlework and sampler examples with Alden O'Brien at the Daughters of the American Revolution Museum in Washington, DC.
 draft=yes
 
 [PHOTO]
@@ -169,19 +169,21 @@ gps=43.07584,-70.75472
 location=Portsmouth, New Hampshire
 location_confidence=metadata
 title=Sampler Research Visit
-caption=Viewing historic samplers and related materials during a museum research visit with Elizabeth Farish, Chief Curator at the Strawbery Banke Museum
+caption=Viewing historic samplers and related materials during a museum research visit with Elizabeth Farish, Chief Curator at the Strawbery Banke Museum.
 draft=yes
 
 [PHOTO]
-file=IMG_3347.jpeg
-date=2023-08-02
-time=10:17:03
-gps=38.89110,-77.02935
-location=Washington, DC
-location_confidence=metadata
-title=Research Visit in Washington, DC
-caption=In the archives at the Smithsonian in Washington, DC connected to historical research and textile study.
+file=IMG_9097.jpeg
+date=2021-09-14
+time=13:02:54
+gps=37.771539,-122.468331
+location=de Young Museum, San Francisco, California
+location_confidence=metadata+visual
+title=Research Visit to the de Young Museum
+caption=Lori Love and colleagues meet with Laura Camerlengo, Curator of Textile Arts at the de Young Museum, to study seventeenth-century samplers in the museum's collection.
 draft=yes
+
+
 
 [PHOTO]
 file=IMG_3350.jpeg
@@ -190,8 +192,8 @@ time=10:31:16
 gps=38.89095,-77.03002
 location=Washington, DC
 location_confidence=metadata
-title=Collection Storage Visit
-caption=Examining textiles and historical materials during a behind-the-scenes collection visit at the Smithsonian
+title=Smithsonian Archives Visit
+caption=Examining textiles and historical materials with Tim Winkle during a behind-the-scenes collection visit at the Smithsonian National Museum of American History.
 draft=yes
 
 [PHOTO]
@@ -202,7 +204,7 @@ gps=42.77614,-71.08668
 location=Haverhill, Massachusetts
 location_confidence=metadata
 title=New England Collection Visit
-caption=A visit with Laura Johnson to the Historic New England Archives in Haverhill, MA
+caption=A visit with Laura Johnson to the Historic New England Archives to examine historic samplers, artworks, and other archival materials.
 draft=yes
 
 [PHOTO]
@@ -213,7 +215,7 @@ gps=43.50207,-70.44168
 location=Biddeford, Maine
 location_confidence=metadata
 title=Guests at the Saco Museum
-caption=A research visit with Tara Vose Raiselis - Curator/Director Saco Museum
+caption=caption=A research visit with Tara Vose Raiselis, Curator and Director of the Saco Museum.
 draft=yes
 
 
@@ -234,14 +236,25 @@ caption=A Yosemite landscape photographed during one of the author's recurring t
 draft=yes
 
 [PHOTO]
-file=IMG_4104.jpeg
-date=2023-11-01
-time=18:06:19
-gps=37.81094,-119.48496
-location=Yosemite National Park, California
-location_confidence=metadata+visual
-title=Evening in Yosemite
-caption=An evening view in Yosemite National Park, reflecting the author's long connection to outdoor travel and photography.
+file=IMG_0825.jpeg
+date=2024-05-22
+time=18:05:05
+gps=37.294431,-112.948731
+location=Unknown
+location_confidence=unknown
+title=Zion - The Narrows
+caption=Hiking through the Narrows in Zion National Park, following the Virgin River between towering sandstone walls that rise hundreds of feet above the canyon floor.
+draft=yes
+
+[PHOTO]
+file=IMG_1004.jpeg
+date=2024-05-24
+time=14:18:27
+gps=37.605817,-112.157508
+location=Bryce Canyon
+location_confidence=unknown
+title=The Bryce Amphitheater
+caption=Looking across Bryce Canyon's famous amphitheater of hoodoos, where millions of years of erosion have sculpted one of the most distinctive landscapes in the American Southwest.
 draft=yes
 
 [PHOTO]
@@ -262,8 +275,8 @@ time=12:07:10
 gps=36.07347,-112.15103
 location=Grand Canyon National Park, Arizona
 location_confidence=metadata+visual
-title=Grand Canyon Visit
-caption=Aric and Lori during a research and travel year that combined historical work, photography, and outdoor exploration.
+title=Grand Canyon
+caption=Aric and Lori at the Grand Canyon during a trip through the American Southwest, combining historical exploration with some of the country's most iconic landscapes.
 draft=yes
 
 [PHOTO]
@@ -274,7 +287,7 @@ gps=36.98062,-110.10393
 location=Monument Valley region, Arizona/Utah
 location_confidence=metadata+visual
 title=Monument Valley
-caption=Travel through the Monument Valley region, part of the author's broader interest in landscapes, history, and photography.
+caption=Traveling through Monument Valley, a landscape familiar from countless western films and one of the most recognizable natural landmarks in the American West.
 draft=yes
 
 
@@ -312,26 +325,33 @@ caption=Night viewing of volcanic activity at Hawaiʻi Volcanoes National Park.
 draft=yes
 
 [PHOTO]
-file=IMG_3724.jpeg
-date=2025-03-04
-time=20:26:43
-gps=19.40154,-155.26666
-location=Hawaiʻi Volcanoes National Park, Hawaii
+file=IMG_5093.jpeg
+date=2025-07-20
+time=09:14:45
+gps=40.533719,-121.570931
+location=Lassen Volcanic National Park, California
 location_confidence=metadata+visual
-title=Volcanic Eruption Detail
-caption=A close view of volcanic activity during a visit to Hawaiʻi Volcanoes National Park.
+title=At Manzanita Lake, Lassen
+caption=At Manzanita Lake in Lassen Volcanic National Park, with Lassen Peak rising above the forest and water.
 draft=yes
 
+
+
+
+
+
 [PHOTO]
-file=IMG_6367.jpeg
+file=20260430_070020_378470220292758.mov
 date=2026-04-29
 time=10:30:31
 gps=39.19515,-120.26064
 location=Lake Tahoe region, California
 location_confidence=metadata+visual
 title=Spring Snowboarding
-caption=A spring snowboarding trip in the Lake Tahoe region.
+caption=A spring snowboarding at 8200 feet at Palisades Resort near Lake Tahoe.
 draft=yes
+
+
 
 [PHOTO]
 file=IMG_8247.jpeg
@@ -341,7 +361,7 @@ gps=44.43149,-69.00948
 location=Belfast, Maine
 location_confidence=metadata
 title=Maine Harbor
-caption=Aric and Lori during a Maine research and travel trip.
+caption=Exploring Maine's coast during a research trip undertaken while tracing the history of the Prescott family and their descendants.
 draft=yes
 
 [PHOTO]
@@ -355,16 +375,7 @@ title=Bubble Rock, Acadia
 caption=A visit to Bubble Rock in Acadia National Park during a Maine research and travel trip.
 draft=yes
 
-[PHOTO]
-file=IMG_8286.jpeg
-date=2021-06-09
-time=16:25:59
-gps=44.33942,-68.25374
-location=Acadia National Park, Maine
-location_confidence=metadata+visual
-title=Acadia National Park
-caption=Aric and Lori in Acadia National Park during a Maine research and travel trip.
-draft=yes
+
 
 [PHOTO]
 file=IMG_8294.jpeg
@@ -374,7 +385,7 @@ gps=44.35221,-68.22380
 location=Acadia National Park, Maine
 location_confidence=metadata+visual
 title=Acadia Overlook
-caption=A scenic overlook in Acadia National Park during the author's Maine travels.
+caption=Looking across Acadia National Park from one of the island's scenic overlooks during a research trip connected to the Prescott family story.
 draft=yes
 
 
@@ -409,7 +420,7 @@ gps=38.30332,-123.06496
 location=Sonoma Coast, California
 location_confidence=metadata
 title=Sonoma Coast
-caption=A coastal photograph from Northern California.
+caption=The rugged Sonoma Coast, one of the author's favorite destinations for photography, hiking, and day trips along Northern California's shoreline.
 draft=yes
 
 
@@ -422,7 +433,7 @@ gps=37.40881,-122.17851
 location=Stanford Dish area, Palo Alto, California
 location_confidence=metadata+visual
 title=Stanford Dish
-caption=A walk near the Stanford Dish, close to the author's Palo Alto roots.
+caption=The Stanford Dish trail, a familiar Bay Area landmark located near the communities where the author spent much of his technology career.
 draft=yes
 
 [PHOTO]
@@ -444,16 +455,16 @@ gps=37.80210,-122.44725
 location=Hawthorne, California
 location_confidence=metadata+visual
 title=SpaceX Headquarters
-caption=A selfie with a Falcon 9 Booster at SpaceX
+caption=Visiting SpaceX headquarters in Hawthorne, California, beside a flown Falcon 9 booster that helped make reusable orbital rockets a reality.
 draft=yes
 
 
 
 
 [SECTION]
-id=technology-games
+id=hobbies-activities
 title=Hobbies and Activities
-caption=Spaceflight, Movies, Soaring, Old-Time model planes just a few of the author's interests
+caption=caption=Spaceflight, movies, soaring, model aviation, and other pursuits that have shaped the author's interests outside of writing.
 
 [PHOTO]
 file=Hanging with Buzz.jpeg
@@ -468,7 +479,7 @@ draft=yes
 
 [PHOTO]
 file=DSC02653.jpeg
-date=2006-10-07
+date=2002-12-07
 time=11:53:54
 gps=
 location=Unknown
@@ -482,13 +493,23 @@ file=Swing Aric, Jackie, Barry.jpg.jpeg
 date=2002-12-06
 time=07:43:25
 gps=
-location=Unknown
+location=San Francisco
 location_confidence=unknown
-title=Cast Photo with Barry Bostwick, Jacqueline Bisset an Inness Casey
-caption=Fun on the set.  
+title=Cast Photo with Barry Bostwick, Jacqueline Bisset and Innis Casey
+caption=Cast Photo of the Jazz band for the movie 'Swing' filmed in San Francisco.  
 draft=yes
 
 
+[PHOTO]
+file=Montague Cross Country.jpeg
+date=2012-07-05
+time=15:48:23
+gps=
+location=Unknown
+location_confidence=unknown
+title=Montague Cross Country
+caption=Team Dust Devils RC Cross Country racing with Mt. Shasta in the background.
+draft=yes
 
 [PHOTO]
 file=IMG_2379.jpeg
@@ -497,20 +518,11 @@ time=12:11:33
 gps=36.37616,-119.38316
 location=Visalia, California
 location_confidence=metadata+visual
-title=Cross-Country RC Gliders
+title=F5J Soaring event at the Central Valley RC Club
 caption=RC glider flying in California's Central Valley, combining technology, craft, and outdoor competition.
 draft=yes
 
-[PHOTO]
-file=IMG_4677.jpeg
-date=2025-10-05
-time=08:57:03
-gps=36.37606,-119.38265
-location=Visalia, California
-location_confidence=metadata+visual
-title=RC Glider Competition
-caption=RC glider flying in California's Central Valley.
-draft=yes
+
 
 [PHOTO]
 file=312483715_10221891478824217_8222841079554157139_n.jpeg
@@ -519,8 +531,8 @@ time=05:52:52
 gps=
 location=Unknown
 location_confidence=unknown
-title=RC Glider Team
-caption=A group photograph from an RC glider event, part of the author's interests in flight, engineering, and outdoor competition.
+title=Old-Timer event winners
+caption=A group photograph from an old-timer competition near Boulder City, Nevada at the El Dorada Dry Lake Bed.
 draft=yes
 
 [PHOTO]
@@ -530,8 +542,8 @@ time=10:03:36
 gps=
 location=Unknown
 location_confidence=unknown
-title=RC Glider Launch
-caption=Preparing to launch an RC glider, part of the author's long interest in flying, building, and outdoor hobbies.
+title=Aric with his 1939 Playboy Senior old-time airplane
+caption=Preparing to launch an RC old-timer, part of the author's long interest in flying, building, and outdoor hobbies.
 draft=yes
 
 [PHOTO]
@@ -545,7 +557,16 @@ title=Golden Gate Bike Ride
 caption=A bicycle ride near the Golden Gate Bridge, part of the author's Bay Area life and outdoor travels.
 draft=yes
 
-
+[PHOTO]
+file=IMG_5345.jpeg
+date=2024-03-15
+time=11:30:21
+gps=37.798931,-122.450583
+location=Presidio, San Francisco
+location_confidence=unknown
+title=A visit to the  Letterman Digital Arts Center
+caption=Home to George Lucas' award winning Industrial Light and Magic and Lucasfilm Games.
+draft=yes
 
 
 
@@ -555,6 +576,17 @@ draft=yes
 id=recognition
 title=Recognition
 caption=Recognition for this project
+
+[PHOTO]
+file=Independent-Author-Awards-Winner-2a.jpeg
+date=
+time=
+gps=
+location=Unknown
+location_confidence=unknown
+title=Independent Author Awards Winner
+caption=caption=Winner, Fiction: Northeast, and finalist in the Historical Fiction and Educational categories.Categories
+draft=yes
 
 [PHOTO]
 file=Wilmunder Overlay.jpg

@@ -575,7 +575,6 @@ def render_html(gallery: Gallery, album_dir: Path) -> str:
 
 <main id=\"main\" class=\"container\">
   <div class=\"section\">
-    <a class=\"return-link\" href=\"../author.html\">← Return to Author</a>
     <h1>{html.escape(page_title)}</h1>
     {page_intro_html}
   </div>
@@ -608,6 +607,186 @@ def render_html(gallery: Gallery, album_dir: Path) -> str:
 </body>
 </html>
 """
+
+
+def control_file_names(gallery: Gallery) -> set[str]:
+    """Return all filenames referenced by [PHOTO] / [MEDIA] blocks."""
+    names: set[str] = set()
+    for section in gallery.sections:
+        for photo in section.photos:
+            if photo.file:
+                names.add(photo.file)
+    return names
+
+
+def first_section_id(gallery: Gallery) -> str:
+    """Suggest the first section as a default insertion point."""
+    if gallery.sections:
+        return gallery.sections[0].id
+    return "prescott-research"
+
+
+def exif_date_from_image(path: Path) -> str:
+    """Return YYYY-MM-DD from image EXIF DateTimeOriginal/DateTime when available."""
+    if Image is None:
+        return ""
+    try:
+        from PIL.ExifTags import TAGS
+        with Image.open(path) as img:
+            exif = img.getexif()
+            if not exif:
+                return ""
+            named = {TAGS.get(k, k): v for k, v in exif.items()}
+            raw = (
+                named.get("DateTimeOriginal")
+                or named.get("DateTimeDigitized")
+                or named.get("DateTime")
+                or ""
+            )
+            if isinstance(raw, bytes):
+                raw = raw.decode("utf-8", errors="ignore")
+            raw = str(raw).strip()
+            # EXIF dates are usually "YYYY:MM:DD HH:MM:SS"
+            if len(raw) >= 10 and raw[4] == ":" and raw[7] == ":":
+                return raw[:10].replace(":", "-")
+    except Exception:
+        pass
+    return ""
+
+
+def exif_time_from_image(path: Path) -> str:
+    """Return HH:MM:SS from image EXIF DateTimeOriginal/DateTime when available."""
+    if Image is None:
+        return ""
+    try:
+        from PIL.ExifTags import TAGS
+        with Image.open(path) as img:
+            exif = img.getexif()
+            if not exif:
+                return ""
+            named = {TAGS.get(k, k): v for k, v in exif.items()}
+            raw = (
+                named.get("DateTimeOriginal")
+                or named.get("DateTimeDigitized")
+                or named.get("DateTime")
+                or ""
+            )
+            if isinstance(raw, bytes):
+                raw = raw.decode("utf-8", errors="ignore")
+            raw = str(raw).strip()
+            if len(raw) >= 19:
+                return raw[11:19]
+    except Exception:
+        pass
+    return ""
+
+
+def _gps_coord(values, ref: str) -> Optional[float]:
+    """Convert EXIF GPS rationals into decimal degrees."""
+    try:
+        def as_float(v):
+            try:
+                return float(v)
+            except Exception:
+                return float(v[0]) / float(v[1])
+        deg = as_float(values[0])
+        minutes = as_float(values[1])
+        seconds = as_float(values[2])
+        result = deg + minutes / 60.0 + seconds / 3600.0
+        if ref in {"S", "W"}:
+            result = -result
+        return result
+    except Exception:
+        return None
+
+
+def exif_gps_from_image(path: Path) -> str:
+    """Return lat,lng from image EXIF GPS data when available."""
+    if Image is None:
+        return ""
+    try:
+        from PIL.ExifTags import GPSTAGS
+        with Image.open(path) as img:
+            exif = img.getexif()
+            gps_ifd = exif.get_ifd(0x8825) if hasattr(exif, "get_ifd") else {}
+            if not gps_ifd:
+                return ""
+            gps = {GPSTAGS.get(k, k): v for k, v in gps_ifd.items()}
+            lat = _gps_coord(gps.get("GPSLatitude"), gps.get("GPSLatitudeRef", "N"))
+            lon = _gps_coord(gps.get("GPSLongitude"), gps.get("GPSLongitudeRef", "E"))
+            if lat is None or lon is None:
+                return ""
+            return f"{lat:.6f},{lon:.6f}"
+    except Exception:
+        pass
+    return ""
+
+
+def title_from_filename(filename: str) -> str:
+    """Create a human-readable draft title from a filename."""
+    stem = Path(filename).stem
+    stem = re.sub(r"^\d+\s+edited\s+", "", stem, flags=re.IGNORECASE)
+    stem = re.sub(r"[_-]+", " ", stem)
+    stem = re.sub(r"\s+", " ", stem).strip()
+    # Avoid useless camera names as titles.
+    if re.match(r"^(IMG|DSC|DSCN)\s*\d+$", stem, flags=re.IGNORECASE):
+        return "New Gallery Photo"
+    return stem.title() if stem else "New Gallery Photo"
+
+
+def media_block_for_unreferenced_file(filename: str, album_dir: Path) -> str:
+    """Create a paste-ready [PHOTO] block for an unreferenced media file."""
+    path = album_dir / filename
+    ext = path.suffix.lower()
+    media_type = "video" if ext in VIDEO_EXTS else "image"
+
+    date = exif_date_from_image(path) if media_type == "image" else ""
+    time = exif_time_from_image(path) if media_type == "image" else ""
+    gps = exif_gps_from_image(path) if media_type == "image" else ""
+
+    title = title_from_filename(filename)
+    caption = "Caption needed."
+
+    lines = [
+        "[PHOTO]",
+        f"file={filename}",
+    ]
+    if media_type == "video":
+        lines.append("media_type=video")
+    lines.extend([
+        f"date={date}",
+        f"time={time}",
+        f"gps={gps}",
+        "location=Unknown",
+        "location_confidence=unknown",
+        f"title={title}",
+        f"caption={caption}",
+        "draft=yes",
+    ])
+    return "\n".join(lines)
+
+
+def unreferenced_media_files(gallery: Gallery, album_dir: Path) -> List[str]:
+    album_files, _unsupported, _ignored = collect_album_media(album_dir)
+    control_files = control_file_names(gallery)
+    return sorted(album_files - control_files)
+
+
+def print_unreferenced_media_blocks(gallery: Gallery, album_dir: Path) -> None:
+    """Print paste-ready [PHOTO] blocks for supported media not in the control file."""
+    missing_from_control = unreferenced_media_files(gallery, album_dir)
+    if not missing_from_control:
+        return
+
+    print("\nPaste-ready control file blocks for unreferenced media")
+    print("-----------------------------------------------------")
+    print(f"# Suggested insertion section: {first_section_id(gallery)}")
+    print("# Review title, caption, location, and section placement before publishing.\n")
+
+    for filename in missing_from_control:
+        print(media_block_for_unreferenced_file(filename, album_dir))
+        print()
+
 
 
 def print_report(errors: List[str], warnings: List[str], gallery: Gallery, album_dir: Path, output_file: Path) -> None:
@@ -665,6 +844,7 @@ def main() -> int:
     album_dir.mkdir(parents=True, exist_ok=True)
     errors, warnings = validate(gallery, album_dir)
     print_report(errors, warnings, gallery, album_dir, output_file)
+    print_unreferenced_media_blocks(gallery, album_dir)
 
     if errors:
         print("Not generating album.html because errors were found.", file=sys.stderr)
