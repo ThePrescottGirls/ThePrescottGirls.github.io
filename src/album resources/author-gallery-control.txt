@@ -79,7 +79,7 @@ draft=yes
 
 
 [PHOTO]
-file=IMG_8429.jpeg
+file=IMG_8430.jpeg
 date=2021-06-12
 time=16:00:21
 gps=44.104206,-69.767831
@@ -101,7 +101,7 @@ caption=The grave marker of Caroline Louisa Prescott Canby, whose 1838 sampler a
 draft=yes
 
 [PHOTO]
-file=IMG_8430.jpeg
+file=IMG_8429.jpeg
 date=2021-06-12
 time=16:00:15
 gps=44.104211,-69.767808
@@ -146,8 +146,8 @@ time=08:50:10
 gps=38.89326,-77.03731
 location=Washington, DC.
 location_confidence=metadata
-title=Historic Samplers at the DAR
-caption=caption=Studying historic needlework and sampler examples with Alden O'Brien at the Daughters of the American Revolution Museum in Washington, DC.
+title=Historic Samplers at the DAR Museum
+caption=Studying historic needlework and sampler examples with Alden O'Brien at the Daughters of the American Revolution Museum in Washington, DC.
 draft=yes
 
 [PHOTO]
@@ -168,7 +168,7 @@ time=12:40:28
 gps=43.07584,-70.75472
 location=Portsmouth, New Hampshire
 location_confidence=metadata
-title=Sampler Research Visit
+title=Research at Strawbery Banke Museum
 caption=Viewing historic samplers and related materials during a museum research visit with Elizabeth Farish, Chief Curator at the Strawbery Banke Museum.
 draft=yes
 
@@ -215,7 +215,7 @@ gps=43.50207,-70.44168
 location=Biddeford, Maine
 location_confidence=metadata
 title=Guests at the Saco Museum
-caption=caption=A research visit with Tara Vose Raiselis, Curator and Director of the Saco Museum.
+caption=A research visit with Tara Vose Raiselis, Curator and Director of the Saco Museum.
 draft=yes
 
 
@@ -348,7 +348,7 @@ gps=39.19515,-120.26064
 location=Lake Tahoe region, California
 location_confidence=metadata+visual
 title=Spring Snowboarding
-caption=A spring snowboarding at 8200 feet at Palisades Resort near Lake Tahoe.
+caption=Spring snowboarding at 8200 feet at Palisades Resort near Lake Tahoe.
 draft=yes
 
 
@@ -385,7 +385,7 @@ gps=44.35221,-68.22380
 location=Acadia National Park, Maine
 location_confidence=metadata+visual
 title=Acadia Overlook
-caption=Looking across Acadia National Park from one of the island's scenic overlooks during a research trip connected to the Prescott family story.
+caption=Looking across Acadia National Park from one of the island's scenic overlooks during a trip to the Pownalborough Court House.
 draft=yes
 
 
@@ -398,7 +398,7 @@ gps=43.65173,-70.22418
 location=South Portland, Maine
 location_confidence=metadata+visual
 title=Spring Point Ledge Lighthouse
-caption=A lighthouse visit in South Portland during a Maine research and travel trip.
+caption=Spring Point Ledge Lighthouse in South Portland, reached by a granite breakwater extending into Casco Bay.
 draft=yes
 
 [PHOTO]
@@ -409,7 +409,7 @@ gps=43.62316,-70.20813
 location=Cape Elizabeth, Maine
 location_confidence=metadata+visual
 title=Portland Head Light
-caption=Aric and Lori at Portland Head Light during a Maine research and travel trip.
+caption=Aric and Lori at Portland Head Light, one of Maine's most recognizable landmarks.
 draft=yes
 
 [PHOTO]
@@ -464,7 +464,7 @@ draft=yes
 [SECTION]
 id=hobbies-activities
 title=Hobbies and Activities
-caption=caption=Spaceflight, movies, soaring, model aviation, and other pursuits that have shaped the author's interests outside of writing.
+caption=Spaceflight, movies, soaring, model aviation, and other pursuits that have shaped the author's interests outside of writing.
 
 [PHOTO]
 file=Hanging with Buzz.jpeg
@@ -474,7 +474,7 @@ gps=
 location=Unknown
 location_confidence=unknown
 title=Hanging with Buzz
-caption=A meeting with Buzz Aldrin, reflecting the author's longtime connections to technology, storytelling, and exploration.
+caption=A visit to the Cape for the STS-133 shuttle launch, lead to a close encounter with seven astronauts who had walked on the Moon.
 draft=yes
 
 [PHOTO]
@@ -485,7 +485,7 @@ gps=
 location=Unknown
 location_confidence=unknown
 title=Filming the movie 'Swing' with Jacqueline Bisset
-caption=A group photograph from an event connected to the author's years in games, technology, or entertainment.
+caption=A brief pause during filming of the movie 'Swing' with Jacqueline Bisset.
 draft=yes
 
 [PHOTO]
@@ -553,8 +553,8 @@ time=12:30:08
 gps=37.80876,-122.47554
 location=San Francisco, California
 location_confidence=metadata+visual
-title=Golden Gate Bike Ride
-caption=A bicycle ride near the Golden Gate Bridge, part of the author's Bay Area life and outdoor travels.
+title=Golden Gate Bike Rides
+caption=A bicycle ride across the Golden Gate Bridge, part of the author's Bay Area life and outdoor travels.
 draft=yes
 
 [PHOTO]
@@ -565,9 +565,43 @@ gps=37.798931,-122.450583
 location=Presidio, San Francisco
 location_confidence=unknown
 title=A visit to the  Letterman Digital Arts Center
-caption=Home to George Lucas' award winning Industrial Light and Magic and Lucasfilm Games.
+caption=Home to George Lucas' award winning Industrial Light and Magic and Lucasfilm Games. Aric is working with archivists to preserve early gaming design documents and other records from his work there.
 draft=yes
 
+[PHOTO]
+file=IMG_6278.jpeg
+date=2026-04-22
+time=
+gps=
+location=Disneyland, Anaheim, California
+location_confidence=visual
+title=Morning Rope Drop at Disneyland
+caption=As a child, the author visited Disney Studios at the invitation of Ollie Johnston, one of Walt Disney's legendary "Nine Old Men" and a friend of his father. Seeing work in progress on The Jungle Book left a lasting impression and helped spark a lifelong interest in storytelling, animation, and creative craftsmanship.
+draft=yes
+
+
+[PHOTO]
+file=515250396_10161034506053204_664475278283555210_n.jpg
+date=
+time=
+gps=
+location=Northern California
+location_confidence=known
+title=Power Red Blood Donation
+caption=Making a double-red-cell (Power Red) blood donation. The author has donated blood for decades, including more than fifty donations at Stanford and many more in the North Bay. As a CMV-negative donor, his blood can be used for newborns and other patients with specialized transfusion needs.
+draft=yes
+
+
+[PHOTO]
+file=IMG_3746.mov
+date=
+time=
+gps=
+location=Kahaluʻu Beach Park, Kailua-Kona, Hawaii
+location_confidence=known
+title=Snorkeling at Kahalu'u
+caption=A surprise encounter with a Hawaiian green sea turtle (Honu) while snorkeling at Kahaluʻu Beach Park just south of Kona. Encounters like this are one of the reasons the area remains a favorite destination during visits to Hawaii. As always, wildlife should be observed respectfully from a distance.
+draft=yes
 
 
 
@@ -585,7 +619,7 @@ gps=
 location=Unknown
 location_confidence=unknown
 title=Independent Author Awards Winner
-caption=caption=Winner, Fiction: Northeast, and finalist in the Historical Fiction and Educational categories.Categories
+caption=The Prescott Girls - A Letter from Philadelphia was the Winner, Fiction: Northeast, and finalist in both the Historical Fiction and Educational categories.
 draft=yes
 
 [PHOTO]
