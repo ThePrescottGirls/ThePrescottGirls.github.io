@@ -428,7 +428,7 @@ def render_section(section: Section, album_dir: Path) -> str:
 
 
 def render_html(gallery: Gallery, album_dir: Path) -> str:
-    page_title = gallery.page.get("page_title", "Author Photo Gallery").strip() or "Author Photo Gallery"
+    page_title = gallery.page.get("page_title", "Author Gallery").strip() or "Author Gallery"
     page_intro = gallery.page.get("page_intro", "").strip()
     sections = sorted(gallery.sections, key=lambda s: s.sort)
     sections_html = "\n".join(render_section(section, album_dir) for section in sections)

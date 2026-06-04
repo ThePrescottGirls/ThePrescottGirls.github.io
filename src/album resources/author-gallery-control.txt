@@ -5,7 +5,7 @@
 # Proposed output: /album/album.html
 # Proposed media path in HTML: /album/<filename>
 
-page_title=Author Photo Gallery
+page_title=Author Gallery
 page_slug=album.html
 page_intro=A curated collection of photographs from historical research, museum visits, technology history, music, travel, and other parts of the author's life and work.
 
