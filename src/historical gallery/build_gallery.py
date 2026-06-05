@@ -609,7 +609,7 @@ def render_html(gallery: Gallery, media_dir: Path, media_url: str, output_file: 
 
         <div class="gallery-nav">
       <span class="gallery-nav-label">Visit:</span>
-      <a href="Illustrations.html">Illustration Gallery</a>
+      <a href="illustrations.html">Illustration Gallery</a>
       <span class="separator">|</span>
       <a href="authorGallery.html">Author Gallery</a>
     </div>
