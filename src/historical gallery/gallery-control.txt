@@ -201,6 +201,17 @@ draft=yes
 
 
 
+[PHOTO]
+file=Rebecca Precott and Her Three Daughters 1.JPEG
+xdate=2023-09-28
+time=13:37:09
+gps=
+xlocation=Prescott Memorial Collection, Lincoln County Historical Association
+location_confidence=known
+title=Rebecca Johnson Prescott and Her Three Daughters
+caption=From left to right: Beckie, Louisa, Sallie, and their mother, Rebecca Johnson Prescott. This rare family photograph shows the three Prescott sisters whose childhood inspired The Prescott Girls.
+draft=no
+
 
 [PHOTO]
 file=IMG_8428.jpeg
