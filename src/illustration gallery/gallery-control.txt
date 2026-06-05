@@ -11,6 +11,8 @@ media_url=assets/illustrations
 gallery_id=illustrations-gallery
 display_mode=full
 
+page_description=Explore historical illustrations from The Prescott Girls, featuring research-based visual interpretations of 1830s Maine, the Prescott sisters, and their world.
+
 xpage_intro=Illustrations from The Prescott Girls, created as historically grounded re-imaginings of people, places, and scenes from the story. (Click images to expand.)
 
 [SECTION]

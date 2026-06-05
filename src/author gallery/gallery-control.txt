@@ -12,7 +12,7 @@ xpage_intro=A curated collection of photographs from historical research, museum
 
 
 
-
+page_description=Explore photographs from the author's travels, historical research, museum visits, outdoor adventures, and experiences that helped inspire The Prescott Girls.
 
 
 

@@ -10,6 +10,9 @@ media_dir=assets/historicalGallery
 media_url=assets/historicalGallery
 gallery_id=historical-gallery
 
+page_description=Discover the real artifacts behind The Prescott Girls, including Prescott family samplers, historic sites, archival materials, and museum collections.
+
+
 xpage_intro=Photographs, artifacts, family portraits, and research materials connected to the real people, places, and objects that inspired The Prescott Girls.
 
 [SECTION]
