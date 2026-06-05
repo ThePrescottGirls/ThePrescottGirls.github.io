@@ -1,0 +1,456 @@
+# author-gallery-control.txt
+# Source control file for generated author photo gallery.
+# Captions marked draft=yes should be reviewed before publication.
+
+page_title=Author Gallery
+output_file=authorGallery.html
+media_dir=assets/authorGallery
+media_url=assets/authorGallery
+gallery_id=author-gallery
+
+xpage_intro=A curated collection of photographs from historical research, museum visits, technology history, music, travel, and other parts of the author's life and work.
+
+
+
+
+
+
+
+[SECTION]
+id=places-travel
+title=Places, Travel, and Outdoor Exploration
+caption=Travel, hiking, camping, and outdoor exploration are part of the author's life and often provide space for reflection, photography, and discovery. (Click images to expand.)
+
+[PHOTO]
+file=IMG_4095.jpeg
+date=2023-11-01
+time=17:52:53
+gps=37.83628,-119.45454
+location=Yosemite National Park, California
+location_confidence=metadata+visual
+title=Yosemite High Country
+caption=A Yosemite landscape photographed during one of the author's recurring trips to the park.
+draft=yes
+
+[PHOTO]
+file=IMG_0825.jpeg
+date=2024-05-22
+time=18:05:05
+gps=37.294431,-112.948731
+location=Unknown
+location_confidence=unknown
+title=Zion - The Narrows
+caption=Hiking through the Narrows in Zion National Park, following the Virgin River between towering sandstone walls that rise hundreds of feet above the canyon floor.
+draft=yes
+
+[PHOTO]
+file=IMG_1004.jpeg
+date=2024-05-24
+time=14:18:27
+gps=37.605817,-112.157508
+location=Bryce Canyon
+location_confidence=unknown
+title=The Bryce Amphitheater
+caption=Looking across Bryce Canyon's famous amphitheater of hoodoos, where millions of years of erosion have sculpted one of the most distinctive landscapes in the American Southwest.
+draft=yes
+
+[PHOTO]
+file=IMG_4733.jpeg
+date=2025-06-04
+time=10:12:33
+gps=37.72798,-119.57296
+location=Yosemite National Park, California
+location_confidence=metadata
+title=Yosemite Trail Self-Portrait
+caption=A trail photograph from Yosemite, one of the author's frequent places for hiking, camping, and reflection.
+draft=yes
+
+[PHOTO]
+file=IMG_0328.jpeg
+date=2024-05-16
+time=12:07:10
+gps=36.07347,-112.15103
+location=Grand Canyon National Park, Arizona
+location_confidence=metadata+visual
+title=Grand Canyon
+caption=Aric and Lori at the Grand Canyon during a trip through the American Southwest, combining historical exploration with some of the country's most iconic landscapes.
+draft=yes
+
+[PHOTO]
+file=IMG_0603.jpeg
+date=2024-05-20
+time=11:11:18
+gps=36.98062,-110.10393
+location=Monument Valley region, Arizona/Utah
+location_confidence=metadata+visual
+title=Monument Valley
+caption=Traveling through Monument Valley, a landscape familiar from countless western films and one of the most recognizable natural landmarks in the American West.
+draft=yes
+
+
+[PHOTO]
+file=IMG_6498.jpeg
+date=2026-05-07
+time=10:41:43
+gps=37.72662,-119.54395
+location=Yosemite National Park, California
+location_confidence=metadata+visual
+title=Rainbow on the Mist Trail
+caption=A rainbow along a Yosemite waterfall trail during one of the author's visits to the park.
+draft=yes
+
+[PHOTO]
+file=IMG_5151.jpeg
+date=2025-07-22
+time=11:13:07
+gps=42.92028,-122.16215
+location=Crater Lake National Park, Oregon
+location_confidence=metadata+visual
+title=Crater Lake
+caption=A photograph at Crater Lake National Park during a western travel and exploration trip.
+draft=yes
+
+[PHOTO]
+file=IMG_3565.jpeg
+date=2025-02-26
+time=00:33:09
+gps=19.40367,-155.26518
+location=Hawaiʻi Volcanoes National Park, Hawaii
+location_confidence=metadata+visual
+title=Kīlauea at Night
+caption=Night viewing of volcanic activity at Hawaiʻi Volcanoes National Park.
+draft=yes
+
+[PHOTO]
+file=IMG_5093.jpeg
+date=2025-07-20
+time=09:14:45
+gps=40.533719,-121.570931
+location=Lassen Volcanic National Park, California
+location_confidence=metadata+visual
+title=At Manzanita Lake, Lassen
+caption=At Manzanita Lake in Lassen Volcanic National Park, with Lassen Peak rising above the forest and water.
+draft=yes
+
+
+
+
+
+
+[PHOTO]
+file=20260430_070020_378470220292758.mov
+date=2026-04-29
+time=10:30:31
+gps=39.19515,-120.26064
+location=Lake Tahoe region, California
+location_confidence=metadata+visual
+title=Spring Snowboarding
+caption=Spring snowboarding at 8200 feet at Palisades Resort near Lake Tahoe.
+draft=yes
+
+
+
+[PHOTO]
+file=IMG_8247.jpeg
+date=2021-06-08
+time=17:48:13
+gps=44.43149,-69.00948
+location=Belfast, Maine
+location_confidence=metadata
+title=Maine Harbor
+caption=Exploring Maine's coast during a research trip undertaken while tracing the history of the Prescott family and their descendants.
+draft=yes
+
+[PHOTO]
+file=IMG_8272.jpeg
+date=2021-06-09
+time=16:13:17
+gps=44.33964,-68.25310
+location=Acadia National Park, Maine
+location_confidence=metadata+visual
+title=Bubble Rock, Acadia
+caption=A visit to Bubble Rock in Acadia National Park during a Maine research and travel trip.
+draft=yes
+
+
+
+[PHOTO]
+file=IMG_8294.jpeg
+date=2021-06-10
+time=10:11:04
+gps=44.35221,-68.22380
+location=Acadia National Park, Maine
+location_confidence=metadata+visual
+title=Acadia Overlook
+caption=Looking across Acadia National Park from one of the island's scenic overlooks during a trip to the Pownalborough Court House.
+draft=yes
+
+
+
+[PHOTO]
+file=IMG_8500.jpeg
+date=2021-06-15
+time=13:25:51
+gps=43.65173,-70.22418
+location=South Portland, Maine
+location_confidence=metadata+visual
+title=Spring Point Ledge Lighthouse
+caption=Spring Point Ledge Lighthouse in South Portland, reached by a granite breakwater extending into Casco Bay.
+draft=yes
+
+[PHOTO]
+file=IMG_8546.jpeg
+date=2021-06-15
+time=14:39:54
+gps=43.62316,-70.20813
+location=Cape Elizabeth, Maine
+location_confidence=metadata+visual
+title=Portland Head Light
+caption=Aric and Lori at Portland Head Light, one of Maine's most recognizable landmarks.
+draft=yes
+
+[PHOTO]
+file=IMG_9643.jpeg
+date=2022-02-19
+time=15:00:09
+gps=38.30332,-123.06496
+location=Sonoma Coast, California
+location_confidence=metadata
+title=Sonoma Coast
+caption=The rugged Sonoma Coast, one of the author's favorite destinations for photography, hiking, and day trips along Northern California's shoreline.
+draft=yes
+
+
+
+[PHOTO]
+file=IMG_5310.jpeg
+date=2024-03-12
+time=17:14:56
+gps=37.40881,-122.17851
+location=Stanford Dish area, Palo Alto, California
+location_confidence=metadata+visual
+title=Stanford Dish
+caption=The Stanford Dish trail, a familiar Bay Area landmark located near the communities where the author spent much of his technology career.
+draft=yes
+
+[PHOTO]
+file=IMG_2131.jpeg
+date=2024-10-13
+time=12:56:54
+gps=37.80210,-122.44725
+location=San Francisco, California
+location_confidence=metadata+visual
+title=Palace of Fine Arts
+caption=A San Francisco visit near the Palace of Fine Arts, connected to the author's Bay Area life and travels.
+draft=yes
+
+[PHOTO]
+file=IMG_1811.jpeg
+date=2022-02-15
+time=12:56:54
+gps=37.80210,-122.44725
+location=Hawthorne, California
+location_confidence=metadata+visual
+title=SpaceX Headquarters
+caption=Visiting SpaceX headquarters in Hawthorne, California, beside a flown Falcon 9 booster that helped make reusable orbital rockets a reality.
+draft=yes
+
+
+
+
+[SECTION]
+id=hobbies-activities
+title=Hobbies and Activities
+caption=Spaceflight, movies, soaring, model aviation, and other pursuits that have shaped the author's interests outside of writing.
+
+[PHOTO]
+file=Hanging with Buzz.jpeg
+date=2010-11-06
+time=03:52:06
+gps=
+location=Unknown
+location_confidence=unknown
+title=Hanging with Buzz
+caption=A visit to the Cape for the STS-133 shuttle launch, lead to a close encounter with seven astronauts who had walked on the Moon.
+draft=yes
+
+[PHOTO]
+file=DSC02653.jpeg
+date=2002-12-07
+time=11:53:54
+gps=
+location=Unknown
+location_confidence=unknown
+title=Filming the movie 'Swing' with Jacqueline Bisset
+caption=A brief pause during filming of the movie 'Swing' with Jacqueline Bisset.
+draft=yes
+
+[PHOTO]
+file=Swing Aric, Jackie, Barry.jpg.jpeg
+date=2002-12-06
+time=07:43:25
+gps=
+location=San Francisco
+location_confidence=unknown
+title=Cast Photo with Barry Bostwick, Jacqueline Bisset and Innis Casey
+caption=Cast Photo of the Jazz band for the movie 'Swing' filmed in San Francisco.  
+draft=yes
+
+
+[PHOTO]
+file=Montague Cross Country.jpeg
+date=2012-07-05
+time=15:48:23
+gps=
+location=Unknown
+location_confidence=unknown
+title=Montague Cross Country
+caption=Team Dust Devils RC Cross Country racing with Mt. Shasta in the background.
+draft=yes
+
+[PHOTO]
+file=IMG_2379.jpeg
+date=2023-03-26
+time=12:11:33
+gps=36.37616,-119.38316
+location=Visalia, California
+location_confidence=metadata+visual
+title=F5J Soaring event at the Central Valley RC Club
+caption=RC glider flying in California's Central Valley, combining technology, craft, and outdoor competition.
+draft=yes
+
+
+
+[PHOTO]
+file=312483715_10221891478824217_8222841079554157139_n.jpeg
+date=2022-10-21
+time=05:52:52
+gps=
+location=Unknown
+location_confidence=unknown
+title=Old-Timer event winners
+caption=A group photograph from an old-timer competition near Boulder City, Nevada at the El Dorada Dry Lake Bed.
+draft=yes
+
+[PHOTO]
+file=E0256B75-F582-4C3F-B77B-970982566CB2.jpeg
+date=2024-09-22
+time=10:03:36
+gps=
+location=Unknown
+location_confidence=unknown
+title=Aric with his 1939 Playboy Senior old-time airplane
+caption=Preparing to launch an RC old-timer, part of the author's long interest in flying, building, and outdoor hobbies.
+draft=yes
+
+[PHOTO]
+file=IMG_1617.jpeg
+date=2024-07-14
+time=12:30:08
+gps=37.80876,-122.47554
+location=San Francisco, California
+location_confidence=metadata+visual
+title=Golden Gate Bike Rides
+caption=A bicycle ride across the Golden Gate Bridge, part of the author's Bay Area life and outdoor travels.
+draft=yes
+
+[PHOTO]
+file=IMG_5345.jpeg
+date=2024-03-15
+time=11:30:21
+gps=37.798931,-122.450583
+location=Presidio, San Francisco
+location_confidence=unknown
+title=A visit to the  Letterman Digital Arts Center
+caption=Home to George Lucas' award winning Industrial Light and Magic and Lucasfilm Games. Aric is working with archivists to preserve early gaming design documents and other records from his work there.
+draft=yes
+
+[PHOTO]
+file=IMG_6278.jpeg
+date=2026-04-22
+time=
+gps=
+location=Disneyland, Anaheim, California
+location_confidence=visual
+title=Morning Rope Drop at Disneyland
+caption=As a child, the author visited Disney Studios at the invitation of Ollie Johnston, one of Walt Disney's legendary "Nine Old Men" and a friend of his father. Seeing work in progress on The Jungle Book left a lasting impression and helped spark a lifelong interest in storytelling, animation, and creative craftsmanship.
+draft=yes
+
+
+[PHOTO]
+file=515250396_10161034506053204_664475278283555210_n.jpg
+date=
+time=
+gps=
+location=Northern California
+location_confidence=known
+title=Power Red Blood Donation
+caption=Making a double-red-cell (Power Red) blood donation. The author has donated blood for decades, including more than fifty donations at Stanford and many more in the North Bay. As a CMV-negative donor, his blood can be used for newborns and other patients with specialized transfusion needs.
+draft=yes
+
+
+[PHOTO]
+file=IMG_3746.mov
+date=
+time=
+gps=
+location=Kahaluʻu Beach Park, Kailua-Kona, Hawaii
+location_confidence=known
+title=Snorkeling at Kahalu'u
+caption=A surprise encounter with a Hawaiian green sea turtle (Honu) while snorkeling at Kahaluʻu Beach Park just south of Kona. Encounters like this are one of the reasons the area remains a favorite destination during visits to Hawaii. As always, wildlife should be observed respectfully from a distance.
+draft=yes
+
+
+
+
+[SECTION]
+id=recognition
+title=Publications & Recognition
+caption=Recognition for this project
+
+
+[PHOTO]
+file=Wilmunder Overlay.jpg
+date=
+time=
+gps=
+location=Unknown
+location_confidence=unknown
+title=PieceWork Magazine Announcement
+caption=Promotional image shared by PieceWork when Six Stitches Through Time was released, featuring Ann Harlan Canby's sampler and the Spring 2026 issue in which the article appeared.
+draft=yes
+
+[PHOTO]
+file=1596856444532.jpeg
+date=
+time=
+gps=
+xlocation=RC Sport Flyer Magazine
+location_confidence=known
+title=Extreme Soaring
+caption=Feature article written by Aric Wilmunder exploring the world of high-speed cross-country soaring competition. The article follows pilots flying large sailplanes over mountain terrain in pursuit of distance, speed, and endurance.
+draft=no
+
+[PHOTO]
+file=1601585243547.jpeg
+date=
+time=
+gps=
+xlocation=RC Sport Flyer Magazine
+location_confidence=known
+title=International Slope Races
+caption=Feature article written by Aric Wilmunder for RC Sport Flyer magazine covering international slope racing competition at Davenport, California. The article examines the aircraft, flying techniques, and strategy behind one of the fastest forms of radio-control sailplane racing.
+draft=no
+
+
+
+[PHOTO]
+file=Independent-Author-Awards-Winner-2a.jpeg
+date=
+time=
+gps=
+location=Unknown
+location_confidence=unknown
+title=Independent Author Awards Winner
+caption=The Prescott Girls - A Letter from Philadelphia was the Winner, Fiction: Northeast, and finalist in both the Historical Fiction and Educational categories.
+draft=yes

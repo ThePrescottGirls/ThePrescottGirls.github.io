@@ -1,0 +1,395 @@
+# gallery-control.txt
+
+# Source control file for generated galleries.
+
+# Captions marked draft=yes should be reviewed before publication.
+
+page_title=Historical Gallery
+output_file=historicalGallery.html
+media_dir=assets/historicalGallery
+media_url=assets/historicalGallery
+gallery_id=historical-gallery
+
+xpage_intro=Photographs, artifacts, family portraits, and research materials connected to the real people, places, and objects that inspired The Prescott Girls.
+
+[SECTION]
+id=prescott-research
+title=Discovery, Artifacts & Family
+caption=Photographs connected to the sampler discovery, family history, museum research, and historical places that helped inspire The Prescott Girls. (Click images to expand.)
+
+[PHOTO]
+file=Clars Website.png
+date=
+time=
+gps=
+xlocation=Oakland, California
+location_confidence=known
+title=Clars Auction Listing
+caption=The Clars Auction Gallery listing where several Prescott family samplers were discovered, beginning the research project that ultimately inspired The Prescott Girls.
+draft=no
+
+[PHOTO]
+file=68_When_First_Found.jpg
+xdate=2020-11-16
+time=13:48:53
+gps=38.091267,-122.572542
+xlocation=Novato, California
+location_confidence=known
+title=The Samplers When Found
+caption=Several Prescott family samplers had been folded and stored in a Ziploc when discovered.
+draft=no
+
+
+
+[PHOTO]
+file=01 edited AJW - Lori studying the Samplers.jpeg
+date=
+time=
+gps=
+xlocation=California
+location_confidence=visual
+title=Lori Studying the Samplers
+caption=Lori Love examines the group of nineteenth-century samplers after their discovery at auction, an early step in identifying the Prescott, Johnson, and Canby family connections.
+draft=yes
+
+[PHOTO]
+file=02 edited LJL - Pownalborough Courthouse.jpeg
+date=
+time=
+gps=
+xlocation=Pownalborough Court House, Dresden, Maine
+location_confidence=visual
+title=Pownalborough Court House
+caption=The Pownalborough Court House in Dresden, Maine, where the Prescott sisters lived in the 1830s and where Beckie's, Sallie's, and Mother's samplers were returned.
+draft=yes
+
+[PHOTO]
+file=03 edited JAY - Samplers Arrive at Courthouse.jpeg
+date=
+time=
+gps=
+xlocation=Pownalborough Court House, Dresden, Maine
+location_confidence=visual
+title=Samplers Returned to the Courthouse
+caption=Lincoln County Historical Association staff gather at the Pownalborough Court House as the samplers return to the place where the Prescott girls stitched them 200 years earlier.
+draft=yes
+
+
+[PHOTO]
+file=61_Mothers_Sampler.jpg
+xdate=2021-01-13
+time=15:09:18
+gps=38.091225,-122.572464
+xlocation=Novato, California
+location_confidence=known
+title=Mother's Sampler
+caption=Rebecca Goodwin Johnson's sampler, completed in 1813. The sampler provided a direct connection between Beckie and the previous generation of the Prescott family.
+draft=no
+
+[PHOTO]
+file=60_Beckies_Sampler.jpg
+xdate=2021-06-11
+time=14:26:55
+gps=
+xlocation=Novato, California
+location_confidence=known
+title=Beckie's Sampler
+caption=Rebecca Goodwin Johnson Prescott's 1835 sampler, stitched at age nine. The sampler became one of the central historical artifacts behind the story.
+draft=no
+
+
+
+[PHOTO]
+file=62_Louisas_Sampler.jpg
+xdate=2025-07-27
+time=16:59:39
+gps=38.091225,-122.572547
+xlocation=Lincoln County Historical Association
+location_confidence=known
+title=Louisa's Sampler
+caption=Caroline Louisa Prescott's sampler, completed in 1838. Louisa would later marry William Jackson Canby, a grandson of Betsy Ross.
+draft=no
+
+[PHOTO]
+file=63_Sallies_sampler.jpg
+date=
+time=
+gps=
+location=Unknown
+location_confidence=unknown
+title=Likely Sallie's Sampler
+caption=A sampler believed to have been stitched by Sarah 'Sallie' Prescott. Although not conclusively identified, it closely matches the family's known needlework tradition.
+draft=no
+
+[PHOTO]
+file=64_Anns_sampler.jpg
+xdate=2025-06-23
+time=16:08:06
+gps=38.091244,-122.572586
+xlocation=Novato, California
+location_confidence=known
+title=Ann Canby's Sampler
+caption=Ann Harlan Canby's sampler. Ann was part of the extended Canby family that would later become connected to the Prescotts through marriage.
+draft=no
+
+[PHOTO]
+file=70_Mothers_Portrait.jpg
+xdate=2021-06-17
+time=11:59:09
+gps=
+location=Unknown
+location_confidence=unknown
+title=Rebecca Johnson Prescott
+caption=Portrait of Rebecca Johnson Prescott (1798–1897), mother of Beckie, Louisa, and Sallie Prescott.
+draft=no
+
+[PHOTO]
+file=73_JOHNSON_Thomas_Portrait.jpg
+date=
+time=
+gps=
+location=Unknown
+location_confidence=unknown
+title=Uncle Thomas Johnson
+caption=Portrait of Thomas Johnson, uncle to the Prescott girls and one of the most important historical figures appearing in the story.
+draft=no
+
+[PHOTO]
+file=71_Beckie_drawn_by_Sallie.jpg
+date=
+time=
+gps=
+location=Unknown
+location_confidence=unknown
+title=Beckie Drawn by Sallie
+caption=A later sketch of Rebecca 'Beckie' Prescott created by her cousin Sallie, providing a rare visual record of one of the girls featured in the book.
+draft=no
+
+[PHOTO]
+file=72_Louisa_Prescott.jpg
+date=
+time=
+gps=
+location=Unknown
+location_confidence=unknown
+title=Caroline Louisa Prescott
+caption=Photograph of Caroline 'Louisa' Prescott later in life. Louisa's surviving correspondence and family connections helped link the Prescott family to the descendants of Betsy Ross.
+draft=no
+
+
+
+
+
+
+
+
+
+
+
+
+
+[PHOTO]
+file=Louisa Marriage.jpeg
+xdate=2020-12-15
+time=14:57:32
+gps=
+location=Unknown
+location_confidence=unknown
+title=Louisa Prescott Marriage Record
+caption=Marriage record connected to Caroline Louisa Prescott, whose family history helped shape the research behind The Prescott Girls.
+draft=yes
+
+
+
+
+[PHOTO]
+file=IMG_8428.jpeg
+xdate=2021-06-12
+time=16:00:01
+gps=44.104186,-69.767822
+xlocation=Dresden, Maine
+location_confidence=metadata+visual
+title=Lori at the Prescott Family Graves
+caption=Lori Love visits the Prescott family graves in Dresden, Maine, part of the genealogical and place-based research behind the sampler story.
+draft=yes
+
+
+
+
+
+[PHOTO]
+file=IMG_8430.jpeg
+xdate=2021-06-12
+time=16:00:21
+gps=44.104206,-69.767831
+xlocation=Dresden, Maine
+location_confidence=metadata+visual
+title=Rebecca Johnson Prescott Grave Marker
+caption=The grave marker of Rebecca Johnson Prescott, mother of Beckie, Louisa, and Sallie Prescott, whose family history is central to The Prescott Girls.
+draft=yes
+
+[PHOTO]
+file=07 edited LJL - Caroline Grave Marker.jpeg
+date=
+time=
+gps=
+xlocation=Dresden, Maine
+location_confidence=visual
+title=Caroline Louisa Prescott Canby's Grave Marker
+caption=The grave marker of Caroline Louisa Prescott Canby, whose 1838 sampler and later marriage into the Canby family connected the Prescott story to the Betsy Ross family.
+draft=yes
+
+[PHOTO]
+file=IMG_8429.jpeg
+xdate=2021-06-12
+time=16:00:15
+gps=44.104211,-69.767808
+xlocation=Dresden, Maine
+location_confidence=metadata+visual
+title=Sallie (Sarah) Prescott Grave Marker
+caption=The grave marker of Sallie Prescott, one of the Prescott sisters whose life and family context helped shape the historical research behind the book.
+draft=yes
+
+
+
+
+
+
+
+[SECTION]
+id=museums-collections
+title=Museums and Collections
+caption=Museum and collection visits helped connect the sampler story to broader histories of textile work, family memory, preservation, and public history.
+
+
+[PHOTO]
+file=IMG_5066.jpeg
+xdate=2019-05-13
+time=13:28:38
+gps=38.57428,-121.50617
+xlocation=Sacramento, California
+location_confidence=metadata
+title=Visit to Antiques Roadshow
+caption=Lori discussing one of her other samplers with Leigh Keno during the filming of Antiques Roadshow.
+draft=yes
+
+[PHOTO]
+file=IMG_1040.jpeg
+xdate=2022-08-30
+time=08:50:10
+gps=38.89326,-77.03731
+xlocation=Washington, DC.
+location_confidence=metadata
+title=Historic Samplers at the DAR Museum
+caption=Studying historic needlework and sampler examples with Alden O'Brien at the Daughters of the American Revolution Museum in Washington, DC.
+draft=yes
+
+[PHOTO]
+file=IMG_3219.jpeg
+xdate=2023-07-25
+time=11:20:01
+gps=39.80607,-75.60073
+xlocation=Winterthur Museum, Garden and Library, Delaware
+location_confidence=metadata+visual
+title=Studying a Sampler at Winterthur
+caption=Examining historic needlework at Winterthur with Laura Johnson as part of the broader research into nineteenth-century samplers and their makers.
+draft=yes
+
+[PHOTO]
+file=IMG_8614.jpeg
+xdate=2021-06-16
+time=12:40:28
+gps=43.07584,-70.75472
+xlocation=Portsmouth, New Hampshire
+location_confidence=metadata
+title=Research at Strawbery Banke Museum
+caption=Viewing historic samplers and related materials during a museum research visit with Elizabeth Farish, Chief Curator at the Strawbery Banke Museum.
+draft=yes
+
+[PHOTO]
+file=IMG_9097.jpeg
+xdate=2021-09-14
+time=13:02:54
+gps=37.771539,-122.468331
+xlocation=de Young Museum, San Francisco, California
+location_confidence=metadata+visual
+title=Research Visit to the de Young Museum
+caption=Lori Love and colleagues meet with Laura Camerlengo, Curator of Textile Arts at the de Young Museum, to study seventeenth-century samplers in the museum's collection.
+draft=yes
+
+
+
+[PHOTO]
+file=IMG_3350.jpeg
+xdate=2023-08-02
+time=10:31:16
+gps=38.89095,-77.03002
+xlocation=Washington, DC
+location_confidence=metadata
+title=Smithsonian Archives Visit
+caption=Examining textiles and historical materials with Tim Winkle during a behind-the-scenes collection visit at the Smithsonian National Museum of American History.
+draft=yes
+
+[PHOTO]
+file=IMG_5800.jpeg
+xdate=2019-07-16
+time=10:41:11
+gps=42.77614,-71.08668
+xlocation=Haverhill, Massachusetts
+location_confidence=metadata
+title=New England Collection Visit
+caption=A visit with Laura Johnson to the Historic New England Archives to examine historic samplers, artworks, and other archival materials.
+draft=yes
+
+[PHOTO]
+file=IMG_8236.jpeg
+xdate=2021-06-08
+time=13:53:05
+gps=43.50207,-70.44168
+xlocation=Biddeford, Maine
+location_confidence=metadata
+title=Guests at the Saco Museum
+caption=A research visit with Tara Vose Raiselis, Curator and Director of the Saco Museum in Biddeford, Maine.
+draft=yes
+
+
+
+
+
+[SECTION]
+id=clothing-research
+title=Clothing Research
+caption=Photographs connected to the research behind the clothing worn in the book.
+
+[PHOTO]
+file=50_Beckies_Dress.jpg
+date=
+time=
+gps=
+xlocation=University of Rhode Island Historic Textile and Costume Collection
+location_confidence=known
+title=Beckie's Dress
+caption=An 1830s dress from the University of Rhode Island Historic Textile and Costume Collection used as a primary reference for Beckie's clothing.
+draft=no
+
+[PHOTO]
+file=51_Louisas_Dress.jpg
+date=
+time=
+gps=
+xlocation=University of Rhode Island Historic Textile and Costume Collection
+location_confidence=known
+title=Louisa's Dress
+caption=An 1830s child's dress from the University of Rhode Island collection used as reference for Louisa's appearance in the illustrations.
+draft=no
+
+[PHOTO]
+file=52_Sallies_Dress.jpg
+date=
+time=
+gps=
+xlocation=University of Rhode Island Historic Textile and Costume Collection
+location_confidence=known
+title=Sallie's Dress
+caption=An 1830s dress from the University of Rhode Island collection used to ensure period-accurate clothing details for Sallie.
+draft=no

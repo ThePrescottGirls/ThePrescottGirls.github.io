@@ -1,0 +1,588 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Author Gallery | The Prescott Girls</title>
+  <meta name="description" content="A gallery for Author Gallery.">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Author Gallery | The Prescott Girls">
+  <meta property="og:description" content="A gallery for Author Gallery.">
+  <meta property="og:image" content="https://www.theprescottgirls.com/assets/promo-image.jpg">
+  <meta property="og:image:secure_url" content="https://www.theprescottgirls.com/assets/promo-image.jpg">
+  <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="The Prescott Girls book cover and interior illustration">
+  <meta property="og:url" content="https://www.theprescottgirls.com/authorGallery.html">
+  <meta property="og:type" content="website">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://www.theprescottgirls.com/assets/book-cover.jpg">
+
+  <!-- Icons -->
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/site.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://www.theprescottgirls.com/authorGallery.html">
+
+  <!-- Counter.dev -->
+  <script src="https://cdn.counter.dev/script.js"
+    data-id="800e0f07-e8c7-43c4-bdaf-617aab5c0504"
+    data-utcoffset="-7"
+    data-track-path="true"
+    defer></script>
+
+  <style>
+    .gallery-tabs {
+      display: flex;
+      flex-wrap: wrap;
+      gap: .6rem;
+      margin: 1rem 0 0;
+    }
+    .gallery-tabs a {
+      display: inline-block;
+      padding: .45rem .8rem;
+      border: 1px solid rgba(0,0,0,.16);
+      border-radius: 999px;
+      text-decoration: none;
+      color: inherit;
+      background: rgba(255,255,255,.55);
+    }
+    .gallery-tabs a[aria-current="page"] {
+      font-weight: 700;
+      box-shadow: 0 1px 4px rgba(0,0,0,.12);
+    }
+    .album-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1.25rem;
+      margin-top: 1.25rem;
+    }
+    .album-card {
+      display: block;
+      text-decoration: none;
+      color: inherit;
+      border: 1px solid rgba(0,0,0,.12);
+      border-radius: 10px;
+      overflow: hidden;
+      background: rgba(255,255,255,.55);
+      box-shadow: 0 1px 4px rgba(0,0,0,.08);
+      transition: transform .15s ease, box-shadow .15s ease;
+    }
+    .album-card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(0,0,0,.14);
+    }
+    .album-card img,
+    .album-card video {
+      width: 100%;
+      aspect-ratio: 4 / 3;
+      object-fit: cover;
+      display: block;
+      background: #eee;
+    }
+    .album-card-text {
+      padding: .85rem .9rem 1rem;
+    }
+    .album-card-text h3 {
+      margin: 0 0 .35rem 0;
+      font-size: 1.05rem;
+    }
+    .album-card-text p {
+      margin: .35rem 0 0 0;
+    }
+    .album-meta {
+      font-size: .9rem;
+      opacity: .8;
+    }
+    .video-preview {
+      position: relative;
+      background: #222;
+    }
+    .play-badge {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      width: 3rem;
+      height: 3rem;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      background: rgba(0,0,0,.62);
+      color: white;
+      font-size: 1.25rem;
+      line-height: 1;
+    }
+    .gdesc-inner {
+      font-size: 1rem;
+      line-height: 1.45;
+    }
+  </style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header>
+  <div class="container brandbar">
+    <a class="brand" href="index.html">
+      <span class="mark" aria-hidden="true"></span>
+      <span class="title">The Prescott Girls</span>
+    </a>
+    <nav aria-label="Primary navigation">
+      <a href="index.html">Home</a>
+      <a href="book.html">Book</a>
+      <a href="illustrations.html"  aria-current="page">Galleries</a>
+      <a href="interpretations.html">Interpretations</a>
+      <a href="author.html">Author</a>
+      <a href="teachers.html">Teachers</a>
+      <a href="events.html">Events</a>
+      <a href="faq.html">FAQ</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main" class="container">
+
+    <h1>Author Gallery</h1>
+
+        <div class="gallery-nav">
+      <span class="gallery-nav-label">Visit:</span>
+      <a href="illustrations.html">Illustrations Gallery</a>
+      <span class="separator">|</span>
+      <a href="historicalGallery.html">Historical Gallery</a>
+    </div>
+
+  <div class="section">
+    
+  </div>
+
+  
+    <section class="section album-section" id="places-travel">
+      <h2>Places, Travel, and Outdoor Exploration</h2>
+      <p>Travel, hiking, camping, and outdoor exploration are part of the author&#x27;s life and often provide space for reflection, photography, and discovery. (Click images to expand.)</p>
+      <div class="album-grid">
+        
+      <a class="album-card glightbox" href="assets/authorGallery/IMG_4095.jpeg" data-gallery="author-gallery" data-title="Yosemite High Country" data-description="&lt;strong&gt;Date:&lt;/strong&gt; 2023-11-01&lt;br&gt;&lt;strong&gt;Location:&lt;/strong&gt; Yosemite National Park, California&lt;br&gt;A Yosemite landscape photographed during one of the author&amp;#x27;s recurring trips to the park.">
+        <img src="assets/authorGallery/thumbs/img-4095.jpg" alt="Yosemite High Country">
+        <div class="album-card-text">
+          <h3>Yosemite High Country</h3>
+          <p class="album-meta">2023-11-01 · Yosemite National Park, California</p>
+          <p>A Yosemite landscape photographed during one of the author&#x27;s recurring trips to the park.</p>
+        </div>
+      </a>
+    
+
+      <a class="album-card glightbox" href="assets/authorGallery/IMG_0825.jpeg" data-gallery="author-gallery" data-title="Zion - The Narrows" data-description="&lt;strong&gt;Date:&lt;/strong&gt; 2024-05-22&lt;br&gt;Hiking through the Narrows in Zion National Park, following the Virgin River between towering sandstone walls that rise hundreds of feet above the canyon floor.">
+        <img src="assets/authorGallery/thumbs/img-0825.jpg" alt="Zion - The Narrows">
+        <div class="album-card-text">
+          <h3>Zion - The Narrows</h3>
+          <p class="album-meta">2024-05-22</p>
+          <p>Hiking through the Narrows in Zion National Park, following the Virgin River between towering sandstone walls that rise hundreds of feet above the canyon floor.</p>
+        </div>
+      </a>
+    
+
+      <a class="album-card glightbox" href="assets/authorGallery/IMG_1004.jpeg" data-gallery="author-gallery" data-title="The Bryce Amphitheater" data-description="&lt;strong&gt;Date:&lt;/strong&gt; 2024-05-24&lt;br&gt;&lt;strong&gt;Location:&lt;/strong&gt; Bryce Canyon&lt;br&gt;Looking across Bryce Canyon&amp;#x27;s famous amphitheater of hoodoos, where millions of years of erosion have sculpted one of the most distinctive landscapes in the American Southwest.">
+        <img src="assets/authorGallery/thumbs/img-1004.jpg" alt="The Bryce Amphitheater">
+        <div class="album-card-text">
+          <h3>The Bryce Amphitheater</h3>
+          <p class="album-meta">2024-05-24 · Bryce Canyon</p>
+          <p>Looking across Bryce Canyon&#x27;s famous amphitheater of hoodoos, where millions of years of erosion have sculpted one of the most distinctive landscapes in the American Southwest.</p>
+        </div>
+      </a>
+    
+
+      <a class="album-card glightbox" href="assets/authorGallery/IMG_4733.jpeg" data-gallery="author-gallery" data-title="Yosemite Trail Self-Portrait" data-description="&lt;strong&gt;Date:&lt;/strong&gt; 2025-06-04&lt;br&gt;&lt;strong&gt;Location:&lt;/strong&gt; Yosemite National Park, California&lt;br&gt;A trail photograph from Yosemite, one of the author&amp;#x27;s frequent places for hiking, camping, and reflection.">
+        <img src="assets/authorGallery/thumbs/img-4733.jpg" alt="Yosemite Trail Self-Portrait">
+        <div class="album-card-text">
+          <h3>Yosemite Trail Self-Portrait</h3>
+          <p class="album-meta">2025-06-04 · Yosemite National Park, California</p>
+          <p>A trail photograph from Yosemite, one of the author&#x27;s frequent places for hiking, camping, and reflection.</p>
+        </div>
+      </a>
+    
+
+      <a class="album-card glightbox" href="assets/authorGallery/IMG_0328.jpeg" data-gallery="author-gallery" data-title="Grand Canyon" data-description="&lt;strong&gt;Date:&lt;/strong&gt; 2024-05-16&lt;br&gt;&lt;strong&gt;Location:&lt;/strong&gt; Grand Canyon National Park, Arizona&lt;br&gt;Aric and Lori at the Grand Canyon during a trip through the American Southwest, combining historical exploration with some of the country&amp;#x27;s most iconic landscapes.">
+        <img src="assets/authorGallery/thumbs/img-0328.jpg" alt="Grand Canyon">
+        <div class="album-card-text">
+          <h3>Grand Canyon</h3>
+          <p class="album-meta">2024-05-16 · Grand Canyon National Park, Arizona</p>
+          <p>Aric and Lori at the Grand Canyon during a trip through the American Southwest, combining historical exploration with some of the country&#x27;s most iconic landscapes.</p>
+        </div>
+      </a>
+    
+
+      <a class="album-card glightbox" href="assets/authorGallery/IMG_0603.jpeg" data-gallery="author-gallery" data-title="Monument Valley" data-description="&lt;strong&gt;Date:&lt;/strong&gt; 2024-05-20&lt;br&gt;&lt;strong&gt;Location:&lt;/strong&gt; Monument Valley region, Arizona/Utah&lt;br&gt;Traveling through Monument Valley, a landscape familiar from countless western films and one of the most recognizable natural landmarks in the American West.">
+        <img src="assets/authorGallery/thumbs/img-0603.jpg" alt="Monument Valley">
+        <div class="album-card-text">
+          <h3>Monument Valley</h3>
+          <p class="album-meta">2024-05-20 · Monument Valley region, Arizona/Utah</p>
+          <p>Traveling through Monument Valley, a landscape familiar from countless western films and one of the most recognizable natural landmarks in the American West.</p>
+        </div>
+      </a>
+    
+
+      <a class="album-card glightbox" href="assets/authorGallery/IMG_6498.jpeg" data-gallery="author-gallery" data-title="Rainbow on the Mist Trail" data-description="&lt;strong&gt;Date:&lt;/strong&gt; 2026-05-07&lt;br&gt;&lt;strong&gt;Location:&lt;/strong&gt; Yosemite National Park, California&lt;br&gt;A rainbow along a Yosemite waterfall trail during one of the author&amp;#x27;s visits to the park.">
+        <img src="assets/authorGallery/thumbs/img-6498.jpg" alt="Rainbow on the Mist Trail">
+        <div class="album-card-text">
+          <h3>Rainbow on the Mist Trail</h3>
+          <p class="album-meta">2026-05-07 · Yosemite National Park, California</p>
+          <p>A rainbow along a Yosemite waterfall trail during one of the author&#x27;s visits to the park.</p>
+        </div>
+      </a>
+    
+
+      <a class="album-card glightbox" href="assets/authorGallery/IMG_5151.jpeg" data-gallery="author-gallery" data-title="Crater Lake" data-description="&lt;strong&gt;Date:&lt;/strong&gt; 2025-07-22&lt;br&gt;&lt;strong&gt;Location:&lt;/strong&gt; Crater Lake National Park, Oregon&lt;br&gt;A photograph at Crater Lake National Park during a western travel and exploration trip.">
+        <img src="assets/authorGallery/thumbs/img-5151.jpg" alt="Crater Lake">
+        <div class="album-card-text">
+          <h3>Crater Lake</h3>
+          <p class="album-meta">2025-07-22 · Crater Lake National Park, Oregon</p>
+          <p>A photograph at Crater Lake National Park during a western travel and exploration trip.</p>
+        </div>
+      </a>
+    
+
+      <a class="album-card glightbox" href="assets/authorGallery/IMG_3565.jpeg" data-gallery="author-gallery" data-title="Kīlauea at Night" data-description="&lt;strong&gt;Date:&lt;/strong&gt; 2025-02-26&lt;br&gt;&lt;strong&gt;Location:&lt;/strong&gt; Hawaiʻi Volcanoes National Park, Hawaii&lt;br&gt;Night viewing of volcanic activity at Hawaiʻi Volcanoes National Park.">
+        <img src="assets/authorGallery/thumbs/img-3565.jpg" alt="Kīlauea at Night">
+        <div class="album-card-text">
+          <h3>Kīlauea at Night</h3>
+          <p class="album-meta">2025-02-26 · Hawaiʻi Volcanoes National Park, Hawaii</p>
+          <p>Night viewing of volcanic activity at Hawaiʻi Volcanoes National Park.</p>
+        </div>
+      </a>
+    
+
+      <a class="album-card glightbox" href="assets/authorGallery/IMG_5093.jpeg" data-gallery="author-gallery" data-title="At Manzanita Lake, Lassen" data-description="&lt;strong&gt;Date:&lt;/strong&gt; 2025-07-20&lt;br&gt;&lt;strong&gt;Location:&lt;/strong&gt; Lassen Volcanic National Park, California&lt;br&gt;At Manzanita Lake in Lassen Volcanic National Park, with Lassen Peak rising above the forest and water.">
+        <img src="assets/authorGallery/thumbs/img-5093.jpg" alt="At Manzanita Lake, Lassen">
+        <div class="album-card-text">
+          <h3>At Manzanita Lake, Lassen</h3>
+          <p class="album-meta">2025-07-20 · Lassen Volcanic National Park, California</p>
+          <p>At Manzanita Lake in Lassen Volcanic National Park, with Lassen Peak rising above the forest and water.</p>
+        </div>
+      </a>
+    
+
+      <a class="album-card glightbox" href="assets/authorGallery/20260430_070020_378470220292758.mov" data-gallery="author-gallery" data-title="Spring Snowboarding" data-description="&lt;strong&gt;Date:&lt;/strong&gt; 2026-04-29&lt;br&gt;&lt;strong&gt;Location:&lt;/strong&gt; Lake Tahoe region, California&lt;br&gt;Spring snowboarding at 8200 feet at Palisades Resort near Lake Tahoe." data-type="video">
+        
+          <div class="video-preview" aria-hidden="true">
+            <video src="assets/authorGallery/20260430_070020_378470220292758.mov" muted preload="metadata"></video>
+            <span class="play-badge">▶</span>
+          </div>
+        
+        <div class="album-card-text">
+          <h3>Spring Snowboarding</h3>
+          <p class="album-meta">2026-04-29 · Lake Tahoe region, California</p>
+          <p>Spring snowboarding at 8200 feet at Palisades Resort near Lake Tahoe.</p>
+        </div>
+      </a>
+    
+
+      <a class="album-card glightbox" href="assets/authorGallery/IMG_8247.jpeg" data-gallery="author-gallery" data-title="Maine Harbor" data-description="&lt;strong&gt;Date:&lt;/strong&gt; 2021-06-08&lt;br&gt;&lt;strong&gt;Location:&lt;/strong&gt; Belfast, Maine&lt;br&gt;Exploring Maine&amp;#x27;s coast during a research trip undertaken while tracing the history of the Prescott family and their descendants.">
+        <img src="assets/authorGallery/thumbs/img-8247.jpg" alt="Maine Harbor">
+        <div class="album-card-text">
+          <h3>Maine Harbor</h3>
+          <p class="album-meta">2021-06-08 · Belfast, Maine</p>
+          <p>Exploring Maine&#x27;s coast during a research trip undertaken while tracing the history of the Prescott family and their descendants.</p>
+        </div>
+      </a>
+    
+
+      <a class="album-card glightbox" href="assets/authorGallery/IMG_8272.jpeg" data-gallery="author-gallery" data-title="Bubble Rock, Acadia" data-description="&lt;strong&gt;Date:&lt;/strong&gt; 2021-06-09&lt;br&gt;&lt;strong&gt;Location:&lt;/strong&gt; Acadia National Park, Maine&lt;br&gt;A visit to Bubble Rock in Acadia National Park during a Maine research and travel trip.">
+        <img src="assets/authorGallery/thumbs/img-8272.jpg" alt="Bubble Rock, Acadia">
+        <div class="album-card-text">
+          <h3>Bubble Rock, Acadia</h3>
+          <p class="album-meta">2021-06-09 · Acadia National Park, Maine</p>
+          <p>A visit to Bubble Rock in Acadia National Park during a Maine research and travel trip.</p>
+        </div>
+      </a>
+    
+
+      <a class="album-card glightbox" href="assets/authorGallery/IMG_8294.jpeg" data-gallery="author-gallery" data-title="Acadia Overlook" data-description="&lt;strong&gt;Date:&lt;/strong&gt; 2021-06-10&lt;br&gt;&lt;strong&gt;Location:&lt;/strong&gt; Acadia National Park, Maine&lt;br&gt;Looking across Acadia National Park from one of the island&amp;#x27;s scenic overlooks during a trip to the Pownalborough Court House.">
+        <img src="assets/authorGallery/thumbs/img-8294.jpg" alt="Acadia Overlook">
+        <div class="album-card-text">
+          <h3>Acadia Overlook</h3>
+          <p class="album-meta">2021-06-10 · Acadia National Park, Maine</p>
+          <p>Looking across Acadia National Park from one of the island&#x27;s scenic overlooks during a trip to the Pownalborough Court House.</p>
+        </div>
+      </a>
+    
+
+      <a class="album-card glightbox" href="assets/authorGallery/IMG_8500.jpeg" data-gallery="author-gallery" data-title="Spring Point Ledge Lighthouse" data-description="&lt;strong&gt;Date:&lt;/strong&gt; 2021-06-15&lt;br&gt;&lt;strong&gt;Location:&lt;/strong&gt; South Portland, Maine&lt;br&gt;Spring Point Ledge Lighthouse in South Portland, reached by a granite breakwater extending into Casco Bay.">
+        <img src="assets/authorGallery/thumbs/img-8500.jpg" alt="Spring Point Ledge Lighthouse">
+        <div class="album-card-text">
+          <h3>Spring Point Ledge Lighthouse</h3>
+          <p class="album-meta">2021-06-15 · South Portland, Maine</p>
+          <p>Spring Point Ledge Lighthouse in South Portland, reached by a granite breakwater extending into Casco Bay.</p>
+        </div>
+      </a>
+    
+
+      <a class="album-card glightbox" href="assets/authorGallery/IMG_8546.jpeg" data-gallery="author-gallery" data-title="Portland Head Light" data-description="&lt;strong&gt;Date:&lt;/strong&gt; 2021-06-15&lt;br&gt;&lt;strong&gt;Location:&lt;/strong&gt; Cape Elizabeth, Maine&lt;br&gt;Aric and Lori at Portland Head Light, one of Maine&amp;#x27;s most recognizable landmarks.">
+        <img src="assets/authorGallery/thumbs/img-8546.jpg" alt="Portland Head Light">
+        <div class="album-card-text">
+          <h3>Portland Head Light</h3>
+          <p class="album-meta">2021-06-15 · Cape Elizabeth, Maine</p>
+          <p>Aric and Lori at Portland Head Light, one of Maine&#x27;s most recognizable landmarks.</p>
+        </div>
+      </a>
+    
+
+      <a class="album-card glightbox" href="assets/authorGallery/IMG_9643.jpeg" data-gallery="author-gallery" data-title="Sonoma Coast" data-description="&lt;strong&gt;Date:&lt;/strong&gt; 2022-02-19&lt;br&gt;&lt;strong&gt;Location:&lt;/strong&gt; Sonoma Coast, California&lt;br&gt;The rugged Sonoma Coast, one of the author&amp;#x27;s favorite destinations for photography, hiking, and day trips along Northern California&amp;#x27;s shoreline.">
+        <img src="assets/authorGallery/thumbs/img-9643.jpg" alt="Sonoma Coast">
+        <div class="album-card-text">
+          <h3>Sonoma Coast</h3>
+          <p class="album-meta">2022-02-19 · Sonoma Coast, California</p>
+          <p>The rugged Sonoma Coast, one of the author&#x27;s favorite destinations for photography, hiking, and day trips along Northern California&#x27;s shoreline.</p>
+        </div>
+      </a>
+    
+
+      <a class="album-card glightbox" href="assets/authorGallery/IMG_5310.jpeg" data-gallery="author-gallery" data-title="Stanford Dish" data-description="&lt;strong&gt;Date:&lt;/strong&gt; 2024-03-12&lt;br&gt;&lt;strong&gt;Location:&lt;/strong&gt; Stanford Dish area, Palo Alto, California&lt;br&gt;The Stanford Dish trail, a familiar Bay Area landmark located near the communities where the author spent much of his technology career.">
+        <img src="assets/authorGallery/thumbs/img-5310.jpg" alt="Stanford Dish">
+        <div class="album-card-text">
+          <h3>Stanford Dish</h3>
+          <p class="album-meta">2024-03-12 · Stanford Dish area, Palo Alto, California</p>
+          <p>The Stanford Dish trail, a familiar Bay Area landmark located near the communities where the author spent much of his technology career.</p>
+        </div>
+      </a>
+    
+
+      <a class="album-card glightbox" href="assets/authorGallery/IMG_2131.jpeg" data-gallery="author-gallery" data-title="Palace of Fine Arts" data-description="&lt;strong&gt;Date:&lt;/strong&gt; 2024-10-13&lt;br&gt;&lt;strong&gt;Location:&lt;/strong&gt; San Francisco, California&lt;br&gt;A San Francisco visit near the Palace of Fine Arts, connected to the author&amp;#x27;s Bay Area life and travels.">
+        <img src="assets/authorGallery/thumbs/img-2131.jpg" alt="Palace of Fine Arts">
+        <div class="album-card-text">
+          <h3>Palace of Fine Arts</h3>
+          <p class="album-meta">2024-10-13 · San Francisco, California</p>
+          <p>A San Francisco visit near the Palace of Fine Arts, connected to the author&#x27;s Bay Area life and travels.</p>
+        </div>
+      </a>
+    
+
+      <a class="album-card glightbox" href="assets/authorGallery/IMG_1811.jpeg" data-gallery="author-gallery" data-title="SpaceX Headquarters" data-description="&lt;strong&gt;Date:&lt;/strong&gt; 2022-02-15&lt;br&gt;&lt;strong&gt;Location:&lt;/strong&gt; Hawthorne, California&lt;br&gt;Visiting SpaceX headquarters in Hawthorne, California, beside a flown Falcon 9 booster that helped make reusable orbital rockets a reality.">
+        <img src="assets/authorGallery/thumbs/img-1811.jpg" alt="SpaceX Headquarters">
+        <div class="album-card-text">
+          <h3>SpaceX Headquarters</h3>
+          <p class="album-meta">2022-02-15 · Hawthorne, California</p>
+          <p>Visiting SpaceX headquarters in Hawthorne, California, beside a flown Falcon 9 booster that helped make reusable orbital rockets a reality.</p>
+        </div>
+      </a>
+    
+      </div>
+    </section>
+    
+
+    <section class="section album-section" id="hobbies-activities">
+      <h2>Hobbies and Activities</h2>
+      <p>Spaceflight, movies, soaring, model aviation, and other pursuits that have shaped the author&#x27;s interests outside of writing.</p>
+      <div class="album-grid">
+        
+      <a class="album-card glightbox" href="assets/authorGallery/Hanging%20with%20Buzz.jpeg" data-gallery="author-gallery" data-title="Hanging with Buzz" data-description="&lt;strong&gt;Date:&lt;/strong&gt; 2010-11-06&lt;br&gt;A visit to the Cape for the STS-133 shuttle launch, lead to a close encounter with seven astronauts who had walked on the Moon.">
+        <img src="assets/authorGallery/thumbs/hanging-with-buzz.jpg" alt="Hanging with Buzz">
+        <div class="album-card-text">
+          <h3>Hanging with Buzz</h3>
+          <p class="album-meta">2010-11-06</p>
+          <p>A visit to the Cape for the STS-133 shuttle launch, lead to a close encounter with seven astronauts who had walked on the Moon.</p>
+        </div>
+      </a>
+    
+
+      <a class="album-card glightbox" href="assets/authorGallery/DSC02653.jpeg" data-gallery="author-gallery" data-title="Filming the movie &#x27;Swing&#x27; with Jacqueline Bisset" data-description="&lt;strong&gt;Date:&lt;/strong&gt; 2002-12-07&lt;br&gt;A brief pause during filming of the movie &amp;#x27;Swing&amp;#x27; with Jacqueline Bisset.">
+        <img src="assets/authorGallery/thumbs/dsc02653.jpg" alt="Filming the movie &#x27;Swing&#x27; with Jacqueline Bisset">
+        <div class="album-card-text">
+          <h3>Filming the movie &#x27;Swing&#x27; with Jacqueline Bisset</h3>
+          <p class="album-meta">2002-12-07</p>
+          <p>A brief pause during filming of the movie &#x27;Swing&#x27; with Jacqueline Bisset.</p>
+        </div>
+      </a>
+    
+
+      <a class="album-card glightbox" href="assets/authorGallery/Swing%20Aric%2C%20Jackie%2C%20Barry.jpg.jpeg" data-gallery="author-gallery" data-title="Cast Photo with Barry Bostwick, Jacqueline Bisset and Innis Casey" data-description="&lt;strong&gt;Date:&lt;/strong&gt; 2002-12-06&lt;br&gt;&lt;strong&gt;Location:&lt;/strong&gt; San Francisco&lt;br&gt;Cast Photo of the Jazz band for the movie &amp;#x27;Swing&amp;#x27; filmed in San Francisco.">
+        <img src="assets/authorGallery/thumbs/swing-aric-jackie-barry-jpg.jpg" alt="Cast Photo with Barry Bostwick, Jacqueline Bisset and Innis Casey">
+        <div class="album-card-text">
+          <h3>Cast Photo with Barry Bostwick, Jacqueline Bisset and Innis Casey</h3>
+          <p class="album-meta">2002-12-06 · San Francisco</p>
+          <p>Cast Photo of the Jazz band for the movie &#x27;Swing&#x27; filmed in San Francisco.</p>
+        </div>
+      </a>
+    
+
+      <a class="album-card glightbox" href="assets/authorGallery/Montague%20Cross%20Country.jpeg" data-gallery="author-gallery" data-title="Montague Cross Country" data-description="&lt;strong&gt;Date:&lt;/strong&gt; 2012-07-05&lt;br&gt;Team Dust Devils RC Cross Country racing with Mt. Shasta in the background.">
+        <img src="assets/authorGallery/thumbs/montague-cross-country.jpg" alt="Montague Cross Country">
+        <div class="album-card-text">
+          <h3>Montague Cross Country</h3>
+          <p class="album-meta">2012-07-05</p>
+          <p>Team Dust Devils RC Cross Country racing with Mt. Shasta in the background.</p>
+        </div>
+      </a>
+    
+
+      <a class="album-card glightbox" href="assets/authorGallery/IMG_2379.jpeg" data-gallery="author-gallery" data-title="F5J Soaring event at the Central Valley RC Club" data-description="&lt;strong&gt;Date:&lt;/strong&gt; 2023-03-26&lt;br&gt;&lt;strong&gt;Location:&lt;/strong&gt; Visalia, California&lt;br&gt;RC glider flying in California&amp;#x27;s Central Valley, combining technology, craft, and outdoor competition.">
+        <img src="assets/authorGallery/thumbs/img-2379.jpg" alt="F5J Soaring event at the Central Valley RC Club">
+        <div class="album-card-text">
+          <h3>F5J Soaring event at the Central Valley RC Club</h3>
+          <p class="album-meta">2023-03-26 · Visalia, California</p>
+          <p>RC glider flying in California&#x27;s Central Valley, combining technology, craft, and outdoor competition.</p>
+        </div>
+      </a>
+    
+
+      <a class="album-card glightbox" href="assets/authorGallery/312483715_10221891478824217_8222841079554157139_n.jpeg" data-gallery="author-gallery" data-title="Old-Timer event winners" data-description="&lt;strong&gt;Date:&lt;/strong&gt; 2022-10-21&lt;br&gt;A group photograph from an old-timer competition near Boulder City, Nevada at the El Dorada Dry Lake Bed.">
+        <img src="assets/authorGallery/thumbs/312483715-10221891478824217-8222841079554157139-n.jpg" alt="Old-Timer event winners">
+        <div class="album-card-text">
+          <h3>Old-Timer event winners</h3>
+          <p class="album-meta">2022-10-21</p>
+          <p>A group photograph from an old-timer competition near Boulder City, Nevada at the El Dorada Dry Lake Bed.</p>
+        </div>
+      </a>
+    
+
+      <a class="album-card glightbox" href="assets/authorGallery/E0256B75-F582-4C3F-B77B-970982566CB2.jpeg" data-gallery="author-gallery" data-title="Aric with his 1939 Playboy Senior old-time airplane" data-description="&lt;strong&gt;Date:&lt;/strong&gt; 2024-09-22&lt;br&gt;Preparing to launch an RC old-timer, part of the author&amp;#x27;s long interest in flying, building, and outdoor hobbies.">
+        <img src="assets/authorGallery/thumbs/e0256b75-f582-4c3f-b77b-970982566cb2.jpg" alt="Aric with his 1939 Playboy Senior old-time airplane">
+        <div class="album-card-text">
+          <h3>Aric with his 1939 Playboy Senior old-time airplane</h3>
+          <p class="album-meta">2024-09-22</p>
+          <p>Preparing to launch an RC old-timer, part of the author&#x27;s long interest in flying, building, and outdoor hobbies.</p>
+        </div>
+      </a>
+    
+
+      <a class="album-card glightbox" href="assets/authorGallery/IMG_1617.jpeg" data-gallery="author-gallery" data-title="Golden Gate Bike Rides" data-description="&lt;strong&gt;Date:&lt;/strong&gt; 2024-07-14&lt;br&gt;&lt;strong&gt;Location:&lt;/strong&gt; San Francisco, California&lt;br&gt;A bicycle ride across the Golden Gate Bridge, part of the author&amp;#x27;s Bay Area life and outdoor travels.">
+        <img src="assets/authorGallery/thumbs/img-1617.jpg" alt="Golden Gate Bike Rides">
+        <div class="album-card-text">
+          <h3>Golden Gate Bike Rides</h3>
+          <p class="album-meta">2024-07-14 · San Francisco, California</p>
+          <p>A bicycle ride across the Golden Gate Bridge, part of the author&#x27;s Bay Area life and outdoor travels.</p>
+        </div>
+      </a>
+    
+
+      <a class="album-card glightbox" href="assets/authorGallery/IMG_5345.jpeg" data-gallery="author-gallery" data-title="A visit to the  Letterman Digital Arts Center" data-description="&lt;strong&gt;Date:&lt;/strong&gt; 2024-03-15&lt;br&gt;&lt;strong&gt;Location:&lt;/strong&gt; Presidio, San Francisco&lt;br&gt;Home to George Lucas&amp;#x27; award winning Industrial Light and Magic and Lucasfilm Games. Aric is working with archivists to preserve early gaming design documents and other records from his work there.">
+        <img src="assets/authorGallery/thumbs/img-5345.jpg" alt="A visit to the  Letterman Digital Arts Center">
+        <div class="album-card-text">
+          <h3>A visit to the  Letterman Digital Arts Center</h3>
+          <p class="album-meta">2024-03-15 · Presidio, San Francisco</p>
+          <p>Home to George Lucas&#x27; award winning Industrial Light and Magic and Lucasfilm Games. Aric is working with archivists to preserve early gaming design documents and other records from his work there.</p>
+        </div>
+      </a>
+    
+
+      <a class="album-card glightbox" href="assets/authorGallery/IMG_6278.jpeg" data-gallery="author-gallery" data-title="Morning Rope Drop at Disneyland" data-description="&lt;strong&gt;Date:&lt;/strong&gt; 2026-04-22&lt;br&gt;&lt;strong&gt;Location:&lt;/strong&gt; Disneyland, Anaheim, California&lt;br&gt;As a child, the author visited Disney Studios at the invitation of Ollie Johnston, one of Walt Disney&amp;#x27;s legendary &amp;quot;Nine Old Men&amp;quot; and a friend of his father. Seeing work in progress on The Jungle Book left a lasting impression and helped spark a lifelong interest in storytelling, animation, and creative craftsmanship.">
+        <img src="assets/authorGallery/thumbs/img-6278.jpg" alt="Morning Rope Drop at Disneyland">
+        <div class="album-card-text">
+          <h3>Morning Rope Drop at Disneyland</h3>
+          <p class="album-meta">2026-04-22 · Disneyland, Anaheim, California</p>
+          <p>As a child, the author visited Disney Studios at the invitation of Ollie Johnston, one of Walt Disney&#x27;s legendary &quot;Nine Old Men&quot; and a friend of his father. Seeing work in progress on The Jungle Book left a lasting impression and helped spark a lifelong interest in storytelling, animation, and creative craftsmanship.</p>
+        </div>
+      </a>
+    
+
+      <a class="album-card glightbox" href="assets/authorGallery/515250396_10161034506053204_664475278283555210_n.jpg" data-gallery="author-gallery" data-title="Power Red Blood Donation" data-description="&lt;strong&gt;Location:&lt;/strong&gt; Northern California&lt;br&gt;Making a double-red-cell (Power Red) blood donation. The author has donated blood for decades, including more than fifty donations at Stanford and many more in the North Bay. As a CMV-negative donor, his blood can be used for newborns and other patients with specialized transfusion needs.">
+        <img src="assets/authorGallery/thumbs/515250396-10161034506053204-664475278283555210-n.jpg" alt="Power Red Blood Donation">
+        <div class="album-card-text">
+          <h3>Power Red Blood Donation</h3>
+          <p class="album-meta">Northern California</p>
+          <p>Making a double-red-cell (Power Red) blood donation. The author has donated blood for decades, including more than fifty donations at Stanford and many more in the North Bay. As a CMV-negative donor, his blood can be used for newborns and other patients with specialized transfusion needs.</p>
+        </div>
+      </a>
+    
+
+      <a class="album-card glightbox" href="assets/authorGallery/IMG_3746.mov" data-gallery="author-gallery" data-title="Snorkeling at Kahalu&#x27;u" data-description="&lt;strong&gt;Location:&lt;/strong&gt; Kahaluʻu Beach Park, Kailua-Kona, Hawaii&lt;br&gt;A surprise encounter with a Hawaiian green sea turtle (Honu) while snorkeling at Kahaluʻu Beach Park just south of Kona. Encounters like this are one of the reasons the area remains a favorite destination during visits to Hawaii. As always, wildlife should be observed respectfully from a distance." data-type="video">
+        
+          <div class="video-preview" aria-hidden="true">
+            <video src="assets/authorGallery/IMG_3746.mov" muted preload="metadata"></video>
+            <span class="play-badge">▶</span>
+          </div>
+        
+        <div class="album-card-text">
+          <h3>Snorkeling at Kahalu&#x27;u</h3>
+          <p class="album-meta">Kahaluʻu Beach Park, Kailua-Kona, Hawaii</p>
+          <p>A surprise encounter with a Hawaiian green sea turtle (Honu) while snorkeling at Kahaluʻu Beach Park just south of Kona. Encounters like this are one of the reasons the area remains a favorite destination during visits to Hawaii. As always, wildlife should be observed respectfully from a distance.</p>
+        </div>
+      </a>
+    
+      </div>
+    </section>
+    
+
+    <section class="section album-section" id="recognition">
+      <h2>Publications &amp; Recognition</h2>
+      <p>Recognition for this project</p>
+      <div class="album-grid">
+        
+      <a class="album-card glightbox" href="assets/authorGallery/Wilmunder%20Overlay.jpg" data-gallery="author-gallery" data-title="PieceWork Magazine Announcement" data-description="Promotional image shared by PieceWork when Six Stitches Through Time was released, featuring Ann Harlan Canby&amp;#x27;s sampler and the Spring 2026 issue in which the article appeared.">
+        <img src="assets/authorGallery/thumbs/wilmunder-overlay.jpg" alt="PieceWork Magazine Announcement">
+        <div class="album-card-text">
+          <h3>PieceWork Magazine Announcement</h3>
+          
+          <p>Promotional image shared by PieceWork when Six Stitches Through Time was released, featuring Ann Harlan Canby&#x27;s sampler and the Spring 2026 issue in which the article appeared.</p>
+        </div>
+      </a>
+    
+
+      <a class="album-card glightbox" href="assets/authorGallery/1596856444532.jpeg" data-gallery="author-gallery" data-title="Extreme Soaring" data-description="Feature article written by Aric Wilmunder exploring the world of high-speed cross-country soaring competition. The article follows pilots flying large sailplanes over mountain terrain in pursuit of distance, speed, and endurance.">
+        <img src="assets/authorGallery/thumbs/1596856444532.jpg" alt="Extreme Soaring">
+        <div class="album-card-text">
+          <h3>Extreme Soaring</h3>
+          
+          <p>Feature article written by Aric Wilmunder exploring the world of high-speed cross-country soaring competition. The article follows pilots flying large sailplanes over mountain terrain in pursuit of distance, speed, and endurance.</p>
+        </div>
+      </a>
+    
+
+      <a class="album-card glightbox" href="assets/authorGallery/1601585243547.jpeg" data-gallery="author-gallery" data-title="International Slope Races" data-description="Feature article written by Aric Wilmunder for RC Sport Flyer magazine covering international slope racing competition at Davenport, California. The article examines the aircraft, flying techniques, and strategy behind one of the fastest forms of radio-control sailplane racing.">
+        <img src="assets/authorGallery/thumbs/1601585243547.jpg" alt="International Slope Races">
+        <div class="album-card-text">
+          <h3>International Slope Races</h3>
+          
+          <p>Feature article written by Aric Wilmunder for RC Sport Flyer magazine covering international slope racing competition at Davenport, California. The article examines the aircraft, flying techniques, and strategy behind one of the fastest forms of radio-control sailplane racing.</p>
+        </div>
+      </a>
+    
+
+      <a class="album-card glightbox" href="assets/authorGallery/Independent-Author-Awards-Winner-2a.jpeg" data-gallery="author-gallery" data-title="Independent Author Awards Winner" data-description="The Prescott Girls - A Letter from Philadelphia was the Winner, Fiction: Northeast, and finalist in both the Historical Fiction and Educational categories.">
+        <img src="assets/authorGallery/thumbs/independent-author-awards-winner-2a.jpg" alt="Independent Author Awards Winner">
+        <div class="album-card-text">
+          <h3>Independent Author Awards Winner</h3>
+          
+          <p>The Prescott Girls - A Letter from Philadelphia was the Winner, Fiction: Northeast, and finalist in both the Historical Fiction and Educational categories.</p>
+        </div>
+      </a>
+    
+      </div>
+    </section>
+    
+
+</main>
+
+<footer>
+  <div class="container footergrid">
+    <div>© 2026 Aric Wilmunder. All rights reserved.</div>
+    <div class="smalllinks">
+      <a href="contact.html">Contact</a>
+      <a href="events.html">Events</a>
+      <a href="illustrations.html">Galleries</a>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+<script>
+  const lightbox = GLightbox({
+    selector: '.glightbox',
+    touchNavigation: true,
+    loop: true,
+    closeButton: true
+  });
+</script>
+
+</body>
+</html>

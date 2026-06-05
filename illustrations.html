@@ -3,12 +3,12 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Illustrations | The Prescott Girls</title>
-  <meta name="description" content="Illustrations and artwork from The Prescott Girls.">
+  <title>Illustrations Gallery | The Prescott Girls</title>
+  <meta name="description" content="A gallery for Illustrations Gallery.">
 
   <!-- Open Graph -->
-  <meta property="og:title" content="The Prescott Girls">
-  <meta property="og:description" content="Three sisters. One letter. A quiet act of courage.">
+  <meta property="og:title" content="Illustrations Gallery | The Prescott Girls">
+  <meta property="og:description" content="A gallery for Illustrations Gallery.">
   <meta property="og:image" content="https://www.theprescottgirls.com/assets/promo-image.jpg">
   <meta property="og:image:secure_url" content="https://www.theprescottgirls.com/assets/promo-image.jpg">
   <meta property="og:image:type" content="image/jpeg">
@@ -21,39 +21,6 @@
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:image" content="https://www.theprescottgirls.com/assets/book-cover.jpg">
-
-      <!-- CreativeWork structured data -->
-      <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "CreativeWork",
-        "name": "Illustrations | The Prescott Girls",
-        "description": "Historically grounded illustrations, character studies, sampler photographs, and reconstructed scenes from The Prescott Girls, inspired by real artifacts, locations, and nineteenth-century Maine history.",
-        "author": {
-          "@type": "Person",
-          "name": "Aric Wilmunder"
-        },
-        "publisher": {
-          "@type": "Organization",
-          "name": "A Well-Regulated Press"
-        },
-        "about": [
-          "Historical illustration",
-          "Needlework samplers",
-          "1830s Maine",
-          "Pownalborough Court House",
-          "Historical costume research",
-          "Artifact interpretation",
-          "AI-assisted visualization"
-        ],
-        "isBasedOn": {
-          "@type": "Book",
-          "name": "The Prescott Girls: A Letter from Philadelphia"
-        },
-        "image": "https://www.theprescottgirls.com/assets/promo-image.jpg",
-        "url": "https://www.theprescottgirls.com/illustrations.html"
-      }
-      </script>
 
   <!-- Icons -->
   <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16.png">
@@ -73,6 +40,116 @@
     data-utcoffset="-7"
     data-track-path="true"
     defer></script>
+
+  <style>
+    .gallery-tabs {
+      display: flex;
+      flex-wrap: wrap;
+      gap: .6rem;
+      margin: 1rem 0 0;
+    }
+    .gallery-tabs a {
+      display: inline-block;
+      padding: .45rem .8rem;
+      border: 1px solid rgba(0,0,0,.16);
+      border-radius: 999px;
+      text-decoration: none;
+      color: inherit;
+      background: rgba(255,255,255,.55);
+    }
+    .gallery-tabs a[aria-current="page"] {
+      font-weight: 700;
+      box-shadow: 0 1px 4px rgba(0,0,0,.12);
+    }
+    .album-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1.25rem;
+      margin-top: 1.25rem;
+    }
+    .album-card {
+      display: block;
+      text-decoration: none;
+      color: inherit;
+      border: 1px solid rgba(0,0,0,.12);
+      border-radius: 10px;
+      overflow: hidden;
+      background: rgba(255,255,255,.55);
+      box-shadow: 0 1px 4px rgba(0,0,0,.08);
+      transition: transform .15s ease, box-shadow .15s ease;
+    }
+    .album-card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(0,0,0,.14);
+    }
+    .album-card img,
+    .album-card video {
+      width: 100%;
+      aspect-ratio: 4 / 3;
+      object-fit: cover;
+      display: block;
+      background: #eee;
+    }
+    .album-card-text {
+      padding: .85rem .9rem 1rem;
+    }
+    .album-card-text h3 {
+      margin: 0 0 .35rem 0;
+      font-size: 1.05rem;
+    }
+    .album-card-text p {
+      margin: .35rem 0 0 0;
+    }
+    .album-meta {
+      font-size: .9rem;
+      opacity: .8;
+    }
+    .video-preview {
+      position: relative;
+      background: #222;
+    }
+    .play-badge {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      width: 3rem;
+      height: 3rem;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      background: rgba(0,0,0,.62);
+      color: white;
+      font-size: 1.25rem;
+      line-height: 1;
+    }
+    
+.illustration-full {
+  margin: 0 0 1rem;
+}
+
+.illustration-full img {
+  display: block;
+  width: 100%;
+  max-width: 1000px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 1px 6px rgba(0,0,0,.12);
+}
+
+.illustration-full figcaption {
+  margin-top: .35rem;
+  margin-bottom: 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+  line-height: 1.2;
+}
+    
+    .gdesc-inner {
+      font-size: 1rem;
+      line-height: 1.45;
+    }
+  </style>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
@@ -85,7 +162,7 @@
     <nav aria-label="Primary navigation">
       <a href="index.html">Home</a>
       <a href="book.html">Book</a>
-      <a href="illustrations.html" aria-current="page">Illustrations</a>
+      <a href="illustrations.html"  aria-current="page">Galleries</a>
       <a href="interpretations.html">Interpretations</a>
       <a href="author.html">Author</a>
       <a href="teachers.html">Teachers</a>
@@ -98,99 +175,210 @@
 
 <main id="main" class="container">
 
-<div class="section">
-  <h1>Illustrations</h1>
-</div>
+    <h1>Illustrations Gallery</h1>
 
-<div class="section">
-  <h2>About the Images</h2>
-  <p><em>The Prescott Girls</em> was created as an illustrated historical novel, inspired by the books I grew up with, <em>The Oz books</em>, <em>The Chronicles of Narnia</em>, <em>The Borrowers</em>, <em>Snow Treasure</em>, and the illustrated editions of <em>Little House on the Prairie</em>. From the beginning, I wanted the story to be accompanied by images that helped bring the world of the Prescott sisters to life.</p>
+        <div class="gallery-nav">
+      <span class="gallery-nav-label">Visit:</span>
+      <a href="historicalGallery.html">Historical Gallery</a>
+      <span class="separator">|</span>
+      <a href="authorGallery.html">Author Gallery</a>
+    </div>
 
-  <p>The illustrations are what I call “historic re-imaginings.” They combine historical research, real locations, period clothing, and documented family history to visualize people and places connected to the story.</p>
+  <div class="section">
+  
+  
+    
 
-  <p>The clothing in the illustrations is based on authentic garments from the 1830s. Early drafts revealed inaccuracies that were later corrected with the help of a textile specialist at the University of Rhode Island, who provided reference images of period dresses and construction details. These references helped ensure that the clothing, fabrics, and silhouettes match the era.</p>
+  </div>
 
-  <p>Many of the figures are grounded in historical sources. The mother in the story is based on her portrait from the 1850s, while the girls were developed using family descriptions, early photographs, and historical sketches. Whenever possible, the backgrounds use actual locations, including the Pownalborough Court House in Dresden, Maine, which still stands today and now serves as a museum.</p>
+  
+    <section class="section album-section" id="book-illustrations">
+      <h2>Book Illustrations</h2>
+      <p>Illustrations from The Prescott Girls, created as historically grounded re-imaginings of people, places, and scenes from the story. (Click images to expand.)</p>
+      <div class="album-grid">
+        
+      <figure class="illustration-full">
+        <a class="glightbox" href="assets/illustrations/01_Sandy_River.jpg" data-gallery="illustrations-gallery" data-title="Sandy River" data-description="">
+          <img src="assets/illustrations/01_Sandy_River.jpg" alt="Sandy River">
+        </a>
+        <figcaption>Sandy River</figcaption>
 
-  <p>Even small environmental details were drawn from research. The opening chapter along the Sandy River reflects the historical record of the grist and sawmill that once stood there, as well as the buttercups and ferns that grow along the riverbank.</p>
+      </figure>
+    
 
-  <p>Each character was developed through visual studies to maintain consistency across the book. Some images required dozens of iterations before the clothing, setting, and characters matched the historical references.</p>
+      <figure class="illustration-full">
+        <a class="glightbox" href="assets/illustrations/04_Sallie_And_The_Old_Fort.jpg" data-gallery="illustrations-gallery" data-title="Sallie, Major and Lieutenant" data-description="">
+          <img src="assets/illustrations/04_Sallie_And_The_Old_Fort.jpg" alt="Sallie, Major and Lieutenant">
+        </a>
+        <figcaption>Sallie, Major and Lieutenant</figcaption>
 
-  <p>This approach has drawn interest from members of the Costume Society of America, where the process may be presented as a way modern tools can help visualize historical textiles and clothing that are often too fragile to display publicly.</p>
-</div>
+      </figure>
+    
 
-<div class="gallery section" aria-label="Illustration gallery">
-  <a href="assets/illustrations/01_Sandy_River.jpg" class="glightbox"><img src="assets/illustrations/01_Sandy_River.jpg" alt="Illustration"><p>Sandy River</p></a>
+      <figure class="illustration-full">
+        <a class="glightbox" href="assets/illustrations/08_Stitches_Before_the_Sunset.jpg" data-gallery="illustrations-gallery" data-title="Stitches Before the Sunset" data-description="">
+          <img src="assets/illustrations/08_Stitches_Before_the_Sunset.jpg" alt="Stitches Before the Sunset">
+        </a>
+        <figcaption>Stitches Before the Sunset</figcaption>
 
-  <a href="assets/illustrations/04_Sallie_And_The_Old_Fort.jpg" class="glightbox"><img src="assets/illustrations/04_Sallie_And_The_Old_Fort.jpg" alt="Illustration"><p>Sallie, Major and Lieutenant</p></a>
+      </figure>
+    
 
-  <a href="assets/illustrations/08_Stitches_Before_the_Sunset.jpg" class="glightbox"><img src="assets/illustrations/08_Stitches_Before_the_Sunset.jpg" alt="Illustration"><p>Stitches Before the Sunset</p></a>
+      <figure class="illustration-full">
+        <a class="glightbox" href="assets/illustrations/10_The_Sugar_Question.jpg" data-gallery="illustrations-gallery" data-title="The Sugar Question" data-description="">
+          <img src="assets/illustrations/10_The_Sugar_Question.jpg" alt="The Sugar Question">
+        </a>
+        <figcaption>The Sugar Question</figcaption>
 
-  <a href="assets/illustrations/10_The_Sugar_Question.jpg" class="glightbox"><img src="assets/illustrations/10_The_Sugar_Question.jpg" alt="Illustration"><p>The Sugar Question</p></a>
+      </figure>
+    
 
-  <a href="assets/illustrations/11_The_Unexpected_Guest.jpg" class="glightbox"><img src="assets/illustrations/11_The_Unexpected_Guest.jpg" alt="Illustration"><p>The Unexpected Guest</p></a>
+      <figure class="illustration-full">
+        <a class="glightbox" href="assets/illustrations/11_The_Unexpected_Guest.jpg" data-gallery="illustrations-gallery" data-title="The Unexpected Guest" data-description="">
+          <img src="assets/illustrations/11_The_Unexpected_Guest.jpg" alt="The Unexpected Guest">
+        </a>
+        <figcaption>The Unexpected Guest</figcaption>
 
-  <a href="assets/illustrations/11_Charity_Teaches_Stitching.jpg" class="glightbox"><img src="assets/illustrations/11_Charity_Teaches_Stitching.jpg" alt="Illustration"><p>Charity Teaches Stitching</p></a>
+      </figure>
+    
 
-  <a href="assets/illustrations/12_Voices_Raised.jpg" class="glightbox"><img src="assets/illustrations/12_Voices_Raised.jpg" alt="Illustration"><p>Voices Raised</p></a>
+      <figure class="illustration-full">
+        <a class="glightbox" href="assets/illustrations/11_Charity_Teaches_Stitching.jpg" data-gallery="illustrations-gallery" data-title="Charity Teaches Stitching" data-description="">
+          <img src="assets/illustrations/11_Charity_Teaches_Stitching.jpg" alt="Charity Teaches Stitching">
+        </a>
+        <figcaption>Charity Teaches Stitching</figcaption>
 
-  <a href="assets/illustrations/13_Three_Letters_to_Philadelphia.jpg" class="glightbox"><img src="assets/illustrations/13_Three_Letters_to_Philadelphia.jpg" alt="Illustration"><p>Three Letters to Philadelphia</p></a>
+      </figure>
+    
 
-  <a href="assets/illustrations/15_The_Tavern_Below.jpg" class="glightbox"><img src="assets/illustrations/15_The_Tavern_Below.jpg" alt="Illustration"><p>The Tavern Below</p></a>
+      <figure class="illustration-full">
+        <a class="glightbox" href="assets/illustrations/12_Voices_Raised.jpg" data-gallery="illustrations-gallery" data-title="Voices Raised" data-description="">
+          <img src="assets/illustrations/12_Voices_Raised.jpg" alt="Voices Raised">
+        </a>
+        <figcaption>Voices Raised</figcaption>
 
-  <a href="assets/illustrations/16_A_Visitor_from_Vassalboro.jpg" class="glightbox"><img src="assets/illustrations/16_A_Visitor_from_Vassalboro.jpg" alt="Illustration"><p>A Visitor from Vassalboro</p></a>
+      </figure>
+    
 
-  <a href="assets/illustrations/17_Apple_Day.jpg" class="glightbox"><img src="assets/illustrations/17_Apple_Day.jpg" alt="Illustration"><p>Apple Day</p></a>
+      <figure class="illustration-full">
+        <a class="glightbox" href="assets/illustrations/13_Three_Letters_to_Philadelphia.jpg" data-gallery="illustrations-gallery" data-title="Three Letters to Philadelphia" data-description="">
+          <img src="assets/illustrations/13_Three_Letters_to_Philadelphia.jpg" alt="Three Letters to Philadelphia">
+        </a>
+        <figcaption>Three Letters to Philadelphia</figcaption>
 
-  <a href="assets/illustrations/19_News_from_Philadelphia.jpg" class="glightbox"><img src="assets/illustrations/19_News_from_Philadelphia.jpg" alt="Illustration"><p>News from Philadelphia</p></a>
+      </figure>
+    
 
-  <a href="assets/illustrations/20_Louisas_Secret.jpg" class="glightbox"><img src="assets/illustrations/20_Louisas_Secret.jpg" alt="Illustration"><p>Louisa's Secret</p></a>
+      <figure class="illustration-full">
+        <a class="glightbox" href="assets/illustrations/15_The_Tavern_Below.jpg" data-gallery="illustrations-gallery" data-title="The Tavern Below" data-description="">
+          <img src="assets/illustrations/15_The_Tavern_Below.jpg" alt="The Tavern Below">
+        </a>
+        <figcaption>The Tavern Below</figcaption>
 
-  <a href="assets/illustrations/21_At_the_School_House.jpg" class="glightbox"><img src="assets/illustrations/21_At_the_School_House.jpg" alt="Illustration"><p>At The School House</p></a>
+      </figure>
+    
 
-  <a href="assets/illustrations/23_The_Ribbon_and_the_Loom.jpg" class="glightbox"><img src="assets/illustrations/23_The_Ribbon_and_the_Loom.jpg" alt="Illustration"><p>The Ribbon and the Loom</p></a>
+      <figure class="illustration-full">
+        <a class="glightbox" href="assets/illustrations/16_A_Visitor_from_Vassalboro.jpg" data-gallery="illustrations-gallery" data-title="A Visitor from Vassalboro" data-description="">
+          <img src="assets/illustrations/16_A_Visitor_from_Vassalboro.jpg" alt="A Visitor from Vassalboro">
+        </a>
+        <figcaption>A Visitor from Vassalboro</figcaption>
 
-  <a href="assets/illustrations/25_Company_for_the_Holidays.jpg" class="glightbox"><img src="assets/illustrations/25_Company_for_the_Holidays.jpg" alt="Illustration"><p>Company for the Holidays</p></a>
+      </figure>
+    
 
-  <a href="assets/illustrations/26_Christmas_Day.jpg" class="glightbox"><img src="assets/illustrations/26_Christmas_Day.jpg" alt="Illustration"><p>Christmas Day</p></a>
+      <figure class="illustration-full">
+        <a class="glightbox" href="assets/illustrations/17_Apple_Day.jpg" data-gallery="illustrations-gallery" data-title="Apple Day" data-description="">
+          <img src="assets/illustrations/17_Apple_Day.jpg" alt="Apple Day">
+        </a>
+        <figcaption>Apple Day</figcaption>
 
-  <a href="assets/illustrations/27_Winter_Market.jpg" class="glightbox"><img src="assets/illustrations/27_Winter_Market.jpg" alt="Illustration"><p>Winter Market</p></a>
+      </figure>
+    
 
-  <a href="assets/illustrations/50_Beckies_Dress.jpg" class="glightbox"><img src="assets/illustrations/50_Beckies_Dress.jpg" alt="Illustration"><p>Beckie's Dress*</p></a>
+      <figure class="illustration-full">
+        <a class="glightbox" href="assets/illustrations/19_News_from_Philadelphia.jpg" data-gallery="illustrations-gallery" data-title="News from Philadelphia" data-description="">
+          <img src="assets/illustrations/19_News_from_Philadelphia.jpg" alt="News from Philadelphia">
+        </a>
+        <figcaption>News from Philadelphia</figcaption>
 
-  <a href="assets/illustrations/51_Louisas_Dress.jpg" class="glightbox"><img src="assets/illustrations/51_Louisas_Dress.jpg" alt="Illustration"><p>Louisa's Dress*</p></a>
+      </figure>
+    
 
-  <a href="assets/illustrations/52_Sallies_Dress.jpg" class="glightbox"><img src="assets/illustrations/52_Sallies_Dress.jpg" alt="Illustration"><p>Sallie's Dress*</p></a>
+      <figure class="illustration-full">
+        <a class="glightbox" href="assets/illustrations/20_Louisas_Secret.jpg" data-gallery="illustrations-gallery" data-title="Louisa&#x27;s Secret" data-description="">
+          <img src="assets/illustrations/20_Louisas_Secret.jpg" alt="Louisa&#x27;s Secret">
+        </a>
+        <figcaption>Louisa&#x27;s Secret</figcaption>
 
-  <a href="assets/illustrations/68_When_First_Found.jpg" class="glightbox"><img src="assets/illustrations/68_When_First_Found.jpg" alt="Sampler photo"><p>Samplers When Found at Auction</p></a>
+      </figure>
+    
 
-  <a href="assets/illustrations/60_Beckies_Sampler.jpg" class="glightbox"><img src="assets/illustrations/60_Beckies_Sampler.jpg" alt="Sampler photo"><p>Beckie's Sampler When Found</p></a>
+      <figure class="illustration-full">
+        <a class="glightbox" href="assets/illustrations/21_At_the_School_House.jpg" data-gallery="illustrations-gallery" data-title="At the School House" data-description="">
+          <img src="assets/illustrations/21_At_the_School_House.jpg" alt="At the School House">
+        </a>
+        <figcaption>At the School House</figcaption>
 
-  <a href="assets/illustrations/61_Mothers_Sampler.jpg" class="glightbox"><img src="assets/illustrations/61_Mothers_Sampler.jpg" alt="Sampler photo"><p>Mother's Sampler When Found</p></a>
+      </figure>
+    
 
-  <a href="assets/illustrations/62_Louisas_Sampler.jpg" class="glightbox"><img src="assets/illustrations/62_Louisas_Sampler.jpg" alt="Sampler photo"><p>Louisa's Sampler Today</p></a>
+      <figure class="illustration-full">
+        <a class="glightbox" href="assets/illustrations/23_The_Ribbon_and_the_Loom.jpg" data-gallery="illustrations-gallery" data-title="The Ribbon and the Loom" data-description="">
+          <img src="assets/illustrations/23_The_Ribbon_and_the_Loom.jpg" alt="The Ribbon and the Loom">
+        </a>
+        <figcaption>The Ribbon and the Loom</figcaption>
 
-  <a href="assets/illustrations/63_Sallies_sampler.jpg" class="glightbox"><img src="assets/illustrations/63_Sallies_sampler.jpg" alt="Sampler photo"><p>Likely Sallie's Sampler</p></a>
+      </figure>
+    
 
-  <a href="assets/illustrations/64_Anns_sampler.jpg" class="glightbox"><img src="assets/illustrations/64_Anns_sampler.jpg" alt="Sampler photo"><p>Ann Canby's Sampler Today</p></a>
+      <figure class="illustration-full">
+        <a class="glightbox" href="assets/illustrations/25_Company_for_the_Holidays.jpg" data-gallery="illustrations-gallery" data-title="Company for the Holidays" data-description="">
+          <img src="assets/illustrations/25_Company_for_the_Holidays.jpg" alt="Company for the Holidays">
+        </a>
+        <figcaption>Company for the Holidays</figcaption>
 
-  <a href="assets/illustrations/71_Beckie_drawn_by_Sallie.jpg" class="glightbox"><img src="assets/illustrations/71_Beckie_drawn_by_Sallie.jpg" alt="Archival photo"><p>Beckie drawn by her cousin</p></a>
+      </figure>
+    
 
-  <a href="assets/illustrations/72_Louisa_Prescott.jpg" class="glightbox"><img src="assets/illustrations/72_Louisa_Prescott.jpg" alt="Archival photo"><p>Caroline 'Louisa' Prescott</p></a>
+      <figure class="illustration-full">
+        <a class="glightbox" href="assets/illustrations/26_Christmas_Day.jpg" data-gallery="illustrations-gallery" data-title="Christmas Day" data-description="">
+          <img src="assets/illustrations/26_Christmas_Day.jpg" alt="Christmas Day">
+        </a>
+        <figcaption>Christmas Day</figcaption>
 
-  <a href="assets/illustrations/70_Mothers_Portrait.jpg" class="glightbox"><img src="assets/illustrations/70_Mothers_Portrait.jpg" alt="Archival photo"><p>Mother's Portrait</p></a>
+      </figure>
+    
 
-  <a href="assets/illustrations/73_JOHNSON_Thomas_Portrait.jpg" class="glightbox"><img src="assets/illustrations/73_JOHNSON_Thomas_Portrait.jpg" alt="Archival photo"><p>Uncle Thomas Prescott</p></a>
+      <figure class="illustration-full">
+        <a class="glightbox" href="assets/illustrations/27_Winter_Market.jpg" data-gallery="illustrations-gallery" data-title="Winter Market" data-description="">
+          <img src="assets/illustrations/27_Winter_Market.jpg" alt="Winter Market">
+        </a>
+        <figcaption>Winter Market</figcaption>
 
-  <a href="assets/book-cover.jpg" class="glightbox"><img src="assets/book-cover.jpg" alt="Book cover"></a>
+      </figure>
+    
 
-  <a href="assets/author-photo.jpg" class="glightbox"><img src="assets/author-photo.jpg" alt="Author photo"></a>
-</div>
+      <figure class="illustration-full">
+        <a class="glightbox" href="assets/illustrations/29_The_Nor%27easter.jpg" data-gallery="illustrations-gallery" data-title="The Nor&#x27;Easter" data-description="">
+          <img src="assets/illustrations/29_The_Nor%27easter.jpg" alt="The Nor&#x27;Easter">
+        </a>
+        <figcaption>The Nor&#x27;Easter</figcaption>
 
-<div class="section">
-  <h2>Notes</h2>
-  <p>Selected illustrations in the book draw upon garments in the Historic Textile & Costume Collection at the University of Rhode Island and the Maine Historical Society collections.</p>
-</div>
+      </figure>
+    
+
+      <figure class="illustration-full">
+        <a class="glightbox" href="assets/illustrations/30_Packing_Winter_Away.jpg" data-gallery="illustrations-gallery" data-title="Packing Winter Away" data-description="">
+          <img src="assets/illustrations/30_Packing_Winter_Away.jpg" alt="Packing Winter Away">
+        </a>
+        <figcaption>Packing Winter Away</figcaption>
+
+      </figure>
+    
+      </div>
+    </section>
+    
 
 </main>
 
@@ -200,7 +388,7 @@
     <div class="smalllinks">
       <a href="contact.html">Contact</a>
       <a href="events.html">Events</a>
-      <a href="illustrations.html">Illustrations</a>
+      <a href="illustrations.html">Galleries</a>
     </div>
   </div>
 </footer>
@@ -208,10 +396,12 @@
 <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
 <script>
   const lightbox = GLightbox({
-    selector: '.glightbox'
+    selector: '.glightbox',
+    touchNavigation: true,
+    loop: true,
+    closeButton: true
   });
 </script>
 
 </body>
 </html>
-

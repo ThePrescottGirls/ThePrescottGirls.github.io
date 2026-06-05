@@ -1,0 +1,121 @@
+# gallery-control.txt
+
+# Source control file for generated galleries.
+
+# Captions marked draft=yes should be reviewed before publication.
+
+page_title=Illustrations Gallery
+output_file=illustrations.html
+media_dir=assets/illustrations
+media_url=assets/illustrations
+gallery_id=illustrations-gallery
+display_mode=full
+
+xpage_intro=Illustrations from The Prescott Girls, created as historically grounded re-imaginings of people, places, and scenes from the story. (Click images to expand.)
+
+[SECTION]
+id=book-illustrations
+title=Book Illustrations
+caption=Illustrations from The Prescott Girls, created as historically grounded re-imaginings of people, places, and scenes from the story. (Click images to expand.)
+
+[PHOTO]
+file=01_Sandy_River.jpg
+title=Sandy River
+draft=yes
+
+[PHOTO]
+file=04_Sallie_And_The_Old_Fort.jpg
+title=Sallie, Major and Lieutenant
+draft=yes
+
+[PHOTO]
+file=08_Stitches_Before_the_Sunset.jpg
+title=Stitches Before the Sunset
+draft=yes
+
+[PHOTO]
+file=10_The_Sugar_Question.jpg
+title=The Sugar Question
+draft=yes
+
+[PHOTO]
+file=11_The_Unexpected_Guest.jpg
+title=The Unexpected Guest
+draft=yes
+
+[PHOTO]
+file=11_Charity_Teaches_Stitching.jpg
+title=Charity Teaches Stitching
+draft=yes
+
+[PHOTO]
+file=12_Voices_Raised.jpg
+title=Voices Raised
+draft=yes
+
+[PHOTO]
+file=13_Three_Letters_to_Philadelphia.jpg
+title=Three Letters to Philadelphia
+draft=yes
+
+[PHOTO]
+file=15_The_Tavern_Below.jpg
+title=The Tavern Below
+draft=yes
+
+[PHOTO]
+file=16_A_Visitor_from_Vassalboro.jpg
+title=A Visitor from Vassalboro
+draft=yes
+
+[PHOTO]
+file=17_Apple_Day.jpg
+title=Apple Day
+draft=yes
+
+[PHOTO]
+file=19_News_from_Philadelphia.jpg
+title=News from Philadelphia
+draft=yes
+
+[PHOTO]
+file=20_Louisas_Secret.jpg
+title=Louisa's Secret
+draft=yes
+
+[PHOTO]
+file=21_At_the_School_House.jpg
+title=At the School House
+draft=yes
+
+[PHOTO]
+file=23_The_Ribbon_and_the_Loom.jpg
+title=The Ribbon and the Loom
+draft=yes
+
+[PHOTO]
+file=25_Company_for_the_Holidays.jpg
+title=Company for the Holidays
+draft=yes
+
+[PHOTO]
+file=26_Christmas_Day.jpg
+title=Christmas Day
+draft=yes
+
+[PHOTO]
+file=27_Winter_Market.jpg
+title=Winter Market
+draft=yes
+
+[PHOTO]
+file=29_The_Nor'easter.jpg
+title=The Nor'Easter
+draft=yes
+
+[PHOTO]
+file=30_Packing_Winter_Away.jpg
+title=Packing Winter Away
+draft=yes
+
+
