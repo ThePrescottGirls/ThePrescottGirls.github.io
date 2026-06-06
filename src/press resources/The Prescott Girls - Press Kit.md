@@ -11,7 +11,7 @@ Recommended Age: **8-12**
 Author: **Aric Wilmunder**  
 Email: [**aric@awellregulatedpress.com**](mailto:aric@awellregulatedpress.com)   
 Publisher: **A Well-Regulated Press**  
-Website: [**theprescottgirls.com**](http://theprescottgirls.com)
+Website: [**theprescottgirls.com**](https://www.theprescottgirls.com) 
 
 ---
 
@@ -46,8 +46,6 @@ Aric Wilmunder is a writer and historical researcher whose work explores the int
 *The Prescott Girls* grew out of collaborative historical research conducted with his wife, Lori, an award-winning needlework historian. Together they traced the provenance of the Prescott samplers and worked with historians and museums to better understand their significance.
 
 Inspired by illustrated classics from childhood, Wilmunder created the artwork for the novel using a process that combined digital tools with historical research. Textile experts helped ensure that clothing and visual details accurately reflect garments worn during the 1830s.
-
----
 
 # **Events and Presentations**
 
@@ -84,7 +82,7 @@ The Prescott Girls website provides downloadable educational materials for class
 
 These materials are available at:
 
-[**theprescottgirls.com/teachers.html**](http://theprescottgirls.com/teachers.html) 
+[**theprescottgirls.com/teachers.html**](https://www.theprescottgirls.com/teachers.html) 
 
 ---
 
@@ -105,6 +103,6 @@ Images may be used freely for event promotion with attribution.
 For interviews, school visits, or event invitations:
 
 **Email:** [aric@awellregulatedpress.com](mailto:aric@awellregulatedpress.com)   
-**Website:** [theprescottgirls.com](http://theprescottgirls.com) 
+**Website:** [theprescottgirls.com](https://www.theprescottgirls.com) 
 
 Publisher: **A Well-Regulated Press**

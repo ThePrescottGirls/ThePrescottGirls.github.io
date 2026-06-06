@@ -23,7 +23,7 @@ import html
 import re
 
 SITE_NAME = "The Prescott Girls"
-PRESS_RESOURCES_PATH = "../press.html"
+PRESS_RESOURCES_PATH = "../events.html"
 OUTPUT_DIR = "../../press"
 
 
