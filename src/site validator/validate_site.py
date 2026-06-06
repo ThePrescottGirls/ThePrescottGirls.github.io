@@ -21,6 +21,7 @@ from html.parser import HTMLParser
 from pathlib import Path
 from urllib.parse import urlparse, unquote
 import os
+import re
 import xml.etree.ElementTree as ET
 
 BASE_URL = "https://www.theprescottgirls.com"
@@ -238,6 +239,39 @@ def collect_asset_reference_pages(site_root: Path, pages: list[Path]) -> list[Pa
     return asset_pages
 
 
+
+def collect_css_files(site_root: Path) -> list[Path]:
+    css_files = []
+
+    for root, dirs, files in os.walk(site_root):
+        root_path = Path(root)
+
+        dirs[:] = [
+            d for d in dirs
+            if d not in IGNORE_DIRS and not d.startswith(".")
+        ]
+
+        for filename in files:
+            path = root_path / filename
+            if path.suffix.lower() == ".css":
+                css_files.append(path.resolve())
+
+    return sorted(css_files)
+
+
+def css_asset_references(css_file: Path) -> list[str]:
+    """Return asset references found in CSS url(...) declarations."""
+    text = css_file.read_text(encoding="utf-8", errors="ignore")
+    refs = []
+
+    for match in re.finditer(r"url\(\s*(['\"]?)(.*?)\1\s*\)", text):
+        ref = match.group(2).strip()
+        if not ref or ref.startswith("data:"):
+            continue
+        refs.append(ref)
+
+    return refs
+
 def collect_all_assets(site_root: Path) -> set[str]:
     assets = set()
 
@@ -354,6 +388,27 @@ def main():
                     pass
             else:
                 missing_assets.append((rel_page, asset_ref))
+
+    # Check CSS url(...) references, such as background images.
+    for css_file in collect_css_files(site_root):
+        rel_css = normalize_path(css_file.relative_to(site_root).as_posix())
+
+        for asset_ref in css_asset_references(css_file):
+            if is_external_url(asset_ref):
+                continue
+
+            target = resolve_reference(site_root, css_file, asset_ref)
+
+            if target is None:
+                continue
+
+            if target.exists():
+                try:
+                    used_assets.add(normalize_path(target.relative_to(site_root).as_posix()))
+                except ValueError:
+                    pass
+            else:
+                missing_assets.append((rel_css, asset_ref))
 
     sitemap_found = sitemap_urls(site_root)
     sitemap_expected = expected_sitemap_pages(site_root)

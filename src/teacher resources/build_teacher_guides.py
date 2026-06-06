@@ -25,6 +25,10 @@ import re
 SITE_NAME = "The Prescott Girls"
 TEACHER_RESOURCES_PATH = "../teachers.html"
 
+from urllib.parse import quote
+
+SITE_BASE_URL = "https://www.theprescottgirls.com"
+
 OUTPUT_DIR = "../../teachers"
 
 
@@ -303,6 +307,10 @@ def build_page(md_path: Path) -> Path:
     basename = md_path.stem
     pdf_name = basename + ".pdf"
     html_name = basename + ".html"
+    
+    canonical_url = (
+    f"{SITE_BASE_URL}/teachers/{quote(html_name)}"
+    )
 
     markdown = remove_google_doc_images(md_path.read_text(encoding="utf-8"))
     display_title, page_title = title_from_markdown(markdown)
@@ -317,6 +325,8 @@ def build_page(md_path: Path) -> Path:
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{html.escape(page_title)}</title>
   <meta name="description" content="{html.escape(meta_description)}">
+  
+  <link rel="canonical" href="{html.escape(canonical_url)}">
   
   <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon-16.png">
   <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32.png">
