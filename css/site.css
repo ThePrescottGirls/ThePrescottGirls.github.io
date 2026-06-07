@@ -524,7 +524,10 @@ body.page-404 {
 
 
 
-
+.email-link {
+    font-size: 1.1rem;
+    font-weight: 700;
+}
 
 
 .imprint h2,
