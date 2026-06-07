@@ -623,12 +623,17 @@ def render_html(gallery: Gallery, media_dir: Path, media_url: str, output_file: 
 </main>
 
 <footer>
-  <div class=\"container footergrid\">
-    <div>© 2026 Aric Wilmunder. All rights reserved.</div>
-    <div class=\"smalllinks\">
-      <a href=\"contact.html\">Contact</a>
-      <a href=\"events.html\">Events</a>
-      <a href=\"illustrations.html\">Galleries</a>
+  <div class="container footergrid">
+    <div>
+      © 2026 Aric Wilmunder. All rights reserved.
+    </div>
+
+    <div class="smalllinks">
+      <a href="book.html">Book</a>
+      <a href="teachers.html">Teachers</a>
+      <a href="events.html">Events &amp; Press</a>
+      <a href="faq.html">FAQ</a>
+      <a href="contact.html">Contact</a>
     </div>
   </div>
 </footer>

@@ -65,11 +65,16 @@ header{
 .brand{
   display:flex; align-items:baseline; gap:12px; text-decoration:none;
 }
+
+
+/*
 .brand .mark{
   width:28px; height:28px; border-radius:8px;
   background: linear-gradient(135deg, color-mix(in srgb, var(--accent) 85%, transparent), color-mix(in srgb, var(--accent2) 85%, transparent));
   box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--paper) 25%, transparent);
 }
+ */
+ 
 .brand .title{font-size:20px; font-weight:600; letter-spacing:.2px; color:var(--ink);}
 .brand .subtitle{font-size:14px; color:var(--muted); display:none;}
 @media(min-width:820px){ .brand .subtitle{display:inline;} }
