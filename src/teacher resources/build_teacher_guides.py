@@ -233,13 +233,13 @@ def title_from_markdown(markdown: str) -> tuple[str, str]:
     else:
         display_title = "Teacher Resource"
 
-  # Avoid duplicating the site name if it already appears in the title.
-    if SITE_NAME.lower() in display_title.lower():
-        page_title = display_title
-    elif title_has_resource_type(display_title):
+    if title_has_resource_type(display_title):
         page_title = f"{display_title} | {SITE_NAME}"
     else:
         page_title = f"{display_title} Study Guide | {SITE_NAME}"
+
+    if len(page_title) > 70 and page_title.endswith(f" | {SITE_NAME}"):
+        page_title = page_title.removesuffix(f" | {SITE_NAME}")
 
     return display_title, page_title
 
