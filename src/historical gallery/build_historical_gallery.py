@@ -18,7 +18,7 @@ Expected pattern:
         src/
             Author Gallery/
                 build_gallery.py
-                gallery-control.txt
+                historical-gallery-control.txt
 
 Typical control header:
 
@@ -36,7 +36,7 @@ Run from anywhere:
 Optional:
 
     python "src/Author Gallery/build_gallery.py" --strict
-    python "src/Author Gallery/build_gallery.py" --control "src/Author Gallery/gallery-control.txt"
+    python "src/Author Gallery/build_gallery.py" --control "src/Author Gallery/historical-gallery-control.txt"
 
 The script reports:
     - files listed in the control file but missing from media_dir
@@ -74,8 +74,8 @@ VIDEO_EXTS = {".mp4", ".mov", ".m4v", ".webm"}
 SUPPORTED_EXTS = IMAGE_EXTS | VIDEO_EXTS
 UNSUPPORTED_WEB_EXTS = {".heic", ".heif", ".avi", ".wmv", ".hevc"}
 
-DEFAULT_CONTROL_FILENAME = "gallery-control.txt"
-LEGACY_CONTROL_FILENAME = "author-gallery-control.txt"
+DEFAULT_CONTROL_FILENAME = "historical-gallery-control.txt"
+LEGACY_CONTROL_FILENAME = "historical-gallery-control.txt"
 THUMB_DIRNAME = "thumbs"
 THUMB_MAX_SIZE = (700, 525)
 
@@ -611,7 +611,7 @@ def render_html(gallery: Gallery, media_dir: Path, media_url: str, output_file: 
       <span class="gallery-nav-label">Visit:</span>
       <a href="illustrations.html">Illustrations Gallery</a>
       <span class="separator">|</span>
-      <a href="historicalGallery.html">Historical Gallery</a>
+      <a href="authorGallery.html">Author Gallery</a>
     </div>
 
   <div class=\"section\">
