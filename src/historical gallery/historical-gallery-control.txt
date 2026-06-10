@@ -10,7 +10,7 @@ media_dir=assets/historicalGallery
 media_url=assets/historicalGallery
 gallery_id=historical-gallery
 
-page_description=Discover the real artifacts behind The Prescott Girls, including Prescott family samplers, historic sites, archival materials, and museum collections.
+page_description=Discover the real artifacts behind The Prescott Girls, including Prescott family schoolgirl samplers, historic sites, archival materials, and museum collections.
 
 
 xpage_intro=Photographs, artifacts, family portraits, and research materials connected to the real people, places, and objects that inspired The Prescott Girls.
@@ -52,7 +52,7 @@ gps=
 xlocation=California
 location_confidence=visual
 title=Lori Studying the Samplers
-caption=Lori Love examines the group of nineteenth-century samplers after their discovery at auction, an early step in identifying the Prescott, Johnson, and Canby family connections.
+caption=Lori Love examines the group of nineteenth-century schoolgirl samplers after their discovery at auction, an early step in identifying the Prescott, Johnson, and Canby family connections.
 draft=yes
 
 [PHOTO]
@@ -86,7 +86,7 @@ gps=38.091225,-122.572464
 xlocation=Novato, California
 location_confidence=known
 title=Mother's Sampler
-caption=Rebecca Goodwin Johnson's sampler, completed in 1813. The sampler provided a direct connection between Beckie and the previous generation of the Prescott family.
+caption=Rebecca Goodwin Johnson's schoolgirl sampler, completed in 1813. The sampler provided a direct connection between Beckie and the previous generation of the Prescott family.
 draft=no
 
 [PHOTO]
@@ -97,7 +97,7 @@ gps=
 xlocation=Novato, California
 location_confidence=known
 title=Beckie's Sampler
-caption=Rebecca Goodwin Johnson Prescott's 1835 sampler, stitched at age nine. The sampler became one of the central historical artifacts behind the story.
+caption=Rebecca Goodwin Johnson Prescott's 1835 schoolgirl sampler, stitched at age nine. The sampler became one of the central historical artifacts behind the story.
 draft=no
 
 
@@ -273,7 +273,7 @@ draft=yes
 [SECTION]
 id=museums-collections
 title=Museums and Collections
-caption=Museum and collection visits helped connect the sampler story to broader histories of textile work, family memory, preservation, and public history.
+caption=Museum and collection visits helped connect the schoolgirl sampler story to broader histories of textile work, family memory, preservation, and public history.
 
 
 [PHOTO]
