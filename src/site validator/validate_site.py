@@ -59,6 +59,10 @@ IGNORE_DIRS = {
     "src",
 }
 
+# Keep visible search snippets from getting overly long.
+# Google often truncates around 155-160 characters, so 160 is a useful warning threshold.
+MAX_META_DESCRIPTION_LENGTH = 160
+
 
 class PageParser(HTMLParser):
     def __init__(self):
@@ -67,6 +71,7 @@ class PageParser(HTMLParser):
         self.assets = []
         self.title_found = False
         self.description_found = False
+        self.description_content = None
         self.canonical_found = False
         self.in_title = False
 
@@ -132,6 +137,7 @@ class PageParser(HTMLParser):
 
             if name == "description" and content:
                 self.description_found = True
+                self.description_content = content.strip()
 
             if prop in {"og:image", "twitter:image"} and content:
                 self.maybe_add_asset(content)
@@ -351,6 +357,11 @@ def main():
 
         if not parser.description_found:
             metadata_warnings.append((rel_page, "missing meta description"))
+        elif len(parser.description_content) > MAX_META_DESCRIPTION_LENGTH:
+            metadata_warnings.append((
+                rel_page,
+                f"meta description too long ({len(parser.description_content)} chars, max {MAX_META_DESCRIPTION_LENGTH})"
+            ))
 
         if not parser.canonical_found:
             metadata_warnings.append((rel_page, "missing canonical link"))
