@@ -358,7 +358,9 @@ def build_page(md_path: Path) -> Path:
 <body>
   <main class="page">
     <header>
-      <p class="back-link"><a href="{html.escape(TEACHER_RESOURCES_PATH)}" onclick="if (history.length > 1) {{ history.back(); return false; }}">← Back to Teacher Resources</a></p>
+    
+        <p class="back-link"><a href="{html.escape(TEACHER_RESOURCES_PATH)}">← Back to Teacher Resources</a></p>
+      
 <h1>{html.escape(visible_h1)}</h1>
       <p class="subtitle">Preview the printable study guide below, or download the PDF for classroom use.</p>
       <div class="actions">
