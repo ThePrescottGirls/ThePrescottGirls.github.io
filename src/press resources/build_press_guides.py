@@ -296,7 +296,11 @@ def build_page(md_path: Path) -> Path:
 <body>
   <main class="page">
     <header>
-      <p class="back-link"><a href="{html.escape(PRESS_RESOURCES_PATH)}" onclick="if (history.length > 1) {{ history.back(); return false; }}">← Back to Press Resources</a></p>
+    
+      <p class="back-link"><a href="{html.escape(PRESS_RESOURCES_PATH)}">← Back to Press Resources</a></p>
+        
+      
+      
       <h1>{html.escape(display_title)}</h1>
       <p class="subtitle">Preview the press resource below, or download the PDF.</p>
       <div class="actions">
