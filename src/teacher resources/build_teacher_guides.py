@@ -25,11 +25,12 @@ import re
 SITE_NAME = "The Prescott Girls"
 TEACHER_RESOURCES_PATH = "../teachers.html"
 
-from urllib.parse import quote
+from urllib.parse import quote, unquote
 
 SITE_BASE_URL = "https://www.theprescottgirls.com"
 
 OUTPUT_DIR = "../../teachers"
+TEACHERS_INDEX_PATH = Path(OUTPUT_DIR).parent / "teachers.html"
 
 
 def remove_google_doc_images(markdown: str) -> str:
@@ -305,10 +306,51 @@ def meta_description_from_markdown(display_title: str, markdown: str) -> str:
     )
 
 
-def build_page(md_path: Path) -> Path:
+def load_teacher_anchors() -> dict[str, str]:
+    """Read teachers.html and map guide HTML filenames to their download-item IDs.
+
+    teachers.html remains the source of truth. Each generated guide page uses
+    the ID from the matching guide link, so its back link can return visitors
+    to the exact item in the Teacher Resources list.
+    """
+    if not TEACHERS_INDEX_PATH.exists():
+        print(f"Warning: {TEACHERS_INDEX_PATH} not found; back links will use {TEACHER_RESOURCES_PATH}.")
+        return {}
+
+    teachers_html = TEACHERS_INDEX_PATH.read_text(encoding="utf-8")
+    anchors: dict[str, str] = {}
+
+    # Match each <div class="download-item..." id="..."> block and the first
+    # guide HTML link inside it. Attribute order is allowed to vary.
+    pattern = re.compile(
+        r'<div\b'
+        r'(?=[^>]*\bclass="[^"]*\bdownload-item\b[^"]*")'
+        r'(?=[^>]*\bid="([^"]+)")'
+        r'[^>]*>'
+        r'[\s\S]*?'
+        r'href="teachers/([^"#]+\.html)"',
+        re.IGNORECASE,
+    )
+
+    for match in pattern.finditer(teachers_html):
+        anchor = html.unescape(match.group(1)).strip()
+        html_file = unquote(html.unescape(match.group(2))).strip()
+        if anchor and html_file:
+            anchors[html_file] = anchor
+
+    return anchors
+
+
+def build_page(md_path: Path, teacher_anchors: dict[str, str]) -> Path:
     basename = md_path.stem
     pdf_name = basename + ".pdf"
     html_name = basename + ".html"
+    anchor = teacher_anchors.get(html_name)
+    if anchor:
+        teacher_resources_path = f"{TEACHER_RESOURCES_PATH}#{anchor}"
+    else:
+        teacher_resources_path = TEACHER_RESOURCES_PATH
+        print(f"WARNING: No anchor found for {html_name}")
     
     canonical_url = (
     f"{SITE_BASE_URL}/teachers/{quote(html_name)}"
@@ -359,7 +401,7 @@ def build_page(md_path: Path) -> Path:
   <main class="page">
     <header>
     
-        <p class="back-link"><a href="{html.escape(TEACHER_RESOURCES_PATH)}">← Back to Teacher Resources</a></p>
+        <p class="back-link"><a href="{html.escape(teacher_resources_path)}">← Back to Teacher Resources</a></p>
       
 <h1>{html.escape(visible_h1)}</h1>
       <p class="subtitle">Preview the printable study guide below, or download the PDF for classroom use.</p>
@@ -397,13 +439,14 @@ def build_page(md_path: Path) -> Path:
 
 
 def main() -> None:
+    teacher_anchors = load_teacher_anchors()
     md_files = sorted(Path.cwd().glob("*.md"))
     if not md_files:
         print("No .md files found in current directory.")
         return
 
     for md_path in md_files:
-        out_path = build_page(md_path)
+        out_path = build_page(md_path, teacher_anchors)
         print(f"Generated {out_path.name}")
 
 
