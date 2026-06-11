@@ -1,6 +1,6 @@
 # **The Prescott Girls – Study Guide**
 
-## **Beckie Prescott’s Sampler (1835)**
+## **Beckie Prescott’s Schoolgirl Sampler (1835)**
 
 ![][image1]
 
@@ -13,15 +13,15 @@
 **Materials:** Silk thread on linen  
 **Dimensions:** 16½ inches wide × 17 inches high
 
-This sampler was stitched by Rebecca Goodwin Johnson Prescott, known in her family as Beckie, when she was eight years old. Today it survives as both a piece of needlework and a historical record of a young girl’s education, family, and beliefs in early nineteenth-century Maine.
+This schoolgirl sampler was stitched by Rebecca Goodwin Johnson Prescott, known in her family as Beckie, when she was eight years old. Today it survives as both a piece of needlework and a historical record of a young girl’s education, family, and beliefs in early nineteenth-century Maine.
 
 When the sampler was rediscovered at auction in California, it had been stitched together along a deteriorated vertical fold line, which had partially obscured some of the embroidery. Through careful study, the design elements and inscriptions could be reconstructed and interpreted, though some details remain uncertain.
 
 ---
 
-### **What Is a Sampler?**
+### **What Is a Schoolgirl Sampler?**
 
-In the eighteenth and nineteenth centuries, girls often stitched samplers as part of their education. A sampler served several purposes:
+In the eighteenth and nineteenth centuries, girls often stitched needlework samplers as part of their education. A sampler served several purposes:
 
 • It was a practice piece for learning embroidery stitches.  
 • It demonstrated a girl’s literacy and numeracy, often including alphabets and numbers.  
@@ -32,7 +32,7 @@ Samplers were often displayed in the home and preserved by families for generati
 
 ---
 
-### **Design Elements of Beckie’s Sampler**
+### **Design Elements of Beckie’s Schoolgirl Sampler**
 
 #### **Border**
 
@@ -92,7 +92,7 @@ It was common for girls to include their name and age to mark the accomplishment
 
 #### **Moral Verse**
 
-Faded by time, the lower left corner of Beckie’s sampler includes a version of the well-known moral teaching often called the Golden Rule:
+Faded by time, the lower left corner of Beckie’s schoolgirl sampler includes a version of the well-known moral teaching often called the Golden Rule:
 
 “Do unto others as you would that others unto you should do.”
 
@@ -172,7 +172,7 @@ These elements are not recorded in historical documents, but they are grounded i
 
 ---
 
-### **Why This Sampler Matters**
+### **Why This Schoolgirl Sampler Matters**
 
 Beckie’s sampler is valuable for several reasons.
 
