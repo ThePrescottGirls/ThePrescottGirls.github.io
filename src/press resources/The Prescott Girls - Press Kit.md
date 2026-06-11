@@ -4,7 +4,7 @@
 
 **A Letter from Philadelphia**
 
-### **Historical Fiction Inspired by Real Samplers from 1830s Maine**
+### **Historical Fiction Inspired by Real Schoolgirl samplers from 1830s Maine**
 
 Genre: **Middle-Grade Historical Fiction**  
 Recommended Age: **8-12**  
@@ -31,7 +31,7 @@ Illustrated in the tradition of classic works such as the Little House series an
 
 The story behind *The Prescott Girls* began with the discovery of several early nineteenth-century needlework samplers at a California auction during the pandemic. Research revealed that the samplers had belonged to members of the Prescott family of Maine and were connected to the extended family of Betsy Ross.
 
-Further investigation traced the lives of the girls who stitched them—Rebecca Goodwin Johnson Prescott, Caroline Louisa Prescott, and Sarah Augusta Prescott. The samplers were eventually returned to the Old Pownalborough Court House in Dresden, Maine, the place where they had originally been created nearly two hundred years earlier.
+Further investigation traced the lives of the girls who stitched them—Rebecca Goodwin Johnson Prescott, Caroline Louisa Prescott, and Sarah Augusta Prescott. The schoolgirl samplers were eventually returned to the Old Pownalborough Court House in Dresden, Maine, the place where they had originally been created nearly two hundred years earlier.
 
 The novel imagines the childhood experiences of these sisters during the 1830s, combining documented historical details with fictional storytelling.
 
@@ -43,7 +43,7 @@ The discovery also led to ongoing historical research and an article exploring t
 
 Aric Wilmunder is a writer and historical researcher whose work explores the intersection of storytelling and artifact research, revealing how small discoveries can illuminate the past.
 
-*The Prescott Girls* grew out of collaborative historical research conducted with his wife, Lori, an award-winning needlework historian. Together they traced the provenance of the Prescott samplers and worked with historians and museums to better understand their significance.
+*The Prescott Girls* grew out of collaborative historical research conducted with his wife, Lori, an award-winning needlework historian. Together they traced the provenance of the Prescott schoolgirl samplers and worked with historians and museums to better understand their significance.
 
 Inspired by illustrated classics from childhood, Wilmunder created the artwork for the novel using a process that combined digital tools with historical research. Textile experts helped ensure that clothing and visual details accurately reflect garments worn during the 1830s.
 
@@ -92,7 +92,7 @@ The following images are available for event promotion and media coverage:
 
 • Book cover for *The Prescott Girls*  
 • Author photograph  
-• Historic Prescott family sampler (1835)
+• Historic Prescott family schoolgirl sampler (1835)
 
 Images may be used freely for event promotion with attribution.
 
