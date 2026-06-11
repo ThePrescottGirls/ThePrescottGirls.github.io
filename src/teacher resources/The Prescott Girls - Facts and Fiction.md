@@ -14,7 +14,7 @@ The following notes explain which parts of the story come directly from historic
 
 Beckie, Louisa, and Sallie Prescott were real sisters who lived with their mother in the old Pownalborough Court House during the 1830s. By that time the building, which had once served as a courthouse, tavern, and post office, had been converted into a residence.
 
-Several objects connected to the Prescott family still survive. Among the most important are the needlework samplers stitched by Beckie and Louisa Prescott and by their mother. These samplers remain preserved today and provided inspiration for many details in the story. A third unfinished sampler on display may have belonged to Sallie Prescott.
+Several objects connected to the Prescott family still survive. Among the most important are the schoolgirl samplers stitched by Beckie and Louisa Prescott and by their mother. These samplers remain preserved today and provided inspiration for many details in the story. A third unfinished sampler on display may have belonged to Sallie Prescott.
 
 Other objects that appear in the book, such as chalk sketches, sleds used in winter, household tools, toys, and the loom mentioned in the story, do exist and may have been part of their everyday life.
 
@@ -22,7 +22,7 @@ Other objects that appear in the book, such as chalk sketches, sleds used in win
 
 * The Prescott sisters were real and lived in the Pownalborough Court House  
 * The building had been repurposed as a residence by the 1830s  
-* Samplers created by members of the family still exist today  
+* Schoolgirl samplers created by members of the family still exist today  
 * Objects similar to those described in the story were part of daily life
 
 **What has been imagined**
@@ -160,7 +160,7 @@ Readers interested in Sallie’s later life may wish to explore *Sallie & Captai
 
 * The later movements and marriages of the Prescott sisters  
 * The connection to the Canby family and Betsy Ross  
-* The preservation of the samplers over generations
+* The preservation of the schoolgirl samplers over generations
 
 **What has been imagined**
 
