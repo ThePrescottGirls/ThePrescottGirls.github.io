@@ -70,7 +70,7 @@ The Old Pownalborough Court House still stands on a hill overlooking the **Kenne
 
 Today it is preserved and maintained by the **Lincoln County Historical Association** as a museum. Visitors can explore the building and learn about its role in the history of Maine.
 
-Artifacts connected to the Prescott and Johnson families—including historical needlework samplers—are now part of the museum’s collection.
+Artifacts connected to the Prescott and Johnson families—including historical schoolgirl samplers—are now part of the museum’s collection.
 
 # **Why Historic Buildings Matter**
 
