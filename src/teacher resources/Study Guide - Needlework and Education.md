@@ -8,7 +8,7 @@ During the eighteenth and early nineteenth centuries, girls were expected to lea
 
 Embroidery, sewing, and sampler making were not simply decorative activities. They were part of a child’s education—teaching discipline, literacy, and careful attention to detail.
 
-The samplers stitched by the Prescott and Canby families in the early 1800s are real historical objects. They offer a direct connection to the lives of young girls like Beckie Prescott and allow us to see how children learned, practiced, and recorded their knowledge.
+The schoolgirl samplers stitched by the Prescott and Canby families in the early 1800s are real historical objects. They offer a direct connection to the lives of young girls like Beckie Prescott and allow us to see how children learned, practiced, and recorded their knowledge.
 
 ---
 
@@ -16,9 +16,9 @@ The samplers stitched by the Prescott and Canby families in the early 1800s are 
 
 A sampler is a piece of embroidery created to practice stitches and record patterns. The word comes from the Latin *exemplar*, meaning a model or example.
 
-Early samplers served as personal reference pieces. A girl could return to her sampler to recall how to form letters, stitch a border, or repeat a pattern.
+Early schoolgirl samplers served as personal reference pieces. A girl could return to her sampler to recall how to form letters, stitch a border, or repeat a pattern.
 
-By the late eighteenth and early nineteenth centuries in America, samplers had become a regular part of girls’ schooling.
+By the late eighteenth and early nineteenth centuries in America, schoolgirl samplers had become a regular part of girls’ schooling.
 
 Many school samplers included:
 
@@ -53,7 +53,7 @@ These were not exercises that would be set aside. The same stitches would later 
 
 ### **Practicing Literacy**
 
-Many samplers include full alphabets and numbers. Stitching letters required careful attention to form, spacing, and consistency.
+Many schoolgirl samplers include full alphabets and numbers. Stitching letters required careful attention to form, spacing, and consistency.
 
 In a time when books were limited and writing materials were not always available, stitching letters was another way to practice reading and writing.
 
@@ -79,7 +79,7 @@ When a girl stitched these words, she was not only practicing lettering. She was
 
 ### **Practicing Arithmetic**
 
-Samplers also required careful counting.
+Schoolgirl samplers also required careful counting.
 
 Most were stitched on evenly woven fabric, where each stitch had to be placed by counting threads. Patterns had to remain balanced. Borders had to repeat correctly.
 
@@ -119,7 +119,7 @@ From her age and the date, we can estimate the year she was born. This raises an
 
 What else can we learn from what is *not* written? Historians often begin with this question.
 
-A sampler may also show:
+A schoolgirl sampler may also show:
 
 * how carefully the letters were formed  
 * whether mistakes were corrected or left in place  
@@ -142,13 +142,13 @@ Quaker schools, such as Westtown School near Philadelphia, were especially recog
 
 Even girls who did not attend these schools were influenced by them. Teachers in smaller communities often adapted popular styles for their own students.
 
-The Prescott family samplers reflect this mix of local instruction and broader traditions.
+The Prescott family schoolgirl samplers reflect this mix of local instruction and broader traditions.
 
 ## 
 
-## **What Samplers Teach Us Today**
+## **What Schoolgirl Samplers Teach Us Today**
 
-Samplers are not only decorative objects. They are historical evidence.
+Schoolgirl samplers are not only decorative objects. They are historical evidence.
 
 They help us understand:
 
@@ -173,7 +173,7 @@ They also remind us that children in the past were active learners. Through thei
 
 ## **Activity**
 
-Use Beckie Prescott’s sampler on the following page as your primary example.
+Use Beckie Prescott’s schoolgirl sampler on the following page as your primary example.
 
 Instead of only identifying its parts, examine it as a piece of evidence.
 
@@ -209,7 +209,7 @@ Made in Dresden Maine in 1835 when she was eight years old.
 
 On display at the Pownalborough Court House in Maine.
 
-## Beckie Prescott’s Sampler
+## Beckie Prescott’s Schoolgirl Sampler
 
 ## 
 
