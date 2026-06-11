@@ -92,7 +92,7 @@ Students studied subjects such as:
 
 Girls were also often taught **needlework**, which helped them learn sewing skills used for clothing and household textiles.
 
-The samplers stitched by the Prescott family are examples of the kinds of needlework girls learned during this time.
+The schoolgirl samplers stitched by the Prescott family are examples of the kinds of needlework girls learned during this time.
 
 ---
 
