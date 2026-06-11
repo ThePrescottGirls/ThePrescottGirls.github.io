@@ -71,7 +71,7 @@ These guides provide background on where and how the Prescott family lived, grou
 
 To explore how historians learn from physical objects:
 
-* *Study Guide – Beckie’s Sampler*  
+* *Study Guide – Beckie’s Schoolgirl Sampler*  
 * *Study Guide – How Historians Trace Artifacts*  
 * *Study Guide – Family Trees*
 
@@ -106,7 +106,7 @@ These guides encourage students to think about historical choices, ethical quest
 To explore learning and daily life through needlework:
 
 * *Study Guide – Needlework and Education*  
-* *Study Guide – Beckie’s Sampler*
+* *Study Guide – Beckie’s Schoolgirl Sampler*
 
 These guides highlight how girls learned, practiced skills, and expressed ideas through their work.
 
