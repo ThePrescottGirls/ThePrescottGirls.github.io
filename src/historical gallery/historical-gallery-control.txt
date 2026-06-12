@@ -216,6 +216,63 @@ caption=From left to right: Beckie, Louisa, Sallie, and their mother, Rebecca Jo
 draft=no
 
 
+
+
+
+[SECTION]
+id=betsy-ross-connections
+title=Betsy Ross Connections
+caption=Research into the Prescott family eventually revealed connections to the descendants of Betsy Ross through Caroline Louisa Prescott's marriage to William Jackson Canby, a grandson of Betsy Ross. Archival documents, family records, and historical artifacts helped trace these relationships and place the Prescott story within a broader American historical context.
+
+
+
+[PHOTO]
+file=Author reading from the diary of Betsy Ross' husband.jpeg
+date=
+time=
+gps=
+xlocation=Pownalborough Court House
+location_confidence=known
+title=Reading from John Claypoole's Diary
+caption=Examining the diary of John Claypoole, Betsy Ross's third husband. Long thought lost, the diary had not been publicly documented since the 1890s before resurfacing during the investigation of the Prescott family samplers. It now resides at the Museum of the American Revolution.
+draft=no
+
+[PHOTO]
+file=Receipt written by Betsy Ross' Father.jpeg
+date=
+time=
+gps=
+xlocation=Pownalborough Court House
+location_confidence=known
+title=Receipt Signed by Samuel Griscom
+caption=Author holding a receipt written and signed by Samuel Griscom, father of Betsy Ross. Surviving family documents such as this provided tangible connections to individuals whose lives intersected with the broader history explored during the project.
+draft=no
+
+[PHOTO]
+file=Copy of Betsy Ross' Bible.jpeg
+date=
+time=
+gps=
+xlocation=Pownalborough Court House
+location_confidence=known
+title=Betsy Ross Family Bible transcript
+caption=A transcript of Betsy Ross family Bible made by her grandson William Jackson Canby, husband of Louisa Prescott. Family records, correspondence, and other surviving artifacts helped researchers trace relationships between the Ross, Canby, and Prescott families across multiple generations.
+draft=no
+
+[PHOTO]
+file=Local news story about the return of the samplers.jpeg
+xdate=2021-06-12
+time=17:41:39
+gps=
+location=Unknown
+location_confidence=unknown
+title=Local News Story About The Return Of The Samplers
+caption=Following the celebration of the return of the samplers, a story appeared in the Lincoln County News describing both the return of Rebecca Prescott's portrait, along with her and her daughter's samplers.
+draft=yes
+
+
+
+
 [PHOTO]
 file=IMG_8428.jpeg
 xdate=2021-06-12
