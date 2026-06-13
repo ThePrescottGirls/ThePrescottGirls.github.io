@@ -41,6 +41,7 @@ SCAN_HTML_DIRS = [
     ".",
     "teachers",
     "press",
+    "research",
 ]
 
 ASSET_EXTENSIONS = {
