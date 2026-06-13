@@ -866,7 +866,7 @@ But artifacts nonetheless.
 
 After reading Sallie's words, I found myself looking at them differently.
 
-Rebecca's sampler was no longer simply Rebecca Johnson Prescott's sampler.
+Rebecca's sampler was no longer simply Rebecca G. J. Prescott's sampler.
 
 It was Beckie’s sampler, the name she went by
 
@@ -896,9 +896,7 @@ Generation after generation had protected them.
 
 Someone had carried them from Maine.
 
-Someone had carried them to Philadelphia.
-
-Someone had eventually carried them west to California.
+Someone had carried them west to California.
 
 And despite all the opportunities for loss, separation, or neglect, they remained together.
 
@@ -978,7 +976,7 @@ It connected two distinct branches of American history.
 
 One branch traced through the Goodwins, Johnsons, and Prescotts of Maine.
 
-The other traced through the Canbys and Claypools of Philadelphia.
+The other traced through the Canbys and Claypooles of Philadelphia.
 
 Neither Louisa nor William could have known that future historians would one day find their families connected through six surviving samplers.
 
@@ -1274,7 +1272,7 @@ The descendants planned to bring the diary to Maine.
 
 And there, in the very courthouse connected to another branch of the family story, I would have the opportunity to hold it in my hands.
 
-Until then, the diary had existed for me only in photographs, references, and descriptions.
+Until then, the diary had existed for me only in references, and descriptions.
 
 Soon it would become something else.
 
@@ -1314,7 +1312,9 @@ Our journey with the samplers proved to be an exception.
 
 While we were still researching the collection and documenting its history, we received an invitation from the Lincoln County Historical Association.
 
-The samplers were coming home.
+Rebecca Prescott’s Portrait was coming home.
+
+It would join the samplers we found and already sent ahead.
 
 A celebration had been organized to mark their return to the Pownalborough Court House, along with other artifacts donated by descendants of the family.
 
@@ -1424,7 +1424,7 @@ One room held particular significance.
 
 There, once again, hung the portrait of Rebecca Johnson Prescott.
 
-For decades the painting had been separated from the samplers created by Rebecca and her daughters.
+Her painting had been separated from the samplers created by Rebecca and her daughters.
 
 Now they were together once more.
 
@@ -1446,7 +1446,7 @@ For a moment I simply stared.
 
 It was John Claypoole's diary.
 
-For years I had known it only through references in books and articles.
+Until then I had known it only through references in books and articles.
 
 Now I was holding it.
 
@@ -1484,7 +1484,7 @@ Real.
 
 One of the first things I did was turn to the back.
 
-For years I had read references to several names written there—individuals Claypoole may have intended to contact should an opportunity for escape arise.
+I had read references to several names written there—individuals Claypoole may have intended to contact should an opportunity for escape arise.
 
 There they were.
 
@@ -1680,7 +1680,9 @@ Books have been inspired.
 
 The girls whose names were once known only to their families are now known to students, researchers, museum visitors, and readers.
 
-Rebecca..
+Rebecca.
+
+Beckie.
 
 Louisa.
 
