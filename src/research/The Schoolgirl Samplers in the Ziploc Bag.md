@@ -648,7 +648,7 @@ What did she think about while stitching those carefully formed letters?
 
 Historical records gradually supplied some answers.
 
-Loisa would later marry William Jackson Canby, a Philadelphia Quaker and grandson of Betsy Ross.
+Louisa would later marry William Jackson Canby, a Philadelphia Quaker and grandson of Betsy Ross.
 
 At the time she created her sampler, however, that future lay far beyond the horizon.
 
@@ -664,7 +664,7 @@ Before responsibilities.
 
 Before history connected her name to one of America's most famous families.
 
-Of all the sampler makers, Loisa often feels closest to the point where the Maine and Philadelphia stories intersect.
+Of all the sampler makers, Louisa often feels closest to the point where the Maine and Philadelphia stories intersect.
 
 She serves as a bridge between two families, two regions, and eventually two centuries of preserved history.
 
