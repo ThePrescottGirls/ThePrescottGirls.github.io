@@ -594,11 +594,11 @@ def render_html(gallery: Gallery, media_dir: Path, media_url: str, output_file: 
       <a href=\"book.html\">Book</a>
       <a href=\"illustrations.html\"  aria-current="page">Galleries</a>
       <a href=\"interpretations.html\">Interpretations</a>
+      <a href=\"research.html\">Research</a>
       <a href=\"author.html\">Author</a>
       <a href=\"teachers.html\">Teachers</a>
       <a href=\"events.html\">Events</a>
       <a href=\"faq.html\">FAQ</a>
-      <a href=\"contact.html\">Contact</a>
     </nav>
   </div>
 </header>
