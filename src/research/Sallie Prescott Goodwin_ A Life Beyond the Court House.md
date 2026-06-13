@@ -6,13 +6,13 @@
 
 On September 22, 1852, Sarah Augusta Prescott opened a new diary and recorded a life-changing event.
 
-"My good husband that now is did not reach home until yesterday," she wrote, "and being obliged to return immediately to New York to attend to his business I had no time to prepare for a wedding."
+"My good husband, that now is, did not reach home until yesterday," she wrote, "and being obliged to return immediately to New York to attend to his business I had no time to prepare for a wedding."
 
 The ceremony had taken place quietly at the old Court House in Dresden, Maine. There had been no elaborate celebration and few guests. Within hours, Sallie and her new husband, Captain Samuel Randolph Goodwin, were on their way to New York. The following day she found herself in a room at the Astor House while her husband attended to business aboard his ship.
 
 The diary entry is brief and practical. Yet it marked the beginning of a life that would carry Sallie far beyond the familiar banks of the Kennebec River.
 
-Today, visitors to the Pownalborough Court House often encounter the Prescott family through a remarkable collection of surviving schoolgirl samplers. Among them is an unattributed sampler believed to have been stitched by Sarah Augusta Prescott during her childhood. Although the sampler bears neither a name nor a date, its provenance and relationship to the other Prescott family samplers strongly suggest a connection to Sallie. Like the surviving samplers completed by her mother and sisters, it preserves a glimpse into the educational traditions of nineteenth-century New England.
+Today, visitors to the Pownalborough Court House often encounter the Prescott family through a remarkable collection of surviving schoolgirl samplers. Among them is an unattributed sampler believed to have been stitched by Sarah ‘Sallie’ Augusta Prescott during her childhood. Although the sampler bears neither a name nor a date, its provenance and relationship to the other Prescott family samplers strongly suggest a connection to Sallie. Like the surviving samplers completed by her mother and sisters, it preserves a glimpse into the educational traditions of nineteenth-century New England.
 
 Had these needlework pieces alone survived, we would know relatively little about the lives of the Prescott girls. Samplers can tell us about education, family connections, and artistic skill, but they rarely reveal personality or experience.
 
