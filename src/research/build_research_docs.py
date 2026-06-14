@@ -234,7 +234,7 @@ def title_from_markdown(markdown: str, basename: str) -> tuple[str, str]:
     if title_has_resource_type(display_title):
         page_title = f"{display_title} | {SITE_NAME}"
     else:
-        page_title = f"{display_title} Research Paper | {SITE_NAME}"
+        page_title = f"{display_title} - Research Paper | {SITE_NAME}"
 
     return display_title, page_title
 
