@@ -1,0 +1,1123 @@
+# **Historical Reimaginings**
+
+### **Bringing the Prescott Family to Life Through Research, Character Development, and Historical Interpretation**
+
+Long before I discovered the Prescott family samplers, I was fascinated by illustrated books.
+
+Some of my most treasured volumes included a first edition of *Tik-Tok of Oz*, an N. C. Wyeth illustrated edition of *Treasure Island*, Garth Williams' illustrations for *Little House in the Big Woods*, and early editions of the books of A. A. Milne, P. L. Travers, and C.S. Lewis. Their illustrations did more than depict scenes from a story. They helped readers know the characters. Long after the details of a plot faded, the images remained.
+
+My professional life reinforced that appreciation for visual storytelling. At Atari, I worked alongside artists, including Debbie Hayes, who had animated the lead female character in Ralph Bakshi's *Fire and Ice*. Through a shared family interest in railroads, I met Ollie Johnston, one of Walt Disney's famed Nine Old Men, who invited my family to the Disney Studios and shared examples of his work on *The Jungle Book*. Later, at LucasArts, I spent years working with artists and animators while developing technology used to create computer games.
+
+I knew I could never draw like the artists I admired.
+
+What I did understand was the power of illustration. Great illustrations do more than show readers what a character looks like. They reveal personality, emotion, relationships, and story. A successful image can make readers feel they know someone before a single line of dialogue is spoken.
+
+When I began writing *The Prescott Girls*, illustration was not part of the plan. The manuscript was already half written before I seriously considered adding artwork. By that point, I already knew Beckie, Louisa, Sallie, Rebecca, Charity, and the others through the research and through the writing itself.
+
+Yet they still existed primarily as words on a page.
+
+I wanted to see them.
+
+I wanted to see Beckie watching over her younger sisters. Louisa exploring the world around her. Sallie absorbed in play. Rebecca managing a busy household within the walls of a former courthouse. I wanted to see them not only as historical figures, but as people living their daily lives.
+
+What began as an effort to illustrate the story soon became something much larger. Every attempt to visualize a character revealed new questions. Diaries provided unexpected clues. Clothing required deeper research. Historic buildings challenged modern assumptions. Objects demanded an understanding of how they were actually used. The more I tried to see the Prescott family, the more I realized how much there was still to learn.
+
+This paper explores that journey. It follows the development of the characters, the creation of the cast, the historical discoveries that shaped their appearances, and the lessons learned while attempting to place them back into the world they once inhabited. It is a story about research, interpretation, visual storytelling, and the realization that understanding people often begins by trying to see them.
+
+## **The Characters Arrive Before the Illustrations**
+
+The illustrations did not begin this project.
+
+The characters did.
+
+By the time I seriously considered adding illustrations to *The Prescott Girls*, the manuscript was already well underway. Beckie, Louisa, Sallie, Rebecca, Charity, Uncle Thomas, Uncle William, and the others had already taken shape through months of research and writing. Their relationships, personalities, hopes, and struggles were becoming familiar.
+
+Like many writers, I found that the characters often revealed themselves gradually. Some emerged directly from historical records. Others grew through the writing process itself. Still others appeared unexpectedly as research uncovered people whose stories were simply too compelling to ignore.
+
+The story became the foundation.
+
+The illustrations followed.
+
+At first, I simply wanted to see moments from the manuscript. Beckie presenting her sampler. Louisa discovering new experiences beyond the courthouse. Sallie playing with her treasured Noah's Ark toys. Charity traveling the roads of Maine. The goal was straightforward: create images that accompanied the story.
+
+Yet the process quickly became more complicated.
+
+Each attempt to visualize a scene forced me to answer questions that the manuscript alone did not require.
+
+What color was Louisa's hair?
+
+How tall was Beckie compared to her sisters?
+
+How would Sallie have worn her clothing while playing?
+
+What objects would have surrounded them in daily life?
+
+Which rooms did they occupy within the courthouse?
+
+The deeper I went, the more I discovered that visual storytelling demands a different kind of understanding than written storytelling. A sentence can suggest. An illustration must decide.
+
+Every image required hundreds of choices, some supported directly by evidence, others requiring interpretation. What began as an effort to accompany the story soon became another avenue of research.
+
+The illustrations were no longer simply showing the story.
+
+They were helping me understand it.
+
+In some cases, the research shaped the illustrations. In others, the illustrations led to new research.
+
+As new chapters were written, visual development became part of the creative process itself. Character studies, clothing research, room layouts, and historical objects all began influencing how I thought about the people who inhabited the narrative. In some cases, visual exploration suggested new scenes. In others, it raised questions that sent me back to diaries, letters, photographs, and historical records.
+
+The characters had arrived before the illustrations.
+
+But once the illustrations began, they became part of the characters' journey as well.
+
+## **Opening the Can of Worms**
+
+At first, I assumed the hard part was behind me.
+
+The manuscript was progressing. The characters were taking shape. The story was working. All that remained, I thought, was to create a few illustrations to accompany the text.
+
+I was wrong.
+
+The first images seemed straightforward enough. Beckie, Louisa, and Sallie. Three sisters. A courthouse. A few scenes from the manuscript.
+
+Then Lori looked at one of the illustrations.
+
+"Louisa's hair is wrong."
+
+It was not the sort of criticism I had anticipated.
+
+I had spent my time looking at composition, clothing, and facial expressions. Hair color had barely crossed my mind.
+
+Yet Lori was right.
+
+Somewhere during the research, we had learned that Sallie's diary described Louisa's hair as reddish. It was a small detail, easy to overlook while writing, but impossible to ignore once the character appeared in an illustration. The moment Louisa became visible, a decision had been made—and it was the wrong one.
+
+The image was revised.
+
+Problem solved.
+
+Or so I thought.
+
+In reality, Louisa's hair was merely the first worm in a very large can.
+
+The more I attempted to visualize the world of the Prescott family, the more questions emerged. What would her clothing actually have looked like? How were dresses constructed? What details was I unconsciously importing from modern assumptions?
+
+Each illustration seemed to expose another gap in my understanding.
+
+What had begun as an effort to create images was becoming an investigation.
+
+## **The Drift Problem**
+
+By the time I corrected Louisa's hair, studied historical clothing, and began developing additional illustrations, a new problem emerged.
+
+The characters would not stay themselves.
+
+At first the changes were subtle.
+
+Beckie would look slightly older in one image than another. Louisa's facial features would shift. Sallie would suddenly appear taller than expected. Clothing details would appear and disappear. Hairstyles evolved. Expressions changed. The girls remained recognizable, but only barely.
+
+As the number of illustrations grew, the problem became increasingly difficult to ignore.
+
+The challenge was not historical accuracy.
+
+The challenge was consistency.
+
+A reader who encounters a character repeatedly expects that character to remain the same person. The clothing may change. The setting may change. The season may change. Yet the character should remain recognizable.
+
+The problem felt strangely familiar.
+
+Throughout my career, I had watched professional artists confront exactly the same issue. At Atari, Disney, LucasArts, and countless illustrated books, artists rarely began with finished scenes. They began with studies.
+
+Character studies.
+
+Expression sheets.
+
+Turnarounds.
+
+Reference drawings.
+
+These were not the final artwork. They were tools used to ensure that a character appearing on page ten remained the same character appearing on page one hundred.
+
+Somehow, in my excitement to begin illustrating the story, I had skipped that step.
+
+The Prescott family needed a cast.
+
+Not simply a collection of illustrations.
+
+A cast.
+
+Beckie, Louisa, Sallie, Rebecca, Charity, Uncle Thomas, Reverend Parker, and the others would appear again and again throughout the book. Each needed a recognizable identity that could survive hundreds of illustrations and months of creative work.
+
+The solution was both obvious and surprisingly difficult.
+
+Before creating more scenes, I needed to stop and understand the people themselves.
+
+Who were they?
+
+What mattered to them?
+
+How did they carry themselves?
+
+How did they dress?
+
+What made them immediately recognizable?
+
+Most importantly, what made them different from one another?
+
+The answer was not another illustration.
+
+It was the creation of character studies.
+
+The studies became a form of source control for the cast. Every new illustration could return to an established reference rather than inheriting the accumulated changes and mistakes of previous images. Faces stabilized. Heights stabilized. Clothing became more consistent. The characters stopped drifting.
+
+More importantly, the studies accomplished something I had not anticipated.
+
+The process of creating them forced me to spend time with the characters.
+
+Not as illustrations.
+
+As people.
+
+And in doing so, they revealed things about themselves that had never appeared in the manuscript.
+
+The illustrations were no longer simply depicting the story.
+
+They were helping shape it.
+
+## **Building the Cast**
+
+The solution to the drift problem was not another illustration.
+
+It was understanding the characters more deeply.
+
+By this point, I had already learned that visual consistency would not happen on its own. Beckie, Louisa, and Sallie needed to remain recognizable from chapter to chapter. Their appearances could not be reinvented every time a new illustration was created.
+
+Yet appearance alone was not enough.
+
+The more I worked on the project, the more I realized that the strongest illustrations were not driven by clothing or facial features. They were driven by character.
+
+The process always began with research.
+
+Who was this person?
+
+What role did they play within the family?
+
+What responsibilities did they carry?
+
+What relationships mattered most to them?
+
+What joys had they experienced?
+
+What losses had shaped them?
+
+Only after answering those questions did I begin thinking about appearance.
+
+For each major character, I assembled notes, historical references, personality traits, family relationships, and physical descriptions. Some information came directly from historical records. Some emerged through the writing process itself. Others were uncovered through conversations with researchers, museum staff, and descendants.
+
+Eventually these notes evolved into written character descriptions.
+
+The descriptions became surprisingly detailed. They included physical appearance, but they also explored temperament, habits, strengths, fears, and motivations. The goal was not simply to determine what a character looked like.
+
+The goal was to understand who they were.
+
+Only then did the visual studies begin.
+
+The available evidence varied considerably from character to character.
+
+Rebecca Johnson Prescott benefited from a surviving portrait, providing a direct connection to a woman who had lived more than two centuries earlier. Beckie Prescott survives through sketches created during her lifetime. Louisa Prescott appears in photographs taken many years later as an adult. Sallie Prescott is represented through surviving drawings as well as the remarkable diary she left behind. Together, these sources offered something unusual for a historical project of this kind: glimpses of the actual people whose lives inspired the story.
+
+Yet the evidence was incomplete.
+
+The challenge was not creating faces from nothing. The challenge was understanding how these individuals may have appeared during a different stage of life. Beckie's sketches captured only moments. Louisa's photographs showed her decades after the events of the book. Sallie's drawings revealed aspects of her appearance but could not answer every question. Even Rebecca's portrait represented a single moment in time rather than a complete picture of her life.
+
+The visual studies therefore became an exercise in interpretation rather than invention.
+
+Historical images were combined with diary entries, family records, descriptions, ages, relationships, and historical context. Small details often proved surprisingly important. Sallie's diary, for example, described Louisa's reddish hair. What occupied only a few words in the historical record became one of the defining characteristics of Louisa's visual identity.
+
+Other characteristics emerged through a combination of evidence and observation.
+
+Beckie appeared as the responsible older sister, often carrying herself with a confidence beyond her years. Louisa's curiosity and willingness to explore new opportunities influenced her expressions and posture. Sallie's youthful energy shaped the way she interacted with the people and objects around her.
+
+Not every character benefited from direct visual evidence.
+
+Charity represented a different challenge altogether. While inspired by the experiences of real free Black men and women living in New England during the period, she required a synthesis of historical research, documented experiences, and informed interpretation. Reverend Parker occupied yet another position along the spectrum. His appearance remained largely undocumented, yet his life story emerged clearly through historical records, revealing a blind minister whose determination and faith made him one of the most memorable figures encountered during the research.
+
+The process was surprisingly similar to techniques I had observed throughout my career. Whether creating an animated film, a children's book, or a computer game, artists often begin by asking who a character is before deciding how they look.
+
+The same principle applied here.
+
+Appearance followed character.
+
+Not the other way around.
+
+The character studies solved the drift problem, but they accomplished something far more important.
+
+They transformed a collection of historical figures into a cast.
+
+And once the cast existed, the story itself began to change.
+
+## **Conversations With the Characters**
+
+The character studies were originally created to solve a practical problem.
+
+I needed consistency.
+
+Beckie needed to remain Beckie.
+
+Louisa needed to remain Louisa.
+
+Sallie needed to remain Sallie.
+
+Yet something unexpected happened as the studies developed.
+
+The more time I spent working on them, the more the characters seemed to take on lives of their own.
+
+Writers often describe moments when characters begin making unexpected choices or revealing aspects of themselves that had not existed in earlier drafts. Something similar began happening here.
+
+The studies gave me someone I could talk to.
+
+Not literally, of course.
+
+The conversations existed entirely in my imagination. Yet they became a useful way of exploring questions that the historical record left unanswered.
+
+What worried this person?
+
+What did they value?
+
+What had they lost?
+
+What experiences had shaped their view of the world?
+
+The goal was not to replace research.
+
+The goal was to identify the questions that required further research.
+
+Again and again, those conversations led back to the historical record.
+
+Charity provides one of the clearest examples.
+
+When she first entered the story, her role was relatively modest. She was intended to be a visitor who spent time with the Prescott family before continuing on her journey. Yet Charity was never created in isolation. From the beginning, she drew inspiration from the lives of real free Black men and women living in New England during the period.
+
+As the research expanded, so did my understanding of the world she inhabited.
+
+The sugar boycott had already become part of the story. What I had not fully appreciated was how personal that issue could become when viewed through the experiences of people directly affected by slavery and racial injustice. The more I learned about abolitionist networks, free Black communities, and the individuals whose efforts would eventually contribute to what became known as the Underground Railroad, the more significant Charity became.
+
+She remained a teacher of needlework.
+
+But she also became a teacher of citizenship.
+
+Of moral courage.
+
+Of speaking when confronted with injustice.
+
+Of understanding that ordinary people can influence the world around them through their choices and actions.
+
+What began as a brief visit gradually evolved into a much larger role within the story.
+
+The same process occurred elsewhere.
+
+Reverend Parker first appeared as a passing reference while researching Rebecca Johnson Prescott. A mention in an obituary led to further investigation, which revealed a remarkable life. Parker had lost his eyesight after entering the ministry, yet continued to study, preach, and serve the congregation attended by the Prescott family. Had I invented such a character, readers might have questioned whether he was realistic. Yet he was entirely real.
+
+Again, the historical record proved more interesting than fiction.
+
+The conversations often raised questions that I could not answer immediately.
+
+What would Charity carry while traveling alone?
+
+How would Reverend Parker study scripture after losing his vision?
+
+How did Uncle Thomas spend his afternoons in the courthouse?
+
+Each question led to further research.
+
+Each discovery led to a deeper understanding of the people involved.
+
+The studies were no longer merely visual references.
+
+They had become tools for historical empathy.
+
+They encouraged me to think about the individuals behind the records, the artifacts, and the surviving documents. They transformed names into people and facts into lives.
+
+Most importantly, they revealed that historical interpretation is not simply about discovering what happened.
+
+It is about trying to understand what those experiences meant to the people who lived them.
+
+The conversations did not replace evidence.
+
+They pointed me toward it.
+
+And in doing so, they helped the characters grow far beyond what I had originally imagined.
+
+## **Building the Wardrobe**
+
+One of the most important lessons I learned during the project was that historical clothing cannot be understood from the outside.
+
+It must be understood from the inside out.
+
+My earliest illustrations reflected many of the assumptions carried by modern audiences. Dresses were treated as complete garments. Closures appeared where they seemed convenient. Details borrowed from modern clothing quietly found their way into nineteenth-century scenes.
+
+Then Susan Jerome entered the picture.
+
+As the Curator of the University of Rhode Island Historic Textile and Costume Collection, Susan reviewed some of my early work and immediately identified problems I had completely overlooked.
+
+One of the first involved buttons.
+
+Several early illustrations featured dresses with visible front-button closures. To modern eyes the garments looked perfectly reasonable. Yet Susan explained that such details were generally inappropriate for the period I was depicting. Many garments closed in the back or relied upon construction methods unfamiliar to modern audiences.
+
+The correction was valuable.
+
+The photographs that followed were transformative.
+
+Rather than simply explaining what was wrong, Susan shared images of actual garments from the University of Rhode Island collection. For the first time, I could study the clothing itself.
+
+Not reproductions.
+
+Not modern interpretations.
+
+The real thing.
+
+Suddenly the dresses were no longer abstract historical costumes. They were carefully constructed objects with layers, structure, and purpose.
+
+The deeper I looked, the more I realized that clothing functioned much like architecture.
+
+Each layer depended upon the layer beneath it.
+
+Chemises.
+
+Drawers.
+
+Petticoats.
+
+Stays.
+
+Overdresses.
+
+Cloaks.
+
+Each contributed to the final silhouette.
+
+Remove a layer and the entire structure changed.
+
+This realization influenced both the illustrations and the character studies.
+
+Rather than creating characters in finished outfits, I began establishing them in historically appropriate foundation garments. Those foundations became the basis for every subsequent costume.
+
+The approach solved several problems at once.
+
+Historically, it reflected how clothing was actually worn.
+
+Artistically, it provided consistency.
+
+Once a character's foundation was established, new garments could be added without reinventing the character each time. The studies became more stable, and the drift that had plagued earlier illustrations became easier to control.
+
+The process also revealed subtle distinctions between historical accuracy and visual storytelling.
+
+Sallie's clothing, for example, often emphasized pantalettes. Such garments were historically appropriate for a child of her age, but they also helped distinguish her visually from her sisters. Louisa's wardrobe developed its own identifying characteristics. Beckie's clothing reflected her position as the eldest sister.
+
+Some decisions emerged directly from historical evidence.
+
+Others represented artistic choices made within the boundaries of historical plausibility.
+
+The goal was never to create a fashion catalog.
+
+The goal was to create recognizable individuals.
+
+By this point, clothing had become more than fabric.
+
+It had become another way of understanding character.
+
+The girls no longer wore generic nineteenth-century costumes.
+
+They wore their clothes.
+
+## **Historical vs. Artistic**
+
+One of the misconceptions surrounding historical illustration is the belief that every decision is either historically correct or historically incorrect.
+
+In practice, the situation is far more nuanced.
+
+Historical interpretation often exists within a space bounded by evidence on one side and storytelling on the other. The challenge is not eliminating interpretation. The challenge is managing it responsibly.
+
+Throughout the project, I found myself making decisions that fell into several different categories.
+
+Some were supported directly by evidence.
+
+Others were informed by evidence but still required interpretation.
+
+Still others were artistic choices made within the boundaries of historical plausibility.
+
+Understanding the difference became an important part of the process.
+
+Louisa's hair provides a good example of direct evidence. Sallie's diary described her sister's reddish hair. Once that description was discovered, it became an important part of Louisa's visual identity. The precise shade remained open to interpretation, but the historical record clearly guided the decision.
+
+Other choices occupied a middle ground.
+
+The surviving sketches, photographs, portraits, and drawings provided valuable clues regarding appearance, yet they did not answer every question. Historical clothing references could establish how garments were constructed, but they could not determine exactly which dress a child wore on a particular day. The evidence established boundaries. Interpretation filled the remaining gaps.
+
+Some decisions were primarily artistic.
+
+As the illustrations accumulated, I discovered that the three sisters could easily become visually interchangeable. They were close in age, lived in the same household, and wore clothing shaped by the same fashions.
+
+Readers, however, needed to recognize them immediately.
+
+Sallie's wardrobe gradually emphasized features associated with younger children, including pantalettes that often appeared beneath her dresses. Louisa developed visual characteristics of her own. Beckie's clothing reflected her role as the eldest sister. These choices remained historically plausible, but they also served an important storytelling purpose.
+
+The same considerations influenced smaller details.
+
+At one point, Sallie's clothing included decorative sleeve ruffles similar to those worn by Louisa. The detail was historically reasonable, but visually it made the sisters more difficult to distinguish. Removing the ruffles simplified Sallie's silhouette and strengthened her visual identity.
+
+The decision was not driven by new historical evidence.
+
+It was driven by storytelling.
+
+Charity's cane represents another form of interpretation.
+
+Historically, a traveling woman might carry a walking stick. Yet as the character developed, the cane became something more personal. To strangers it might suggest age, caution, or frailty. In reality, it reflected independence and self-reliance. It could assist a traveler on rough roads, but it could also serve as protection against an aggressive dog or other threat. The carved hawk head drew inspiration from birds common along the Schuylkill River of Charity's youth, while also reflecting literary influences that had shaped my own imagination.
+
+The object became an extension of the character.
+
+Not because the historical record demanded it, but because the character did.
+
+Perhaps the most interesting lesson was that artistic choices and historical choices were rarely opponents. More often, they were partners.
+
+Historical evidence established what was possible.
+
+Artistic interpretation helped communicate meaning.
+
+The strongest illustrations emerged when both worked together.
+
+The goal was never to create a fashion plate, an architectural diagram, or a catalog of historical objects.
+
+The goal was to help readers connect with people.
+
+Historical evidence provided the foundation.
+
+Interpretation helped bring that foundation to life.
+
+Neither was sufficient alone.
+
+Together, they made the story possible.
+
+## **Learning to See Their World**
+
+If the character studies taught me about the people, Perry Palmer taught me about the place.
+
+From the earliest drafts of *The Prescott Girls*, Perry generously agreed to read chapters and provide feedback. As a longtime volunteer and interpreter at the Pownalborough Court House, she possessed something no photograph or historical record could fully convey: an intimate understanding of the building itself.
+
+Initially, her role was straightforward.
+
+She helped me avoid mistakes.
+
+As scenes took place throughout the courthouse, I occasionally placed family members in rooms that historically belonged to someone else. At other times I made assumptions about the building based upon modern expectations rather than historical reality.
+
+The corrections were invaluable.
+
+One of the first involved the attic.
+
+Like many people, I unconsciously assumed attic spaces would contain windows. Early illustrations reflected that assumption. Perry quickly pointed out that no such windows existed. The attic the Prescott girls knew was a darker and more enclosed space than I had imagined.
+
+Other lessons were even more revealing.
+
+At one point Perry described branches attached to the ceiling of the children's playroom. To modern eyes they seemed decorative, perhaps remnants of an earlier use of the building.
+
+They were not decorative at all.
+
+Perry explained that the poles served a practical purpose. Clothing and household items were hung from them to dry. What I had initially viewed as an unusual architectural detail was actually evidence of daily life.
+
+Again and again, the building challenged my assumptions.
+
+The fireplaces provided another example.
+
+I thought I understood fireplaces.
+
+I was wrong.
+
+Perry introduced me to the fireplace crane, a pivoting iron arm used to suspend kettles over the fire. She explained the function of the ash pit and the practical realities of cooking in a nineteenth-century household. Features I had barely noticed during earlier visits suddenly became essential components of daily life within the courthouse.
+
+The building was no longer a backdrop.
+
+It was becoming a teacher.
+
+As the project continued, Perry's contributions evolved as well.
+
+What began as fact-checking gradually became collaboration.
+
+She photographed rooms, architectural details, furnishings, and objects throughout the courthouse. At first these photographs served as references, helping ensure that illustrations remained consistent with the building itself.
+
+Over time they became something more.
+
+The photographs inspired scenes.
+
+A particular room might suggest a conversation. A doorway might inspire an illustration. A piece of furniture or a shaft of light could spark an entirely new way of imagining a moment from the story.
+
+The courthouse itself was beginning to participate in the creative process.
+
+This transformation changed the way I viewed historical interpretation.
+
+Initially, I thought my task was to place characters within a building.
+
+Instead, I discovered that understanding the building helped me better understand the characters.
+
+Where people slept.
+
+Where they worked.
+
+Where they played.
+
+Where they gathered.
+
+Where they cooked.
+
+These details shaped their daily lives in countless ways.
+
+The more I learned about the courthouse, the more the Prescott family felt connected to a real place rather than a fictional setting.
+
+The building ceased being scenery.
+
+It became another character in the story.
+
+Thanks to Perry.
+
+## **When Objects Fight Back**
+
+By this point in the project, I felt reasonably confident.
+
+The characters had become more consistent. Historical clothing was improving. The courthouse itself had become familiar territory. I had developed a growing appreciation for how people lived within the spaces they occupied.
+
+Then the objects began demanding attention.
+
+At first, many seemed straightforward.
+
+A kettle.
+
+A tea service.
+
+A sled.
+
+A toy.
+
+Each appeared to be little more than a historical prop waiting to be placed into an illustration.
+
+I quickly learned otherwise.
+
+Objects tell stories.
+
+More importantly, they often refuse to be understood until you learn how they were actually used.
+
+The fireplace crane provided an early lesson. Before Perry explained its purpose, I viewed it as little more than an unusual piece of iron attached to a fireplace. Once I understood how kettles were suspended above the fire and how meals were prepared, the object suddenly became meaningful. It was no longer decoration. It was part of a system that shaped everyday life.
+
+The same thing happened repeatedly.
+
+A kettle became more than a kettle.
+
+A sled became more than a sled.
+
+A toy became more than a toy.
+
+Understanding the object meant understanding the people who interacted with it.
+
+No object demonstrated this challenge more clearly than Uncle Thomas's swing chair.
+
+The chair was unlike anything I had encountered before.
+
+Its most distinctive feature was an adjustable back controlled by a system of ropes. The ropes allowed the occupant to alter the angle of the chair, creating a remarkably sophisticated piece of furniture for its era. Surviving photographs documented the chair, yet understanding how it actually functioned proved far more difficult than understanding how it looked.
+
+Again and again I attempted to recreate the mechanism.
+
+Again and again the results fell short.
+
+The illustrations came close. The ropes appeared plausible. The chair resembled the original. Yet the mechanics never felt entirely correct. The relationship between the ropes, the frame, and the adjustable back remained elusive.
+
+The challenge revealed an important limitation.
+
+Illustration is not merely about appearance.
+
+Some objects require an understanding of physics, engineering, and mechanics. It is possible to create something that looks correct while failing to understand how it actually works.
+
+The niddy-noddy presented an entirely different challenge.
+
+Unlike the swing chair, the problem was not understanding the object's purpose. I knew exactly what a niddy-noddy was intended to do. The device was used to wind spun yarn into measured skeins and played an important role in the textile processes that formed part of the girls' world.
+
+One of the goals of the illustrations was educational. Modern readers are unlikely to encounter many of the objects that surrounded families in the 1830s. The illustrations provided an opportunity to introduce those objects visually and show them in use.
+
+The niddy-noddy seemed like a perfect candidate.
+
+Unfortunately, the object proved remarkably resistant to illustration.
+
+Its structure consists of crossed arms set at odd angles, with yarn wrapped around the frame in a complex three-dimensional pattern. While simple enough for a person to understand, it repeatedly confounded the image generation process. I supplied reference photographs. I revised descriptions. I experimented with dozens of variations.
+
+Every result was wrong.
+
+Some versions twisted the frame into impossible shapes. Others wrapped the yarn in ways that could never function in reality. A few produced objects so mangled that they scarcely resembled a niddy-noddy at all.
+
+Eventually practicality won.
+
+Rather than continuing to fight a losing battle, I located a public domain image of an actual niddy-noddy and transformed it into the wood-engraved style used throughout the book.
+
+The solution worked.
+
+The irony is that I preserved the successful illustration but discarded most of the failed attempts. At the time, the images were simply frustrating. Looking back, I suspect they might have been among the funniest illustrations produced during the entire project.
+
+The experience reinforced a lesson that appeared repeatedly throughout the work.
+
+Some objects are difficult not because they are rare or obscure, but because they require a level of spatial understanding that exceeds simple visual recognition.
+
+The niddy-noddy knew exactly what it was.
+
+Convincing the illustrations to understand it proved far more difficult.
+
+The swing chair and the niddy-noddy revealed different challenges, yet they pointed toward the same conclusion.
+
+Historical interpretation is not simply about reproducing appearances.
+
+It is about understanding.
+
+How does this object work?
+
+Why was it built this way?
+
+What role did it play in everyday life?
+
+How would the people around it have understood it?
+
+The more I learned, the more I realized that objects were not props sitting quietly in the background.
+
+Like the people and the buildings, they had stories of their own.
+
+And sometimes they fought back.
+
+Oddly enough, those struggles often became some of the most rewarding parts of the project.
+
+Each unresolved question represented another opportunity to learn.
+
+Each difficult object encouraged deeper research.
+
+Each challenge reminded me that historical interpretation is not simply the process of illustrating the past.
+
+It is the process of trying to understand it.
+
+The objects were no longer props.
+
+They had become teachers.
+
+## **When Accuracy Isn't Enough**
+
+By this point in the project, I had spent countless hours researching clothing, architecture, furniture, tools, toys, and household objects. The illustrations were becoming more historically grounded. The characters were more consistent. The courthouse was better understood. The objects occupying each room increasingly reflected the world of the 1830s.
+
+Yet something was still missing.
+
+Some illustrations felt alive.
+
+Others did not.
+
+The difference had little to do with accuracy.
+
+A perfectly accurate kettle remained a kettle.
+
+A perfectly accurate chair remained a chair.
+
+A perfectly accurate toy remained a toy.
+
+Historical accuracy alone could not make an illustration interesting.
+
+The breakthrough came when I stopped thinking about objects and started thinking about stories.
+
+The Noah's Ark toy provided one of the clearest examples.
+
+At first, it appeared simply as a historical object associated with Sallie. The toy itself was interesting. Many nineteenth-century children owned Noah's Ark sets, and they fit naturally within the world of the Prescott family.
+
+Then I learned something unexpected.
+
+In many Protestant households, Sunday activities were carefully regulated. Ordinary toys were often discouraged, yet toys based upon biblical stories occupied a unique position. A Noah's Ark set was not merely a toy. It was also a religious teaching tool. In a sense, it represented a loophole—an object that could satisfy both a child's desire to play and an adult's desire for moral instruction.
+
+Suddenly the toy became more than a collection of carved animals.
+
+It became a window into childhood, religion, and family life.
+
+More importantly, the illustration became more interesting once Sallie began interacting with it.
+
+The same lesson appeared elsewhere.
+
+A tea set sitting on a table was historically accurate.
+
+Louisa pouring tea while Sallie played nearby told a story.
+
+A sled leaning against a wall documented an object.
+
+Three sisters racing downhill through a Maine winter created a moment.
+
+The distinction was subtle but important.
+
+The goal was no longer to illustrate things.
+
+The goal was to illustrate experiences.
+
+As the project evolved, I found myself thinking increasingly about the illustrators whose work had inspired me as a child. N. C. Wyeth, Garth Williams, and Norman Rockwell rarely created images of people standing motionless beside historically accurate objects. Their illustrations captured moments. Relationships. Decisions. Emotions.
+
+The viewer entered a story already in progress.
+
+That realization changed the way I approached every scene.
+
+Historical objects remained important.
+
+Historical accuracy remained important.
+
+But neither could carry an illustration by themselves.
+
+A room becomes interesting when people inhabit it.
+
+A toy becomes interesting when a child treasures it.
+
+A kettle becomes interesting when someone is preparing a meal.
+
+A sled becomes interesting when children are flying down a snowy hill.
+
+The illustrations became strongest when the historical research disappeared into the background and allowed the human story to take center stage.
+
+Paradoxically, the more effort I invested in understanding the details, the less those details became the focus.
+
+Their purpose was not to be noticed.
+
+Their purpose was to support the illusion that the viewer was looking through a window into another time.
+
+The goal was never to create a museum exhibit on a page.
+
+The goal was to create a moment.
+
+Once I understood that, the illustrations began to come alive.
+
+## **Seeing Them in Their World**
+
+By the time I began creating the later illustrations, the challenge was no longer understanding individual characters or historical objects.
+
+The challenge was bringing everything together.
+
+The strongest scenes in the book rarely began with a character.
+
+They began with a moment.
+
+A conversation.
+
+A chore.
+
+A lesson.
+
+A game.
+
+A family gathering.
+
+Once the moment was identified, the surrounding pieces gradually fell into place. The room. The furniture. The clothing. The objects. The lighting. The relationships between the people occupying the space.
+
+The goal was not simply to create an illustration.
+
+The goal was to create a believable world.
+
+Perry Palmer's photographs became increasingly important during this stage of the project.
+
+What had begun as reference material gradually evolved into inspiration. Photographs of rooms, furnishings, stairways, fireplaces, and architectural details helped establish a sense of place that would have been difficult to achieve through imagination alone.
+
+Sometimes an image suggested a scene.
+
+A corner of a room might inspire a conversation between Rebecca and the girls.
+
+A doorway could become the setting for a departure.
+
+A staircase might suggest a moment of anticipation.
+
+The courthouse was no longer a location where events happened.
+
+It had become part of the story itself.
+
+One of the most rewarding aspects of the project was seeing familiar historical spaces become inhabited once again.
+
+The kitchen was no longer simply a preserved room within a museum.
+
+It became a place where meals were prepared.
+
+The playroom became a place where children argued, learned, and imagined.
+
+The courtroom became a gathering place for the community.
+
+The illustrations allowed these spaces to return, if only briefly, to the purposes for which they had originally been created.
+
+The same transformation occurred with historical objects.
+
+A kettle hanging from a fireplace crane became part of preparing supper.
+
+A tea service became part of a lesson in manners and hospitality.
+
+A Noah's Ark set became part of childhood.
+
+A sled became part of winter.
+
+Objects gained meaning through use.
+
+Rooms gained meaning through activity.
+
+The people connected everything together.
+
+As the scenes became more complex, another realization emerged.
+
+Historical illustrations are not simply reconstructions of the past.
+
+They are invitations.
+
+An invitation to step inside a room.
+
+An invitation to share a moment.
+
+An invitation to view familiar historical subjects not as distant figures in a textbook, but as people living ordinary lives.
+
+Many of the most successful illustrations in the book depict moments that would never appear in a historical record.
+
+No diary records the exact instant Sallie arranged animals from her Noah's Ark set.
+
+No letter describes every cup of tea poured by Louisa.
+
+No document records every winter ride on a sled.
+
+Yet those moments almost certainly happened.
+
+History often preserves the extraordinary.
+
+Illustration provides an opportunity to explore the ordinary.
+
+That ordinary life was what interested me most.
+
+Not the famous events.
+
+Not the dramatic moments.
+
+The daily experiences that connected one generation to the next.
+
+The illustrations became an attempt to make those experiences visible.
+
+To allow readers to look through a window and see not simply the Prescott family, but a family.
+
+Not simply a courthouse, but a home.
+
+Not simply artifacts, but objects being used by the people who depended upon them.
+
+By this stage of the project, the illustrations were no longer serving the story.
+
+They had become part of it.
+
+The characters, the building, the objects, and the research had merged into a shared world.
+
+For a brief moment, the Prescott family lived there again.
+
+## **The Courthouse in Shingles**
+
+One of the most interesting interpretive questions raised during the project involved the building itself.
+
+While researching court records and historical descriptions, I discovered evidence suggesting that the Pownalborough Court House was fully shingled during the period when the Prescott girls lived there. The white clapboard appearance familiar to modern visitors developed later.
+
+My first reaction was straightforward.
+
+If the goal was historical reconstruction, then the illustrations should depict the courthouse as it appeared during the 1830s.
+
+The evidence seemed clear.
+
+The courthouse of Beckie, Louisa, and Sallie was not quite the courthouse we see today.
+
+When I shared the discovery, however, an important concern was raised.
+
+Visitors recognize the courthouse as it appears now.
+
+The shingled version may have been historically accurate, but it was visually unfamiliar. Readers encountering the illustrations might not immediately realize they were looking at the same building.
+
+The discussion revealed a challenge faced regularly by historians, museum professionals, and interpreters.
+
+Which truth should an illustration emphasize?
+
+The historical truth?
+
+Or the visitor's truth?
+
+Neither answer is entirely wrong.
+
+The modern courthouse is the building visitors know and love. It is the building preserved by generations of dedicated volunteers. It is the building that appears in brochures, photographs, and memories.
+
+Yet the shingled courthouse is equally real.
+
+It represents a chapter of the building's history that has largely disappeared from public view.
+
+In the end, a compromise emerged.
+
+For many illustrations within the book, the courthouse retained the appearance most familiar to modern audiences. Readers could immediately recognize the building and connect it to the historic site that still stands today.
+
+At the same time, the discovery inspired a different kind of project.
+
+If historical interpretation could help reconstruct people, clothing, rooms, and objects, perhaps it could also help reconstruct the building itself.
+
+Photorealistic renderings offered an opportunity to show visitors something they could no longer see.
+
+The courthouse appeared once again beneath its wooden shingles.
+
+The goal was not to replace the modern building.
+
+Nor was it to argue that one version was somehow more authentic than the other.
+
+Instead, the images allowed multiple versions of the courthouse to coexist.
+
+Visitors could see the building as it exists today.
+
+They could also glimpse the building as the Prescott girls may have known it.
+
+The experience reinforced a lesson that had surfaced repeatedly throughout the project.
+
+Historical interpretation is not always about choosing between competing truths.
+
+Sometimes it is about revealing that more than one truth can exist at the same time.
+
+The courthouse preserved by the Lincoln County Historical Association and the courthouse inhabited by the Prescott family are not rivals.
+
+They are chapters in the same story.
+
+Historical reconstruction simply gives us another way to read it.
+
+## **Interpretation and the Limits of Knowing**
+
+One of the most important lessons I learned during this project was that historical interpretation is never finished.
+
+At first, this realization was frustrating.
+
+Every answer seemed to generate two new questions.
+
+Louisa's hair led to diaries.
+
+Clothing led to textile collections.
+
+Room assignments led to courthouse records.
+
+Objects led to questions of mechanics, engineering, and daily use.
+
+Even Uncle Thomas's swing chair resisted complete understanding despite photographs and repeated attempts to reconstruct its operation.
+
+The deeper I explored the past, the more I realized how much remained unknown.
+
+Over time, however, I came to appreciate that this uncertainty is not a flaw in historical interpretation.
+
+It is its very nature.
+
+Dinosaurs provide a useful example.
+
+For generations they were depicted as slow-moving reptiles dragging their tails behind them. Later discoveries in anatomy, musculature, biomechanics, balance, and even engineering principles transformed our understanding of how they may have moved and appeared. Each generation of researchers worked with the best evidence available to them. Their reconstructions were not failures.
+
+They were stepping stones.
+
+Historical interpretation works much the same way.
+
+The goal is not to produce a final, unquestionable answer.
+
+The goal is to create the most informed interpretation possible using the evidence available today.
+
+Future discoveries may change that understanding.
+
+New documents may emerge.
+
+New technologies may reveal details currently invisible to us.
+
+Future historians, artists, and researchers will undoubtedly notice things that I missed.
+
+They will ask questions I never considered.
+
+They will build upon the work that came before them.
+
+That is both the reward and the curse of interpretation.
+
+Our work is never the final word.
+
+It is simply our contribution to an ongoing conversation between the past and the future.
+
+Throughout this project I often found myself moving back and forth between evidence and imagination.
+
+A diary entry suggested a detail.
+
+A photograph inspired a question.
+
+A room generated a scene.
+
+An illustration revealed a misunderstanding.
+
+The process was rarely linear.
+
+Research informed interpretation.
+
+Interpretation generated new research.
+
+Again and again, the two worked together.
+
+The result was never intended to be a definitive reconstruction of the Prescott family.
+
+It was an attempt to understand them.
+
+To understand the people who lived within the courthouse.
+
+To understand the objects they used.
+
+To understand the choices they made.
+
+To understand the world they inhabited.
+
+Most importantly, it was an attempt to see them.
+
+Not as names in records.
+
+Not as artifacts in display cases.
+
+But as people.
+
+If future researchers discover new evidence and create better interpretations, then the work will have succeeded.
+
+That is how knowledge advances.
+
+Each generation contributes what it can.
+
+Each generation leaves something for the next.
+
+The artists who reconstructed dinosaurs a century ago could not know what we know today.
+
+Yet without their work, our own understanding would never have developed.
+
+The same is true for historical interpretation.
+
+We study.
+
+We question.
+
+We imagine responsibly.
+
+We reconstruct.
+
+And then we leave the door open for those who follow.
+
+That is our reward.
+
+And it is our curse.
+
+Our work is not the destination.
+
+It is simply another step along the path.
+
+## **About This Research**
+
+**The Prescott Girls Historical Research Series**
+
+*Historical Reimaginings: Bringing the Prescott Family to Live Through Research, Character Development, and Interpretation* is part of an ongoing effort to document the people, artifacts, family connections, and historical discoveries that inspired *The Prescott Girls: A Letter from Philadelphia*.
+
+For additional research articles, historical images, schoolgirl samplers, family records, and educational resources, visit:
+
+[**www.theprescottgirls.com**](http://www.theprescottgirls.com)
+
+### **Author**
+
+**Aric Wilmunder**  
+Author, researcher, and presenter
+
+A Well-Regulated Press
+
+Copyright © 2026 Aric Wilmunder. All rights reserved.
+
+Text, images, and original historical interpretations contained in this publication may not be reproduced, distributed, or republished without permission, except for brief quotations used for review, educational, or scholarly purposes.
+

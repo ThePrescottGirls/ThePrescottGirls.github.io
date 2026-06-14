@@ -2,8 +2,6 @@
 
 ## How Six Forgotten Schoolgirl Samplers Reconnected a Family, a Museum, and a Piece of American History
 
-# **Chapter 1**
-
 ## **A Sampler for Christmas**
 
 In November 2020, during the isolation of the COVID-19 pandemic, my wife Lori and I found ourselves spending more time than usual pursuing the hobbies we loved. For Lori, that meant needlework.
@@ -73,8 +71,6 @@ Who were these girls?
 The search for that answer would become the beginning of a journey neither of us could have imagined.
 
 ---
-
-# **Chapter 2**
 
 ## **The Auction**
 
@@ -189,8 +185,6 @@ So before the night was over, I began drawing the first family tree.
 By morning, that simple sketch would lead us to an even larger discovery.
 
 ---
-
-# **Chapter 3**
 
 ## **The First Family Tree**
 
@@ -374,8 +368,6 @@ And the story was only beginning.
 
 ---
 
-# **Chapter 4**
-
 ## **Following the Threads to Maine**
 
 The discovery of the Betsy Ross connection was exhilarating.
@@ -553,8 +545,6 @@ And increasingly, I realized that if the story was to be told properly, it would
 In Maine.
 
 ---
-
-# **Chapter 5**
 
 ## **The Girls Behind the Stitches**
 
@@ -760,8 +750,6 @@ She had left behind her voice.
 
 ---
 
-# **Chapter 6**
-
 ## **Sallie's Diary**
 
 Historians are accustomed to working with fragments.
@@ -909,8 +897,6 @@ The next clues lay in Philadelphia.
 And they began with Caroline Louisa Prescott.
 
 ---
-
-# **Chapter 7**
 
 ## **Louisa’s Journey**
 
@@ -1066,8 +1052,6 @@ The next chapter would reveal how a family memory preserved by the Canbys transf
 
 ---
 
-# **Chapter 8**
-
 ## **The Canbys and the First Flag Story**
 
 Most Americans know the name Betsy Ross.
@@ -1139,8 +1123,6 @@ One that had not been publicly documented since the nineteenth century.
 A diary written by John Claypoole.
 
 ---
-
-# **Chapter 9**
 
 ## **The Diary Thought Lost**
 
@@ -1281,8 +1263,6 @@ Something tangible.
 A link not merely to history, but to the people who lived it.
 
 ---
-
-# **Chapter 10**
 
 ## **Coming Home**
 
@@ -1743,10 +1723,7 @@ Author, researcher, and presenter
 
 A Well-Regulated Press
 
-Version 1.0
+Copyright © 2026 Aric Wilmunder. All rights reserved.
 
-May 2026
+Text, images, and original historical interpretations contained in this publication may not be reproduced, distributed, or republished without permission, except for brief quotations used for review, educational, or scholarly purposes.
 
-### **Suggested Citation**
-
-Wilmunder, Aric. *The Schoolgirl Samplers in the Ziploc Bag.  How Six Forgotten Schoolgirl Samplers Reconnected a Family, a Museum, and a Piece of American History.* The Prescott Girls Historical Research Series. Novato, California: A Well-Regulated Press, 2026\.

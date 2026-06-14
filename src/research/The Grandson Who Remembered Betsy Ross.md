@@ -175,11 +175,7 @@ Author, researcher, and presenter
 
 A Well-Regulated Press
 
-Version 1.0
+Copyright © 2026 Aric Wilmunder. All rights reserved.
 
-May 2026
-
-### **Suggested Citation**
-
-Wilmunder, Aric. *The Grandson Who Remembered Betsy Ross: William Jackson Canby and the Family Stories That Shaped an American Legend.* The Prescott Girls Historical Research Series. Novato, California: A Well-Regulated Press, 2026\.
+Text, images, and original historical interpretations contained in this publication may not be reproduced, distributed, or republished without permission, except for brief quotations used for review, educational, or scholarly purposes.
 
