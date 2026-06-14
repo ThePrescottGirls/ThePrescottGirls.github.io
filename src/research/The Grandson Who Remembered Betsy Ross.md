@@ -20,7 +20,7 @@ In 1773, she married fellow apprentice John Ross. Because he was not a Quaker, t
 
 Several years later, Betsy married sea captain Joseph Ashburn. During the war, Ashburn was captured by the British and died in Mill Prison in Plymouth, England, leaving Betsy a widow for the second time.
 
-In 1783 she married John Claypoole, a Philadelphia merchant who had reportedly shared imprisonment with Ashburn and carried news of his death back to America. Together they raised a large family and spent decades in Philadelphia as respected members of the city's artisan community.
+In 1783 she married John Claypoole, a Philadelphia merchant who had shared imprisonment with Ashburn and carried news of his death back to America. Together they raised a large family and spent decades in Philadelphia as respected members of the city's artisan community.
 
 Long before she became a national icon, Betsy Ross was known simply as a skilled craftswoman, wife, mother, and grandmother.
 
@@ -142,7 +142,7 @@ Historians continue to debate the extent of Betsy Ross's role in creating the fi
 
 Modern historians continue to examine the evidence, distinguishing between documented facts and family recollections. Yet regardless of where one stands in that debate, William Jackson Canby's contribution is undeniable.
 
-Without him, much of what we know—or believe we know—about Betsy Ross might never have entered the historical record.
+Without him, much of what we know, or believe we know, about Betsy Ross might never have entered the historical record.
 
 ---
 
