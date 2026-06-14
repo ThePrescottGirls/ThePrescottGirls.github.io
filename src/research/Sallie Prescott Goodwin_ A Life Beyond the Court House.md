@@ -287,7 +287,5 @@ Author, researcher, and presenter
 
 A Well-Regulated Press
 
-Version 1.0
-
 June 2026
 
