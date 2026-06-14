@@ -297,7 +297,7 @@ def build_page(md_path: Path) -> Path:
   <main class="page">
     <header>
     
-      <p class="back-link"><a href="{html.escape(PRESS_RESOURCES_PATH)}#press-resources">← Back to Research Documents</a></p>
+      <p class="back-link"><a href="{html.escape(PRESS_RESOURCES_PATH)}#research-papers">← Back to Research Documents</a></p>
         
       
       
