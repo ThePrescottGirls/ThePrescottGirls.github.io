@@ -234,7 +234,7 @@ def title_from_markdown(markdown: str, basename: str) -> tuple[str, str]:
     if title_has_resource_type(display_title):
         page_title = f"{display_title} | {SITE_NAME}"
     else:
-        page_title = f"{display_title} Press Release | {SITE_NAME}"
+        page_title = f"{display_title} Research Paper | {SITE_NAME}"
 
     return display_title, page_title
 
@@ -245,7 +245,7 @@ def meta_description_for(display_title: str) -> str:
         return f"Preview and download the {display_title} for {SITE_NAME}."
     if "press release" in title_lower:
         return f"Preview and download the {display_title} from {SITE_NAME} press resources."
-    return f"Preview and download the {display_title} press resource from {SITE_NAME}."
+    return f"Preview and download the {display_title} research paper from {SITE_NAME}."
 
 
 def build_page(md_path: Path) -> Path:
