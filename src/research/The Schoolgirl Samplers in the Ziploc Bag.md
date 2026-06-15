@@ -796,7 +796,7 @@ Suddenly, the Prescott family ceased to be genealogical entries.
 
 They became a household.
 
-Brothers and sisters teased one another.
+Sisters teased one another.
 
 Relatives visited.
 
