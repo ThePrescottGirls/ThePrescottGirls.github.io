@@ -728,7 +728,7 @@ The more we learned about them, the harder it became to think of the samplers as
 
 They had become personal.
 
-Rebecca.
+Rebecca, the mother.
 
 Then Beckie.
 
