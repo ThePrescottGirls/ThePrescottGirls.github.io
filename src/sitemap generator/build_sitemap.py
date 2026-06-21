@@ -34,6 +34,7 @@ SCAN_DIRS = [
     "teachers",
     "press",
     "research",
+    "previews",
 ]
 
 
