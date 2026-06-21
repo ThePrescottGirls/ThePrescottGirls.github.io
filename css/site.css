@@ -527,7 +527,9 @@ body.page-404 {
   padding: 10px 18px;
 }
 
-
+.imprint-button {
+    font-size: 1.1rem;
+}
 
 .email-link {
     font-size: 1.1rem;
