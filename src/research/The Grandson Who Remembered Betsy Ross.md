@@ -12,6 +12,8 @@ Yet William Jackson Canby's story extends beyond Betsy Ross. Through his marriag
 
 ---
 
+## 
+
 ## **Betsy Ross Before the Legend**
 
 Elizabeth Griscom was born in Philadelphia on January 1, 1752, into a Quaker family. Trained as an upholsterer, she learned a skilled trade that involved sewing curtains, bed hangings, cushions, and other furnishings for homes and public buildings.
@@ -64,11 +66,7 @@ These recollections would later form the basis of Canby's efforts to preserve hi
 
 ## **A Quaker Education**
 
-As a young man, William attended Westtown School, one of the most important Quaker educational institutions in the United States.
-
-Founded in 1799 by the Religious Society of Friends, Westtown emphasized scholarship, moral character, practical skills, and community responsibility. Students lived, studied, and worked together in an environment designed to encourage discipline and self-improvement.
-
-The school reflected many of the same Quaker values that had shaped Betsy Ross's early life: simplicity, education, service, and conscientious conduct.
+As a young man, William attended Westtown School, one of the most important Quaker educational institutions in the United States. Founded in 1799 by the Religious Society of Friends, Westtown emphasized scholarship, moral character, practical skills, and community responsibility. Students lived, studied, and worked together in an environment designed to encourage discipline and self-improvement. The school reflected many of the same Quaker values that had shaped Betsy Ross's early life: simplicity, education, service, and conscientious conduct.
 
 Surviving school records offer a glimpse into William's education and provide another connection to the wider network of Quaker families that linked Philadelphia to communities throughout the eastern United States.
 
@@ -76,9 +74,7 @@ Surviving school records offer a glimpse into William's education and provide an
 
 ## **The Death of Betsy Ross**
 
-Betsy Ross died on January 30, 1836, at the age of eighty-four.
-
-For William, the loss marked the end of a direct connection to the Revolutionary era. Yet the stories remained.
+Betsy Ross died on January 30, 1836, at the age of eighty-four. For William, the loss marked the end of a direct connection to the Revolutionary era. Yet the stories remained.
 
 Within the family, letters, Bibles, records, and recollections continued to be preserved. These materials would later prove essential as descendants attempted to document their family history and answer growing public interest in Betsy Ross.
 
@@ -145,6 +141,8 @@ Modern historians continue to examine the evidence, distinguishing between docum
 Without him, much of what we know, or believe we know, about Betsy Ross might never have entered the historical record.
 
 ---
+
+## 
 
 ## **Conclusion**
 
