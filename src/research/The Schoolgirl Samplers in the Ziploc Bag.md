@@ -56,7 +56,7 @@ As the research continued, I repeatedly encountered references to a place I had 
 
 The courthouse itself had an extraordinary history. Built in 1761, it had served as a center of government before later becoming a private residence. For generations, members of the same extended family associated with the samplers had lived there. The more I learned, the more convinced I became that the collection belonged not merely to descendants, but to a place.
 
-At that point I reached out to the Lincoln County Historical Association, the organization responsible for preserving the courthouse. My message was simple.I believed a group of schoolgirl samplers connected to families associated with the courthouse was about to be sold at auction in California.
+At that point I reached out to the Lincoln County Historical Association, the organization responsible for preserving the courthouse. My message was simple. I believed a group of schoolgirl samplers connected to families associated with the courthouse was about to be sold at auction in California.
 
 Would they be interested? The timing could not have been worse. The auction was only days away.
 
@@ -132,7 +132,7 @@ Like many Americans, I knew Betsy Ross immediately. Her name required no explana
 
 The names that appeared repeatedly throughout the family tree, Goodwin, Johnson, and Prescott, were tied to a place I had never visited before beginning this research. Dresden. 
 
-Located along the Kennebec River, Dresden Maine occupies a landscape shaped by forests, shipbuilding, farming, and the river traffic that connected inland communities to the Atlantic world. In the late eighteenth and early nineteenth centuries, it was a place where families built lives that often spanned generations. Again and again, my research led me back to a single landmark.
+Located along the Kennebec River, Dresden, Maine occupies a landscape shaped by forests, shipbuilding, farming, and the river traffic that connected inland communities to the Atlantic world. In the late eighteenth and early nineteenth centuries, it was a place where families built lives that often spanned generations. Again and again, my research led me back to a single landmark.
 
 The Pownalborough Court House.
 
@@ -169,6 +169,8 @@ The more I reflected on that fact, the more extraordinary it seemed. Most family
 Long before I understood their connection to Betsy Ross, I had become fascinated by something else. The samplers told the story of an American family. A family rooted in a courthouse beside the Kennebec River. A family that endured loss and change. A family that quietly preserved its history in thread. And increasingly, I realized that if the story was to be told properly, it would need to begin here. In Maine.
 
 ---
+
+## 
 
 ## **The Girls Behind the Stitches**
 
@@ -228,7 +230,7 @@ The ordinary moments of life, usually invisible to history, became visible again
 
 As researchers, we often become attached to the people we study. Spending months or years following individuals through historical records inevitably creates a sense of connection. Yet Sallie's diary produced something different. It created recognition. We no longer wondered who the Prescott girls had been. We began to feel as though we knew them.
 
-That realization carried an unexpected consequence. The samplers themselves changed. Before discovering the diary, I had viewed the samplers primarily as historical artifacts. Important artifacts, certainly. But artifacts nonetheless. After reading Sallie's words, I found myself looking at them differently. Rebecca's sampler was no longer simply Rebecca G. J. Prescott's sampler. It was Beckie’s sampler, the name she went by Caroline's sampler was Louisa’s, her family name
+That realization carried an unexpected consequence. The samplers themselves changed. Before discovering the diary, I had viewed the samplers primarily as historical artifacts. Important artifacts, certainly. But artifacts nonetheless. After reading Sallie's words, I found myself looking at them differently. Rebecca's sampler was no longer simply Rebecca G. J. Prescott's sampler. It was Beckie’s sampler, the name she went by. Caroline's sampler became Louisa’s, her family name.
 
 The distinction may seem subtle. It was not. The objects had become personal. The girls who stitched them were no longer distant figures separated from us by two centuries. They had become individuals with recognizable hopes, relationships, and concerns. Individuals who once occupied rooms in the courthouse. Individuals who walked roads we could still follow. Individuals whose descendants would unknowingly preserve their work for more than two hundred years.
 
@@ -273,6 +275,8 @@ Because William's connection to Betsy Ross came through his mother. A woman whos
 The next chapter would reveal how a family memory preserved by the Canbys transformed a Philadelphia upholsterer into an American icon.
 
 ---
+
+## 
 
 ## **The Canbys and the First Flag Story**
 
