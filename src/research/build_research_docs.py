@@ -331,6 +331,12 @@ def build_page(md_path: Path) -> Path:
 {transcript_html}
       </div>
     </details>
+    
+    <p class="back-link">
+      <a href="{html.escape(PRESS_RESOURCES_PATH)}#research-papers">
+        ← Back to Research Documents
+      </a>
+    </p>
 
     <footer>From <em>The Prescott Girls</em> Research Documents.</footer>
   </main>
