@@ -26,13 +26,38 @@ title=Sandy River
 draft=yes
 
 [PHOTO]
+file=01b_Walking_Home.jpg
+title=Walking Home
+draft=yes
+
+[PHOTO]
+file=02_Leaving_New_Sharon.jpg
+title=Leaving New Sharon
+draft=yes
+
+[PHOTO]
+file=05_The_Pownalborough_Court_House.jpg
+title=The Pownalborough Court House
+draft=yes
+
+[PHOTO]
 file=04_Sallie_And_The_Old_Fort.jpg
 title=Sallie, Major and Lieutenant
 draft=yes
 
 [PHOTO]
-file=08_Stitches_Before_the_Sunset.jpg
+file=08_The_Chest_In_The_Attic.jpg
+title=Louisa Discovers the Chest in the Attic
+draft=yes
+
+[PHOTO]
+file=09_Stitches_Before_the_Sunset.jpg
 title=Stitches Before the Sunset
+draft=yes
+
+[PHOTO]
+file=10_A_Letter_from_Philadelphia.jpg
+title=A Letter From Philadelphia
 draft=yes
 
 [PHOTO]
@@ -61,6 +86,11 @@ title=Three Letters to Philadelphia
 draft=yes
 
 [PHOTO]
+file=14_Sallie_on_Beckie's_Shoulder.jpg
+title=Beckie and Sallie
+draft=yes
+
+[PHOTO]
 file=15_The_Tavern_Below.jpg
 title=The Tavern Below
 draft=yes
@@ -76,17 +106,22 @@ title=Apple Day
 draft=yes
 
 [PHOTO]
-file=19_News_from_Philadelphia.jpg
+file=19_The_Quaker_Wedding.jpg
+title=The Quaker Wedding
+draft=yes
+
+[PHOTO]
+file=20_News_from_Philadelphia.jpg
 title=News from Philadelphia
 draft=yes
 
 [PHOTO]
-file=20_Louisas_Secret.jpg
+file=21_Louisas_Secret.jpg
 title=Louisa's Secret
 draft=yes
 
 [PHOTO]
-file=21_At_the_School_House.jpg
+file=22_At_the_School_House.jpg
 title=At the School House
 draft=yes
 
@@ -106,6 +141,11 @@ title=Christmas Day
 draft=yes
 
 [PHOTO]
+file=27_Girls_inspecting_the_Chair.jpg
+title=The Girls Inspect Uncle Thomas' New Chair
+draft=yes
+
+[PHOTO]
 file=27_Winter_Market.jpg
 title=Winter Market
 draft=yes
@@ -118,6 +158,26 @@ draft=yes
 [PHOTO]
 file=30_Packing_Winter_Away.jpg
 title=Packing Winter Away
+draft=yes
+
+[PHOTO]
+file=31_A_Visit_from_Hannah.jpg
+title=A Visit from Hannah
+draft=yes
+
+[PHOTO]
+file=32_The_Gathering.jpg
+title=The Gathering
+draft=yes
+
+[PHOTO]
+file=33_Family_Ties.jpg
+title=Family Ties
+draft=yes
+
+[PHOTO]
+file=60_The_Bees_in_the_Attic.jpg
+title=Book 2 Preview - Louisa's Journey
 draft=yes
 
 
