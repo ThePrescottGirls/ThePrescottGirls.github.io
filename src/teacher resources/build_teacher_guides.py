@@ -433,6 +433,8 @@ def build_page(md_path: Path, teacher_anchors: dict[str, str]) -> Path:
 {transcript_html}
       </div>
     </details>
+    
+    <p class="back-link"><a href="{html.escape(teacher_resources_path)}">← Back to Teacher Resources</a></p>
 
     <footer>From <em>The Prescott Girls</em> Teacher Resources.</footer>
   </main>
