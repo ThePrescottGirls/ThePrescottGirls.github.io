@@ -28,7 +28,7 @@ gps=
 xlocation=Oakland, California
 location_confidence=known
 title=Clars Auction Listing
-caption=The Clars Auction Gallery listing where several Prescott family samplers were discovered, beginning the research project that ultimately inspired The Prescott Girls.
+caption=The Clars Auction Gallery listing in Oakland, California, where several Prescott family samplers were unexpectedly discovered, beginning the research project that ultimately inspired The Prescott Girls.
 draft=no
 
 [PHOTO]
@@ -132,7 +132,7 @@ gps=38.091244,-122.572586
 xlocation=Novato, California
 location_confidence=known
 title=Ann Canby's Sampler
-caption=Ann Harlan Canby's sampler. Ann was part of the extended Canby family that would later become connected to the Prescotts through marriage.
+caption=Ann's brother married Jane Claypoole, daughter of Betsy Ross. The Canby and Prescott families later united through Caroline Louisa Prescott's marriage to William Jackson Canby, Betsy Ross's grandson.
 draft=no
 
 [PHOTO]
