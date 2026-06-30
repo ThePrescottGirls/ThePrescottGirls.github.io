@@ -5,12 +5,15 @@ from googleapiclient.discovery import build
 from googleapiclient.errors import HttpError
 
 from sitemap import read_sitemap_urls
+from models import URLResult
+from report import write_inspection_csv
 
 BASE_DIR = Path(__file__).resolve().parent
 ROOT_DIR = BASE_DIR.parents[1]
 
 CREDENTIALS_DIR = BASE_DIR / "credentials"
 REPORTS_DIR = BASE_DIR / "reports"
+CSV_REPORT = REPORTS_DIR / "inspection.csv"
 SITEMAP_FILE = ROOT_DIR / "sitemap.xml"
 
 CREDENTIALS_FILE = CREDENTIALS_DIR / "google-search-console-credentials.json"
@@ -61,6 +64,8 @@ def main():
 
     service = build("searchconsole", "v1", credentials=credentials)
 
+    results = []
+
     try:
         for i, url in enumerate(urls, start=1):
             print(f"[{i:2}/{len(urls)}] {url}")
@@ -68,7 +73,28 @@ def main():
             response = inspect_url(service, url)
             status = response["inspectionResult"]["indexStatusResult"]
 
-            print(f"    {status.get('coverageState', 'Unknown')}")
+            result = URLResult(
+                url=url,
+                verdict=status.get("verdict", ""),
+                coverage=status.get("coverageState", ""),
+                last_crawl=status.get("lastCrawlTime", ""),
+                user_canonical=status.get("userCanonical", ""),
+                google_canonical=status.get("googleCanonical", ""),
+                robots=status.get("robotsTxtState", ""),
+                fetch=status.get("pageFetchState", ""),
+                indexing=status.get("indexingState", ""),
+                crawled_as=status.get("crawledAs", ""),
+            )
+
+            results.append(result)
+
+            print(f"    {result.coverage or 'Unknown'}")
+
+        write_inspection_csv(results, CSV_REPORT)
+
+        print()
+        print("CSV report written to:")
+        print(f"  {CSV_REPORT}")
 
     except HttpError as e:
         print()
