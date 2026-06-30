@@ -1,6 +1,4 @@
-# The Prescott Family Samplers 
-
-# Seven Generations of Family Stewardship
+# The Prescott Family Samplers \- Seven Generations of Family Stewardship
 
 # Abstract
 
