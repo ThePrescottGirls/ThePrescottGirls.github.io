@@ -360,6 +360,170 @@ def archive(
     }
 
 
+
+# ---------------------------------------------------------------------------
+# Read API
+# ---------------------------------------------------------------------------
+
+def latest_run(db_file: str | Path) -> Optional[Dict[str, Any]]:
+    """
+    Return the most recent run row as a plain dictionary.
+
+    This is intended for reporting tools such as dashboard.py.
+    """
+    db_path = Path(db_file).expanduser().resolve()
+
+    if not db_path.exists():
+        return None
+
+    conn = connect_db(db_path)
+    try:
+        initialize_schema(conn)
+
+        row = conn.execute(
+            """
+            SELECT *
+            FROM runs
+            ORDER BY run_id DESC
+            LIMIT 1
+            """
+        ).fetchone()
+
+        if row is None:
+            return None
+
+        return dict(row)
+    finally:
+        conn.close()
+
+
+def inspections_for_run(
+    db_file: str | Path,
+    run_id: int,
+) -> List[Dict[str, Any]]:
+    """
+    Return inspection rows for a specific run as plain dictionaries.
+    """
+    db_path = Path(db_file).expanduser().resolve()
+
+    if not db_path.exists():
+        return []
+
+    conn = connect_db(db_path)
+    try:
+        initialize_schema(conn)
+
+        rows = conn.execute(
+            """
+            SELECT
+                url,
+                verdict,
+                coverage,
+                is_indexed,
+                last_crawl,
+                user_canonical,
+                google_canonical,
+                robots,
+                fetch,
+                indexing,
+                crawled_as
+            FROM url_inspections
+            WHERE run_id = ?
+            ORDER BY url
+            """,
+            (run_id,),
+        ).fetchall()
+
+        return [dict(row) for row in rows]
+    finally:
+        conn.close()
+
+
+def latest_inspections(db_file: str | Path) -> List[Dict[str, Any]]:
+    """
+    Return inspection rows for the most recent run as plain dictionaries.
+    """
+    run = latest_run(db_file)
+
+    if run is None:
+        return []
+
+    return inspections_for_run(db_file, int(run["run_id"]))
+
+
+def changes_for_run(
+    db_file: str | Path,
+    run_id: int,
+) -> List[Dict[str, Any]]:
+    """
+    Return changes for a specific run compared with the previous run.
+
+    A row is considered changed when coverage, indexed state, or last crawl
+    differs from the previous run, or when the URL is new in this run.
+    """
+    db_path = Path(db_file).expanduser().resolve()
+
+    if not db_path.exists():
+        return []
+
+    conn = connect_db(db_path)
+    try:
+        initialize_schema(conn)
+        _run, changes = summarize_run(conn, run_id)
+        return [dict(row) for row in changes]
+    finally:
+        conn.close()
+
+
+def latest_changes(db_file: str | Path) -> List[Dict[str, Any]]:
+    """
+    Return changes for the most recent run compared with the previous run.
+    """
+    run = latest_run(db_file)
+
+    if run is None:
+        return []
+
+    return changes_for_run(db_file, int(run["run_id"]))
+
+
+def latest_archive_summary(db_file: str | Path) -> Dict[str, Any]:
+    """
+    Return a summary dictionary for the most recent run.
+
+    This mirrors the structure returned by archive(...), but reads from the
+    database instead of importing a new CSV snapshot.
+    """
+    run = latest_run(db_file)
+
+    if run is None:
+        return {
+            "run_id": None,
+            "database": str(Path(db_file).expanduser().resolve()),
+            "source_csv": "",
+            "run_time": "",
+            "total_urls": 0,
+            "indexed": 0,
+            "not_indexed": 0,
+            "changed": False,
+            "changes": [],
+        }
+
+    changes = latest_changes(db_file)
+
+    return {
+        "run_id": run["run_id"],
+        "database": str(Path(db_file).expanduser().resolve()),
+        "source_csv": run.get("source_csv", ""),
+        "run_time": run.get("run_time", ""),
+        "total_urls": run.get("total_urls", 0),
+        "indexed": run.get("indexed_count", 0),
+        "not_indexed": run.get("not_indexed_count", 0),
+        "changed": bool(run.get("changed_since_previous", 0)),
+        "changes": changes,
+    }
+
+
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(
         description="Archive URL Inspection CSV results into SQLite."

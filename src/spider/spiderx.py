@@ -7,7 +7,6 @@ from inspector import inspect_urls
 from report import write_inspection_csv
 from archive import archive
 from summary import print_summary
-from dashboard import write_dashboard
 
 BASE_DIR = Path(__file__).resolve().parent
 ROOT_DIR = BASE_DIR.parents[1]
@@ -16,7 +15,6 @@ CREDENTIALS_DIR = BASE_DIR / "credentials"
 REPORTS_DIR = BASE_DIR / "reports"
 CSV_REPORT = REPORTS_DIR / "inspection.csv"
 HISTORY_DB = REPORTS_DIR / "inspection_history.db"
-DASHBOARD_FILE = REPORTS_DIR / "index.html"
 SITEMAP_FILE = ROOT_DIR / "sitemap.xml"
 
 CREDENTIALS_FILE = CREDENTIALS_DIR / "google-search-console-credentials.json"
@@ -61,14 +59,6 @@ def main():
             CSV_REPORT,
             HISTORY_DB,
         )
-
-        write_dashboard(
-            results,
-            archive_summary,
-            DASHBOARD_FILE,
-            HISTORY_DB,
-        )
-
 
     except HttpError as e:
         print()
