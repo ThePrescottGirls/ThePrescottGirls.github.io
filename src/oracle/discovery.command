@@ -17,17 +17,23 @@ else
     source .venv/bin/activate
 fi
 
-echo
+clear
+
 echo "==========================================="
-echo "ORACLE"
+echo "DISCOVERY"
 echo "==========================================="
+echo "Oracle Website Discovery"
 echo "Python: $(python --version)"
 echo
 
-# Default property during development
-PROPERTY="${1:-https://www.theprescottgirls.com}"
+# ------------------------------------------------------------
+# Development defaults
+# ------------------------------------------------------------
 
-python oracle.py "$PROPERTY"
+PROPERTY="${1:-https://www.theprescottgirls.com}"
+SITEMAP="${2:-../../sitemap.xml}"
+
+python discovery.py "$PROPERTY" "$SITEMAP"
 
 echo
 echo "Press Return to close."
