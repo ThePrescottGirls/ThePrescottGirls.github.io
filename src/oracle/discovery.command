@@ -26,14 +26,7 @@ echo "Oracle Website Discovery"
 echo "Python: $(python --version)"
 echo
 
-# ------------------------------------------------------------
-# Development defaults
-# ------------------------------------------------------------
-
-PROPERTY="${1:-https://www.theprescottgirls.com}"
-SITEMAP="${2:-../../sitemap.xml}"
-
-python discovery.py "$PROPERTY" "$SITEMAP"
+python discovery.py
 
 echo
 echo "Press Return to close."

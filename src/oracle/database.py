@@ -18,6 +18,7 @@ import sqlite3
 from datetime import UTC, datetime
 from pathlib import Path
 from typing import Any
+from urllib.parse import urlparse
 
 
 SCHEMA_VERSION = 2
@@ -534,6 +535,16 @@ class Database:
 # is being renamed from models.py to database.py.
 OracleDatabase = Database
 
+
+
+def database_path_for_site(site_url: str) -> Path:
+    """Return the SQLite database path for a website URL."""
+    parsed = urlparse(site_url)
+    host = parsed.netloc.lower().strip()
+    if host.startswith("www."):
+        host = host[4:]
+    safe_name = host.replace(".", "_")
+    return Path("database") / f"{safe_name}.db"
 
 def utc_now() -> str:
     return datetime.now(UTC).isoformat(timespec="seconds")

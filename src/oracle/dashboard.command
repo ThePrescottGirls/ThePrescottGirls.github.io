@@ -24,7 +24,7 @@ echo "==========================================="
 echo "Python: $(python --version)"
 echo
 
-python dashboard.py "$@"
+python dashboard.py
 
 echo
 echo "Press Return to close."

@@ -14,12 +14,14 @@ from __future__ import annotations
 
 import argparse
 import sqlite3
+
+from config import load_config
+from database import database_path_for_site
 from pathlib import Path
 from typing import Iterable, Any
 from urllib.parse import unquote
 
 
-DEFAULT_DATABASE = "database/oracle.db"
 DEFAULT_RUN_LIMIT = 10
 
 
@@ -265,12 +267,8 @@ def show_query_summary(connection: sqlite3.Connection) -> None:
 
 
 def parse_arguments() -> argparse.Namespace:
-    parser = argparse.ArgumentParser(description="Show a rudimentary Oracle dashboard.")
-    parser.add_argument(
-        "database",
-        nargs="?",
-        default=DEFAULT_DATABASE,
-        help=f"Path to oracle.db. Default: {DEFAULT_DATABASE}",
+    parser = argparse.ArgumentParser(
+        description="Show a rudimentary Oracle dashboard."
     )
     parser.add_argument(
         "--run-limit",
@@ -290,11 +288,15 @@ def parse_arguments() -> argparse.Namespace:
 def main() -> None:
     args = parse_arguments()
 
+    config = load_config()
+    db_path = database_path_for_site(config.website)
+
     print()
-    print(f"Database: {args.database}")
+    print(f"Website : {config.website}")
+    print(f"Database: {db_path}")
     print()
 
-    with connect_database(args.database) as connection:
+    with connect_database(db_path) as connection:
         show_overview(connection)
         show_sites(connection)
         show_recent_runs(connection, args.run_limit)
