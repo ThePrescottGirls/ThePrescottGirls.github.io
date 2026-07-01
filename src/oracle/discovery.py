@@ -13,20 +13,20 @@ Its purpose is simply to learn the structure of the website.
 import sys
 from pathlib import Path
 
-from models import OracleDatabase
+from database import Database
 from sitemap import read_sitemap_urls
 
 
-DEFAULT_PROPERTY = "https://www.theprescottgirls.com"
+DEFAULT_SITE = "https://www.theprescottgirls.com"
 DEFAULT_SITEMAP = "../../sitemap.xml"
 
 
 def main():
 
-    property_url = (
+    site_url = (
         sys.argv[1]
         if len(sys.argv) > 1
-        else DEFAULT_PROPERTY
+        else DEFAULT_SITE
     )
 
     sitemap_file = (
@@ -38,7 +38,7 @@ def main():
     print("Discovery")
     print("=========")
     print()
-    print(f"Property : {property_url}")
+    print(f"Site     : {site_url}")
     print(f"Sitemap  : {sitemap_file}")
     print()
 
@@ -46,11 +46,11 @@ def main():
     # Open Oracle database
     # ------------------------------------------------------------
 
-    db = OracleDatabase("database/oracle.db")
+    db = Database("database/oracle.db")
     db.initialize()
 
-    site_id = db.get_or_create_site(property_url)
-    run_id = db.start_run(site_id)
+    site_id = db.get_or_create_site(site_url)
+    run_id = db.start_run(site_id, run_type="discovery")
 
     # ------------------------------------------------------------
     # Read sitemap
