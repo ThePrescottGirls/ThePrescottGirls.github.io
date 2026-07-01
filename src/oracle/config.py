@@ -29,11 +29,28 @@ def load_config(config_file: str | Path = CONFIG_FILE) -> OracleConfig:
 
     if not path.exists():
         raise FileNotFoundError(
-            f"Configuration file not found: {path}\n"
-            "Create config.ini with:\n\n"
-            "# Oracle Configuration\n\n"
-            "[project]\n"
-            "website = https://www.example.com\n"
+            f"""
+Configuration file not found: {path}
+
+To configure Oracle:
+
+1. Copy
+
+       config_TEMPLATE.ini
+
+   to
+
+       config.ini
+
+2. Edit config.ini and enter your website and API credentials.
+
+IMPORTANT
+
+config.ini contains private information and should NEVER be
+committed to GitHub.
+
+Only config_TEMPLATE.ini belongs in the repository.
+"""
         )
 
     parser = ConfigParser()
