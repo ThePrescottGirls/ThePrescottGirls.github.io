@@ -18,3 +18,16 @@ __pycache__/
 src/spider/.venv/
 src/spider/reports/
 src/spider/credentials/
+
+# ------------------------------------------------------------------
+# ORACLE
+# ------------------------------------------------------------------
+
+src/oracle/.venv/
+src/oracle/credentials/
+src/oracle/reports/*.html
+
+# SQLite runtime files
+*.db-wal
+*.db-shm
+*.db-journal

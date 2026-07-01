@@ -1,0 +1,1 @@
+Oracle - from knowledge comes foresight
