@@ -243,6 +243,60 @@ class OracleDatabase:
         ))
 
         return cursor.fetchone()[0]
+        
+    # ------------------------------------------------------------------
+    # Inspections
+    # ------------------------------------------------------------------
+
+    def register_inspection(
+        self,
+        run_id,
+        page_id,
+        verdict,
+        coverage_state,
+        indexing_state,
+        robots_txt_state,
+        page_fetch_state,
+        google_canonical,
+        user_canonical,
+        raw_json,
+    ):
+        cursor = self.conn.cursor()
+
+        now = datetime.now(UTC).isoformat(timespec="seconds")
+
+        cursor.execute("""
+            INSERT INTO inspections (
+                run_id,
+                page_id,
+                inspected_at,
+                verdict,
+                coverage_state,
+                indexing_state,
+                robots_txt_state,
+                page_fetch_state,
+                google_canonical,
+                user_canonical,
+                raw_json
+            )
+            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+        """, (
+            run_id,
+            page_id,
+            now,
+            verdict,
+            coverage_state,
+            indexing_state,
+            robots_txt_state,
+            page_fetch_state,
+            google_canonical,
+            user_canonical,
+            raw_json,
+        ))
+
+        self.conn.commit()
+
+        return cursor.lastrowid
 
     # ------------------------------------------------------------------
     # Utility
