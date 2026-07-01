@@ -26,6 +26,10 @@ src/spider/credentials/
 src/oracle/.venv/
 src/oracle/credentials/
 src/oracle/reports/*.html
+src/oracle/config.ini
+src/oracle/database/*.db
+
+
 
 # SQLite runtime files
 *.db-wal

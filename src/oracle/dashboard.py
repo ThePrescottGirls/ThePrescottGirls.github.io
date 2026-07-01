@@ -266,6 +266,46 @@ def show_query_summary(connection: sqlite3.Connection) -> None:
     print()
 
 
+def show_queries(connection: sqlite3.Connection) -> None:
+    print_heading("Tracked Queries", "-")
+
+    if not table_exists(connection, "queries"):
+        print("No queries table found yet.")
+        print()
+        return
+
+    rows = fetchall(
+        connection,
+        """
+        SELECT
+            id,
+            CASE
+                WHEN is_active = 1 THEN 'active'
+                ELSE 'inactive'
+            END AS status,
+            query_text,
+            created_at,
+            updated_at
+          FROM queries
+         ORDER BY is_active DESC,
+                  query_text
+        """,
+    )
+
+    print_rows(
+        rows,
+        [
+            ("id", "ID"),
+            ("status", "Status"),
+            ("query_text", "Query"),
+            ("created_at", "Created"),
+            ("updated_at", "Updated"),
+        ],
+        "No queries found.",
+    )
+    print()
+
+
 def parse_arguments() -> argparse.Namespace:
     parser = argparse.ArgumentParser(
         description="Show a rudimentary Oracle dashboard."
@@ -302,6 +342,7 @@ def main() -> None:
         show_recent_runs(connection, args.run_limit)
         show_pages(connection, args.page_limit)
         show_query_summary(connection)
+        show_queries(connection)
 
     print("Dashboard complete.")
 
