@@ -19,12 +19,15 @@ fi
 
 echo
 echo "==========================================="
-echo "SPIDER"
+echo "ORACLE"
 echo "==========================================="
 echo "Python: $(python --version)"
 echo
 
-python spider.py
+# Default property during development
+PROPERTY="${1:-https://www.theprescottgirls.com}"
+
+python oracle.py "$PROPERTY"
 
 echo
 echo "Press Return to close."
