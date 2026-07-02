@@ -29,8 +29,7 @@ src/oracle/reports/*.html
 src/oracle/config.ini
 src/oracle/database/*.db
 src/oracle/dashboard_html/*.html
-src/oracle/docs/api/*.html
-src/oracle/docs/api/*.js
+src/oracle/docs/api/*.*
 
 
 
