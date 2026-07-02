@@ -95,7 +95,7 @@ def show_text(connection: sqlite3.Connection, site_url: str, **kwargs) -> None:
 
     print_heading("Oracle Dashboard")
 
-    print_key_value("Website", metrics["website"])
+    print_key_value("Site", metrics["website"])
     print_key_value("Discovered Pages", metrics["discovered_pages"])
     print_key_value("Suggested Queries", metrics["suggested_queries"])
     print_key_value("Manual Queries", metrics["manual_queries"])
@@ -105,31 +105,45 @@ def show_text(connection: sqlite3.Connection, site_url: str, **kwargs) -> None:
     print()
 
 
+def _metric_card(label: str, value: object, href: str, hint: str) -> str:
+    return (
+        f'<a class="metric" href="{html_escape(href)}">'
+        f'<div class="label">{html_escape(label)}</div>'
+        f'<div class="value">{html_escape(value)}</div>'
+        f'<div class="hint">{html_escape(hint)}</div>'
+        f'</a>'
+    )
+
+
 def render_html(connection: sqlite3.Connection, output_dir, nav_items, site_url: str, **kwargs):
     metrics = _metrics(connection, site_url)
 
     metric_cards = [
-        ("Discovered Pages", metrics["discovered_pages"]),
-        ("Suggested Queries", metrics["suggested_queries"]),
-        ("Manual Queries", metrics["manual_queries"]),
-        ("SerpApi Searches", metrics["serpapi_searches"]),
-        ("AI Overviews", metrics["ai_overviews"]),
+        ("Discovered Pages", metrics["discovered_pages"], "pages.html", "Open pages"),
+        ("Suggested Queries", metrics["suggested_queries"], "queries.html", "Open queries"),
+        ("Manual Queries", metrics["manual_queries"], "queries.html", "Open queries"),
+        ("SerpApi Searches", metrics["serpapi_searches"], "results.html", "Open results"),
+        ("AI Overviews", metrics["ai_overviews"], "results.html", "Open results"),
     ]
 
     body = []
 
-    body.append('<section class="card">')
-    body.append("<h2>Website</h2>")
-    body.append(f'<p><a href="{html_escape(metrics["website"])}">{html_escape(metrics["website"])}</a></p>')
-    body.append(f'<p class="muted">Last updated: {html_escape(metrics["last_updated"])}</p>')
-    body.append("</section>")
-
     body.append('<section class="grid">')
-    for label, value in metric_cards:
-        body.append(
-            f'<div class="metric"><div class="label">{html_escape(label)}</div>'
-            f'<div class="value">{html_escape(value)}</div></div>'
-        )
+    for label, value, href, hint in metric_cards:
+        body.append(_metric_card(label, value, href, hint))
     body.append("</section>")
 
-    return write_html_page(output_dir, HTML_FILE, "Oracle Dashboard", "\n".join(body), nav_items)
+    body.append('<p class="muted">')
+    body.append(f'Last updated: {html_escape(metrics["last_updated"])}')
+    body.append('</p>')
+
+    header_right = f'<a href="{html_escape(metrics["website"])}">{html_escape(metrics["website"])}</a>'
+
+    return write_html_page(
+        output_dir,
+        HTML_FILE,
+        "Oracle Dashboard",
+        "\n".join(body),
+        nav_items,
+        header_right=header_right,
+    )

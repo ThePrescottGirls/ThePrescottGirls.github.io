@@ -103,7 +103,14 @@ def short_path_from_url(url: str | None) -> str:
     return path
 
 
-def write_html_page(output_dir: str | Path, filename: str, title: str, body: str, nav_items: list[tuple[str, str]]) -> Path:
+def write_html_page(
+    output_dir: str | Path,
+    filename: str,
+    title: str,
+    body: str,
+    nav_items: list[tuple[str, str]],
+    header_right: str | None = None,
+) -> Path:
     output_path = Path(output_dir)
     output_path.mkdir(parents=True, exist_ok=True)
 
@@ -111,6 +118,10 @@ def write_html_page(output_dir: str | Path, filename: str, title: str, body: str
         f'<a href="{html_escape(href)}">{html_escape(label)}</a>'
         for label, href in nav_items
     )
+
+    header_right_html = ""
+    if header_right:
+        header_right_html = f'<div class="header-right">{header_right}</div>'
 
     document = f"""<!doctype html>
 <html lang="en">
@@ -138,7 +149,27 @@ body {{
     color: var(--text);
 }}
 header {{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 24px;
     padding: 24px 32px 12px;
+}}
+h1 {{
+    margin: 0;
+}}
+.header-right {{
+    color: var(--muted);
+    font-size: 0.98rem;
+    text-align: right;
+    white-space: nowrap;
+}}
+.header-right a {{
+    color: var(--neutral);
+    text-decoration: none;
+}}
+.header-right a:hover {{
+    text-decoration: underline;
 }}
 nav {{
     display: flex;
@@ -177,6 +208,15 @@ main {{
     border-radius: 12px;
     padding: 14px 16px;
 }}
+a.metric {{
+    display: block;
+    color: inherit;
+    text-decoration: none;
+}}
+a.metric:hover {{
+    border-color: var(--neutral);
+    box-shadow: 0 2px 5px rgba(16, 24, 40, 0.08);
+}}
 .metric .label {{
     color: var(--muted);
     font-size: 0.86rem;
@@ -185,6 +225,11 @@ main {{
     font-size: 1.6rem;
     font-weight: 700;
     margin-top: 4px;
+}}
+.metric .hint {{
+    color: var(--muted);
+    font-size: 0.78rem;
+    margin-top: 6px;
 }}
 table {{
     width: 100%;
@@ -229,7 +274,17 @@ th {{
     color: var(--neutral);
 }}
 @media (max-width: 740px) {{
-    header, nav, main {{ padding-left: 18px; padding-right: 18px; }}
+    header {{
+        display: block;
+        padding-left: 18px;
+        padding-right: 18px;
+    }}
+    .header-right {{
+        margin-top: 6px;
+        text-align: left;
+        white-space: normal;
+    }}
+    nav, main {{ padding-left: 18px; padding-right: 18px; }}
     .result-row {{ grid-template-columns: 42px 1fr; }}
     .result-title {{ grid-column: 2; }}
 }}
@@ -238,6 +293,7 @@ th {{
 <body>
 <header>
 <h1>{html_escape(title)}</h1>
+{header_right_html}
 </header>
 <nav>
 {nav}
