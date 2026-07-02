@@ -322,6 +322,12 @@ def parse_arguments() -> argparse.Namespace:
         default=None,
         help="Number of pages to show. Default: all pages.",
     )
+    parser.add_argument(
+        "-view",
+        choices=["all","summary","sites","runs","pages","queries","results"],
+        default="all",
+        help="Display a single dashboard view (default: all).",
+    )
     return parser.parse_args()
 
 
@@ -337,12 +343,22 @@ def main() -> None:
     print()
 
     with connect_database(db_path) as connection:
-        show_overview(connection)
-        show_sites(connection)
-        show_recent_runs(connection, args.run_limit)
-        show_pages(connection, args.page_limit)
-        show_query_summary(connection)
-        show_queries(connection)
+        view=args.view
+        if view in ("all","summary"):
+            show_overview(connection)
+        if view in ("all","sites"):
+            show_sites(connection)
+        if view in ("all","runs"):
+            show_recent_runs(connection, args.run_limit)
+        if view in ("all","pages"):
+            show_pages(connection, args.page_limit)
+        if view in ("all","queries"):
+            show_query_summary(connection)
+            show_queries(connection)
+        if view=="results":
+            print_heading("Search Performance","-")
+            print("Search Performance view coming next.")
+            print()
 
     print("Dashboard complete.")
 
