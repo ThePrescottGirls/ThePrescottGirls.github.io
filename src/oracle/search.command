@@ -26,7 +26,7 @@ echo "Oracle Search Queries"
 echo "Python: $(python --version)"
 echo
 
-python search.py
+python search.py "$@"
 
 echo
 echo "Press Return to close."

@@ -21,6 +21,8 @@ CONFIG_FILE = Path("config.ini")
 @dataclass(frozen=True)
 class OracleConfig:
     website: str
+    search_google_api_key: str
+    search_google_engine_id: str
 
 
 def load_config(config_file: str | Path = CONFIG_FILE) -> OracleConfig:
@@ -63,9 +65,24 @@ Only config_TEMPLATE.ini belongs in the repository.
 
     if not website:
         raise ValueError("Missing 'website' setting in [project] section of config.ini")
+        
+    search_google_api_key = parser.get(
+        "search",
+        "GOOGLE_SEARCH_API_KEY",
+        fallback=""
+    ).strip()
 
-    return OracleConfig(website=website)
+    search_google_engine_id = parser.get(
+        "search",
+        "GOOGLE_SEARCH_ENGINE_ID",
+        fallback=""
+    ).strip()
 
+    return OracleConfig(
+        website=website,
+        search_google_api_key=search_google_api_key,
+        search_google_engine_id=search_google_engine_id,
+    )
 
 if __name__ == "__main__":
     config = load_config()

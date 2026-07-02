@@ -16,11 +16,11 @@ from __future__ import annotations
 
 import argparse
 import json
-import os
 import time
 from dataclasses import dataclass
 from typing import Any
 from urllib.parse import urldefrag
+from urllib.error import HTTPError, URLError
 from urllib.request import Request, urlopen
 from urllib.parse import urlencode
 
@@ -67,24 +67,20 @@ def load_page_lookup(db: Database, site_id: int) -> dict[str, int]:
 def fetch_google_custom_search_results(
     query: str,
     results_per_query: int,
+    api_key: str,
+    search_engine_id: str,
 ) -> list[SearchResult]:
     """
     Fetch search results using Google's Custom Search JSON API.
 
-    Required environment variables:
-        GOOGLE_SEARCH_API_KEY
-        GOOGLE_SEARCH_ENGINE_ID
-
+    Credentials are supplied by Oracle's config.ini through load_config().
     The search engine should be configured to search the public web.
     """
-    api_key = os.environ.get("GOOGLE_SEARCH_API_KEY", "").strip()
-    search_engine_id = os.environ.get("GOOGLE_SEARCH_ENGINE_ID", "").strip()
-
     if not api_key:
-        raise RuntimeError("Missing environment variable: GOOGLE_SEARCH_API_KEY")
+        raise RuntimeError("Missing config value: [search] GOOGLE_SEARCH_API_KEY")
 
     if not search_engine_id:
-        raise RuntimeError("Missing environment variable: GOOGLE_SEARCH_ENGINE_ID")
+        raise RuntimeError("Missing config value: [search] GOOGLE_SEARCH_ENGINE_ID")
 
     parameters = {
         "key": api_key,
@@ -95,6 +91,14 @@ def fetch_google_custom_search_results(
 
     url = "https://www.googleapis.com/customsearch/v1?" + urlencode(parameters)
 
+    safe_url = (
+        url
+        .replace(api_key, "***API_KEY***")
+        .replace(search_engine_id, "***CX***")
+    )
+
+    print(f"    GET {safe_url}")
+
     request = Request(
         url,
         headers={
@@ -102,8 +106,34 @@ def fetch_google_custom_search_results(
         },
     )
 
-    with urlopen(request) as response:
-        payload = json.loads(response.read().decode("utf-8"))
+
+
+
+
+    request = Request(
+        url,
+        headers={
+            "User-Agent": "Oracle Search Collector/1.0",
+        },
+    )
+
+    try:
+        with urlopen(request) as response:
+            payload = json.loads(response.read().decode("utf-8"))
+    except HTTPError as error:
+        error_body = error.read().decode("utf-8", errors="replace")
+
+        try:
+            error_payload = json.loads(error_body)
+            message = json.dumps(error_payload, indent=2)
+        except json.JSONDecodeError:
+            message = error_body.strip() or str(error)
+
+        raise RuntimeError(
+            f"Google Custom Search API error {error.code}: {message}"
+        ) from error
+    except URLError as error:
+        raise RuntimeError(f"Network error calling Google Custom Search API: {error}") from error
 
     results: list[SearchResult] = []
 
@@ -183,6 +213,8 @@ def collect_search_results(
                 results = fetch_google_custom_search_results(
                     query_text,
                     results_per_query,
+                    config.search_google_api_key,
+                    config.search_google_engine_id,
                 )
             except Exception as error:
                 failed_queries += 1
@@ -248,6 +280,12 @@ def parse_arguments() -> argparse.Namespace:
         description="Collect search results for Oracle's active queries."
     )
     parser.add_argument(
+        "limit",
+        nargs="?",
+        type=int,
+        help="Optional positional limit on the number of active queries to execute (testing shortcut).",
+    )
+    parser.add_argument(
         "--top",
         type=int,
         default=DEFAULT_RESULTS_PER_QUERY,
@@ -278,7 +316,7 @@ def main() -> None:
 
     collect_search_results(
         results_per_query=args.top,
-        query_limit=args.query_limit,
+        query_limit=args.query_limit if args.query_limit is not None else args.limit,
         delay_seconds=args.delay,
         dry_run=args.dry_run,
     )

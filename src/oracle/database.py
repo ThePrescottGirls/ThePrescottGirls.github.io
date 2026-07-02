@@ -7,7 +7,7 @@ Shared Oracle database layer.
 Responsible for:
     - Opening the SQLite database
     - Creating and migrating the schema
-    - Registering sites, discovery runs, pages, queries, and inspections
+    - Registering sites, runs, pages, queries, inspections, and search observations
 
 This file is intentionally plain and reusable. It should not know anything
 about Google APIs, command-line arguments, dashboards, or presentation code.
@@ -21,7 +21,7 @@ from typing import Any
 from urllib.parse import urlparse
 
 
-SCHEMA_VERSION = 2
+SCHEMA_VERSION = 3
 
 
 class Database:
@@ -77,16 +77,40 @@ class Database:
                 id INTEGER PRIMARY KEY AUTOINCREMENT,
                 site_id INTEGER NOT NULL,
                 run_type TEXT NOT NULL DEFAULT 'discovery',
+                provider TEXT,
+                engine TEXT,
+                location_requested TEXT,
+                location_used TEXT,
+                google_domain TEXT,
+                hl TEXT,
+                gl TEXT,
+                device TEXT,
                 started_at TEXT NOT NULL,
                 finished_at TEXT,
                 status TEXT NOT NULL,
                 message TEXT,
+                raw_json TEXT,
                 FOREIGN KEY(site_id) REFERENCES sites(id)
             )
         """)
 
         if "run_type" not in self.column_names("runs"):
             cursor.execute("ALTER TABLE runs ADD COLUMN run_type TEXT NOT NULL DEFAULT 'discovery'")
+
+        run_columns = self.column_names("runs")
+        for column_name in [
+            "provider",
+            "engine",
+            "location_requested",
+            "location_used",
+            "google_domain",
+            "hl",
+            "gl",
+            "device",
+            "raw_json",
+        ]:
+            if column_name not in run_columns:
+                cursor.execute(f"ALTER TABLE runs ADD COLUMN {column_name} TEXT")
 
         cursor.execute("""
             CREATE TABLE IF NOT EXISTS pages (
@@ -141,16 +165,81 @@ class Database:
                 id INTEGER PRIMARY KEY AUTOINCREMENT,
                 run_id INTEGER NOT NULL,
                 query_id INTEGER NOT NULL,
+                search_response_id INTEGER,
                 page_id INTEGER,
                 checked_at TEXT NOT NULL,
                 position INTEGER,
                 result_url TEXT,
+                displayed_link TEXT,
+                redirect_link TEXT,
                 title TEXT,
                 snippet TEXT,
+                source TEXT,
+                result_type TEXT,
+                favicon TEXT,
+                result_date TEXT,
+                about_this_result_json TEXT,
                 raw_json TEXT,
                 FOREIGN KEY(run_id) REFERENCES runs(id),
                 FOREIGN KEY(query_id) REFERENCES queries(id),
+                FOREIGN KEY(search_response_id) REFERENCES search_responses(id),
                 FOREIGN KEY(page_id) REFERENCES pages(id)
+            )
+        """)
+
+        query_result_columns = self.column_names("query_results")
+        for column_name in [
+            "search_response_id",
+            "displayed_link",
+            "redirect_link",
+            "source",
+            "result_type",
+            "favicon",
+            "result_date",
+            "about_this_result_json",
+        ]:
+            if column_name not in query_result_columns:
+                cursor.execute(f"ALTER TABLE query_results ADD COLUMN {column_name} TEXT")
+
+        cursor.execute("""
+            CREATE TABLE IF NOT EXISTS search_responses (
+                id INTEGER PRIMARY KEY AUTOINCREMENT,
+                run_id INTEGER NOT NULL,
+                query_id INTEGER NOT NULL,
+                checked_at TEXT NOT NULL,
+                provider TEXT,
+                engine TEXT,
+                query_text TEXT,
+                location_requested TEXT,
+                location_used TEXT,
+                google_domain TEXT,
+                hl TEXT,
+                gl TEXT,
+                device TEXT,
+                total_results INTEGER,
+                time_taken_displayed REAL,
+                organic_results_state TEXT,
+                search_metadata_json TEXT,
+                search_parameters_json TEXT,
+                search_information_json TEXT,
+                raw_json TEXT,
+                FOREIGN KEY(run_id) REFERENCES runs(id),
+                FOREIGN KEY(query_id) REFERENCES queries(id)
+            )
+        """)
+
+        cursor.execute("""
+            CREATE TABLE IF NOT EXISTS serp_features (
+                id INTEGER PRIMARY KEY AUTOINCREMENT,
+                search_response_id INTEGER,
+                run_id INTEGER NOT NULL,
+                query_id INTEGER,
+                feature_type TEXT NOT NULL,
+                created_at TEXT NOT NULL,
+                raw_json TEXT,
+                FOREIGN KEY(search_response_id) REFERENCES search_responses(id),
+                FOREIGN KEY(run_id) REFERENCES runs(id),
+                FOREIGN KEY(query_id) REFERENCES queries(id)
             )
         """)
 
@@ -207,13 +296,54 @@ class Database:
     # Runs
     # ------------------------------------------------------------------
 
-    def start_run(self, site_id: int, run_type: str = "discovery") -> int:
+    def start_run(
+        self,
+        site_id: int,
+        run_type: str = "discovery",
+        provider: str | None = None,
+        engine: str | None = None,
+        location_requested: str | None = None,
+        location_used: str | None = None,
+        google_domain: str | None = None,
+        hl: str | None = None,
+        gl: str | None = None,
+        device: str | None = None,
+        raw_json: str | dict[str, Any] | None = None,
+    ) -> int:
         cursor = self.connection.cursor()
 
         cursor.execute("""
-            INSERT INTO runs (site_id, run_type, started_at, status)
-            VALUES (?, ?, ?, ?)
-        """, (site_id, run_type, utc_now(), "running"))
+            INSERT INTO runs (
+                site_id,
+                run_type,
+                provider,
+                engine,
+                location_requested,
+                location_used,
+                google_domain,
+                hl,
+                gl,
+                device,
+                started_at,
+                status,
+                raw_json
+            )
+            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+        """, (
+            site_id,
+            run_type,
+            provider,
+            engine,
+            location_requested,
+            location_used,
+            google_domain,
+            hl,
+            gl,
+            device,
+            utc_now(),
+            "running",
+            encode_json(raw_json),
+        ))
 
         self.connection.commit()
         return cursor.lastrowid
@@ -433,15 +563,128 @@ class Database:
     # Query results
     # ------------------------------------------------------------------
 
+    def register_search_response(
+        self,
+        run_id: int,
+        query_id: int,
+        provider: str | None = None,
+        engine: str | None = None,
+        query_text: str | None = None,
+        location_requested: str | None = None,
+        location_used: str | None = None,
+        google_domain: str | None = None,
+        hl: str | None = None,
+        gl: str | None = None,
+        device: str | None = None,
+        total_results: int | None = None,
+        time_taken_displayed: float | None = None,
+        organic_results_state: str | None = None,
+        search_metadata: str | dict[str, Any] | None = None,
+        search_parameters: str | dict[str, Any] | None = None,
+        search_information: str | dict[str, Any] | None = None,
+        raw_json: str | dict[str, Any] | None = None,
+    ) -> int:
+        """Store one complete provider response for one query."""
+        cursor = self.connection.cursor()
+
+        cursor.execute("""
+            INSERT INTO search_responses (
+                run_id,
+                query_id,
+                checked_at,
+                provider,
+                engine,
+                query_text,
+                location_requested,
+                location_used,
+                google_domain,
+                hl,
+                gl,
+                device,
+                total_results,
+                time_taken_displayed,
+                organic_results_state,
+                search_metadata_json,
+                search_parameters_json,
+                search_information_json,
+                raw_json
+            )
+            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+        """, (
+            run_id,
+            query_id,
+            utc_now(),
+            provider,
+            engine,
+            query_text,
+            location_requested,
+            location_used,
+            google_domain,
+            hl,
+            gl,
+            device,
+            total_results,
+            time_taken_displayed,
+            organic_results_state,
+            encode_json(search_metadata),
+            encode_json(search_parameters),
+            encode_json(search_information),
+            encode_json(raw_json),
+        ))
+
+        self.connection.commit()
+        return cursor.lastrowid
+
+    def register_serp_feature(
+        self,
+        run_id: int,
+        feature_type: str,
+        search_response_id: int | None = None,
+        query_id: int | None = None,
+        raw_json: str | dict[str, Any] | None = None,
+    ) -> int:
+        """Store a non-organic SERP feature such as a knowledge graph or AI overview token."""
+        cursor = self.connection.cursor()
+
+        cursor.execute("""
+            INSERT INTO serp_features (
+                search_response_id,
+                run_id,
+                query_id,
+                feature_type,
+                created_at,
+                raw_json
+            )
+            VALUES (?, ?, ?, ?, ?, ?)
+        """, (
+            search_response_id,
+            run_id,
+            query_id,
+            feature_type,
+            utc_now(),
+            encode_json(raw_json),
+        ))
+
+        self.connection.commit()
+        return cursor.lastrowid
+
     def register_query_result(
         self,
         run_id: int,
         query_id: int,
+        search_response_id: int | None = None,
         page_id: int | None = None,
         position: int | None = None,
         result_url: str | None = None,
+        displayed_link: str | None = None,
+        redirect_link: str | None = None,
         title: str | None = None,
         snippet: str | None = None,
+        source: str | None = None,
+        result_type: str | None = None,
+        favicon: str | None = None,
+        result_date: str | None = None,
+        about_this_result: str | dict[str, Any] | None = None,
         raw_json: str | dict[str, Any] | None = None,
     ) -> int:
         cursor = self.connection.cursor()
@@ -450,24 +693,40 @@ class Database:
             INSERT INTO query_results (
                 run_id,
                 query_id,
+                search_response_id,
                 page_id,
                 checked_at,
                 position,
                 result_url,
+                displayed_link,
+                redirect_link,
                 title,
                 snippet,
+                source,
+                result_type,
+                favicon,
+                result_date,
+                about_this_result_json,
                 raw_json
             )
-            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
+            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
         """, (
             run_id,
             query_id,
+            search_response_id,
             page_id,
             utc_now(),
             position,
             result_url,
+            displayed_link,
+            redirect_link,
             title,
             snippet,
+            source,
+            result_type,
+            favicon,
+            result_date,
+            encode_json(about_this_result),
             encode_json(raw_json),
         ))
 
@@ -550,7 +809,7 @@ def utc_now() -> str:
     return datetime.now(UTC).isoformat(timespec="seconds")
 
 
-def encode_json(value: str | dict[str, Any] | None) -> str | None:
+def encode_json(value: str | dict[str, Any] | list[Any] | None) -> str | None:
     if value is None or isinstance(value, str):
         return value
     return json.dumps(value, indent=2, sort_keys=True)
