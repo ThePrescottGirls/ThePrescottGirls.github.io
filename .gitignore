@@ -28,6 +28,8 @@ src/oracle/credentials/
 src/oracle/reports/*.html
 src/oracle/config.ini
 src/oracle/database/*.db
+src/oracle/dashboard_html/*.html
+
 
 
 
