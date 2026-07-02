@@ -366,7 +366,6 @@ def update_query_seen_time(db: Database, query_id: int) -> None:
 
 
 def confirm_existing_query_run(
-    query_text: str,
     history: dict[str, Any],
     assume_yes: bool,
 ) -> bool:
@@ -375,15 +374,6 @@ def confirm_existing_query_run(
         return True
 
     print()
-    print("Query already exists:")
-    print(f"    {query_text}")
-    print()
-    print("Previous observations:")
-    print(f"    Last run : {history['last_checked_at'] or 'unknown'}")
-    print(f"    Runs     : {history['run_count']}")
-    print(f"    Results  : {history['result_count']}")
-    print()
-
     try:
         answer = input("Run this search again? [y/N] ").strip().lower()
     except EOFError:
@@ -413,12 +403,13 @@ def resolve_query_override(
 
         print("Using existing query:")
         print(f"    {query_text}")
+        print()
         print(f"    Status   : {status}")
         print(f"    Last run : {history['last_checked_at'] or 'never'}")
         print(f"    Runs     : {history['run_count']}")
         print(f"    Results  : {history['result_count']}")
 
-        if not confirm_existing_query_run(query_text, history, assume_yes):
+        if not confirm_existing_query_run(history, assume_yes):
             print()
             print("Search cancelled.")
             return []
@@ -428,12 +419,13 @@ def resolve_query_override(
 
         return [{"id": row["id"], "query_text": query_text}]
 
-    print("Query not found.")
-    print("Added inactive ad-hoc query:")
+    print("Added new query:")
     print(f"    {query_text}")
+    print()
+    print("    Status   : inactive")
 
     if dry_run:
-        print("Dry run: query was not added to the database.")
+        print("    Dry run  : query was not added to the database.")
         return [{"id": -1, "query_text": query_text}]
 
     query_id = create_ad_hoc_query(db, site_id, query_text)
