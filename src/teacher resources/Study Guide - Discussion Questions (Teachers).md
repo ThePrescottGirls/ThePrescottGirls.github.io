@@ -1,12 +1,16 @@
 # **The Prescott Girls — Discussion Questions (Teachers)**
 
-## **Discussion Questions with examples from the book**
+## **Teaching with This Discussion Guide**
 
----
+Historical fiction offers students more than a story to enjoy—it provides an opportunity to explore history through the experiences of people their own age. *The Prescott Girls* follows three sisters as they navigate loss, family, education, and questions of conscience in 1830s Maine. This guide is designed to help teachers use those experiences as a foundation for thoughtful classroom discussion.
 
-Each section below corresponds to a group of chapters. Questions are supported with direct quotes from the text to guide discussion. Students should answer in their own words rather than quoting directly.
+Rather than focusing on simple recall, these questions encourage students to examine evidence from the text, consider multiple perspectives, and support their ideas with examples. Many of the questions invite students to compare historical choices with issues they encounter in their own lives, helping them develop both historical understanding and critical thinking skills.
 
----
+The guide is organized into ten sections that correspond to major parts of the novel. Each discussion question is accompanied by selected quotations from the text to help teachers guide conversations while encouraging students to answer in their own words. The quotations are intended as reference points, not model answers.
+
+These questions may be used for whole-class discussion, small-group activities, literature circles, journaling, or writing assignments. Teachers may choose to work through the guide sequentially as the class reads the novel or select individual sections that support specific classroom objectives.
+
+While the story is grounded in documented history, many of the conversations extend beyond historical events to themes that remain relevant today, including family responsibility, civic engagement, fairness, moral courage, and the importance of making decisions based on evidence and conscience.
 
 # **1\. Leaving New Sharon**
 
@@ -69,12 +73,16 @@ Each section below corresponds to a group of chapters. Questions are supported w
 * “For Dresden,” Hannah said simply…  
 * “Flower seeds for your new home.”
 
+---
+
 8. ## **What moment shows a shift toward hope or looking ahead?**
 
 * “Will there be flowers where we are going?”  
 * “If not, we will plant some.”
 
 ---
+
+# 
 
 # **2\. The Road to Dresden**
 
@@ -147,6 +155,8 @@ Each section below corresponds to a group of chapters. Questions are supported w
 * “The building stood on the top of the hill, tall and square and painted a sensible white.”  
 * “They watched as Uncle Thomas opened the front door, and for the first time, they stepped inside.”
 
+---
+
 # 
 
 # **3\. Entering a New World**
@@ -212,10 +222,7 @@ Each section below corresponds to a group of chapters. Questions are supported w
 * “Inside were… a needlework sampler bearing her mother’s name…”  
 * “I thought these were lost…”  
 * “So, in the quiet room… Louisa began to read aloud.”  
-* “the courthouse slowly became something else…”  
-* “finally the old courthouse became their home.”
-
-# 
+* “the courthouse slowly became something else…finally the old courthouse became their home”
 
 # **4\. Work, Study, and New Ideas**
 
@@ -280,6 +287,8 @@ Each section below corresponds to a group of chapters. Questions are supported w
 * “I could no longer pretend that standing still was the same as helping.”  
 * “People helping others on their journey north.”  
 * “conscience sometimes requires us to speak.”
+
+---
 
 # 
 
@@ -350,6 +359,8 @@ Each section below corresponds to a group of chapters. Questions are supported w
 * “I brought something for thee.”  
 * “It was written to educate people who would rather not think about slavery.”  
 * “the youngest among us often carry the clearest sense of what is just.”
+
+---
 
 # 
 
