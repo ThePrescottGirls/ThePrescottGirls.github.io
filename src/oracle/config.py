@@ -2,10 +2,10 @@
 """
 config.py
 
-Shared configuration loader for Oracle.
+Simple INI configuration loader.
 
-All Oracle tools should read config.ini through this module rather than
-hard-coding project settings.
+Provides access to configuration values using hierarchical keys in the
+form "section.option".
 """
 
 from __future__ import annotations
@@ -22,10 +22,6 @@ class Config:
 
     def __init__(self, parser: ConfigParser):
         self._parser = parser
-
-    def website(self) -> str:
-        """Return the configured website."""
-        return self.require("project.website")
 
     def get(self, key: str, default: str | None = None) -> str | None:
         """
@@ -70,10 +66,16 @@ class Config:
         return value
 
 
-def load_config(config_file: str | Path = CONFIG_FILE) -> Config:
+def load_config(config_file: str | Path | None = None) -> Config:
     """
-    Load Oracle configuration from config.ini.
+    Load configuration from an INI file.
+
+    If no configuration file is specified, config.ini in the same
+    directory as this module is used.
     """
+    if config_file is None:
+        config_file = CONFIG_FILE
+
     path = Path(config_file)
 
     if not path.exists():
@@ -81,24 +83,10 @@ def load_config(config_file: str | Path = CONFIG_FILE) -> Config:
             f"""
 Configuration file not found: {path}
 
-To configure Oracle:
+Create the configuration file and add the required settings.
 
-1. Copy
-
-       config_TEMPLATE.ini
-
-   to
-
-       config.ini
-
-2. Edit config.ini and enter your project settings.
-
-IMPORTANT
-
-config.ini contains private information and should NEVER be
-committed to GitHub.
-
-Only config_TEMPLATE.ini belongs in the repository.
+Do not commit configuration files containing private values, credentials,
+or local machine settings.
 """
         )
 
@@ -109,12 +97,5 @@ Only config_TEMPLATE.ini belongs in the repository.
 
 
 if __name__ == "__main__":
-    config = load_config()
-
-    print("Oracle Configuration")
-    print("====================")
-    print()
-
-    print("Project")
-    print("-------")
-    print(f"Website : {config.website()}")
+    load_config()
+    print("Configuration loaded.")

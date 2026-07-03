@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Change to the Oracle project root
-cd "$(dirname "$0")/.."
+cd "$(dirname "$0")"
 
 # Activate the local virtual environment
 source .venv/bin/activate
