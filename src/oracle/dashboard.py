@@ -15,8 +15,8 @@ import argparse
 import sqlite3
 from pathlib import Path
 
+from common import database_path, website
 from config import load_config
-from database import database_path_for_site
 
 from views import pages
 from views import queries
@@ -102,12 +102,12 @@ def nav_items() -> list[tuple[str, str]]:
     ]
 
 
-def common_kwargs(args: argparse.Namespace, config) -> dict:
+def common_kwargs(args: argparse.Namespace, website: str) -> dict:
     return {
         "run_limit": args.run_limit,
         "page_limit": args.page_limit,
         "result_limit": args.result_limit,
-        "site_url": config.website,
+        "site_url": website,
     }
 
 
@@ -120,7 +120,11 @@ def show_text_view(connection: sqlite3.Connection, view: str, kwargs: dict) -> N
     VIEWS[view].show_text(connection, **kwargs)
 
 
-def render_html(connection: sqlite3.Connection, output_dir: str, kwargs: dict) -> list[Path]:
+def render_html(
+    connection: sqlite3.Connection,
+    output_dir: str,
+    kwargs: dict,
+) -> list[Path]:
     written: list[Path] = []
     nav = nav_items()
 
@@ -141,14 +145,16 @@ def main() -> None:
     args = parse_arguments()
 
     config = load_config()
-    db_path = database_path_for_site(config.website)
+
+    site = website(config)
+    db_path = database_path(config)
 
     print()
-    print(f"Website : {config.website}")
+    print(f"Website : {site}")
     print(f"Database: {db_path}")
     print()
 
-    kwargs = common_kwargs(args, config)
+    kwargs = common_kwargs(args, site)
 
     with connect_database(db_path) as connection:
         if args.view:

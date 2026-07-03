@@ -5,28 +5,75 @@ config.py
 Shared configuration loader for Oracle.
 
 All Oracle tools should read config.ini through this module rather than
-hard-coding website URLs or other project settings.
+hard-coding project settings.
 """
 
 from __future__ import annotations
 
 from configparser import ConfigParser
-from dataclasses import dataclass
 from pathlib import Path
 
 
-CONFIG_FILE = Path("config.ini")
+CONFIG_FILE = Path(__file__).with_name("config.ini")
 
 
-@dataclass(frozen=True)
-class OracleConfig:
-    website: str
-    search_google_api_key: str
-    search_google_engine_id: str
+class Config:
+    """Simple configuration service."""
+
+    def __init__(self, parser: ConfigParser):
+        self._parser = parser
+
+    def website(self) -> str:
+        """Return the configured website."""
+        return self.require("project.website")
+
+    def get(self, key: str, default: str | None = None) -> str | None:
+        """
+        Return a configuration value.
+
+        Args:
+            key: Configuration key in the form "section.option".
+            default: Value returned if the key does not exist.
+
+        Returns:
+            Configuration value or default.
+        """
+        try:
+            section, option = key.split(".", 1)
+        except ValueError:
+            raise ValueError(
+                f"Invalid configuration key '{key}'. "
+                "Expected 'section.option'."
+            )
+
+        value = self._parser.get(section, option, fallback=default)
+
+        if isinstance(value, str):
+            value = value.strip()
+
+        return value
+
+    def require(self, key: str) -> str:
+        """
+        Return a required configuration value.
+
+        Raises:
+            ValueError if the value is missing or empty.
+        """
+        value = self.get(key)
+
+        if not value:
+            raise ValueError(
+                f"Missing required configuration value '{key}' in {CONFIG_FILE.name}"
+            )
+
+        return value
 
 
-def load_config(config_file: str | Path = CONFIG_FILE) -> OracleConfig:
-    """Load Oracle configuration from config.ini."""
+def load_config(config_file: str | Path = CONFIG_FILE) -> Config:
+    """
+    Load Oracle configuration from config.ini.
+    """
     path = Path(config_file)
 
     if not path.exists():
@@ -44,7 +91,7 @@ To configure Oracle:
 
        config.ini
 
-2. Edit config.ini and enter your website and API credentials.
+2. Edit config.ini and enter your project settings.
 
 IMPORTANT
 
@@ -58,35 +105,16 @@ Only config_TEMPLATE.ini belongs in the repository.
     parser = ConfigParser()
     parser.read(path)
 
-    if "project" not in parser:
-        raise ValueError("Missing [project] section in config.ini")
+    return Config(parser)
 
-    website = parser.get("project", "website", fallback="").strip()
-
-    if not website:
-        raise ValueError("Missing 'website' setting in [project] section of config.ini")
-        
-    search_google_api_key = parser.get(
-        "search",
-        "GOOGLE_SEARCH_API_KEY",
-        fallback=""
-    ).strip()
-
-    search_google_engine_id = parser.get(
-        "search",
-        "GOOGLE_SEARCH_ENGINE_ID",
-        fallback=""
-    ).strip()
-
-    return OracleConfig(
-        website=website,
-        search_google_api_key=search_google_api_key,
-        search_google_engine_id=search_google_engine_id,
-    )
 
 if __name__ == "__main__":
     config = load_config()
+
     print("Oracle Configuration")
     print("====================")
     print()
-    print(f"Website : {config.website}")
+
+    print("Project")
+    print("-------")
+    print(f"Website : {config.website()}")

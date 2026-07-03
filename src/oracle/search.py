@@ -6,7 +6,7 @@ Collects search result observations for Oracle's active queries.
 
 Search does not analyze, score, graph, or interpret results. It only:
     - reads active queries from the configured site's database
-    - asks a search provider for results
+    - asks SerpApi for Google search results
     - stores the returned result rows in query_results
 
 Dashboard is responsible for interpreting the stored observations.
@@ -27,8 +27,9 @@ from urllib.error import HTTPError, URLError
 from urllib.parse import urlencode, urldefrag
 from urllib.request import Request, urlopen
 
+from common import database_path, website
 from config import load_config
-from database import Database, database_path_for_site
+from database import Database
 
 
 DEFAULT_RESULTS_PER_QUERY = 10
@@ -42,7 +43,6 @@ DEFAULT_SERPAPI_DEVICE = "desktop"
 
 @dataclass(frozen=True)
 class SearchSettings:
-    provider: str
     serpapi_api_key: str
     serpapi_location: str
     serpapi_hl: str
@@ -91,14 +91,11 @@ def load_page_lookup(db: Database, site_id: int) -> dict[str, int]:
 
 
 def load_search_settings(config_file: str | Path = "config.ini") -> SearchSettings:
-    """Load search-provider settings that are not yet part of config.py."""
+    """Load SerpApi search settings."""
     parser = ConfigParser()
     parser.read(config_file)
 
-    provider = parser.get("search", "provider", fallback="google").strip().lower()
-
     return SearchSettings(
-        provider=provider,
         serpapi_api_key=(
             parser.get("search", "SERPAPI_API_KEY", fallback="").strip()
             or parser.get("search", "SERPAPI_KEY", fallback="").strip()
@@ -131,76 +128,6 @@ def decode_http_error(error: HTTPError) -> str:
         return json.dumps(error_payload, indent=2)
     except json.JSONDecodeError:
         return error_body.strip() or str(error)
-
-
-def fetch_google_custom_search_results(
-    query: str,
-    results_per_query: int,
-    api_key: str,
-    search_engine_id: str,
-) -> tuple[dict[str, Any], list[SearchResult]]:
-    """
-    Fetch search results using Google's legacy Custom Search JSON API.
-
-    This is retained as a legacy provider. New Oracle searches should normally
-    use SerpApi, because Google has closed Custom Search JSON API access to
-    new signups.
-    """
-    if not api_key:
-        raise RuntimeError("Missing config value: [search] GOOGLE_SEARCH_API_KEY")
-
-    if not search_engine_id:
-        raise RuntimeError("Missing config value: [search] GOOGLE_SEARCH_ENGINE_ID")
-
-    parameters = {
-        "key": api_key,
-        "cx": search_engine_id,
-        "q": query,
-        "num": max(1, min(results_per_query, 10)),
-    }
-
-    url = "https://www.googleapis.com/customsearch/v1?" + urlencode(parameters)
-
-    safe_url = (
-        url
-        .replace(api_key, "***API_KEY***")
-        .replace(search_engine_id, "***CX***")
-    )
-    print(f"    GET {safe_url}")
-
-    request = Request(
-        url,
-        headers={
-            "User-Agent": "Oracle Search Collector/1.0",
-        },
-    )
-
-    try:
-        with urlopen(request) as response:
-            payload = json.loads(response.read().decode("utf-8"))
-    except HTTPError as error:
-        raise RuntimeError(
-            f"Google Custom Search API error {error.code}: {decode_http_error(error)}"
-        ) from error
-    except URLError as error:
-        raise RuntimeError(f"Network error calling Google Custom Search API: {error}") from error
-
-    results: list[SearchResult] = []
-
-    for index, item in enumerate(payload.get("items", []), start=1):
-        results.append(
-            SearchResult(
-                position=index,
-                title=item.get("title", ""),
-                url=item.get("link", ""),
-                snippet=item.get("snippet", ""),
-                displayed_link=item.get("displayLink"),
-                raw_json=item,
-                result_type="organic",
-            )
-        )
-
-    return payload, results
 
 
 def fetch_serpapi_google_results(
@@ -515,35 +442,35 @@ def collect_search_results(
 ) -> None:
     config = load_config()
     settings = load_search_settings()
-    db_path = database_path_for_site(config.website)
 
-    provider_label = (
-        "SerpApi Google Search API"
-        if settings.provider == "serpapi"
-        else "Google Custom Search JSON API"
-    )
+    site = website(config)
+    db_path = database_path(config)
+
+    provider = "serpapi"
+    provider_label = "SerpApi Google Search API"
 
     print("Search")
     print("======")
     print()
-    print(f"Website : {config.website}")
+    print(f"Website : {site}")
     print(f"Database: {db_path}")
     print(f"Provider: {provider_label}")
-    if settings.provider == "serpapi":
-        print(
-            "Market  : "
-            f"{settings.serpapi_location}, hl={settings.serpapi_hl}, "
-            f"gl={settings.serpapi_gl}, device={settings.serpapi_device}"
-        )
+    print(
+        "Market  : "
+        f"{settings.serpapi_location}, hl={settings.serpapi_hl}, "
+        f"gl={settings.serpapi_gl}, device={settings.serpapi_device}"
+    )
+
     if query_override:
         print("Mode    : Single command-line query override")
         print(f"Query   : {query_override}")
+
     print()
 
     db = Database(db_path)
     db.initialize()
 
-    site_id = db.get_or_create_site(config.website)
+    site_id = db.get_or_create_site(site)
 
     if query_override:
         queries = resolve_query_override(
@@ -576,39 +503,34 @@ def collect_search_results(
 
             print(f"[{query_index:2}/{len(queries)}] {query_text}")
 
+            history = query_history(db, query_id)
+
+            if history["result_count"] > 0 and not assume_yes:
+                print("    Already has results. Skipping. Use --yes to run again.")
+                continue
+
             try:
-                if settings.provider == "serpapi":
-                    payload, results = fetch_serpapi_google_results(
-                        query_text,
-                        results_per_query,
-                        settings,
-                    )
-                elif settings.provider == "google":
-                    payload, results = fetch_google_custom_search_results(
-                        query_text,
-                        results_per_query,
-                        config.search_google_api_key,
-                        config.search_google_engine_id,
-                    )
-                else:
-                    raise RuntimeError(
-                        f"Unsupported search provider: {settings.provider}. "
-                        "Use 'serpapi' or 'google'."
-                    )
+                payload, results = fetch_serpapi_google_results(
+                    query_text,
+                    results_per_query,
+                    settings,
+                )
             except Exception as error:
                 failed_queries += 1
                 print(f"    ERROR: {error}")
                 continue
 
             search_response_id = None
+
             if not dry_run:
                 search_response_id = register_search_response_if_supported(
                     db=db,
                     run_id=run_id,
                     query_id=query_id,
-                    provider=settings.provider,
+                    provider=provider,
                     payload=payload,
                 )
+
                 register_serp_features_if_supported(
                     db=db,
                     run_id=run_id,
@@ -648,6 +570,7 @@ def collect_search_results(
 
                     match_note = " *site match*" if page_id else ""
                     source_note = f" [{result.source}]" if result.source else ""
+
                     print(f"    {result.position:2}. {result.title}{match_note}{source_note}")
                     print(f"        {result.url}")
 
@@ -688,7 +611,7 @@ def parse_arguments() -> argparse.Namespace:
         "limit",
         nargs="?",
         type=int,
-        help="Optional positional limit on the number of active queries to execute (testing shortcut).",
+        help="Optional positional limit on the number of active queries to execute.",
     )
     parser.add_argument(
         "--top",

@@ -20,13 +20,13 @@ fi
 clear
 
 echo "==========================================="
-echo "SEARCH"
+echo "SEED QUERIES"
 echo "==========================================="
-echo "Oracle Search Queries"
+echo "Oracle Query Generator"
 echo "Python: $(python --version)"
 echo
 
-python search.py "$@"
+python seedQueries.py
 
 echo
 echo "Press Return to close."

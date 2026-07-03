@@ -7,38 +7,39 @@ Reads the configured website sitemap and populates Oracle's database with
 pages discovered on the website.
 """
 
+from common import database_path, website
 from config import load_config
-from database import Database, database_path_for_site
+from database import Database
 from sitemap import read_sitemap_urls
 
 
-def sitemap_url_for_site(site_url: str) -> str:
+def sitemap_url(website: str) -> str:
     """Return the default sitemap URL for a website."""
-    return f"{site_url.rstrip('/')}/sitemap.xml"
+    return f"{website.rstrip('/')}/sitemap.xml"
 
 
 def main():
     config = load_config()
 
-    site_url = config.website
-    sitemap_url = sitemap_url_for_site(site_url)
+    site = website(config)
+    sitemap = sitemap_url(site)
 
     print("Discovery")
     print("=========")
     print()
-    print(f"Site     : {site_url}")
-    print(f"Sitemap  : {sitemap_url}")
+    print(f"Site     : {site}")
+    print(f"Sitemap  : {sitemap}")
     print()
 
-    db_path = database_path_for_site(site_url)
+    db_path = database_path(config)
 
     db = Database(db_path)
     db.initialize()
 
-    site_id = db.get_or_create_site(site_url)
+    site_id = db.get_or_create_site(site)
     run_id = db.start_run(site_id, run_type="discovery")
 
-    urls = read_sitemap_urls(sitemap_url)
+    urls = read_sitemap_urls(sitemap)
 
     new_pages = 0
     for url in urls:

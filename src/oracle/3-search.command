@@ -20,13 +20,13 @@ fi
 clear
 
 echo "==========================================="
-echo "SEED QUERIES"
+echo "SEARCH"
 echo "==========================================="
-echo "Oracle Website Discovery"
+echo "Oracle Search Queries"
 echo "Python: $(python --version)"
 echo
 
-python seedQueries.py
+python search.py --query-limit 1 "$@"
 
 echo
 echo "Press Return to close."

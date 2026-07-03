@@ -16,8 +16,9 @@ import re
 import sqlite3
 from urllib.parse import unquote, urlparse
 
+from common import database_path, website
 from config import load_config
-from database import Database, database_path_for_site
+from database import Database
 
 
 DEFAULT_IGNORED_PREFIXES = (
@@ -100,19 +101,21 @@ def fetch_pages(db: Database, site_id: int) -> list[sqlite3.Row]:
 
 def seed_queries(dry_run: bool = False) -> None:
     config = load_config()
-    db_path = database_path_for_site(config.website)
+
+    site = website(config)
+    db_path = database_path(config)
 
     print("Seed Queries")
     print("============")
     print()
-    print(f"Website : {config.website}")
+    print(f"Website : {site}")
     print(f"Database: {db_path}")
     print()
 
     db = Database(db_path)
     db.initialize()
 
-    site_id = db.get_or_create_site(config.website)
+    site_id = db.get_or_create_site(site)
     pages = fetch_pages(db, site_id)
 
     if not pages:
