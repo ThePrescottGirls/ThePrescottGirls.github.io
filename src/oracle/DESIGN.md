@@ -179,32 +179,140 @@ The database does **not** determine importance.
 
 ---
 
-# **Scoring**
 
-Scoring belongs entirely to Dashboard.
-
-Users decide what matters.
-
-Examples
-
-Google AI Overview      50
-
-Google Organic          40
-
-Perplexity              30
-
-Bing                    10
-
-Users may also determine
-
-* Position weighting  
-* AI citation weighting  
-* Page-two penalties  
-* Overall source importance
-
-Changing a scoring model never changes the underlying observations.
 
 ---
+
+# **Coding Principles**
+
+These principles guide the evolution of Oracle. When multiple solutions are possible, these principles take precedence.
+
+### Single Responsibility
+
+Every module has one clearly defined responsibility.
+
+A module should have one primary reason to change.
+
+---
+
+### Ownership
+
+Behavior belongs with the component that owns the underlying data or workflow.
+
+Avoid placing functionality where it is merely convenient.
+
+---
+
+### Clear Boundaries
+
+Applications communicate through well-defined interfaces.
+
+Avoid exposing database implementation details throughout the codebase.
+
+---
+
+### Facts vs. Interpretation
+
+Store facts.
+
+Interpret facts elsewhere.
+
+The database stores observations, not opinions, rankings, or scoring decisions.
+
+---
+
+### Generic Before Specific
+
+Components without Oracle-specific knowledge should remain generic.
+
+Oracle-specific behavior belongs in Oracle modules.
+
+---
+
+### Command-Line First
+
+Each application exposes its functionality through a consistent command-line interface.
+
+New capabilities should normally become options of existing commands rather than new one-off utilities.
+
+---
+
+### Evolution Over Replacement
+
+Prefer extending existing architecture over replacing it.
+
+Design components so they can grow naturally.
+
+---
+
+### Naming Matters
+
+Names should communicate responsibility.
+
+A reader should understand a module's purpose from its name.
+
+---
+
+### Keep the Layers Honest
+
+Discover does not monitor.
+
+Monitor does not interpret.
+
+Dashboard does not collect.
+
+Oracle does not fabricate observations.
+
+---
+
+### Simplicity Wins
+
+Choose the simplest design that preserves future flexibility.
+
+Avoid abstraction until there is a demonstrated need.
+
+---
+
+### Follow the Direction of Knowledge
+
+Information flows in one direction.
+
+Website
+
+↓
+
+Discover
+
+↓
+
+Database
+
+↓
+
+Monitor
+
+↓
+
+Database
+
+↓
+
+Dashboard
+
+↓
+
+Oracle
+
+Each layer depends only on information produced by earlier layers. Components should communicate through defined interfaces rather than reaching across architectural boundaries.
+
+---
+
+# **Scoring**
+
+Scoring models are configured through Dashboard and stored in the database.
+
+Dashboard and Oracle may use those models to interpret observations, but changing a scoring model never changes the underlying observations.
+
 
 # **Workflow**
 
