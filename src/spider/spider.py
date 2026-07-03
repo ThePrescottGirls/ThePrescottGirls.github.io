@@ -63,10 +63,8 @@ def main():
         )
 
         write_dashboard(
-            results,
-            archive_summary,
-            DASHBOARD_FILE,
-            HISTORY_DB,
+            db_file=HISTORY_DB,
+            output_file=DASHBOARD_FILE,
         )
 
 
