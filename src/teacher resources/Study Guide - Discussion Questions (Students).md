@@ -1,5 +1,9 @@
 # **The Prescott Girls — Discussion Questions (Students)**
 
+## **Using This Discussion Guide**
+
+These questions are designed to help you think more deeply about *The Prescott Girls* as you read. Rather than asking you to memorize facts, they encourage you to notice details, compare ideas, and consider why the characters make the choices they do. Many questions have more than one reasonable answer if you can support your thinking with evidence from the story. Discuss your ideas with classmates, listen to different viewpoints, and explain the reasons behind your conclusions.
+
 ---
 
 ## **1\. Leaving New Sharon**

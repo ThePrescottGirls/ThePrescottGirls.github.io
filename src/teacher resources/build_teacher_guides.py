@@ -21,6 +21,7 @@ from __future__ import annotations
 from pathlib import Path
 import html
 import re
+import shutil
 
 SITE_NAME = "The Prescott Girls"
 TEACHER_RESOURCES_PATH = "../teachers.html"
@@ -31,6 +32,10 @@ SITE_BASE_URL = "https://www.theprescottgirls.com"
 
 OUTPUT_DIR = "../../teachers"
 TEACHERS_INDEX_PATH = Path(OUTPUT_DIR).parent / "teachers.html"
+
+INCOMING_DIR = Path("incoming")
+PDF_WARNING_SIZE_MB = 5
+IGNORED_INCOMING_FILES = {".DS_Store", ".gitkeep"}
 
 
 def write_text_if_changed(path: str | Path, content: str) -> bool:
@@ -48,6 +53,158 @@ def write_text_if_changed(path: str | Path, content: str) -> bool:
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(content, encoding="utf-8")
     return True
+
+
+def format_file_size(size_bytes: int) -> str:
+    """Return a readable file size."""
+    size_mb = size_bytes / (1024 * 1024)
+    if size_mb >= 1:
+        return f"{size_mb:.1f} MB"
+    size_kb = size_bytes / 1024
+    return f"{size_kb:.0f} KB"
+
+
+def ask_yes_no(prompt: str, default: bool = True) -> bool:
+    """Ask a yes/no question, returning the default when the user presses Return."""
+    suffix = "[Y/n]" if default else "[y/N]"
+
+    while True:
+        answer = input(f"{prompt} {suffix} ").strip().lower()
+
+        if not answer:
+            return default
+
+        if answer in {"y", "yes"}:
+            return True
+
+        if answer in {"n", "no"}:
+            return False
+
+        print("Please answer y or n.")
+
+
+def incoming_files() -> list[Path]:
+    """Return non-ignored files currently waiting in incoming."""
+    if not INCOMING_DIR.exists():
+        return []
+
+    return sorted(
+        path
+        for path in INCOMING_DIR.iterdir()
+        if path.is_file() and path.name not in IGNORED_INCOMING_FILES
+    )
+
+
+def validate_incoming() -> list[tuple[Path, Path]]:
+    """Validate complete Markdown/PDF document pairs waiting in incoming.
+
+    Returns a list of (markdown_path, pdf_path) pairs. If validation fails,
+    the program exits before publishing anything.
+    """
+    INCOMING_DIR.mkdir(exist_ok=True)
+
+    files = incoming_files()
+    if not files:
+        return []
+
+    print("Checking incoming...")
+    print()
+
+    pdf_files = sorted(path for path in files if path.suffix.lower() == ".pdf")
+    md_files = sorted(path for path in files if path.suffix.lower() == ".md")
+    other_files = sorted(path for path in files if path.suffix.lower() not in {".md", ".pdf"})
+
+    errors: list[str] = []
+    pairs: list[tuple[Path, Path]] = []
+
+    if other_files:
+        errors.append("Stray files found in incoming:")
+        for path in other_files:
+            errors.append(f"  {path.name}")
+
+    if not pdf_files and md_files:
+        errors.append("Markdown files found without matching PDFs:")
+        for path in md_files:
+            errors.append(f"  {path.name}")
+
+    md_by_stem = {path.stem: path for path in md_files}
+    pdf_stems = {path.stem for path in pdf_files}
+
+    for pdf_path in pdf_files:
+        size = pdf_path.stat().st_size
+        size_text = format_file_size(size)
+        threshold_bytes = PDF_WARNING_SIZE_MB * 1024 * 1024
+
+        print(f"Incoming document: {pdf_path.stem}")
+        print(f"  PDF:  {pdf_path.name}")
+        print(f"  Size: {size_text}")
+
+        if size > threshold_bytes:
+            print()
+            print(f"WARNING: PDF is larger than {PDF_WARNING_SIZE_MB} MB.")
+            print()
+            print("Large PDFs may slow downloads and website performance.")
+            print("If appropriate, open the PDF in Preview and use:")
+            print("  File → Export... → Quartz Filter: Reduce File Size")
+            print()
+
+            if not ask_yes_no("Continue publishing this PDF?", default=True):
+                print()
+                print("Publishing cancelled.")
+                print("Files remain in incoming.")
+                raise SystemExit(1)
+
+        md_path = md_by_stem.get(pdf_path.stem)
+        if md_path is None:
+            errors.append(f"Missing matching Markdown file for PDF: {pdf_path.name}")
+        else:
+            print(f"  MD:   {md_path.name}")
+            pairs.append((md_path, pdf_path))
+
+        print()
+
+    for md_path in md_files:
+        if md_path.stem not in pdf_stems:
+            errors.append(f"Missing matching PDF file for Markdown: {md_path.name}")
+
+    if errors:
+        print("ERROR")
+        print("-----")
+        for error in errors:
+            print(error)
+        print()
+        print("Nothing was published.")
+        raise SystemExit(1)
+
+    if pairs:
+        print(f"Validated {len(pairs)} incoming document(s).")
+        print()
+
+    return pairs
+
+
+def install_incoming(pairs: list[tuple[Path, Path]]) -> None:
+    """Install validated incoming documents into the builder and public folders."""
+    if not pairs:
+        return
+
+    print("Installing incoming documents...")
+    print()
+
+    output_dir = Path(OUTPUT_DIR)
+    output_dir.mkdir(parents=True, exist_ok=True)
+
+    for md_path, pdf_path in pairs:
+        destination_md = Path.cwd() / md_path.name
+        destination_pdf = output_dir / pdf_path.name
+
+        shutil.move(str(md_path), destination_md)
+        shutil.move(str(pdf_path), destination_pdf)
+
+        print(f"Installed {md_path.stem}")
+        print(f"  Markdown: {destination_md}")
+        print(f"  PDF:      {destination_pdf}")
+        print()
 
 
 def remove_google_doc_images(markdown: str) -> str:
@@ -465,6 +622,9 @@ def build_page(md_path: Path, teacher_anchors: dict[str, str]) -> Path:
 
 
 def main() -> None:
+    pairs = validate_incoming()
+    install_incoming(pairs)
+
     teacher_anchors = load_teacher_anchors()
     md_files = sorted(Path.cwd().glob("*.md"))
     if not md_files:
