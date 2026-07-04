@@ -35,6 +35,15 @@ src/oracle/docs/api/
 src/oracle/database/*.db
 src/oracle/database/*.db-*
 
+# ------------------------------------------------------------------
+# PUBLISHERS
+# ------------------------------------------------------------------
+
+src/teacher resources/incoming/*
+src/press resources/incoming/*
+src/research/incoming/*
+
+
 
 
 

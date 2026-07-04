@@ -31,6 +31,23 @@ from urllib.parse import quote
 SITE_BASE_URL = "https://www.theprescottgirls.com"
 
 
+
+def write_text_if_changed(path: str | Path, content: str) -> bool:
+    """Write text only when the generated content has changed.
+
+    Returns True if the file was written, False if the existing file was unchanged.
+    """
+    path = Path(path)
+
+    if path.exists():
+        existing = path.read_text(encoding="utf-8")
+        if existing == content:
+            return False
+
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(content, encoding="utf-8")
+    return True
+
 def remove_google_doc_images(markdown: str) -> str:
     """Remove Google Docs Markdown image embeds and base64 image references."""
     # Remove image embeds, including ![][image1], ![](path), and odd one-line variants.
@@ -345,8 +362,8 @@ def build_page(md_path: Path) -> Path:
 '''
 
     out_path = Path(OUTPUT_DIR) / html_name
-    out_path.write_text(page, encoding="utf-8")
-    return out_path
+    changed = write_text_if_changed(out_path, page)
+    return out_path, changed
 
 
 def main() -> None:
@@ -355,9 +372,21 @@ def main() -> None:
         print("No .md files found in current directory.")
         return
 
+    updated = 0
+    unchanged = 0
+
     for md_path in md_files:
-        out_path = build_page(md_path)
-        print(f"Generated {out_path.name}")
+        out_path, changed = build_page(md_path)
+        if changed:
+            updated += 1
+            print(f"Updated   {out_path.name}")
+        else:
+            unchanged += 1
+            print(f"Unchanged {out_path.name}")
+
+    print()
+    print(f"Research documents updated:   {updated}")
+    print(f"Research documents unchanged: {unchanged}")
 
 
 if __name__ == "__main__":
