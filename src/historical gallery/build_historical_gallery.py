@@ -486,12 +486,19 @@ def render_html(gallery: Gallery, media_dir: Path, media_url: str, output_file: 
   <!-- Canonical -->
   <link rel=\"canonical\" href=\"{html.escape(canonical_url, quote=True)}\">
 
-  <!-- Counter.dev -->
-  <script src=\"https://cdn.counter.dev/script.js\"
-    data-id=\"800e0f07-e8c7-43c4-bdaf-617aab5c0504\"
-    data-utcoffset=\"-7\"
-    data-track-path=\"true\"
-    defer></script>
+  <script>
+  if (localStorage.getItem("CounterDevIgnore") !== "true") {{
+    const script = document.createElement("script");
+    script.src = "https://cdn.counter.dev/script.js";
+    script.dataset.id = "800e0f07-e8c7-43c4-bdaf-617aab5c0504";
+    script.dataset.utcoffset = "-7";
+    script.dataset.trackPath = "true";
+    script.defer = true;
+    document.head.appendChild(script);
+  }} else {{
+    console.log("Counter.dev disabled for this browser.");
+  }}
+  </script>
 
   <style>
     .gallery-tabs {{
