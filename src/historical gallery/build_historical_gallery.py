@@ -365,6 +365,25 @@ def make_thumbnail(src: Path, thumb_dir: Path) -> str:
         print(f"WARNING: Could not create thumbnail for {src.name}: {exc}")
         return src.name
 
+def format_caption(text: str) -> str:
+    """Escape HTML, then allow a small whitelist of inline formatting tags."""
+    text = html.escape(text)
+
+    replacements = {
+        "&lt;em&gt;": "<em>",
+        "&lt;/em&gt;": "</em>",
+        "&lt;strong&gt;": "<strong>",
+        "&lt;/strong&gt;": "</strong>",
+        "&lt;i&gt;": "<i>",
+        "&lt;/i&gt;": "</i>",
+        "&lt;b&gt;": "<b>",
+        "&lt;/b&gt;": "</b>",
+    }
+
+    for old, new in replacements.items():
+        text = text.replace(old, new)
+
+    return text
 
 def media_description(photo: Photo) -> str:
     bits = []
@@ -373,14 +392,14 @@ def media_description(photo: Photo) -> str:
     if photo.location and photo.location.lower() not in {"unknown", "auto"}:
         bits.append(f"<strong>Location:</strong> {html.escape(photo.location)}")
     if photo.caption:
-        bits.append(html.escape(photo.caption))
+        bits.append(format_caption(photo.caption))
     return "<br>".join(bits)
 
 
 def render_media_card(photo: Photo, media_dir: Path, media_url: str, gallery_id: str) -> str:
     href = url_path(f"{media_url}/{photo.file}")
     title = html.escape(photo.title or photo.file)
-    caption = html.escape(photo.caption)
+    caption = format_caption(photo.caption)
     alt = html.escape(photo.alt)
     description = media_description(photo)
 

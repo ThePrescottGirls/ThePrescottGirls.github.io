@@ -420,7 +420,7 @@ gps=43.50207,-70.44168
 xlocation=Biddeford, Maine
 location_confidence=metadata
 title=Guests at the Saco Museum
-caption=A research visit with Tara Vose Raiselis, Curator and Director of the Saco Museum in Biddeford, Maine and co-author, with Leslie Rounds, of I My Needle Ply with Skill and Industry and Virtue Joined: Schoolgirl Needlework of Northern New England.
+caption=A research visit with Tara Vose Raiselis, Curator and Director of the Saco Museum in Biddeford, Maine and co-author, with Leslie Rounds, of <em>I My Needle Ply with Skill</em> and <em>Industry and Virtue Joined: Schoolgirl Needlework of Northern New England.</em>
 draft=yes
 
 
