@@ -341,7 +341,7 @@ gps=38.57428,-121.50617
 xlocation=Sacramento, California
 location_confidence=metadata
 title=Visit to Antiques Roadshow
-caption=Lori discussing one of her other samplers with Leigh Keno during the filming of Antiques Roadshow.
+caption=Lori discussing one of her other samplers with Leigh Keno during the filming of Antiques Roadshow. Conversations with appraisers, curators, and collectors over many years helped shape the research that led to the discovery and interpretation of the Prescott family samplers.
 draft=yes
 
 [PHOTO]
@@ -352,7 +352,7 @@ gps=38.89326,-77.03731
 xlocation=Washington, DC.
 location_confidence=metadata
 title=Historic Samplers at the DAR Museum
-caption=Studying historic needlework and sampler examples with Alden O'Brien at the Daughters of the American Revolution Museum in Washington, DC.
+caption=Studying historic needlework with Alden O'Brien at the Daughters of the American Revolution Museum in Washington, DC. Alden served for many years as Curator of Costumes and Textiles, helping build one of the nation's most important collections for the study of early American needlework.
 draft=yes
 
 [PHOTO]
@@ -362,8 +362,8 @@ time=11:20:01
 gps=39.80607,-75.60073
 xlocation=Winterthur Museum, Garden and Library, Delaware
 location_confidence=metadata+visual
-title=Studying a Sampler at Winterthur
-caption=Examining historic needlework at Winterthur with Laura Johnson as part of the broader research into nineteenth-century samplers and their makers.
+title=Studying Samplers at Winterthur
+caption=Examining historic needlework with Laura Johnson as part of the broader research into nineteenth-century samplers and their makers. Since this visit, Laura has become Curator of Costumes and Textiles at the Smithsonian National Museum of American History.
 draft=yes
 
 [PHOTO]
@@ -374,7 +374,7 @@ gps=43.07584,-70.75472
 xlocation=Portsmouth, New Hampshire
 location_confidence=metadata
 title=Research at Strawbery Banke Museum
-caption=Viewing historic samplers and related materials during a museum research visit with Elizabeth Farish, Chief Curator at the Strawbery Banke Museum.
+caption=Viewing historic samplers and related materials during a museum research visit with Elizabeth Farish, Chief Curator at the Strawbery Banke Museum. Her expertise in New England decorative arts and material culture helped place the Prescott family artifacts within the broader context of nineteenth-century life.
 draft=yes
 
 [PHOTO]
@@ -385,7 +385,7 @@ gps=37.771539,-122.468331
 xlocation=de Young Museum, San Francisco, California
 location_confidence=metadata+visual
 title=Research Visit to the de Young Museum
-caption=Lori Love and colleagues meet with Laura Camerlengo, Curator of Textile Arts at the de Young Museum, to study seventeenth-century samplers in the museum's collection.
+caption=Lori Love and colleagues meet with Laura Camerlengo, Curator of Textile Arts at the de Young Museum, to study seventeenth-century samplers. Her expertise in European textiles and historic embroidery provided valuable context for understanding the traditions that influenced later American schoolgirl needlework.
 draft=yes
 
 
@@ -398,7 +398,7 @@ gps=38.89095,-77.03002
 xlocation=Washington, DC
 location_confidence=metadata
 title=Smithsonian Archives Visit
-caption=Examining textiles and historical materials with Tim Winkle during a behind-the-scenes collection visit at the Smithsonian National Museum of American History.
+caption=Examining textiles and historical materials with Tim Winkle during a behind-the-scenes collection visit at the Smithsonian National Museum of American History. Access to the Smithsonian's collections helped place the Prescott family samplers within the wider story of early American craftsmanship and daily life.
 draft=yes
 
 [PHOTO]
@@ -409,7 +409,7 @@ gps=42.77614,-71.08668
 xlocation=Haverhill, Massachusetts
 location_confidence=metadata
 title=New England Collection Visit
-caption=A visit with Laura Johnson to the Historic New England Archives to examine historic samplers, artworks, and other archival materials.
+caption=A visit with Laura Johnson to the Historic New England Archives to examine historic samplers, artworks, and other archival materials. Laura’s expertise in New England textiles and material culture helped connect the Prescott family samplers to broader regional traditions of needlework and preservation.
 draft=yes
 
 [PHOTO]
@@ -420,7 +420,7 @@ gps=43.50207,-70.44168
 xlocation=Biddeford, Maine
 location_confidence=metadata
 title=Guests at the Saco Museum
-caption=A research visit with Tara Vose Raiselis, Curator and Director of the Saco Museum in Biddeford, Maine.
+caption=A research visit with Tara Vose Raiselis, Curator and Director of the Saco Museum in Biddeford, Maine and co-author, with Leslie Rounds, of I My Needle Ply with Skill and Industry and Virtue Joined: Schoolgirl Needlework of Northern New England.
 draft=yes
 
 
