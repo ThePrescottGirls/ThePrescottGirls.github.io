@@ -1,42 +1,43 @@
 #!/usr/bin/env python3
 """
-build_gallery.py
+build_interpretations_gallery.py
 
-Builds a generated media gallery for The Prescott Girls website.
+Builds the Interpretations Gallery for The Prescott Girls website.
 
-The script is intentionally gallery-neutral. Gallery-specific paths and labels
-come from the control file.
+Gallery-specific paths, labels, sections, and captions come from the control
+file. The generated page links to the other three galleries: Illustrations,
+Historical, and Author.
 
 Expected pattern:
 
     project-root/
         css/site.css
         assets/
-            authorGallery/
+            interpretationsGallery/
                 *.jpg / *.jpeg / *.png / *.webp / *.mp4 / *.mov / *.m4v / *.webm
                 thumbs/             <-- generated thumbnails for images
         src/
-            Author Gallery/
-                build_gallery.py
-                author-gallery-control.txt
+            interpretations gallery/
+                build_interpretations_gallery.py
+                interpretations-gallery-control.txt
 
 Typical control header:
 
-    page_title=Author Gallery
-    output_file=authorGallery.html
-    media_dir=assets/authorGallery
-    media_url=assets/authorGallery
-    gallery_id=author-gallery
-    page_intro=A curated collection...
+    page_title=Interpretations Gallery
+    output_file=interpretationsGallery.html
+    media_dir=assets/interpretationsGallery
+    media_url=assets/interpretationsGallery
+    gallery_id=interpretations-gallery
+    page_intro=Museum photographs paired with historical interpretations.
 
 Run from anywhere:
 
-    python "src/Author Gallery/build_gallery.py"
+    python "src/interpretations gallery/build_interpretations_gallery.py"
 
 Optional:
 
-    python "src/Author Gallery/build_gallery.py" --strict
-    python "src/Author Gallery/build_gallery.py" --control "src/Author Gallery/author-gallery-control.txt"
+    python "src/interpretations gallery/build_interpretations_gallery.py" --strict
+    python "src/interpretations gallery/build_interpretations_gallery.py" --control "src/interpretations gallery/interpretations-gallery-control.txt"
 
 The script reports:
     - files listed in the control file but missing from media_dir
@@ -74,8 +75,8 @@ VIDEO_EXTS = {".mp4", ".mov", ".m4v", ".webm"}
 SUPPORTED_EXTS = IMAGE_EXTS | VIDEO_EXTS
 UNSUPPORTED_WEB_EXTS = {".heic", ".heif", ".avi", ".wmv", ".hevc"}
 
-DEFAULT_CONTROL_FILENAME = "author-gallery-control.txt"
-LEGACY_CONTROL_FILENAME = "author-gallery-control.txt"
+DEFAULT_CONTROL_FILENAME = "interpretations-gallery-control.txt"
+LEGACY_CONTROL_FILENAME = "interpretations-gallery-control.txt"
 THUMB_DIRNAME = "thumbs"
 THUMB_MAX_SIZE = (700, 525)
 
@@ -377,12 +378,39 @@ def media_description(photo: Photo) -> str:
     return "<br>".join(bits)
 
 
-def render_media_card(photo: Photo, media_dir: Path, media_url: str, gallery_id: str) -> str:
+def render_media_card(photo: Photo, media_dir: Path, media_url: str, gallery_id: str, display_mode: str) -> str:
     href = url_path(f"{media_url}/{photo.file}")
     title = html.escape(photo.title or photo.file)
     caption = html.escape(photo.caption)
     alt = html.escape(photo.alt)
     description = media_description(photo)
+
+    type_attr = ' data-type="video"' if photo.media_type == "video" else ""
+    desc_attr = html.escape(description, quote=True)
+    title_attr = html.escape(photo.title or photo.file, quote=True)
+
+    if display_mode == "full":
+        return f"""
+      <figure class="illustration-full">
+        <a class="glightbox" href="{href}" data-gallery="{html.escape(gallery_id, quote=True)}" data-title="{title_attr}" data-description="{desc_attr}"{type_attr}>
+          <img src="{href}" alt="{alt}">
+        </a>
+        <figcaption>{title}</figcaption>
+
+      </figure>
+    """
+
+    if photo.media_type == "video":
+        preview = f"""
+          <div class="video-preview" aria-hidden="true">
+            <video src="{href}" muted preload="metadata"></video>
+            <span class="play-badge">▶</span>
+          </div>
+        """
+    else:
+        thumb = make_thumbnail(media_dir / photo.file, media_dir / THUMB_DIRNAME)
+        thumb_href = url_path(f"{media_url}/{thumb}")
+        preview = f'<img src="{thumb_href}" alt="{alt}">'
 
     meta_items = []
     if photo.date:
@@ -391,29 +419,13 @@ def render_media_card(photo: Photo, media_dir: Path, media_url: str, gallery_id:
         meta_items.append(html.escape(photo.location))
     meta = " · ".join(meta_items)
 
-    type_attr = ' data-type="video"' if photo.media_type == "video" else ""
-    desc_attr = html.escape(description, quote=True)
-    title_attr = html.escape(photo.title or photo.file, quote=True)
-
-    if photo.media_type == "video":
-        preview = f"""
-          <div class=\"video-preview\" aria-hidden=\"true\">
-            <video src=\"{href}\" muted preload=\"metadata\"></video>
-            <span class=\"play-badge\">▶</span>
-          </div>
-        """
-    else:
-        thumb = make_thumbnail(media_dir / photo.file, media_dir / THUMB_DIRNAME)
-        thumb_href = url_path(f"{media_url}/{thumb}")
-        preview = f'<img src="{thumb_href}" alt="{alt}">'
-
     meta_html = f'<p class="album-meta">{meta}</p>' if meta else ""
     caption_html = f"<p>{caption}</p>" if caption else ""
 
     return f"""
-      <a class=\"album-card glightbox\" href=\"{href}\" data-gallery=\"{html.escape(gallery_id, quote=True)}\" data-title=\"{title_attr}\" data-description=\"{desc_attr}\"{type_attr}>
+      <a class="album-card glightbox" href="{href}" data-gallery="{html.escape(gallery_id, quote=True)}" data-title="{title_attr}" data-description="{desc_attr}"{type_attr}>
         {preview}
-        <div class=\"album-card-text\">
+        <div class="album-card-text">
           <h3>{title}</h3>
           {meta_html}
           {caption_html}
@@ -422,9 +434,12 @@ def render_media_card(photo: Photo, media_dir: Path, media_url: str, gallery_id:
     """
 
 
-def render_section(section: Section, media_dir: Path, media_url: str, gallery_id: str) -> str:
+def render_section(section: Section, media_dir: Path, media_url: str, gallery_id: str, display_mode: str) -> str:
     photos = sorted(section.photos, key=lambda p: p.sort)
-    cards = "\n".join(render_media_card(photo, media_dir, media_url, gallery_id) for photo in photos)
+    cards = "\n".join(
+        render_media_card(photo, media_dir, media_url, gallery_id, display_mode)
+        for photo in photos
+    )
     section_caption_html = f"<p>{html.escape(section.caption)}</p>" if section.caption else ""
 
     return f"""
@@ -447,9 +462,12 @@ def render_html(gallery: Gallery, media_dir: Path, media_url: str, output_file: 
     og_url = gallery.page.get("og_url", canonical_url).strip()
 
     sections = sorted(gallery.sections, key=lambda s: s.sort)
-    sections_html = "\n".join(render_section(section, media_dir, media_url, gallery_id) for section in sections)
-    page_intro_html = f"<p>{html.escape(page_intro)}</p>" if page_intro else ""
-
+    display_mode = gallery.page.get("display_mode", "cards").strip().lower()
+    sections_html = "\n".join(
+        render_section(section, media_dir, media_url, gallery_id, display_mode)
+        for section in sections
+    )
+    page_intro_html = f"<p>{page_intro}</p>" if page_intro else ""
     return f"""<!doctype html>
 <html lang=\"en\">
 <head>
@@ -487,7 +505,7 @@ def render_html(gallery: Gallery, media_dir: Path, media_url: str, output_file: 
   <link rel=\"canonical\" href=\"{html.escape(canonical_url, quote=True)}\">
 
   <script>
-  if (localStorage.getItem("CounterDevIgnore") !== "true") {{
+ if (localStorage.getItem("CounterDevIgnore") !== "true") {{
     const script = document.createElement("script");
     script.src = "https://cdn.counter.dev/script.js";
     script.dataset.id = "800e0f07-e8c7-43c4-bdaf-617aab5c0504";
@@ -582,6 +600,28 @@ def render_html(gallery: Gallery, media_dir: Path, media_url: str, output_file: 
       font-size: 1.25rem;
       line-height: 1;
     }}
+    
+.illustration-full {{
+  margin: 0 0 1rem;
+}}
+
+.illustration-full img {{
+  display: block;
+  width: 100%;
+  max-width: 1000px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 1px 6px rgba(0,0,0,.12);
+}}
+
+.illustration-full figcaption {{
+  margin-top: .35rem;
+  margin-bottom: 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+  line-height: 1.2;
+}}
+    
     .gdesc-inner {{
       font-size: 1rem;
       line-height: 1.45;
@@ -620,11 +660,14 @@ def render_html(gallery: Gallery, media_dir: Path, media_url: str, output_file: 
       <span class="separator">|</span>
       <a href="historicalGallery.html">Historical Gallery</a>
       <span class="separator">|</span>
-      <a href="interpretationsGallery.html">Interpretations Gallery</a>
+      <a href="authorGallery.html">Author Gallery</a>
     </div>
 
   <div class=\"section\">
+  
+  
     {page_intro_html}
+
   </div>
 
   {sections_html}
@@ -866,10 +909,10 @@ def default_control_path(root: Path, script_path: Path) -> Path:
 
 
 def main() -> int:
-    parser = argparse.ArgumentParser(description="Build a Prescott Girls media gallery.")
+    parser = argparse.ArgumentParser(description="Build the Prescott Girls Interpretations Gallery.")
     parser.add_argument("--strict", action="store_true", help="Do not generate output if warnings are present.")
     parser.add_argument("--root", type=Path, default=None, help="Project root. Defaults to auto-detection.")
-    parser.add_argument("--control", type=Path, default=None, help="Control file path. Defaults to gallery-control.txt beside this script.")
+    parser.add_argument("--control", type=Path, default=None, help="Control file path. Defaults to interpretations-gallery-control.txt beside this script.")
     args = parser.parse_args()
 
     script_path = Path(__file__)
@@ -882,9 +925,9 @@ def main() -> int:
         print(f"ERROR: {exc}", file=sys.stderr)
         return 2
 
-    media_dir_value = get_required_page_value(gallery, "media_dir", "album")
+    media_dir_value = get_required_page_value(gallery, "media_dir", "assets/interpretationsGallery")
     media_url = get_required_page_value(gallery, "media_url", media_dir_value).strip("/")
-    output_file_value = get_required_page_value(gallery, "output_file", "album.html")
+    output_file_value = get_required_page_value(gallery, "output_file", "interpretationsGallery.html")
 
     media_dir = root / media_dir_value
     output_file = root / output_file_value
