@@ -24,8 +24,6 @@ The purpose of these guidelines is not to define a single "correct" workflow. Be
 
 The bridge between traditional historical practice and AI-assisted interpretation is still under construction. These pages are simply field notes from one traveler who has begun the crossing.
 
-## 
-
 ## **1\. Start With Research, Not Prompts**
 
 If there is one lesson that underlies every other guideline in this paper, it is this: AI is not a substitute for historical research. In fact, the opposite is true. The better the historical research, the more useful AI becomes.
@@ -285,7 +283,7 @@ I also found that these studies often became useful in ways I had not anticipate
 
 The more comprehensive the reference library became, the less time I spent recreating what I had already learned, and the more time I could devote to exploring new historical questions. Like any good research collection, its value grew with every addition.
 
-## **11\. The Goal Is Interpretation, Not Perfection**
+**11\. The Goal Is Interpretation, Not Perfection**
 
 Throughout this paper I have described techniques for creating AI-assisted historical illustrations. It is worth concluding by remembering why museums create visual interpretations in the first place.
 
