@@ -139,7 +139,7 @@ caption=Family members prepare for a holiday gathering.
 
 [SECTION]
 id=sled
-title=Sled
+title=Snow Sled
 caption=A simple sled hints at winter adventures around the courthouse.
 
 [PHOTO]
