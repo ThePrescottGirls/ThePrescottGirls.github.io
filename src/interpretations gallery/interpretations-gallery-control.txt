@@ -22,7 +22,7 @@ caption=Thomas Johnson, postmaster at the Pownalborough Court House, and his sis
 [PHOTO]
 file=Dining Room.jpeg
 title=Dining Room — Museum Photograph Courtesy of Perry Palmer
-caption=The dining room as it appears in the museum today.
+caption=The dining room as it appears in the Pownalborough Court House Museum today.
 
 [PHOTO]
 file=Dining Room - The breakfast table 1 - best.jpeg
@@ -37,7 +37,7 @@ caption=Rebecca Johnson Prescott pauses while composing a reply to her brother R
 [PHOTO]
 file=Desk.jpeg
 title=Writing Desk — Museum Photograph  Courtesy of Perry Palmer
-caption=The writing desk as it appears in the museum today.
+caption=The writing desk as it appears in the Pownalborough Court House Museum today.
 
 [PHOTO]
 file=Desk - Mother writing to Rowland 2 - best.jpeg
@@ -52,7 +52,7 @@ caption=The Prescott girls explore the courthouse kitchen soon after arriving in
 [PHOTO]
 file=Kitchen.jpeg
 title=Kitchen — Museum Photograph  Courtesy of Perry Palmer
-caption=The kitchen as it appears in the museum today.
+caption=The kitchen as it appears in the Pownalborough Court House Museum today.
 
 [PHOTO]
 file=Kitchen with Girls 2.jpeg
@@ -67,7 +67,7 @@ caption=Louisa “Lulu” Prescott studies one of her sketches while caring for 
 [PHOTO]
 file=Bedroom with Cradle.jpeg
 title=Bedroom — Museum Photograph Courtesy of Perry Palmer
-caption=The upstairs bedroom and cradle as they appear in the museum today.
+caption=The upstairs bedroom and cradle as they appear in the Pownalborough Court House Museum today.
 
 [PHOTO]
 file=Bedroom - Lulu and her nephew.jpeg
@@ -82,12 +82,12 @@ caption=Early each morning, Beckie carried the chamber pot downstairs to be empt
 [PHOTO]
 file=Bed with Chamberpot (Perry).jpeg
 title=Bedroom — Museum Photograph Courtesy of Perry Palmer
-caption=The upstairs bedroom as it appears in the museum today.
+caption=The upstairs bedroom as it appears in the Pownalborough Court House Museum today.
 
 [PHOTO]
 file=Bed with Chamberpot 5.jpeg
 title=Morning Chores, 1835
-caption=Beckie carries the chamber pot from the bedroom as Louisa pinches her nose and raises her skirt to avoid the smell, while Sallie remains comfortably asleep in bed.
+caption=Beckie carries the chamber pot from the bedroom as Louisa pinches her nose and raises her skirt to avoid the smell, while Sallie remains comfortably in bed with Major, the cat.
 
 
 [SECTION]
@@ -98,7 +98,7 @@ caption=A child's drawing becomes the inspiration for imagining Sallie Prescott 
 [PHOTO]
 file=Doll Drawing - Perry.jpg
 title=Doll Drawing — Museum Photograph Courtesy of Perry Palmer
-caption=The original drawing displayed in the museum.
+caption=The original drawing displayed in the Pownalborough Court House Museum.
 
 [PHOTO]
 file=Doll Drawing with Sallie.jpg
@@ -113,7 +113,7 @@ caption=Rebecca Johnson Prescott pauses while preparing a hot beverage in the co
 [PHOTO]
 file=Fireplace - Perry.jpg
 title=Fireplace — Museum Photograph Courtesy of Perry Palmer
-caption=The fireplace as it appears in the museum today.
+caption=The fireplace as it appears in the Pownalborough Court House Museum today.
 
 [PHOTO]
 file=Fireplace with Mother.jpg
@@ -145,7 +145,7 @@ caption=A simple sled hints at winter adventures around the courthouse.
 [PHOTO]
 file=Sled at PCH.jpg
 title=Sled — Museum Photograph Courtesy of Perry Palmer
-caption=A child's sled displayed in the museum.
+caption=A child's sled displayed in the Pownalborough Court House Museum.
 
 [PHOTO]
 file=Sled with Girls.jpg
@@ -160,7 +160,7 @@ caption=Thomas Johnson relaxes in his distinctive chair after a busy day.
 [PHOTO]
 file=Thomas Chair.jpg
 title=Thomas's Chair — Museum Photograph Courtesy of Perry Palmer
-caption=The chair as displayed in the museum.
+caption=The chair as displayed in the Pownalborough Court House Museum.
 
 [PHOTO]
 file=Thomas in Chair.jpg
@@ -175,7 +175,7 @@ caption=Historic toys inspire a glimpse into the Prescott sisters' playtime.
 [PHOTO]
 file=Toys.jpg
 title=Children's Toys — Museum Photograph Courtesy of Perry Palmer
-caption=Toys preserved in the museum collection.
+caption=Toys preserved in the Pownalborough Court House Museum collection.
 
 [PHOTO]
 file=Toys with Girls13.jpg
