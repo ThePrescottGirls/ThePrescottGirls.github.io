@@ -75,6 +75,22 @@ title=Lulu and Her Nephews, 1876
 caption=Lulu reviews her artwork while keeping watch over the children.
 
 [SECTION]
+id=bedroom-chamberpot
+title=Bedroom
+caption=Early each morning, Beckie carried the chamber pot downstairs to be emptied while Louisa followed close behind, pinching her nose. Sallie, still half asleep, remained tucked beneath the blankets.
+
+[PHOTO]
+file=Bed with Chamberpot (Perry).jpeg
+title=Bedroom — Museum Photograph Courtesy of Perry Palmer
+caption=The upstairs bedroom as it appears in the museum today.
+
+[PHOTO]
+file=Bed with Chamberpot 5.jpeg
+title=Morning Chores, 1835
+caption=Beckie carries the chamber pot from the bedroom as Louisa pinches her nose and raises her skirt to avoid the smell, while Sallie remains comfortably asleep in bed.
+
+
+[SECTION]
 id=doll-drawing
 title=Doll Drawing
 caption=A child's drawing becomes the inspiration for imagining Sallie Prescott proudly showing one of her treasured dolls.
