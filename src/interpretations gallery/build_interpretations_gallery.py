@@ -434,20 +434,114 @@ def render_media_card(photo: Photo, media_dir: Path, media_url: str, gallery_id:
     """
 
 
-def render_section(section: Section, media_dir: Path, media_url: str, gallery_id: str, display_mode: str) -> str:
-    photos = sorted(section.photos, key=lambda p: p.sort)
-    cards = "\n".join(
-        render_media_card(photo, media_dir, media_url, gallery_id, display_mode)
-        for photo in photos
-    )
-    section_caption_html = f"<p>{html.escape(section.caption)}</p>" if section.caption else ""
+def render_source_image(photo: Photo, media_dir: Path, media_url: str, gallery_id: str) -> str:
+    """Render the first photo in a section as the compact present-day source image."""
+    href = url_path(f"{media_url}/{photo.file}")
+    title = html.escape(photo.title or photo.file)
+    alt = html.escape(photo.alt)
+    description = media_description(photo)
+    desc_attr = html.escape(description, quote=True)
+    title_attr = html.escape(photo.title or photo.file, quote=True)
+    type_attr = ' data-type="video"' if photo.media_type == "video" else ""
+
+    if photo.media_type == "video":
+        preview = f"""
+          <div class="video-preview" aria-hidden="true">
+            <video src="{href}" muted preload="metadata"></video>
+            <span class="play-badge">▶</span>
+          </div>
+        """
+    else:
+        thumb = make_thumbnail(media_dir / photo.file, media_dir / THUMB_DIRNAME)
+        thumb_href = url_path(f"{media_url}/{thumb}")
+        preview = f'<img src="{thumb_href}" alt="{alt}">'
 
     return f"""
-    <section class=\"section album-section\" id=\"{html.escape(section.id)}\">
+        <figure class="interpretation-source-image">
+          <a class="glightbox" href="{href}" data-gallery="{html.escape(gallery_id, quote=True)}" data-title="{title_attr}" data-description="{desc_attr}"{type_attr}>
+            {preview}
+          </a>
+        </figure>
+    """
+
+
+def render_interpretation_image(photo: Photo, media_url: str, gallery_id: str) -> str:
+    """Render a historical interpretation as the large, nearly full-width hero image."""
+    href = url_path(f"{media_url}/{photo.file}")
+    title = html.escape(photo.title or photo.file)
+    caption = html.escape(photo.caption)
+    alt = html.escape(photo.alt)
+    description = media_description(photo)
+    desc_attr = html.escape(description, quote=True)
+    title_attr = html.escape(photo.title or photo.file, quote=True)
+    type_attr = ' data-type="video"' if photo.media_type == "video" else ""
+
+    if photo.media_type == "video":
+        media = f'<video src="{href}" controls preload="metadata"></video>'
+    else:
+        media = f'<img src="{href}" alt="{alt}">'
+
+    return f"""
+      <figure class="interpretation-hero">
+        <a class="glightbox" href="{href}" data-gallery="{html.escape(gallery_id, quote=True)}" data-title="{title_attr}" data-description="{desc_attr}"{type_attr}>
+          {media}
+        </a>
+      </figure>
+    """
+
+
+def render_section(section: Section, media_dir: Path, media_url: str, gallery_id: str, display_mode: str) -> str:
+    """Render each interpretation as evidence/context above a large finished image.
+
+    Existing control-file meaning:
+      * [SECTION] title/caption = interpretation heading and explanatory text
+      * first [PHOTO] = present-day source/before image
+      * second [PHOTO] = large historical interpretation
+      * any additional [PHOTO] entries = additional large interpretation images
+    """
+    photos = sorted(section.photos, key=lambda p: p.sort)
+    source = photos[0] if photos else None
+    interpretations = photos[1:] if len(photos) > 1 else []
+
+    section_caption_html = f'<p class="interpretation-summary">{html.escape(section.caption)}</p>' if section.caption else ""
+
+    source_caption_html = ""
+    if source and source.caption:
+        source_caption_html = f'<p class="source-caption">{html.escape(source.caption)}</p>'
+
+    if source:
+        source_html = render_source_image(source, media_dir, media_url, gallery_id)
+        intro_html = f"""
+<div class="interpretation-intro">
+
+    <div class="interpretation-description-panel">
+        {section_caption_html}
+        {source_caption_html}
+    </div>
+
+    <div class="interpretation-before-panel">
+        {source_html}
+    </div>
+
+</div>
+        """
+    else:
+        intro_html = f'<div class="interpretation-description-panel interpretation-description-only">{section_caption_html}</div>'
+
+    if interpretations:
+        hero_html = "\n".join(
+            render_interpretation_image(photo, media_url, gallery_id)
+            for photo in interpretations
+        )
+    else:
+        hero_html = '<p class="interpretation-missing">Historical interpretation image not yet supplied.</p>'
+
+    return f"""
+    <section class="section interpretation-entry" id="{html.escape(section.id)}">
       <h2>{html.escape(section.title)}</h2>
-      {section_caption_html}
-      <div class=\"album-grid\">
-        {cards}
+      {intro_html}
+      <div class="interpretation-results">
+        {hero_html}
       </div>
     </section>
     """
@@ -622,6 +716,127 @@ def render_html(gallery: Gallery, media_dir: Path, media_url: str, output_file: 
   line-height: 1.2;
 }}
     
+    .interpretation-entry {{
+      margin-top: 2.75rem;
+      padding-top: .25rem;
+    }}
+    .interpretation-entry > h2 {{
+      margin-bottom: 1rem;
+    }}
+    .interpretation-intro {{
+      display: grid;
+      grid-template-columns: minmax(260px, 42%) minmax(0, 1fr);
+      gap: 1.5rem;
+      align-items: stretch;
+      margin-bottom: 1.5rem;
+    }}
+    .interpretation-before-panel,
+    .interpretation-description-panel {{
+      min-width: 0;
+    }}
+    .interpretation-before-panel {{
+      display: flex;
+      align-items: flex-start;
+    }}
+    .interpretation-source-image {{
+      width: 100%;
+      margin: 0;
+    }}
+    .interpretation-source-image a {{
+      display: block;
+    }}
+    .interpretation-source-image img,
+    .interpretation-source-image video {{
+      display: block;
+      width: 100%;
+      height: auto;
+      max-height: 430px;
+      object-fit: contain;
+      object-position: left top;
+      border-radius: 10px;
+      box-shadow: 0 1px 6px rgba(0,0,0,.12);
+      background: #eee;
+    }}
+    .interpretation-source-image figcaption {{
+      margin-top: .4rem;
+      font-size: .98rem;
+      font-weight: 600;
+      line-height: 1.25;
+    }}
+    .interpretation-description-panel {{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 1.25rem 1.4rem;
+      border: 1px solid rgba(0,0,0,.10);
+      border-radius: 10px;
+      background: rgba(255,255,255,.42);
+    }}
+    .interpretation-description-panel p {{
+      margin: 0;
+      font-size: 1.08rem;
+      line-height: 1.55;
+    }}
+    .interpretation-description-panel p + p {{
+      margin-top: 1rem;
+    }}
+    .source-caption {{
+      font-size: .98rem !important;
+      opacity: .82;
+    }}
+    .interpretation-description-only {{
+      margin-bottom: 1.5rem;
+    }}
+    .interpretation-results {{
+      width: 100%;
+    }}
+    .interpretation-hero {{
+      margin: 0 0 2.5rem;
+      width: 100%;
+    }}
+    .interpretation-hero a {{
+      display: block;
+      width: 100%;
+    }}
+    .interpretation-hero img,
+    .interpretation-hero video {{
+      display: block;
+      width: 100%;
+      max-width: none;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 1px 7px rgba(0,0,0,.14);
+    }}
+    .interpretation-hero figcaption {{
+      margin-top: .5rem;
+    }}
+    .interpretation-hero h3 {{
+      margin: 0;
+      font-size: 1.2rem;
+      line-height: 1.25;
+    }}
+    .interpretation-caption {{
+      margin: .3rem 0 0;
+      line-height: 1.45;
+    }}
+    .interpretation-missing {{
+      font-style: italic;
+      opacity: .75;
+    }}
+    @media (max-width: 760px) {{
+      .interpretation-intro {{
+        grid-template-columns: 1fr;
+        gap: 1rem;
+      }}
+      .interpretation-description-panel {{
+        padding: 1rem;
+      }}
+      .interpretation-source-image img,
+      .interpretation-source-image video {{
+        max-height: none;
+      }}
+    }}
+
     .gdesc-inner {{
       font-size: 1rem;
       line-height: 1.45;

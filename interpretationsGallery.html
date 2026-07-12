@@ -152,6 +152,127 @@
   line-height: 1.2;
 }
     
+    .interpretation-entry {
+      margin-top: 2.75rem;
+      padding-top: .25rem;
+    }
+    .interpretation-entry > h2 {
+      margin-bottom: 1rem;
+    }
+    .interpretation-intro {
+      display: grid;
+      grid-template-columns: minmax(260px, 42%) minmax(0, 1fr);
+      gap: 1.5rem;
+      align-items: stretch;
+      margin-bottom: 1.5rem;
+    }
+    .interpretation-before-panel,
+    .interpretation-description-panel {
+      min-width: 0;
+    }
+    .interpretation-before-panel {
+      display: flex;
+      align-items: flex-start;
+    }
+    .interpretation-source-image {
+      width: 100%;
+      margin: 0;
+    }
+    .interpretation-source-image a {
+      display: block;
+    }
+    .interpretation-source-image img,
+    .interpretation-source-image video {
+      display: block;
+      width: 100%;
+      height: auto;
+      max-height: 430px;
+      object-fit: contain;
+      object-position: left top;
+      border-radius: 10px;
+      box-shadow: 0 1px 6px rgba(0,0,0,.12);
+      background: #eee;
+    }
+    .interpretation-source-image figcaption {
+      margin-top: .4rem;
+      font-size: .98rem;
+      font-weight: 600;
+      line-height: 1.25;
+    }
+    .interpretation-description-panel {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 1.25rem 1.4rem;
+      border: 1px solid rgba(0,0,0,.10);
+      border-radius: 10px;
+      background: rgba(255,255,255,.42);
+    }
+    .interpretation-description-panel p {
+      margin: 0;
+      font-size: 1.08rem;
+      line-height: 1.55;
+    }
+    .interpretation-description-panel p + p {
+      margin-top: 1rem;
+    }
+    .source-caption {
+      font-size: .98rem !important;
+      opacity: .82;
+    }
+    .interpretation-description-only {
+      margin-bottom: 1.5rem;
+    }
+    .interpretation-results {
+      width: 100%;
+    }
+    .interpretation-hero {
+      margin: 0 0 2.5rem;
+      width: 100%;
+    }
+    .interpretation-hero a {
+      display: block;
+      width: 100%;
+    }
+    .interpretation-hero img,
+    .interpretation-hero video {
+      display: block;
+      width: 100%;
+      max-width: none;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 1px 7px rgba(0,0,0,.14);
+    }
+    .interpretation-hero figcaption {
+      margin-top: .5rem;
+    }
+    .interpretation-hero h3 {
+      margin: 0;
+      font-size: 1.2rem;
+      line-height: 1.25;
+    }
+    .interpretation-caption {
+      margin: .3rem 0 0;
+      line-height: 1.45;
+    }
+    .interpretation-missing {
+      font-style: italic;
+      opacity: .75;
+    }
+    @media (max-width: 760px) {
+      .interpretation-intro {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+      }
+      .interpretation-description-panel {
+        padding: 1rem;
+      }
+      .interpretation-source-image img,
+      .interpretation-source-image video {
+        max-height: none;
+      }
+    }
+
     .gdesc-inner {
       font-size: 1rem;
       line-height: 1.45;
@@ -201,286 +322,374 @@
   </div>
 
   
-    <section class="section album-section" id="dining-room">
+    <section class="section interpretation-entry" id="dining-room">
       <h2>Dining Room</h2>
-      <p>Thomas Johnson, postmaster at the Pownalborough Court House, and his sister Rebecca Johnson Prescott discuss the latest news from Boston over breakfast in 1835.</p>
-      <div class="album-grid">
+      
+<div class="interpretation-intro">
+
+    <div class="interpretation-description-panel">
+        <p class="interpretation-summary">Thomas Johnson, postmaster at the Pownalborough Court House, and his sister Rebecca Johnson Prescott discuss the latest news from Boston over breakfast in 1835.</p>
+        <p class="source-caption">The dining room as it appears in the museum today.</p>
+    </div>
+
+    <div class="interpretation-before-panel">
         
-      <figure class="illustration-full">
-        <a class="glightbox" href="assets/galleryInterpretations/Dining%20Room.jpeg" data-gallery="interpretations-gallery" data-title="Dining Room — Museum Photograph Courtesy of Perry Palmer" data-description="The dining room as it appears in the museum today.">
-          <img src="assets/galleryInterpretations/Dining%20Room.jpeg" alt="Dining Room — Museum Photograph Courtesy of Perry Palmer">
-        </a>
-        <figcaption>Dining Room — Museum Photograph Courtesy of Perry Palmer</figcaption>
-
-      </figure>
+        <figure class="interpretation-source-image">
+          <a class="glightbox" href="assets/galleryInterpretations/Dining%20Room.jpeg" data-gallery="interpretations-gallery" data-title="Dining Room — Museum Photograph Courtesy of Perry Palmer" data-description="The dining room as it appears in the museum today.">
+            <img src="assets/galleryInterpretations/thumbs/dining-room.jpg" alt="Dining Room — Museum Photograph Courtesy of Perry Palmer">
+          </a>
+        </figure>
     
+    </div>
 
-      <figure class="illustration-full">
+</div>
+        
+      <div class="interpretation-results">
+        
+      <figure class="interpretation-hero">
         <a class="glightbox" href="assets/galleryInterpretations/Dining%20Room%20-%20The%20breakfast%20table%201%20-%20best.jpeg" data-gallery="interpretations-gallery" data-title="Breakfast at the Court House, 1835" data-description="Thomas Johnson points out an item in the newspaper while Rebecca leans in to read.">
           <img src="assets/galleryInterpretations/Dining%20Room%20-%20The%20breakfast%20table%201%20-%20best.jpeg" alt="Breakfast at the Court House, 1835">
         </a>
-        <figcaption>Breakfast at the Court House, 1835</figcaption>
-
       </figure>
     
       </div>
     </section>
     
 
-    <section class="section album-section" id="writing-desk">
+    <section class="section interpretation-entry" id="writing-desk">
       <h2>Writing Desk</h2>
-      <p>Rebecca Johnson Prescott pauses while composing a reply to her brother Rowland in 1837.</p>
-      <div class="album-grid">
+      
+<div class="interpretation-intro">
+
+    <div class="interpretation-description-panel">
+        <p class="interpretation-summary">Rebecca Johnson Prescott pauses while composing a reply to her brother Rowland in 1837.</p>
+        <p class="source-caption">The writing desk as it appears in the museum today.</p>
+    </div>
+
+    <div class="interpretation-before-panel">
         
-      <figure class="illustration-full">
-        <a class="glightbox" href="assets/galleryInterpretations/Desk.jpeg" data-gallery="interpretations-gallery" data-title="Writing Desk — Museum Photograph  Courtesy of Perry Palmer" data-description="The writing desk as it appears in the museum today.">
-          <img src="assets/galleryInterpretations/Desk.jpeg" alt="Writing Desk — Museum Photograph  Courtesy of Perry Palmer">
-        </a>
-        <figcaption>Writing Desk — Museum Photograph  Courtesy of Perry Palmer</figcaption>
-
-      </figure>
+        <figure class="interpretation-source-image">
+          <a class="glightbox" href="assets/galleryInterpretations/Desk.jpeg" data-gallery="interpretations-gallery" data-title="Writing Desk — Museum Photograph  Courtesy of Perry Palmer" data-description="The writing desk as it appears in the museum today.">
+            <img src="assets/galleryInterpretations/thumbs/desk.jpg" alt="Writing Desk — Museum Photograph  Courtesy of Perry Palmer">
+          </a>
+        </figure>
     
+    </div>
 
-      <figure class="illustration-full">
+</div>
+        
+      <div class="interpretation-results">
+        
+      <figure class="interpretation-hero">
         <a class="glightbox" href="assets/galleryInterpretations/Desk%20-%20Mother%20writing%20to%20Rowland%202%20-%20best.jpeg" data-gallery="interpretations-gallery" data-title="Rebecca Writing to her brother Rowland, 1837" data-description="Rebecca considers her next words, with quill, inkpot, and letter before her.">
           <img src="assets/galleryInterpretations/Desk%20-%20Mother%20writing%20to%20Rowland%202%20-%20best.jpeg" alt="Rebecca Writing to her brother Rowland, 1837">
         </a>
-        <figcaption>Rebecca Writing to her brother Rowland, 1837</figcaption>
-
       </figure>
     
       </div>
     </section>
     
 
-    <section class="section album-section" id="kitchen">
+    <section class="section interpretation-entry" id="kitchen">
       <h2>Kitchen</h2>
-      <p>The Prescott girls explore the courthouse kitchen soon after arriving in 1834.</p>
-      <div class="album-grid">
+      
+<div class="interpretation-intro">
+
+    <div class="interpretation-description-panel">
+        <p class="interpretation-summary">The Prescott girls explore the courthouse kitchen soon after arriving in 1834.</p>
+        <p class="source-caption">The kitchen as it appears in the museum today.</p>
+    </div>
+
+    <div class="interpretation-before-panel">
         
-      <figure class="illustration-full">
-        <a class="glightbox" href="assets/galleryInterpretations/Kitchen.jpeg" data-gallery="interpretations-gallery" data-title="Kitchen — Museum Photograph  Courtesy of Perry Palmer" data-description="The kitchen as it appears in the museum today.">
-          <img src="assets/galleryInterpretations/Kitchen.jpeg" alt="Kitchen — Museum Photograph  Courtesy of Perry Palmer">
-        </a>
-        <figcaption>Kitchen — Museum Photograph  Courtesy of Perry Palmer</figcaption>
-
-      </figure>
+        <figure class="interpretation-source-image">
+          <a class="glightbox" href="assets/galleryInterpretations/Kitchen.jpeg" data-gallery="interpretations-gallery" data-title="Kitchen — Museum Photograph  Courtesy of Perry Palmer" data-description="The kitchen as it appears in the museum today.">
+            <img src="assets/galleryInterpretations/thumbs/kitchen.jpg" alt="Kitchen — Museum Photograph  Courtesy of Perry Palmer">
+          </a>
+        </figure>
     
+    </div>
 
-      <figure class="illustration-full">
+</div>
+        
+      <div class="interpretation-results">
+        
+      <figure class="interpretation-hero">
         <a class="glightbox" href="assets/galleryInterpretations/Kitchen%20with%20Girls%202.jpeg" data-gallery="interpretations-gallery" data-title="The Girls in the Kitchen, 1834" data-description="Beckie, Louisa, and Sallie discover the room that will become part of their new home.">
           <img src="assets/galleryInterpretations/Kitchen%20with%20Girls%202.jpeg" alt="The Girls in the Kitchen, 1834">
         </a>
-        <figcaption>The Girls in the Kitchen, 1834</figcaption>
-
       </figure>
     
       </div>
     </section>
     
 
-    <section class="section album-section" id="bedroom">
+    <section class="section interpretation-entry" id="bedroom">
       <h2>Bedroom</h2>
-      <p>Louisa “Lulu” Prescott studies one of her sketches while caring for her young nephews in 1876.</p>
-      <div class="album-grid">
+      
+<div class="interpretation-intro">
+
+    <div class="interpretation-description-panel">
+        <p class="interpretation-summary">Louisa “Lulu” Prescott studies one of her sketches while caring for her young nephews in 1876.</p>
+        <p class="source-caption">The upstairs bedroom and cradle as they appear in the museum today.</p>
+    </div>
+
+    <div class="interpretation-before-panel">
         
-      <figure class="illustration-full">
-        <a class="glightbox" href="assets/galleryInterpretations/Bedroom%20with%20Cradle.jpeg" data-gallery="interpretations-gallery" data-title="Bedroom — Museum Photograph Courtesy of Perry Palmer" data-description="The upstairs bedroom and cradle as they appear in the museum today.">
-          <img src="assets/galleryInterpretations/Bedroom%20with%20Cradle.jpeg" alt="Bedroom — Museum Photograph Courtesy of Perry Palmer">
-        </a>
-        <figcaption>Bedroom — Museum Photograph Courtesy of Perry Palmer</figcaption>
-
-      </figure>
+        <figure class="interpretation-source-image">
+          <a class="glightbox" href="assets/galleryInterpretations/Bedroom%20with%20Cradle.jpeg" data-gallery="interpretations-gallery" data-title="Bedroom — Museum Photograph Courtesy of Perry Palmer" data-description="The upstairs bedroom and cradle as they appear in the museum today.">
+            <img src="assets/galleryInterpretations/thumbs/bedroom-with-cradle.jpg" alt="Bedroom — Museum Photograph Courtesy of Perry Palmer">
+          </a>
+        </figure>
     
+    </div>
 
-      <figure class="illustration-full">
+</div>
+        
+      <div class="interpretation-results">
+        
+      <figure class="interpretation-hero">
         <a class="glightbox" href="assets/galleryInterpretations/Bedroom%20-%20Lulu%20and%20her%20nephew.jpeg" data-gallery="interpretations-gallery" data-title="Lulu and Her Nephews, 1876" data-description="Lulu reviews her artwork while keeping watch over the children.">
           <img src="assets/galleryInterpretations/Bedroom%20-%20Lulu%20and%20her%20nephew.jpeg" alt="Lulu and Her Nephews, 1876">
         </a>
-        <figcaption>Lulu and Her Nephews, 1876</figcaption>
-
       </figure>
     
       </div>
     </section>
     
 
-    <section class="section album-section" id="doll-drawing">
+    <section class="section interpretation-entry" id="doll-drawing">
       <h2>Doll Drawing</h2>
-      <p>A child&#x27;s drawing becomes the inspiration for imagining Sallie Prescott proudly showing one of her treasured dolls.</p>
-      <div class="album-grid">
+      
+<div class="interpretation-intro">
+
+    <div class="interpretation-description-panel">
+        <p class="interpretation-summary">A child&#x27;s drawing becomes the inspiration for imagining Sallie Prescott proudly showing one of her treasured dolls.</p>
+        <p class="source-caption">The original drawing displayed in the museum.</p>
+    </div>
+
+    <div class="interpretation-before-panel">
         
-      <figure class="illustration-full">
-        <a class="glightbox" href="assets/galleryInterpretations/Doll%20Drawing%20-%20Perry.jpg" data-gallery="interpretations-gallery" data-title="Doll Drawing — Museum Photograph Courtesy of Perry Palmer" data-description="The original drawing displayed in the museum.">
-          <img src="assets/galleryInterpretations/Doll%20Drawing%20-%20Perry.jpg" alt="Doll Drawing — Museum Photograph Courtesy of Perry Palmer">
-        </a>
-        <figcaption>Doll Drawing — Museum Photograph Courtesy of Perry Palmer</figcaption>
-
-      </figure>
+        <figure class="interpretation-source-image">
+          <a class="glightbox" href="assets/galleryInterpretations/Doll%20Drawing%20-%20Perry.jpg" data-gallery="interpretations-gallery" data-title="Doll Drawing — Museum Photograph Courtesy of Perry Palmer" data-description="The original drawing displayed in the museum.">
+            <img src="assets/galleryInterpretations/thumbs/doll-drawing-perry.jpg" alt="Doll Drawing — Museum Photograph Courtesy of Perry Palmer">
+          </a>
+        </figure>
     
+    </div>
 
-      <figure class="illustration-full">
+</div>
+        
+      <div class="interpretation-results">
+        
+      <figure class="interpretation-hero">
         <a class="glightbox" href="assets/galleryInterpretations/Doll%20Drawing%20with%20Sallie.jpg" data-gallery="interpretations-gallery" data-title="Sallie Drawing Her Doll" data-description="Sallie proudly shares one of her favorite toys.">
           <img src="assets/galleryInterpretations/Doll%20Drawing%20with%20Sallie.jpg" alt="Sallie Drawing Her Doll">
         </a>
-        <figcaption>Sallie Drawing Her Doll</figcaption>
-
       </figure>
     
       </div>
     </section>
     
 
-    <section class="section album-section" id="fireplace">
+    <section class="section interpretation-entry" id="fireplace">
       <h2>Fireplace</h2>
-      <p>Rebecca Johnson Prescott pauses while preparing a hot beverage in the courthouse fireplace.</p>
-      <div class="album-grid">
+      
+<div class="interpretation-intro">
+
+    <div class="interpretation-description-panel">
+        <p class="interpretation-summary">Rebecca Johnson Prescott pauses while preparing a hot beverage in the courthouse fireplace.</p>
+        <p class="source-caption">The fireplace as it appears in the museum today.</p>
+    </div>
+
+    <div class="interpretation-before-panel">
         
-      <figure class="illustration-full">
-        <a class="glightbox" href="assets/galleryInterpretations/Fireplace%20-%20Perry.jpg" data-gallery="interpretations-gallery" data-title="Fireplace — Museum Photograph Courtesy of Perry Palmer" data-description="The fireplace as it appears in the museum today.">
-          <img src="assets/galleryInterpretations/Fireplace%20-%20Perry.jpg" alt="Fireplace — Museum Photograph Courtesy of Perry Palmer">
-        </a>
-        <figcaption>Fireplace — Museum Photograph Courtesy of Perry Palmer</figcaption>
-
-      </figure>
+        <figure class="interpretation-source-image">
+          <a class="glightbox" href="assets/galleryInterpretations/Fireplace%20-%20Perry.jpg" data-gallery="interpretations-gallery" data-title="Fireplace — Museum Photograph Courtesy of Perry Palmer" data-description="The fireplace as it appears in the museum today.">
+            <img src="assets/galleryInterpretations/thumbs/fireplace-perry.jpg" alt="Fireplace — Museum Photograph Courtesy of Perry Palmer">
+          </a>
+        </figure>
     
+    </div>
 
-      <figure class="illustration-full">
+</div>
+        
+      <div class="interpretation-results">
+        
+      <figure class="interpretation-hero">
         <a class="glightbox" href="assets/galleryInterpretations/Fireplace%20with%20Mother.jpg" data-gallery="interpretations-gallery" data-title="Rebecca by the Fireplace" data-description="Rebecca reflects quietly beside the hearth.">
           <img src="assets/galleryInterpretations/Fireplace%20with%20Mother.jpg" alt="Rebecca by the Fireplace">
         </a>
-        <figcaption>Rebecca by the Fireplace</figcaption>
-
       </figure>
     
       </div>
     </section>
     
 
-    <section class="section album-section" id="holiday-kitchen">
+    <section class="section interpretation-entry" id="holiday-kitchen">
       <h2>Holiday Kitchen</h2>
-      <p>The kitchen decorated and bustling during the holiday season.</p>
-      <div class="album-grid">
+      
+<div class="interpretation-intro">
+
+    <div class="interpretation-description-panel">
+        <p class="interpretation-summary">The kitchen decorated and bustling during the holiday season.</p>
+        <p class="source-caption">A second view of the courthouse kitchen.</p>
+    </div>
+
+    <div class="interpretation-before-panel">
         
-      <figure class="illustration-full">
-        <a class="glightbox" href="assets/galleryInterpretations/Kitchen2.jpg" data-gallery="interpretations-gallery" data-title="Kitchen — Museum Photograph Courtesy of Perry Palmer" data-description="A second view of the courthouse kitchen.">
-          <img src="assets/galleryInterpretations/Kitchen2.jpg" alt="Kitchen — Museum Photograph Courtesy of Perry Palmer">
-        </a>
-        <figcaption>Kitchen — Museum Photograph Courtesy of Perry Palmer</figcaption>
-
-      </figure>
+        <figure class="interpretation-source-image">
+          <a class="glightbox" href="assets/galleryInterpretations/Kitchen2.jpg" data-gallery="interpretations-gallery" data-title="Kitchen — Museum Photograph Courtesy of Perry Palmer" data-description="A second view of the courthouse kitchen.">
+            <img src="assets/galleryInterpretations/thumbs/kitchen2.jpg" alt="Kitchen — Museum Photograph Courtesy of Perry Palmer">
+          </a>
+        </figure>
     
+    </div>
 
-      <figure class="illustration-full">
+</div>
+        
+      <div class="interpretation-results">
+        
+      <figure class="interpretation-hero">
         <a class="glightbox" href="assets/galleryInterpretations/Kitchen2%20-%20holidays.jpg" data-gallery="interpretations-gallery" data-title="Holiday Preparations" data-description="Family members prepare for a holiday gathering.">
           <img src="assets/galleryInterpretations/Kitchen2%20-%20holidays.jpg" alt="Holiday Preparations">
         </a>
-        <figcaption>Holiday Preparations</figcaption>
-
       </figure>
     
       </div>
     </section>
     
 
-    <section class="section album-section" id="sled">
+    <section class="section interpretation-entry" id="sled">
       <h2>Sled</h2>
-      <p>A simple sled hints at winter adventures around the courthouse.</p>
-      <div class="album-grid">
+      
+<div class="interpretation-intro">
+
+    <div class="interpretation-description-panel">
+        <p class="interpretation-summary">A simple sled hints at winter adventures around the courthouse.</p>
+        <p class="source-caption">A child&#x27;s sled displayed in the museum.</p>
+    </div>
+
+    <div class="interpretation-before-panel">
         
-      <figure class="illustration-full">
-        <a class="glightbox" href="assets/galleryInterpretations/Sled%20at%20PCH.jpg" data-gallery="interpretations-gallery" data-title="Sled — Museum Photograph Courtesy of Perry Palmer" data-description="A child&amp;#x27;s sled displayed in the museum.">
-          <img src="assets/galleryInterpretations/Sled%20at%20PCH.jpg" alt="Sled — Museum Photograph Courtesy of Perry Palmer">
-        </a>
-        <figcaption>Sled — Museum Photograph Courtesy of Perry Palmer</figcaption>
-
-      </figure>
+        <figure class="interpretation-source-image">
+          <a class="glightbox" href="assets/galleryInterpretations/Sled%20at%20PCH.jpg" data-gallery="interpretations-gallery" data-title="Sled — Museum Photograph Courtesy of Perry Palmer" data-description="A child&amp;#x27;s sled displayed in the museum.">
+            <img src="assets/galleryInterpretations/thumbs/sled-at-pch.jpg" alt="Sled — Museum Photograph Courtesy of Perry Palmer">
+          </a>
+        </figure>
     
+    </div>
 
-      <figure class="illustration-full">
+</div>
+        
+      <div class="interpretation-results">
+        
+      <figure class="interpretation-hero">
         <a class="glightbox" href="assets/galleryInterpretations/Sled%20with%20Girls.jpg" data-gallery="interpretations-gallery" data-title="Winter Outing" data-description="The Prescott girls enjoy a winter day together.">
           <img src="assets/galleryInterpretations/Sled%20with%20Girls.jpg" alt="Winter Outing">
         </a>
-        <figcaption>Winter Outing</figcaption>
-
       </figure>
     
       </div>
     </section>
     
 
-    <section class="section album-section" id="thomas-chair">
+    <section class="section interpretation-entry" id="thomas-chair">
       <h2>Thomas&#x27;s Chair</h2>
-      <p>Thomas Johnson relaxes in his distinctive chair after a busy day.</p>
-      <div class="album-grid">
+      
+<div class="interpretation-intro">
+
+    <div class="interpretation-description-panel">
+        <p class="interpretation-summary">Thomas Johnson relaxes in his distinctive chair after a busy day.</p>
+        <p class="source-caption">The chair as displayed in the museum.</p>
+    </div>
+
+    <div class="interpretation-before-panel">
         
-      <figure class="illustration-full">
-        <a class="glightbox" href="assets/galleryInterpretations/Thomas%20Chair.jpg" data-gallery="interpretations-gallery" data-title="Thomas&#x27;s Chair — Museum Photograph Courtesy of Perry Palmer" data-description="The chair as displayed in the museum.">
-          <img src="assets/galleryInterpretations/Thomas%20Chair.jpg" alt="Thomas&#x27;s Chair — Museum Photograph Courtesy of Perry Palmer">
-        </a>
-        <figcaption>Thomas&#x27;s Chair — Museum Photograph Courtesy of Perry Palmer</figcaption>
-
-      </figure>
+        <figure class="interpretation-source-image">
+          <a class="glightbox" href="assets/galleryInterpretations/Thomas%20Chair.jpg" data-gallery="interpretations-gallery" data-title="Thomas&#x27;s Chair — Museum Photograph Courtesy of Perry Palmer" data-description="The chair as displayed in the museum.">
+            <img src="assets/galleryInterpretations/thumbs/thomas-chair.jpg" alt="Thomas&#x27;s Chair — Museum Photograph Courtesy of Perry Palmer">
+          </a>
+        </figure>
     
+    </div>
 
-      <figure class="illustration-full">
+</div>
+        
+      <div class="interpretation-results">
+        
+      <figure class="interpretation-hero">
         <a class="glightbox" href="assets/galleryInterpretations/Thomas%20in%20Chair.jpg" data-gallery="interpretations-gallery" data-title="Thomas in His Chair" data-description="Thomas Johnson seated comfortably at home.">
           <img src="assets/galleryInterpretations/Thomas%20in%20Chair.jpg" alt="Thomas in His Chair">
         </a>
-        <figcaption>Thomas in His Chair</figcaption>
-
       </figure>
     
       </div>
     </section>
     
 
-    <section class="section album-section" id="toys">
+    <section class="section interpretation-entry" id="toys">
       <h2>Children&#x27;s Toys</h2>
-      <p>Historic toys inspire a glimpse into the Prescott sisters&#x27; playtime.</p>
-      <div class="album-grid">
+      
+<div class="interpretation-intro">
+
+    <div class="interpretation-description-panel">
+        <p class="interpretation-summary">Historic toys inspire a glimpse into the Prescott sisters&#x27; playtime.</p>
+        <p class="source-caption">Toys preserved in the museum collection.</p>
+    </div>
+
+    <div class="interpretation-before-panel">
         
-      <figure class="illustration-full">
-        <a class="glightbox" href="assets/galleryInterpretations/Toys.jpg" data-gallery="interpretations-gallery" data-title="Children&#x27;s Toys — Museum Photograph Courtesy of Perry Palmer" data-description="Toys preserved in the museum collection.">
-          <img src="assets/galleryInterpretations/Toys.jpg" alt="Children&#x27;s Toys — Museum Photograph Courtesy of Perry Palmer">
-        </a>
-        <figcaption>Children&#x27;s Toys — Museum Photograph Courtesy of Perry Palmer</figcaption>
-
-      </figure>
+        <figure class="interpretation-source-image">
+          <a class="glightbox" href="assets/galleryInterpretations/Toys.jpg" data-gallery="interpretations-gallery" data-title="Children&#x27;s Toys — Museum Photograph Courtesy of Perry Palmer" data-description="Toys preserved in the museum collection.">
+            <img src="assets/galleryInterpretations/thumbs/toys.jpg" alt="Children&#x27;s Toys — Museum Photograph Courtesy of Perry Palmer">
+          </a>
+        </figure>
     
+    </div>
 
-      <figure class="illustration-full">
+</div>
+        
+      <div class="interpretation-results">
+        
+      <figure class="interpretation-hero">
         <a class="glightbox" href="assets/galleryInterpretations/Toys%20with%20Girls13.jpg" data-gallery="interpretations-gallery" data-title="The Prescott Girls at Play" data-description="The sisters enjoying an afternoon together with their toys.">
           <img src="assets/galleryInterpretations/Toys%20with%20Girls13.jpg" alt="The Prescott Girls at Play">
         </a>
-        <figcaption>The Prescott Girls at Play</figcaption>
-
       </figure>
     
       </div>
     </section>
     
 
-    <section class="section album-section" id="jail-parlor">
+    <section class="section interpretation-entry" id="jail-parlor">
       <h2>Parlor in the 1811 Old Jail, Wiscasset, Maine</h2>
-      <p>The jailkeeper and his wife welcome visitors into the adjoining parlor.</p>
-      <div class="album-grid">
+      
+<div class="interpretation-intro">
+
+    <div class="interpretation-description-panel">
+        <p class="interpretation-summary">The jailkeeper and his wife welcome visitors into the adjoining parlor.</p>
+        <p class="source-caption">The jail parlor as preserved in the museum.</p>
+    </div>
+
+    <div class="interpretation-before-panel">
         
-      <figure class="illustration-full">
-        <a class="glightbox" href="assets/galleryInterpretations/Jail%20Parlor.jpg" data-gallery="interpretations-gallery" data-title="Jail Parlor — Museum Photograph Courtesy of Perry Palmer" data-description="The jail parlor as preserved in the museum.">
-          <img src="assets/galleryInterpretations/Jail%20Parlor.jpg" alt="Jail Parlor — Museum Photograph Courtesy of Perry Palmer">
-        </a>
-        <figcaption>Jail Parlor — Museum Photograph Courtesy of Perry Palmer</figcaption>
-
-      </figure>
+        <figure class="interpretation-source-image">
+          <a class="glightbox" href="assets/galleryInterpretations/Jail%20Parlor.jpg" data-gallery="interpretations-gallery" data-title="Jail Parlor — Museum Photograph Courtesy of Perry Palmer" data-description="The jail parlor as preserved in the museum.">
+            <img src="assets/galleryInterpretations/thumbs/jail-parlor.jpg" alt="Jail Parlor — Museum Photograph Courtesy of Perry Palmer">
+          </a>
+        </figure>
     
+    </div>
 
-      <figure class="illustration-full">
+</div>
+        
+      <div class="interpretation-results">
+        
+      <figure class="interpretation-hero">
         <a class="glightbox" href="assets/galleryInterpretations/Jail%20-%20Jailkeeper%20and%20his%20wife.jpg" data-gallery="interpretations-gallery" data-title="The Jailkeeper and His Wife" data-description="An interpretation of daily life connected with the courthouse jail.">
           <img src="assets/galleryInterpretations/Jail%20-%20Jailkeeper%20and%20his%20wife.jpg" alt="The Jailkeeper and His Wife">
         </a>
-        <figcaption>The Jailkeeper and His Wife</figcaption>
-
       </figure>
     
       </div>
