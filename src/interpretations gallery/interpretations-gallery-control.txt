@@ -51,7 +51,7 @@ caption=The Prescott girls explore the courthouse kitchen soon after arriving in
 
 [PHOTO]
 file=Kitchen.jpeg
-title=Kitchen — Photograph  Courtesy of Perry Palmer
+title=Kitchen — Photograph Courtesy of Perry Palmer
 caption=The kitchen as it appears in the Pownalborough Court House Museum today.
 
 [PHOTO]
@@ -130,12 +130,12 @@ caption=The kitchen decorated and bustling during the holiday season.
 [PHOTO]
 file=Kitchen2.jpg
 title=Kitchen — Photograph Courtesy of Perry Palmer
-caption=A second view of the courthouse kitchen.
+caption=The kitchen as it appears in the Pownalborough Court House Museum today.
 
 [PHOTO]
 file=Kitchen2 - holidays.jpg
 title=Holiday Preparations
-caption=Family members prepare for a holiday gathering.
+caption=The Prescott family prepare for a holiday gathering.
 
 [SECTION]
 id=sled
@@ -208,7 +208,7 @@ caption=The jailkeeper and his wife welcome visitors into the adjoining parlor.
 [PHOTO]
 file=Jail Parlor.jpg
 title=Jail Parlor — Photograph Courtesy of Perry Palmer
-caption=The jail parlor as preserved in the Wiscasset Old Lincoln County Jail Museum.
+caption=The jail parlor as it appears today in the Old Lincoln County Jail Museum, Wiscasset, Maine.
 
 [PHOTO]
 file=Jail - Jailkeeper and his wife.jpg
