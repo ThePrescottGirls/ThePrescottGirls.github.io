@@ -183,6 +183,22 @@ title=The Prescott Girls at Play
 caption=The sisters enjoying an afternoon together with their toys.
 
 
+[SECTION]
+id=nancy-lydia-portrait
+title=Nancy Goodwin Johnson and Lydia
+caption=This portrait of Nancy Goodwin Johnson and her daughter Lydia was painted by Henry C. Pratt in 1830, shortly before the family moved to Philadelphia. Nancy was the wife of Rowland Johnson, brother of Rebecca Johnson Prescott, making Lydia the Prescott girls' cousin.
+
+[PHOTO]
+file=Nancy & Lydia Portrait.jpg
+title=Nancy Goodwin Johnson and Daughter Lydia — Museum Photograph Courtesy of Perry Palmer
+caption=The original portrait displayed in the museum. Painted by Henry C. Pratt in 1830.
+
+[PHOTO]
+file=Pratt painting Nancy & Lydia.png
+title=Nancy and Lydia, 1830
+caption=An AI-assisted interpretation inspired by Henry C. Pratt's portrait of Nancy Goodwin Johnson and her daughter Lydia shortly before their move to Philadelphia.
+
+
 
 [SECTION]
 id=jail-parlor
