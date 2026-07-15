@@ -85,7 +85,38 @@ if (localStorage.getItem("CounterDevIgnore") !== "true") {
 </script>
 
 
-    </head>
+    
+<style>
+  .guide-topics-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.25rem 2rem;
+    margin: 1.25rem 0 2rem;
+  }
+
+  .guide-topic {
+    font-size: 1rem;
+    line-height: 1.55;
+  }
+
+  .guide-topic strong {
+    display: block;
+    margin-bottom: 0.3rem;
+    font-size: 1.05rem;
+  }
+
+  .guide-topic a {
+    display: block;
+  }
+
+  @media (max-width: 700px) {
+    .guide-topics-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
+
+</head>
     
 <body>
 <a class="skip" href="#main">Skip to content</a>
@@ -156,8 +187,79 @@ if (localStorage.getItem("CounterDevIgnore") !== "true") {
       <p class="study-guides-intro">
       Designed for grades 4–7, these printable study guides connect literature with history, geography, and primary sources to support classroom discussion and critical thinking.
       </p>
-      
-      <!-- Overview -->
+
+      <h3>Browse by Topic</h3>
+
+      <p class="study-guides-intro">
+        These study guides can be used individually or combined to support lessons in history,
+        geography, literacy, artifact analysis, ethics, and critical thinking.
+      </p>
+
+      <div class="guide-topics-grid">
+
+        <div class="guide-topic">
+          <strong>Character, Ethics, and Civic Responsibility</strong>
+          <a href="teachers/Study Guide - Discussion Questions (Teachers).html">Discussion Questions (Teachers)</a>
+          <a href="teachers/Study Guide - Discussion Questions (Students).html">Discussion Questions (Students)</a>
+          <a href="teachers/Study Guide - The Sugar Boycott.html">The Sugar Boycott</a>
+        </div>
+
+        <div class="guide-topic">
+          <strong>Historical Thinking</strong>
+          <a href="teachers/The Prescott Girls - Facts and Fiction.html">Facts and Fiction</a>
+          <a href="teachers/Study Guide - How Historians Trace Artifacts.html">How Historians Trace Artifacts</a>
+        </div>
+
+        <div class="guide-topic">
+          <strong>Primary Sources and Artifact Analysis</strong>
+          <a href="teachers/Study Guide - Beckie Prescott's Sampler.html">Beckie Prescott’s Schoolgirl Sampler</a>
+          <a href="teachers/Study Guide - How Historians Trace Artifacts.html">How Historians Trace Artifacts</a>
+        </div>
+
+        <div class="guide-topic">
+          <strong>Women’s History and Education</strong>
+          <a href="teachers/Study Guide - Needlework and Education.html">Needlework and Girls’ Education in Early America</a>
+          <a href="teachers/Study Guide - Beckie Prescott's Sampler.html">Beckie Prescott’s Schoolgirl Sampler</a>
+        </div>
+
+        <div class="guide-topic">
+          <strong>Geography and Travel</strong>
+          <a href="teachers/Study Guide - Geography.html">Geography of <em>The Prescott Girls</em></a>
+          <a href="teachers/Maine_Map.html">Printable Maine Map (1833)</a>
+        </div>
+
+        <div class="guide-topic">
+          <strong>Daily Life and Local History</strong>
+          <a href="teachers/Study Guide - Life in 1830s Maine.html">Life in 1830s Maine</a>
+          <a href="teachers/Study Guide - The Old Pownalborough Court House.html">The Old Pownalborough Court House</a>
+        </div>
+
+        <div class="guide-topic">
+          <strong>Literacy and Communication</strong>
+          <a href="teachers/Study Guide - Letters and Communications in the 1830s.html">Letters and Communications in the 1830s</a>
+          <a href="teachers/Study Guide - Discussion Questions (Teachers).html">Discussion Questions (Teachers)</a>
+          <a href="teachers/Study Guide - Discussion Questions (Students).html">Discussion Questions (Students)</a>
+        </div>
+
+        <div class="guide-topic">
+          <strong>Family History and Genealogy</strong>
+          <a href="teachers/Study Guide - Family Trees.html">Family Trees</a>
+          <a href="teachers/Study Guide - How Historians Trace Artifacts.html">How Historians Trace Artifacts</a>
+        </div>
+
+        <div class="guide-topic">
+          <strong>Historical Interpretation and Creative Process</strong>
+          <a href="teachers/Study Guide - Creating the Illustrations.html">Creating the Illustrations</a>
+          <a href="teachers/The Prescott Girls - Facts and Fiction.html">Facts and Fiction</a>
+        </div>
+
+      </div>
+
+
+      <h3>Browse by Title</h3>
+
+
+<!-- Overview -->
 
       <div class="download-item featured" id="overview">
         <p>
@@ -176,8 +278,6 @@ if (localStorage.getItem("CounterDevIgnore") !== "true") {
       </div>
       
       <!-- Discussion Guides - Teacher -->
-
-      <h3>Discussion Guides</h3>
 
       <div class="download-item" id="discussion-teachers">
         <p>
@@ -215,9 +315,7 @@ if (localStorage.getItem("CounterDevIgnore") !== "true") {
       </div>
       
       <!-- Study Guides -->
-      
-      <h3>More Resources</h3>
-      
+            
       <!-- Study Guide - Beckie Prescott's Sampler -->
       
       <div class="download-item" id="beckie-sampler">
@@ -444,4 +542,3 @@ if (localStorage.getItem("CounterDevIgnore") !== "true") {
 
 </body>
 </html>
-
