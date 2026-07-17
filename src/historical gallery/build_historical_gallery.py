@@ -653,7 +653,7 @@ def render_html(gallery: Gallery, media_dir: Path, media_url: str, output_file: 
 <footer>
   <div class="container footergrid">
     <div>
-      © 2026 Aric Wilmunder. All rights reserved.
+      © 2026 A Well-Regulated Press. All rights reserved.
     </div>
 
     <div class="smalllinks">
