@@ -488,3 +488,19 @@ location_confidence=known
 title=Mother's Dress
 caption=An 1830s dress from the Maine Historical Society. MMN-105395 Dress - Cream Muslin with motif, c.1830's
 draft=no
+
+
+
+
+
+
+[PHOTO]
+file=Nancy & Lydia Portrait.jpg
+date=
+time=
+gps=
+xlocation=University of Rhode Island Historic Textile and Costume Collection
+location_confidence=known
+title=Aunt Nancy and Cousin Lydia's Dresses
+caption=Based on historic portrait at the Pownalborough Court House Museum, courtesy of the Lincoln Count Historical Association
+draft=no
