@@ -55,7 +55,7 @@ This guide was created to help readers explore that survey. Rather than simply r
 * Sheet 15 – Kitchen  
 * Sheet 16 – Door Schedule  
 * Sheet 17 – North-East Bedroom, Second Floor  
-* Sheet 18 – South-East Bedroom, Third Floor and Original Hardware  
+* Sheet 18 – South-East Bedroom, Third Floor and Original Wrought Iron Hardware  
 * Sheet 19 – Original Hardware
 
 ## **Conclusion**
