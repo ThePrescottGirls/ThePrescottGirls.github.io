@@ -18,7 +18,7 @@ This guide was created to help readers explore that survey. Rather than simply r
 
 # **Contents**
 
-## **Chapter 1 – The Historic American Buildings Survey**
+## **Chapter 1 – The Historic American Buildings Survey (HABS)**
 
 * Preserving America's Architectural Heritage  
 * The Great Depression and the Birth of HABS  
@@ -70,7 +70,7 @@ This guide was created to help readers explore that survey. Rather than simply r
 
 # **Chapter 1**
 
-## **The Historic American Buildings Survey**
+## **The Historic American Buildings Survey (HABS)**
 
 ### **Preserving America's Architectural Heritage**
 
