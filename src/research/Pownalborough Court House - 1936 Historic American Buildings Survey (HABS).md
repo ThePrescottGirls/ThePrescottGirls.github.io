@@ -602,7 +602,7 @@ This sheet also illustrates an important principle of Georgian interior design. 
 
 **Next:** *The survey concludes with two final sheets that focus on the courthouse's smallest architectural features. By documenting original hardware, hinges, latches, and other fittings, the survey preserves the finishing details that completed the work of the eighteenth-century builders and craftsmen.*
 
-# **Sheet 18 – South-East Bedroom, Third Floor and Original Hardware**
+# **Sheet 18 – South-East Bedroom, Third Floor and Original Wrought Iron Hardware**
 
 The penultimate sheet of the Historic American Buildings Survey shifts attention from the building's architectural features to the hardware that made them function. Hinges, latches, handles, and hand-forged fasteners may seem like small details, yet they represent the daily interaction between people and the courthouse. Every door opened, every latch lifted, and every hinge swung through the work of a local blacksmith and carpenter.
 
