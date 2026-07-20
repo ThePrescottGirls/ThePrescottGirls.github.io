@@ -165,6 +165,8 @@ Several details on this cover sheet deserve special attention.
 
 ![][image1]
 
+**Next:** *The survey began where every great building begins, with its foundation. Before we can appreciate the courthouse's rooms, doors, and architectural details, we first understand the structure that has supported them since 1761\.*
+
 # 
 
 # **Sheet 1 – Basement Plan**
@@ -188,9 +190,8 @@ Although the basement itself receives few visitors today, this drawing reminds u
 * **A simple material legend tells an important story.** Only two materials are identified: fieldstone and brick. They form the structural backbone of the courthouse.  
 * **The basement reveals the building's hidden framework.** While later sheets focus on rooms, doors, and architectural details, this plan introduces the unseen structural system that supports everything above it.
 
-![][image2]
-
-**Next:** *The survey began where every great building begins, with its foundation. Before we can appreciate the courthouse's rooms, doors, and architectural details, we first understand the structure that has supported them since 1761\.*
+![][image2]  
+**Next:** *We begin where every visitor begins, on the first floor. Before exploring the courthouse's history room by room, we'll examine the spaces recorded by the 1936 HABS survey and the evidence they preserve.*
 
 # 
 
@@ -678,9 +679,9 @@ Nearly ninety years after these drawings were completed, they continue to fulfil
 
 # **About This Guide**
 
-*This publication was prepared to help readers understand the 1936 Historic American Buildings Survey of the Pownalborough Court House. While the measured drawings reproduced in this guide were created by the Historic American Buildings Survey, the accompanying explanations, observations, and historical commentary are the work of the author unless otherwise noted.*
+> *This publication was prepared to help readers understand the 1936 Historic American Buildings Survey of the Pownalborough Court House. While the measured drawings reproduced in this guide were created by the Historic American Buildings Survey, the accompanying explanations, observations, and historical commentary are the work of the author unless otherwise noted.*
 
-*Every effort has been made to distinguish information documented by the original survey from modern observations and interpretations. Any errors or omissions in this guide are the responsibility of the author.*
+> *Every effort has been made to distinguish information documented by the original survey from modern observations and interpretations. Any errors or omissions in this guide are the responsibility of the author.*
 
 ***Author's observations.** Unless otherwise noted, references to probable labeling errors, later alterations, or comparisons with the present building represent the author's analysis based upon study of the original HABS drawings and examination of the Pownalborough Court House.*
 
