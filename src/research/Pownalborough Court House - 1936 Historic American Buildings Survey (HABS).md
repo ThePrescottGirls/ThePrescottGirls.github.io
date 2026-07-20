@@ -124,9 +124,9 @@ The names appearing on the original title blocks, including Josiah T. Tubby, Jos
 
 For many readers, architectural drawings may appear unfamiliar at first. Fortunately, they follow a consistent visual language that becomes easy to understand with a little practice.
 
-A **floor plan** presents a building as though it were sliced horizontally several feet above the floor, allowing the arrangement of rooms, walls, doors, windows, stairways, and fireplaces to be viewed from above. An **elevation** shows the exterior of one side of the building, revealing its proportions, windows, doors, rooflines, and architectural details. A **section** cuts vertically through the structure to expose its interior construction, framing, floor levels, and relationships between spaces.
+A floor plan presents a building as though it were sliced horizontally several feet above the floor, allowing the arrangement of rooms, walls, doors, windows, stairways, and fireplaces to be viewed from above. An elevation shows the exterior of one side of the building, revealing its proportions, windows, doors, rooflines, and architectural details. A section cuts vertically through the structure to expose its interior construction, framing, floor levels, and relationships between spaces.
 
-Many sheets also include **detail drawings**, which enlarge specific architectural features such as entrances, fireplaces, moldings, doors, windows, or hardware. These enlarged views record craftsmanship that would be impossible to show clearly at the scale of the overall building.
+Many sheets also include detail drawings, which enlarge specific architectural features such as entrances, fireplaces, moldings, doors, windows, or hardware. These enlarged views record craftsmanship that would be impossible to show clearly at the scale of the overall building.
 
 Throughout the survey, scales, dimension lines, labels, and notes provide additional information about construction and materials. Together, these measured drawings form a comprehensive architectural record that allows readers to examine the courthouse from its overall design down to the smallest details.
 
@@ -175,9 +175,9 @@ The first measured drawing in the survey begins beneath the courthouse. Although
 
 Unlike a modern basement, this space was never intended as finished living or working space. Instead, it provided a solid foundation for the building above while supporting massive masonry fireplaces and carrying the weight of heavy timber framing. The plan documents both the structural elements that made the courthouse possible and the practical solutions employed by eighteenth-century builders.
 
-One of the most striking features of the drawing is the large central area labeled **"Unexcavated."** Rather than excavating beneath the entire building, the original builders removed only the soil necessary to construct the foundation walls, support the fireplaces, and provide access beneath portions of the floor. Leaving much of the interior undisturbed reduced labor while providing a stable base for the structure.
+One of the most striking features of the drawing is the large central area labeled "Unexcavated." Rather than excavating beneath the entire building, the original builders removed only the soil necessary to construct the foundation walls, support the fireplaces, and provide access beneath portions of the floor. Leaving much of the interior undisturbed reduced labor while providing a stable base for the structure.
 
-The drawing also illustrates the substantial fieldstone foundation that supports the courthouse. A material legend identifies the two primary construction materials: **fieldstone** for the exterior foundation walls and **brick** for the large masonry arches beneath the fireplaces. These brick arches carried the tremendous weight of the chimneys above while creating protected spaces beneath each hearth.
+The drawing also illustrates the substantial fieldstone foundation that supports the courthouse. A material legend identifies the two primary construction materials: fieldstone for the exterior foundation walls and brick for the large masonry arches beneath the fireplaces. These brick arches carried the tremendous weight of the chimneys above while creating protected spaces beneath each hearth.
 
 Running through the center of the building is a series of heavy timber posts supporting the principal floor framing. Together with the stone foundation and masonry arches, these supports distributed the weight of the building above and created a remarkably durable structural system that has served the courthouse for more than 260 years.
 
@@ -185,7 +185,7 @@ Although the basement itself receives few visitors today, this drawing reminds u
 
 ## **Looking Closer**
 
-* **Only part of the basement was excavated.** The large area marked **"Unexcavated"** demonstrates that eighteenth-century builders removed only as much earth as was necessary for construction and maintenance.  
+* **Only part of the basement was excavated.** The large area marked "Unexcavated" demonstrates that eighteenth-century builders removed only as much earth as was necessary for construction and maintenance.  
 * **The fireplaces begin in the basement.** The brick arches shown beneath each fireplace supported the weight of the masonry chimneys that rise through the building.  
 * **A simple material legend tells an important story.** Only two materials are identified: fieldstone and brick. They form the structural backbone of the courthouse.  
 * **The basement reveals the building's hidden framework.** While later sheets focus on rooms, doors, and architectural details, this plan introduces the unseen structural system that supports everything above it.
@@ -199,11 +199,11 @@ Although the basement itself receives few visitors today, this drawing reminds u
 
 The first floor plan introduces readers to the courthouse as its surveyors experienced it in 1936\. More than simply showing the arrangement of rooms, this measured drawing captures nearly two centuries of architectural change, documenting both original eighteenth-century construction and later modifications made as the building adapted to new uses.
 
-The plan reveals a remarkably compact and efficient layout centered on a main hall and staircase. Four principal rooms occupy the corners of the building: the **Parlor**, **Kitchen**, **North Room**, and **East Room**. Thick masonry chimneys stand at the center, allowing fireplaces to heat each of the major rooms while minimizing the amount of masonry required.
+The plan reveals a remarkably compact and efficient layout centered on a main hall and staircase. Four principal rooms occupy the corners of the building: the Parlor, Kitchen, North Room, and East Room. Thick masonry chimneys stand at the center, allowing fireplaces to heat each of the major rooms while minimizing the amount of masonry required.
 
-One of the strengths of this drawing is the surveyors' careful attention to historical evidence. Rather than recording only what existed in 1936, they also identified features that had changed over time. Notes such as **"Original Partition Removed"** and **"Entrance Probably Not Original"** demonstrate that the survey team carefully distinguished between eighteenth-century construction and later alterations whenever physical evidence allowed.
+One of the strengths of this drawing is the surveyors' careful attention to historical evidence. Rather than recording only what existed in 1936, they also identified features that had changed over time. Notes such as "Original Partition Removed" and "Entrance Probably Not Original" demonstrate that the survey team carefully distinguished between eighteenth-century construction and later alterations whenever physical evidence allowed.
 
-The plan also records spaces that reflect the building's evolution from a colonial courthouse to a nineteenth-century family residence. The **wood shed** and **present kitchen** addition appear outside the original footprint, while closets and other interior modifications illustrate how changing needs shaped the building over nearly two centuries of continuous use.
+The plan also records spaces that reflect the building's evolution from a colonial courthouse to a nineteenth-century family residence. The wood shed and present kitchen addition appear outside the original footprint, while closets and other interior modifications illustrate how changing needs shaped the building over nearly two centuries of continuous use.
 
 Because every wall, doorway, window, fireplace, and staircase was measured directly from the building, this drawing serves as both an architectural plan and a historical record. It preserves not only the courthouse's original design but also the evidence of generations who adapted the building to meet their own needs.
 
@@ -223,7 +223,7 @@ Because every wall, doorway, window, fireplace, and staircase was measured direc
 
 The second floor plan reveals one of the most significant transitions in the history of the Pownalborough Court House. While the first floor had evolved into a combination of domestic and service spaces, the upper floor still preserved evidence of the building's original public purpose.
 
-Dominating the plan is the large **Old Court Room**, occupying nearly half of the second floor. This expansive space recalls the building's original function as Lincoln County's courthouse, where judges, lawyers, jurors, and citizens gathered to conduct the business of the community. Long after the courthouse ceased serving its judicial role, the room remained a defining feature of the building's architecture.
+Dominating the plan is the large Old Court Room, occupying nearly half of the second floor. This expansive space recalls the building's original function as Lincoln County's courthouse, where judges, lawyers, jurors, and citizens gathered to conduct the business of the community. Long after the courthouse ceased serving its judicial role, the room remained a defining feature of the building's architecture.
 
 The remainder of the floor reflects the building's later life as a family residence. Two large bedrooms occupy the southern corners of the building, each served by a fireplace built into the central chimney mass. Closets, hallways, and the central staircase demonstrate how the upper floor was adapted to meet the needs of those who called the courthouse home.
 
@@ -249,7 +249,7 @@ The third floor plan completes the survey of the courthouse's interior while beg
 
 Like the second floor, the plan is organized around a central staircase and hall. Four bedrooms occupy the corners of the building, while smaller storage rooms and closets fill the remaining space. Compared to the more formal arrangement of the lower floors, this level reflects practical domestic use, providing sleeping quarters and storage for the families who called the courthouse home during the nineteenth and early twentieth centuries.
 
-One note on the drawing is particularly significant: **"Ceiling beams marked 'X' are continuous from front to rear of building."** This seemingly simple observation reveals an important aspect of eighteenth-century construction. Rather than relying on numerous short framing members, the builders incorporated massive timbers that spanned the full width of the courthouse, contributing to the building's remarkable strength and stability.
+One note on the drawing is particularly significant: "Ceiling beams marked 'X' are continuous from front to rear of building." This seemingly simple observation reveals an important aspect of eighteenth-century construction. Rather than relying on numerous short framing members, the builders incorporated massive timbers that spanned the full width of the courthouse, contributing to the building's remarkable strength and stability.
 
 The plan also hints at the transition from finished living space to the structural framework above. While plastered walls and ceilings enclosed the occupied rooms, the surveyors increasingly focused on framing, beam locations, and construction methods. Their attention was beginning to shift from how the building was used to how it was engineered.
 
@@ -329,7 +329,7 @@ The north-east elevation presents a quieter side of the Pownalborough Court Hous
 
 The orderly arrangement of windows aligns with the floor plans examined in the previous chapter, allowing readers to see how the interior spaces were expressed on the exterior. The three-story organization remains clearly visible, while the single chimney rising from the roof marks the location of one of the courthouse's central masonry stacks.
 
-Unlike the principal entrance shown on the front elevation, this side includes a doorway identified by the surveyors as **"Entrance Not Original."** This simple note reminds us that the courthouse continued to evolve long after its completion in 1761\. As the building transitioned from a public courthouse to a private residence, entrances and circulation patterns were adapted to meet changing needs.
+Unlike the principal entrance shown on the front elevation, this side includes a doorway identified by the surveyors as "Entrance Not Original." This simple note reminds us that the courthouse continued to evolve long after its completion in 1761\. As the building transitioned from a public courthouse to a private residence, entrances and circulation patterns were adapted to meet changing needs.
 
 The elevation also demonstrates the surveyors' commitment to documenting historical evidence rather than simply recording appearance. Every window, doorway, roofline, and architectural feature was measured and placed with precision, while notes distinguished original construction from later alterations whenever the evidence permitted.
 
@@ -352,7 +352,7 @@ The rear elevation completes the survey's views of the courthouse's long sides. 
 
 Like the front elevation, the surveyors restored the original wood-shingled appearance of the exterior using historical evidence. The evenly spaced windows align with the floor plans documented in earlier sheets, allowing readers to see how the arrangement of interior rooms shaped the building's outward appearance.
 
-The drawing also records another doorway identified as **"Door Not Original."** Together with similar observations on the previous elevation, this note illustrates how the courthouse evolved over time. As the building's function changed from county courthouse to family residence, entrances were added or modified to improve daily access. Rather than concealing these changes, the Historic American Buildings Survey distinguished original construction from later alterations whenever the evidence allowed.
+The drawing also records another doorway identified as "Door Not Original." Together with similar observations on the previous elevation, this note illustrates how the courthouse evolved over time. As the building's function changed from county courthouse to family residence, entrances were added or modified to improve daily access. Rather than concealing these changes, the Historic American Buildings Survey distinguished original construction from later alterations whenever the evidence allowed.
 
 At the right side of the drawing, the attached woodshed is shown adjoining the courthouse. Although not part of the original 1761 structure, it illustrates the practical additions made during the building's long residential history. By including both the original building and its later additions, this sheet provides a more complete understanding of how the courthouse adapted to changing needs over nearly two centuries.
 
@@ -373,7 +373,7 @@ Like the previous elevations, this drawing combines precise measurement with his
 
 The south-west elevation completes the survey's documentation of the courthouse's exterior. While this side shares the same balanced proportions and simple architectural character seen throughout the building, it also illustrates how the courthouse continued to adapt to changing needs long after its construction in 1761\.
 
-Dominating the elevation is the large woodshed attached to the center of the façade. Rather than omitting this later addition, the surveyors carefully recorded it and identified its contemporary use with the note, **"Old Wood Shed Used at Present as a Kitchen."** This simple annotation captures another chapter in the building's history, demonstrating how a structure originally designed for one purpose could be modified to serve another as the courthouse became a family home.
+Dominating the elevation is the large woodshed attached to the center of the façade. Rather than omitting this later addition, the surveyors carefully recorded it and identified its contemporary use with the note, "Old Wood Shed Used at Present as a Kitchen." This simple annotation captures another chapter in the building's history, demonstrating how a structure originally designed for one purpose could be modified to serve another as the courthouse became a family home.
 
 Although the woodshed obscures part of the original wall, enough of the elevation remains visible to demonstrate the building's consistent architectural design. The regular spacing of the windows, the restrained roofline, and the central chimney continue the disciplined symmetry that characterizes the courthouse on every side.
 
@@ -412,7 +412,7 @@ The transverse section provides one of the most informative drawings in the enti
 
 For the first time, readers can follow the central staircase as it rises through every occupied floor, connecting the basement, first, second, and third stories before reaching the attic beneath the roof. The drawing clearly illustrates how each floor is supported by heavy timber framing while the central chimney extends uninterrupted from the cellar to above the roofline.
 
-The section also confirms observations made throughout the earlier drawings. The large courtroom occupies a substantial portion of the second floor, while the bedrooms and hallways align vertically with the spaces below. Notes identifying **"Door Not Original"** and **"Wall and Door Not Original"** continue the surveyors' careful distinction between original construction and later alterations, reinforcing that this survey documents both the building's architecture and its history.
+The section also confirms observations made throughout the earlier drawings. The large courtroom occupies a substantial portion of the second floor, while the bedrooms and hallways align vertically with the spaces below. Notes identifying "Door Not Original" and "Wall and Door Not Original" continue the surveyors' careful distinction between original construction and later alterations, reinforcing that this survey documents both the building's architecture and its history.
 
 Perhaps most impressive is the clarity with which the survey communicates the courthouse's structural system. The stone foundation, heavy framing, stair construction, floor heights, and roof supports are shown working as a single integrated design. What previously required several separate drawings can now be understood at a glance.
 
@@ -435,9 +435,9 @@ For architects, historians, and preservationists, sectional drawings are among t
 
 The final sheet in this chapter broadens our perspective once again. After examining the courthouse from within and exploring its overall structure through the transverse section, the surveyors step back to show how the building related to its surroundings. At the same time, they begin focusing on individual architectural details that demonstrate the craftsmanship of the original construction.
 
-The largest drawing on the sheet is the **plot plan**, which places the courthouse within its historic setting along the Kennebec River. More than a simple site map, it records neighboring buildings, landscape features, roads, and archaeological evidence that helped the surveyors understand the property's long history. Notes identifying the probable location of the original stockade, the old gallows, a blockhouse, and other historic features illustrate how the survey extended beyond the courthouse itself to document the broader historical landscape.
+The largest drawing on the sheet is the plot plan, which places the courthouse within its historic setting along the Kennebec River. More than a simple site map, it records neighboring buildings, landscape features, roads, and archaeological evidence that helped the surveyors understand the property's long history. Notes identifying the probable location of the original stockade, the old gallows, a blockhouse, and other historic features illustrate how the survey extended beyond the courthouse itself to document the broader historical landscape.
 
-Two additional drawings examine details that would be difficult to understand from the larger plans and elevations. The **cornice section** reveals how the roof overhang, framing, and molding were constructed, while the **original carriage shed cornice** preserves the profile of an architectural feature from a building no longer standing. Together these drawings demonstrate the surveyors' commitment to recording not only entire buildings but also the craftsmanship of individual components.
+Two additional drawings examine details that would be difficult to understand from the larger plans and elevations. The cornice section reveals how the roof overhang, framing, and molding were constructed, while the original carriage shed cornice preserves the profile of an architectural feature from a building no longer standing. Together these drawings demonstrate the surveyors' commitment to recording not only entire buildings but also the craftsmanship of individual components.
 
 This sheet also highlights the interdisciplinary nature of the Historic American Buildings Survey. Architects measured the courthouse, historians researched earlier photographs and documents, and surveyors interpreted the surrounding landscape. The result is far more than a collection of architectural drawings. It is a comprehensive record of a historic place.
 
@@ -468,7 +468,7 @@ After documenting the courthouse as a complete architectural work, the survey no
 
 The measured drawing records every component of the entrance, including the door, transom, pilasters, entablature, moldings, and surrounding trim. By enlarging these elements, the surveyors captured details that could never be shown clearly on the exterior elevations.
 
-One note is especially revealing: **"All original hardware on this doorway except knocker has been removed."** Rather than ignoring missing elements, this sheet honestly records their absence. This careful documentation reflects the surveyors' commitment to accuracy and reminds us that preservation sometimes involves recording what has been lost as well as what survives.
+One note is especially revealing: "All original hardware on this doorway except knocker has been removed." Rather than ignoring missing elements, this sheet honestly records their absence. This careful documentation reflects the surveyors' commitment to accuracy and reminds us that preservation sometimes involves recording what has been lost as well as what survives.
 
 The enlarged molding profiles are equally valuable. These carefully measured sections preserve the exact shape of the entrance's architectural trim, allowing future craftsmen and preservationists to reproduce the original profiles if repairs or restoration become necessary.
 
@@ -486,9 +486,9 @@ The enlarged molding profiles are equally valuable. These carefully measured sec
 
 Having documented the courthouse's principal entrance, this sheet now turns to a secondary doorway and one of the building's characteristic windows. While less elaborate than the front entrance, these features reveal how the surveyors carefully examined even the smallest architectural elements, distinguishing original craftsmanship from later modifications whenever possible.
 
-The drawing records the north-east entrance in remarkable detail, documenting the door, surrounding trim, pilasters, entablature, and molding profiles. A note accompanying the entablature states that the **moldings on this entrance are of later construction than the original building**, while another profile is identified as **"Probably Not Original."** These observations illustrate the surveyors' willingness to evaluate physical evidence rather than simply measure what stood before them.
+The drawing records the north-east entrance in remarkable detail, documenting the door, surrounding trim, pilasters, entablature, and molding profiles. A note accompanying the entablature states that the moldings on this entrance are of later construction than the original building, while another profile is identified as "Probably Not Original." These observations illustrate the surveyors' willingness to evaluate physical evidence rather than simply measure what stood before them.
 
-Beside the entrance is a measured drawing of a **typical first- and second-floor window**. Rather than documenting every window individually, the surveyors selected one representative example to preserve the proportions, muntin pattern, sash construction, and surrounding trim common throughout the courthouse. This practical approach allowed this sheet to record recurring architectural features without unnecessary repetition.
+Beside the entrance is a measured drawing of a typical first- and second-floor window. Rather than documenting every window individually, the surveyors selected one representative example to preserve the proportions, muntin pattern, sash construction, and surrounding trim common throughout the courthouse. This practical approach allowed this sheet to record recurring architectural features without unnecessary repetition.
 
 The enlarged molding profiles surrounding the sheet demonstrate another important purpose of the Historic American Buildings Survey. By recording the exact shapes and dimensions of architectural trim, the survey preserved information that could later guide restoration, conservation, or reproduction by future craftsmen.
 
@@ -511,7 +511,7 @@ The survey's examination of the courthouse entrances concludes with the north-we
 
 The elevation records the overall proportions of the doorway, while the plan and section reveal details that cannot be seen from the exterior alone. Together, these drawings show the relationship between the doorway, wall thickness, foundation, and interior finishes, providing a complete understanding of how the entrance was integrated into the building's structure.
 
-As on earlier sheets, the surveyors carefully distinguished original craftsmanship from later alterations. Notes identify the **door** as **not original**, indicate that portions of the **exterior moldings** were added after the original construction, and identify the **sash** as **original**. These observations demonstrate the thoughtful analysis that accompanied the survey's precise measurements. Rather than simply documenting the doorway as it existed in 1936, this sheet attempted to identify which elements dated from the courthouse's construction in 1761 and which reflected later modifications.
+As on earlier sheets, the surveyors carefully distinguished original craftsmanship from later alterations. Notes identify the door as not original, indicate that portions of the exterior moldings were added after the original construction, and identify the sash as original. These observations demonstrate the thoughtful analysis that accompanied the survey's precise measurements. Rather than simply documenting the doorway as it existed in 1936, this sheet attempted to identify which elements dated from the courthouse's construction in 1761 and which reflected later modifications.
 
 The enlarged molding profiles once again preserve the exact shapes and dimensions of the architectural trim. Though these details may seem minor, they represent the work of eighteenth-century craftsmen whose skill is evident in every proportioned curve and molding. By recording these profiles at full scale, the survey ensured that this craftsmanship could be studied, preserved, and, if necessary, accurately reproduced.
 
@@ -536,7 +536,7 @@ The survey records the room from several perspectives. Two interior elevations s
 
 The large brick fireplace dominates the sheet, illustrating the multiple functions it served. In addition to providing heat, it supported cooking over an open fire using an iron crane and pot hooks, while the adjoining bake oven allowed bread and other foods to be cooked using retained heat after the fire had burned down. The plan and sectional drawings reveal construction details that would remain hidden during an ordinary visit to the courthouse.
 
-As throughout the survey, the draftsmen carefully distinguished original features from later modifications. A note identifies the **mantel shelf** as **probably new**, reminding readers that even within one room, architectural elements reflected different periods in the building's long history. The survey's willingness to record uncertainty, using words such as *probably*, reflects the careful judgment exercised whenever definitive evidence was unavailable.
+As throughout the survey, the draftsmen carefully distinguished original features from later modifications. A note identifies the mantel shelf as probably new, reminding readers that even within one room, architectural elements reflected different periods in the building's long history. The survey's willingness to record uncertainty, using words such as *probably*, reflects the careful judgment exercised whenever definitive evidence was unavailable.
 
 Perhaps more than any previous sheet, these drawings remind us that the courthouse was not simply a public building. For generations, it was also a home. The kitchen preserves evidence of the daily routines, practical skills, and craftsmanship that shaped family life within its walls.
 
@@ -550,7 +550,7 @@ Perhaps more than any previous sheet, these drawings remind us that the courthou
 
 ### **Author's Note**
 
-Comparison with the first-floor plan indicates that the directional labels assigned to the two kitchen wall elevations appear to have been inadvertently reversed. The elevation labeled **"N.E. Wall of Kitchen"** depicts the fireplace wall, which is actually the **north-west wall**. Likewise, the elevation labeled **"S.E. Wall of Kitchen"** shows the wall adjoining the central hallway, which is actually the **north-east wall**. The measured drawings themselves accurately document the room; only the compass directions assigned to the two elevations appear to be in error.
+Comparison with the first-floor plan indicates that the directional labels assigned to the two kitchen wall elevations appear to have been inadvertently reversed. The elevation labeled "N.E. Wall of Kitchen" depicts the fireplace wall, which is actually the north-west wall. Likewise, the elevation labeled "S.E. Wall of Kitchen" shows the wall adjoining the central hallway, which is actually the north-east wall. The measured drawings themselves accurately document the room; only the compass directions assigned to the two elevations appear to be in error.
 
 ![][image16]
 
@@ -558,13 +558,13 @@ Comparison with the first-floor plan indicates that the directional labels assig
 
 # **Sheet 16 – Door Schedule**
 
-While previous drawings examined individual entrances in detail, this sheet takes a broader approach by documenting nearly every door found throughout the courthouse. Rather than treating each doorway as a unique feature, the surveyors created a **door schedule**, a standard architectural reference that records the size, construction, and characteristics of each door in a single, organized drawing.
+While previous drawings examined individual entrances in detail, this sheet takes a broader approach by documenting nearly every door found throughout the courthouse. Rather than treating each doorway as a unique feature, the surveyors created a door schedule, a standard architectural reference that records the size, construction, and characteristics of each door in a single, organized drawing.
 
 Each numbered door corresponds to locations identified elsewhere in the survey, allowing readers to compare doors throughout the building without repeating the same information on multiple sheets. By presenting every example together, the sheet makes it easy to identify patterns in construction while also highlighting doors that differ from the others.
 
 The accompanying schedule records the dimensions of each door, while sectional drawings illustrate their construction. These details reveal how panels, rails, stiles, battens, and moldings were assembled to create strong, durable doors capable of withstanding generations of use. Although doors are among the most frequently handled architectural features in any building, they are often overlooked. Here they receive the same careful attention given to fireplaces, entrances, and structural framing.
 
-The sheet also distinguishes original doors from later replacements. One door is identified as **not original**, reminding readers that even seemingly ordinary architectural features evolved over the building's long history. Recording these distinctions allows future researchers and preservationists to understand which elements represent eighteenth-century craftsmanship and which belong to later periods.
+The sheet also distinguishes original doors from later replacements. One door is identified as not original, reminding readers that even seemingly ordinary architectural features evolved over the building's long history. Recording these distinctions allows future researchers and preservationists to understand which elements represent eighteenth-century craftsmanship and which belong to later periods.
 
 This sheet demonstrates one of the practical strengths of the Historic American Buildings Survey. Rather than documenting every feature individually, the surveyors organized repetitive elements into schedules that efficiently preserved essential information without sacrificing accuracy.
 
@@ -587,7 +587,7 @@ The central elevation records the complete fireplace wall, including the mantel,
 
 The accompanying plan illustrates the relationship between the fireplace, chimney, and adjoining closets, showing how the massive masonry stack served multiple rooms while conserving space. This arrangement, first observed in the floor plans, becomes much easier to understand when viewed at this larger scale.
 
-As elsewhere in the survey, the draftsmen carefully distinguished original work from later alterations. A note indicates that portions of the moldings were **probably later than the original building**, reminding readers that decorative details, like doors and entrances, often changed over the building's long history. Even so, the survey preserved these features exactly as they appeared, allowing future researchers to distinguish eighteenth-century craftsmanship from later modifications.
+As elsewhere in the survey, the draftsmen carefully distinguished original work from later alterations. A note indicates that portions of the moldings were probably later than the original building, reminding readers that decorative details, like doors and entrances, often changed over the building's long history. Even so, the survey preserved these features exactly as they appeared, allowing future researchers to distinguish eighteenth-century craftsmanship from later modifications.
 
 This sheet also illustrates an important principle of Georgian interior design. Rather than relying on elaborate ornamentation, the room derives its character from careful proportion, balanced composition, and finely executed moldings. The fireplace naturally becomes the focal point, while the surrounding woodwork provides visual harmony without unnecessary decoration.
 
@@ -607,11 +607,11 @@ This sheet also illustrates an important principle of Georgian interior design. 
 
 The penultimate sheet of the Historic American Buildings Survey shifts attention from the building's architectural features to the hardware that made them function. Hinges, latches, handles, and hand-forged fasteners may seem like small details, yet they represent the daily interaction between people and the courthouse. Every door opened, every latch lifted, and every hinge swung through the work of a local blacksmith and carpenter.
 
-The upper portion of the sheet documents portions of the south-east bedroom on the third floor, including two interior wall elevations. A note identifies the **mantel** as **not original**, continuing the drawing’s careful effort to distinguish later alterations from surviving eighteenth-century craftsmanship. While modest in appearance, these elevations preserve the room's wall paneling, fireplace, and trim with the same precision seen throughout the survey.
+The upper portion of the sheet documents portions of the south-east bedroom on the third floor, including two interior wall elevations. A note identifies the mantel as not original, continuing the drawing’s careful effort to distinguish later alterations from surviving eighteenth-century craftsmanship. While modest in appearance, these elevations preserve the room's wall paneling, fireplace, and trim with the same precision seen throughout the survey.
 
 The remainder of the sheet is devoted to the courthouse's original hardware. Enlarged drawings illustrate a typical latch, strap hinge, kitchen door latch, and other iron fittings, accompanied by elevations, sections, and construction details. These illustrations record not only the appearance of the hardware but also how each piece was attached and operated within the building.
 
-One detail deserves special attention. The strap hinge is fastened with **hand-made nails**, reminding us that these components were individually forged long before the introduction of modern wire nails and mass-produced hardware. Every hinge, latch, and fastener reflects the skill of eighteenth-century blacksmiths whose work has survived for more than two and a half centuries.
+One detail deserves special attention. The strap hinge is fastened with hand-made nails, reminding us that these components were individually forged long before the introduction of modern wire nails and mass-produced hardware. Every hinge, latch, and fastener reflects the skill of eighteenth-century blacksmiths whose work has survived for more than two and a half centuries.
 
 Although easily overlooked during a visit to the courthouse, original hardware often provides some of the clearest evidence of a building's age and craftsmanship. By recording these details at full scale, the Historic American Buildings Survey preserved information that might otherwise have been lost through wear, repair, or replacement.
 
