@@ -116,7 +116,7 @@ The measured drawings contained in this survey were the result of countless hour
 
 Unlike artistic renderings intended to capture the appearance of a building, measured drawings are technical documents created to exact scale. Dimensions, construction methods, architectural details, and structural relationships are recorded with precision so that the building can be studied long after the survey is complete.
 
-The names appearing on the original title blocks—including Joseph P. DePetre, Joseph T. Libby, Edwin W. Small, Frank B. Sterner, Louis A. Simon, and T. Edwin Rogers—represent the professionals whose work made this permanent record possible. Their careful documentation continues to serve researchers nearly a century later, preserving information that might otherwise have been lost.
+The names appearing on the original title blocks, including Josiah T. Tubby, Joseph P. DePeter, Frank D. Sampson, and Carl R. Stearns, represent the professionals whose work made this permanent record possible. Their careful documentation continues to serve researchers nearly a century later, preserving information that might otherwise have been lost.
 
 ---
 
@@ -190,7 +190,7 @@ Although the basement itself receives few visitors today, this drawing reminds u
 
 ![][image2]
 
-**Next:** *The survey began where every great building begins—with its foundation. Before we can appreciate the courthouse's rooms, doors, and architectural details, we first understand the structure that has supported them since 1761\.*
+**Next:** *The survey began where every great building begins, with its foundation. Before we can appreciate the courthouse's rooms, doors, and architectural details, we first understand the structure that has supported them since 1761\.*
 
 # 
 
