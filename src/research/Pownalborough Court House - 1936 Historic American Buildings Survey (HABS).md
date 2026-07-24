@@ -116,7 +116,13 @@ The measured drawings contained in this survey were the result of countless hour
 
 Unlike artistic renderings intended to capture the appearance of a building, measured drawings are technical documents created to exact scale. Dimensions, construction methods, architectural details, and structural relationships are recorded with precision so that the building can be studied long after the survey is complete.
 
-The names appearing on the original title blocks, including Josiah T. Tubby, Joseph P. DePeter, Frank D. Sampson, and Carl R. Stearns, represent the professionals whose work made this permanent record possible. Their careful documentation continues to serve researchers nearly a century later, preserving information that might otherwise have been lost.
+The Pownalborough Court House survey was completed as part of the Historic American Buildings Survey (HABS), one of the earliest New Deal preservation programs established in 1933\. HABS brought together architects, draftsmen, photographers, and historians to create permanent records of America's significant historic structures before time, neglect, or development could erase them.
+
+The Maine HABS program was supervised by Josiah T. Tubby, a Portland architect who served as the state's HABS District Officer during the 1930s. In that role, Tubby coordinated surveys throughout Maine and helped establish the standards that made HABS documentation one of the most respected architectural records in the country.
+
+Working with Tubby on the Pownalborough Court House were Joseph P. DePeter, Frank D. Sampson, and Carl R. Stearns, architects and draftsmen responsible for carrying out the field measurements and preparing the measured drawings reproduced in this guide. Although relatively little has been published about these men individually, their work exemplifies the extraordinary level of care that characterized the early HABS program.
+
+Nearly ninety years later, the drawings they produced remain among the most important documentary records of the courthouse. They continue to guide historians, preservationists, architects, and museum interpreters.
 
 ---
 
