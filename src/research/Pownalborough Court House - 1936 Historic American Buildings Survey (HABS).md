@@ -64,8 +64,6 @@ This guide was created to help readers explore that survey. Rather than simply r
 
 ## **About this Guide**
 
-## **About this Research**
-
 # 
 
 # **Chapter 1**
@@ -138,15 +136,35 @@ Throughout the survey, scales, dimension lines, labels, and notes provide additi
 
 The chapters that follow explore each of the nineteen sheets in sequence, explaining what the surveyors documented, why each drawing was important, and what it reveals about one of Maine's most remarkable historic buildings.
 
-## **Finding Historic American Buildings Survey Records**
+---
 
-For more than ninety years, the Historic American Buildings Survey has documented thousands of historic structures across the United States. Today, these records are preserved by the Library of Congress and are freely available to the public online.
+### **Finding Historic American Buildings Survey Records**
 
-A typical HABS collection includes measured drawings, large-format photographs, and written historical documentation. Some surveys are relatively brief, while others contain dozens or even hundreds of drawings and photographs.
+The records of the Historic American Buildings Survey (HABS) are preserved by the Library of Congress and are freely available to anyone through its website. Established in 1933, HABS has documented thousands of historic structures across the United States, creating one of the largest and most valuable architectural archives in the world. Today, nearly all of these surveys have been digitized, allowing researchers to examine original drawings, photographs, and historical documentation from anywhere.
 
-Researchers, students, homeowners, and history enthusiasts can search the Library of Congress by building name, community, county, state, or HABS survey number. Because the collection is fully digitized, many surveys can be viewed and downloaded in high resolution at no cost.
+The easiest place to begin is the Library of Congress homepage:
 
-Whether your interest is an eighteenth-century courthouse, a covered bridge, a lighthouse, or a family farmhouse, the Historic American Buildings Survey offers an extraordinary opportunity to explore America's architectural heritage directly from the original records.
+**Library of Congress**  
+[https://www.loc.gov/](https://www.loc.gov/)
+
+HABS records are accessed through the Library of Congress **Prints & Photographs Online Catalog (PPOC)**:
+
+**Prints & Photographs Online Catalog**  
+[https://www.loc.gov/pictures/](https://www.loc.gov/pictures/)
+
+From the search box, simply enter the name of a building, city or town, county, state, or HABS survey number. Searching for **"Pownalborough Court House"**, for example, immediately locates the complete survey discussed in this paper.
+
+Each HABS collection is unique, but most include three principal components: measured drawings prepared to architectural standards, large-format black-and-white photographs, and written historical reports describing the structure's history, architecture, ownership, and significance. Some surveys consist of only a few pages, while others contain dozens—or even hundreds—of drawings, photographs, and supporting documents.
+
+The Library of Congress allows these materials to be viewed directly in a web browser or downloaded in high resolution at no cost. Architectural drawings can often be enlarged sufficiently to study individual construction details, while photographs reveal features that may no longer survive. Many surveys also include downloadable PDF versions of the historical reports, making the complete documentation readily available to researchers, homeowners, educators, preservationists, and students.
+
+Although HABS is best known for documenting nationally significant landmarks, the collection extends far beyond famous buildings. Farmhouses, courthouses, mills, schools, churches, railroad stations, industrial buildings, covered bridges, lighthouses, and countless other historic structures have all been carefully documented. Because the surveys span more than nine decades, they also provide a fascinating record of how buildings have changed over time and how the practice of historic preservation has evolved.
+
+Whether you are researching a family home, studying local history, restoring a historic structure, or simply exploring America's architectural heritage, the Historic American Buildings Survey offers an extraordinary opportunity to examine these places through the original records created by the architects, photographers, and historians who documented them. The Pownalborough Court House survey examined in this paper is just one example of the remarkable depth and quality of information preserved within this national collection.
+
+**Tip:** If your first search does not produce the desired building, try searching by the town or county instead. Many HABS records are cataloged using historic place names or official building names rather than the names commonly used today.
+
+# 
 
 # **Chapter 2**
 
@@ -160,7 +178,7 @@ The title block along the bottom of the sheet provides valuable historical infor
 
 Perhaps most importantly, this page reminds us that the drawings which follow are neither modern reconstructions nor artistic interpretations. They are measured drawings prepared directly from the building itself. Every floor plan, elevation, section, and architectural detail in the pages ahead is part of the official 1936 Historic American Buildings Survey, created to preserve an accurate architectural record of one of Maine's most significant colonial buildings.
 
-### **Looking Closer**
+## **Looking Closer**
 
 Several details on this cover sheet deserve special attention.
 
@@ -701,7 +719,7 @@ For additional research articles, historical images, schoolgirl samplers, family
 
 [**www.theprescottgirls.com**](http://www.theprescottgirls.com)
 
-### **Author**
+## **Author**
 
 **Aric Wilmunder**  
 Author, researcher, and presenter
