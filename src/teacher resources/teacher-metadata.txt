@@ -1,0 +1,95 @@
+# ============================================================================
+# The Prescott Girls - Teacher Resource Metadata
+# ============================================================================
+#
+# Required fields:
+#   file
+#   page_intro
+#   description
+#   keywords
+#
+# Keywords are separated with semicolons.
+
+[DOCUMENT]
+file=An Overview - Using the Study Guides.md
+page_intro=Learn how to use The Prescott Girls study guides to connect historical fiction with primary sources, classroom discussion, artifact analysis, geography, genealogy, and the everyday world of 1830s Maine.
+description=An overview of classroom resources for using The Prescott Girls to explore historical fiction, primary sources, artifacts, geography, and life in 1830s Maine.
+keywords=The Prescott Girls;teacher resources;study guides;historical fiction;classroom activities;primary sources;artifact analysis;1830s Maine
+
+[DOCUMENT]
+file=Study Guide - Beckie Prescott's Sampler.md
+page_intro=Discover how an eight-year-old girl's sampler becomes a window into education, family life, and material culture in early nineteenth-century Maine.
+description=Explore Beckie Prescott's authentic 1835 sampler through artifact analysis, embroidery, literacy, and material culture while discovering everyday life in nineteenth-century Maine.
+keywords=Beckie Prescott sampler;schoolgirl sampler;nineteenth century education;embroidery;needlework;historical artifacts;primary sources;material culture;Dresden Maine;classroom resource
+
+[DOCUMENT]
+file=Study Guide - Creating the Illustrations.md
+page_intro=See how historical research, character studies, and artistic interpretation combined to create the illustrations throughout The Prescott Girls.
+description=Learn how historical research, character studies, and artistic interpretation combined to create the illustrations for The Prescott Girls using documented evidence.
+keywords=historical illustration;historic reimagining;AI illustration;character studies;children's book illustration;historical research;visual interpretation;educational resource
+
+[DOCUMENT]
+file=Study Guide - Discussion Questions (Students).md
+page_intro=Encourage thoughtful classroom discussion through chapter-by-chapter questions that emphasize evidence, interpretation, and critical thinking.
+description=Chapter-by-chapter discussion questions that encourage close reading, historical thinking, evidence-based reasoning, and classroom conversation.
+keywords=discussion questions;student guide;historical fiction;reading comprehension;classroom discussion;literature circles;middle grades;The Prescott Girls
+
+[DOCUMENT]
+file=Study Guide - Discussion Questions (Teachers).md
+page_intro=Support classroom conversations with teacher notes, discussion prompts, and historical context organized throughout the novel.
+description=Teacher discussion guide with chapter-by-chapter questions, instructional prompts, and historical context for teaching The Prescott Girls.
+keywords=teacher guide;discussion questions;historical fiction education;lesson planning;classroom resource;literacy;middle grades;The Prescott Girls
+
+[DOCUMENT]
+file=Study Guide - Family Trees.md
+page_intro=Explore how genealogy connects the Prescott family to Betsy Ross and reveals the stories preserved within generations of family history.
+description=Trace the Prescott, Johnson, Canby, Claypoole, and Betsy Ross families while learning how genealogy helps historians reconstruct the past.
+keywords=family tree;genealogy;Betsy Ross;William Jackson Canby;Prescott family;historical research;lineage;classroom resource
+
+[DOCUMENT]
+file=Study Guide - Geography.md
+page_intro=Follow the Prescott family's journey across nineteenth-century Maine while discovering the geography that shaped their world.
+description=Explore the towns, rivers, and transportation routes that shaped the Prescott family's world and daily life in nineteenth-century Maine.
+keywords=Maine geography;nineteenth-century Maine;Dresden Maine;Hallowell;Wiscasset;Kennebec River;historical maps;classroom resource
+
+[DOCUMENT]
+file=Study Guide - How Historians Trace Artifacts.md
+page_intro=Learn how historians transform surviving artifacts into documented family histories using careful research and historical evidence.
+description=Follow the research methods historians use to identify artifacts, connect families, and reconstruct history through documentary evidence.
+keywords=artifact research;historical methodology;genealogy;historical evidence;schoolgirl samplers;archives;primary sources;classroom resource
+
+[DOCUMENT]
+file=Study Guide - Letters and Communications in the 1830s.md
+page_intro=Discover how handwritten letters carried news, ideas, and friendships across nineteenth-century America.
+description=Discover how handwritten letters connected families and communities before modern communication while exploring the nineteenth-century postal system.
+keywords=letters;postal history;nineteenth-century communication;mail;history education;correspondence;classroom resource
+
+[DOCUMENT]
+file=Study Guide - Life in 1830s Maine.md
+page_intro=Step into the everyday world of nineteenth-century Maine and explore the communities where the Prescott sisters lived.
+description=Explore transportation, work, education, family life, trade, and community in nineteenth-century Maine through the world of The Prescott Girls.
+keywords=Maine history;nineteenth century;daily life;frontier communities;transportation;education;historical context;classroom resource
+
+[DOCUMENT]
+file=Study Guide - Needlework and Education.md
+page_intro=Discover why schoolgirl samplers were far more than decorative embroidery—they were an important part of a young girl's education.
+description=Discover how schoolgirl samplers taught literacy, practical skills, and moral instruction while serving as an important part of girls' education.
+keywords=needlework;schoolgirl samplers;girls' education;embroidery;material culture;literacy;historical education;classroom resource
+
+[DOCUMENT]
+file=Study Guide - The Old Pownalborough Court House.md
+page_intro=Learn how a colonial courthouse became a family home and one of the most remarkable settings in Maine history.
+description=Explore the history and architecture of the Old Pownalborough Court House and its role as both a colonial courthouse and the Prescott family home.
+keywords=Pownalborough Court House;Dresden Maine;colonial architecture;Maine history;historic buildings;museum;classroom resource
+
+[DOCUMENT]
+file=Study Guide - The Sugar Boycott.md
+page_intro=Explore how ordinary families used everyday purchasing decisions to express their opposition to slavery.
+description=Learn how the nineteenth-century sugar boycott connected abolition, Quaker beliefs, and everyday purchasing decisions in the fight against slavery.
+keywords=sugar boycott;abolition;Quakers;slavery;free labor sugar;nineteenth-century reform;social history;classroom resource
+
+[DOCUMENT]
+file=The Prescott Girls - Facts and Fiction.md
+page_intro=Discover how documented history and thoughtful imagination work together to bring the Prescott family's story to life.
+description=Compare documented history with historical imagination to discover which people, places, and events in The Prescott Girls are supported by evidence.
+keywords=facts and fiction;historical fiction;historical evidence;interpretation;The Prescott Girls;primary sources;responsible imagination;classroom resource
