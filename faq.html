@@ -22,12 +22,46 @@
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:image" content="https://www.theprescottgirls.com/assets/book-cover.jpg">
 
-  <!-- FAQ structured data -->
+  <!-- FAQ and page structured data -->
   <script type="application/ld+json">
+{
+ "@context":"https://schema.org",
+ "@graph":[
   {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
+   "@type":"Organization",
+   "@id":"https://www.awellregulatedpress.com/#organization",
+   "name":"A Well-Regulated Press",
+   "url":"https://www.awellregulatedpress.com/"
+  },
+  {
+   "@type":"Person",
+   "@id":"https://www.theprescottgirls.com/author.html#author",
+   "name":"Aric Wilmunder",
+   "url":"https://www.theprescottgirls.com/author.html"
+  },
+  {
+   "@type":"Book",
+   "@id":"https://www.theprescottgirls.com/book.html#book",
+   "name":"The Prescott Girls: A Letter from Philadelphia",
+   "url":"https://www.theprescottgirls.com/book.html",
+   "author":{"@id":"https://www.theprescottgirls.com/author.html#author"},
+   "publisher":{"@id":"https://www.awellregulatedpress.com/#organization"}
+  },
+  {
+   "@type":"WebSite",
+   "@id":"https://www.theprescottgirls.com/#website",
+   "url":"https://www.theprescottgirls.com/",
+   "name":"The Prescott Girls",
+   "publisher":{"@id":"https://www.awellregulatedpress.com/#organization"}
+  },
+  {
+   "@type":"FAQPage",
+   "@id":"https://www.theprescottgirls.com/faq.html#faq",
+   "url":"https://www.theprescottgirls.com/faq.html",
+   "isPartOf":{"@id":"https://www.theprescottgirls.com/#website"},
+   "about":{"@id":"https://www.theprescottgirls.com/book.html#book"},
+   "mainEntity":[
+
       {
         "@type": "Question",
         "name": "Is The Prescott Girls based on real people?",
@@ -92,44 +126,27 @@
           "text": "Historical sources include family history, surviving schoolgirl samplers, the Pownalborough Court House, period maps, museum clothing collections, Quaker and abolition history, and published works on Betsy Ross, sugar, slavery, needlework, material culture, and early American education."
         }
       }
-    ]
-  }
-  </script>
-
-  <!-- WebPage structured data -->
-  <script type="application/ld+json">
+    
+   ]
+  },
   {
-    "@context": "https://schema.org",
-    "@type": "WebPage",
-    "name": "FAQ & Historical Sources | The Prescott Girls",
-    "description": "Frequently asked questions and historical sources for The Prescott Girls: A Letter from Philadelphia.",
-    "author": {
-      "@type": "Person",
-      "name": "Aric Wilmunder"
-    },
-    "publisher": {
-      "@type": "Organization",
-      "name": "A Well-Regulated Press"
-    },
-    "about": [
-      "The Prescott Girls",
-      "Pownalborough Court House",
-      "Needlework samplers",
-      "Schoolgirl samplers",
-      "Embroidery samplers",
-      "Material culture",
-      "1830s Maine",
-      "Betsy Ross family history",
-      "Abolition",
-      "Historical fiction"
-    ],
-    "isPartOf": {
-      "@type": "WebSite",
-      "name": "The Prescott Girls",
-      "url": "https://www.theprescottgirls.com/"
-    },
-    "url": "https://www.theprescottgirls.com/faq.html"
+   "@type":"WebPage",
+   "@id":"https://www.theprescottgirls.com/faq.html#webpage",
+   "url":"https://www.theprescottgirls.com/faq.html",
+   "name":"FAQ & Historical Sources | The Prescott Girls",
+   "description":"Frequently asked questions and historical sources for The Prescott Girls.",
+   "isPartOf":{"@id":"https://www.theprescottgirls.com/#website"},
+   "about":{"@id":"https://www.theprescottgirls.com/book.html#book"},
+   "mainEntity":{"@id":"https://www.theprescottgirls.com/faq.html#faq"},
+   "author":{"@id":"https://www.theprescottgirls.com/author.html#author"},
+   "publisher":{"@id":"https://www.awellregulatedpress.com/#organization"},
+   "keywords":[
+      "FAQ","1830s Maine","schoolgirl samplers","Pownalborough Court House",
+      "Betsy Ross","historical fiction","teacher resources","historical sources"
+   ]
   }
+ ]
+}
   </script>
 
   <!-- Icons -->
