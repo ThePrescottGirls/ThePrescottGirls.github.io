@@ -22,43 +22,73 @@
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:image" content="https://www.theprescottgirls.com/assets/book-cover.jpg">
 
-  <!-- WebPage structured data -->
+  <!-- Research collection structured data -->
   <script type="application/ld+json">
   {
-    "@context": "https://schema.org",
-    "@type": "WebPage",
-    "name": "Research | The Prescott Girls",
-    "description": "Research papers and historical documentation exploring the Prescott family, schoolgirl samplers, 1830s Maine, and connections to Betsy Ross.",
-    "author": {
-      "@type": "Person",
-      "name": "Aric Wilmunder"
-    },
-    "publisher": {
-      "@type": "Organization",
-      "name": "A Well-Regulated Press"
-    },
-    "about": [
-      "Historical fiction",
-      "Needlework samplers",
-      "Schoolgirl samplers",
-      "Embroidery samplers",
-      "1830s Maine",
-      "Betsy Ross",
-      "William Jackson Canby",
-      "Historical interpretation",
-      "Museum presentations",
-      "Public history"
-    ],
-    "isPartOf": {
-      "@type": "Book",
-      "name": "The Prescott Girls: A Letter from Philadelphia"
-    },
-    "mainEntity": {
-      "@type": "CreativeWork",
-      "name": "The Prescott Girls Research Collection",
-      "description": "A collection of research papers covering a variety of topics related to the Prescott Girls and their schoolgirl samplers."
-    },
-    "url": "https://www.theprescottgirls.com/research.html"
+    "@context":"https://schema.org",
+    "@graph":[
+      {
+        "@type":"Organization",
+        "@id":"https://www.awellregulatedpress.com/#organization",
+        "name":"A Well-Regulated Press",
+        "url":"https://www.awellregulatedpress.com/"
+      },
+      {
+        "@type":"Person",
+        "@id":"https://www.theprescottgirls.com/author.html#author",
+        "name":"Aric Wilmunder",
+        "url":"https://www.theprescottgirls.com/author.html"
+      },
+      {
+        "@type":"Book",
+        "@id":"https://www.theprescottgirls.com/book.html#book",
+        "name":"The Prescott Girls: A Letter from Philadelphia",
+        "url":"https://www.theprescottgirls.com/book.html",
+        "author":{"@id":"https://www.theprescottgirls.com/author.html#author"},
+        "publisher":{"@id":"https://www.awellregulatedpress.com/#organization"}
+      },
+      {
+        "@type":"WebSite",
+        "@id":"https://www.theprescottgirls.com/#website",
+        "url":"https://www.theprescottgirls.com/",
+        "name":"The Prescott Girls",
+        "publisher":{"@id":"https://www.awellregulatedpress.com/#organization"}
+      },
+      {
+        "@type":"CollectionPage",
+        "@id":"https://www.theprescottgirls.com/research.html#collection",
+        "url":"https://www.theprescottgirls.com/research.html",
+        "name":"Research | The Prescott Girls",
+        "description":"Research papers and historical documentation exploring the Prescott family, schoolgirl samplers, 1830s Maine, and connections to Betsy Ross.",
+        "isPartOf":{"@id":"https://www.theprescottgirls.com/#website"},
+        "about":{"@id":"https://www.theprescottgirls.com/book.html#book"},
+        "author":{"@id":"https://www.theprescottgirls.com/author.html#author"},
+        "publisher":{"@id":"https://www.awellregulatedpress.com/#organization"},
+        "keywords":[
+          "1830s Maine","schoolgirl samplers","needlework","Betsy Ross",
+          "William Jackson Canby","Pownalborough Court House",
+          "public history","historical interpretation","museum research"
+        ],
+        "mainEntity":{"@id":"https://www.theprescottgirls.com/research.html#papers"}
+      },
+      {
+        "@type":"ItemList",
+        "@id":"https://www.theprescottgirls.com/research.html#papers",
+        "name":"The Prescott Girls Research Collection",
+        "numberOfItems":9,
+        "itemListElement":[
+          {"@type":"ListItem","position":1,"name":"The Schoolgirl Samplers in the Ziploc Bag","url":"https://www.theprescottgirls.com/research/The%20Schoolgirl%20Samplers%20in%20the%20Ziploc%20Bag.html"},
+          {"@type":"ListItem","position":2,"name":"Rebecca Johnson Prescott - Mother of The Prescott Girls","url":"https://www.theprescottgirls.com/research/Rebecca%20Johnson%20Prescott%20-%20Mother%20of%20The%20Prescott%20Girls.html"},
+          {"@type":"ListItem","position":3,"name":"The Prescott Family Samplers - Seven Generations of Family Stewardship","url":"https://www.theprescottgirls.com/research/The%20Prescott%20Family%20Samplers%20-%20Seven%20Generations%20of%20Family%20Stewardship.html"},
+          {"@type":"ListItem","position":4,"name":"Sallie Prescott Goodwin - A Life Beyond the Court House","url":"https://www.theprescottgirls.com/research/Sallie%20Prescott%20Goodwin%20-%20A%20Life%20Beyond%20the%20Court%20House.html"},
+          {"@type":"ListItem","position":5,"name":"The Grandson Who Remembered Betsy Ross","url":"https://www.theprescottgirls.com/research/The%20Grandson%20Who%20Remembered%20Betsy%20Ross.html"},
+          {"@type":"ListItem","position":6,"name":"Pownalborough Court House - 1936 Historic American Buildings Survey (HABS)","url":"https://www.theprescottgirls.com/research/Pownalborough%20Court%20House%20-%201936%20Historic%20American%20Buildings%20Survey%20(HABS).html"},
+          {"@type":"ListItem","position":7,"name":"Historical Reimaginings","url":"https://www.theprescottgirls.com/research/Historical%20Reimaginings.html"},
+          {"@type":"ListItem","position":8,"name":"Practical Guidelines for AI-Assisted Historical Interpretation","url":"https://www.theprescottgirls.com/research/Practical%20Guidelines%20for%20AI-Assisted%20Historical%20Interpretation.html"},
+          {"@type":"ListItem","position":9,"name":"Character Studies - The Cast of the Prescott Girls","url":"https://www.theprescottgirls.com/research/Character%20Studies%20-%20The%20Cast%20of%20the%20Prescott%20Girls.html"}
+        ]
+      }
+    ]
   }
   </script>
 
