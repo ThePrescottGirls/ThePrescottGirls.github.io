@@ -22,40 +22,202 @@
       <meta name="twitter:card" content="summary_large_image">
       <meta name="twitter:image" content="https://www.theprescottgirls.com/assets/book-cover.jpg">
 
-      <!-- LearningResource structured data -->
+      <!-- Teacher resources structured data -->
       <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
           {
-              "@context": "https://schema.org",
-              "@type": "LearningResource",
-              "name": "Teacher Resources | The Prescott Girls",
-              "educationalLevel": "Grades 4-7",
-              "learningResourceType": "Study Guide",
-              "author": {
-                  "@type": "Person",
-                  "name": "Aric Wilmunder"
+            "@type": "Organization",
+            "@id": "https://www.awellregulatedpress.com/#organization",
+            "name": "A Well-Regulated Press",
+            "url": "https://www.awellregulatedpress.com/"
+          },
+          {
+            "@type": "Person",
+            "@id": "https://www.theprescottgirls.com/author.html#author",
+            "name": "Aric Wilmunder",
+            "url": "https://www.theprescottgirls.com/author.html"
+          },
+          {
+            "@type": "Book",
+            "@id": "https://www.theprescottgirls.com/book.html#book",
+            "name": "The Prescott Girls: A Letter from Philadelphia",
+            "url": "https://www.theprescottgirls.com/book.html",
+            "author": {
+              "@id": "https://www.theprescottgirls.com/author.html#author"
+            },
+            "publisher": {
+              "@id": "https://www.awellregulatedpress.com/#organization"
+            },
+            "image": "https://www.theprescottgirls.com/assets/book-cover.jpg"
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://www.theprescottgirls.com/#website",
+            "url": "https://www.theprescottgirls.com/",
+            "name": "The Prescott Girls",
+            "publisher": {
+              "@id": "https://www.awellregulatedpress.com/#organization"
+            },
+            "inLanguage": "en-US"
+          },
+          {
+            "@type": [
+              "CollectionPage",
+              "LearningResource"
+            ],
+            "@id": "https://www.theprescottgirls.com/teachers.html#resource",
+            "url": "https://www.theprescottgirls.com/teachers.html",
+            "name": "Teacher Resources | The Prescott Girls",
+            "description": "Free teacher resources for The Prescott Girls, with study guides, historical activities, and primary-source materials for grades 4–7.",
+            "isPartOf": {
+              "@id": "https://www.theprescottgirls.com/#website"
+            },
+            "isBasedOn": {
+              "@id": "https://www.theprescottgirls.com/book.html#book"
+            },
+            "author": {
+              "@id": "https://www.theprescottgirls.com/author.html#author"
+            },
+            "publisher": {
+              "@id": "https://www.awellregulatedpress.com/#organization"
+            },
+            "educationalLevel": "Grades 4–7",
+            "typicalAgeRange": "9-13",
+            "learningResourceType": [
+              "Teacher resource collection",
+              "Study guides",
+              "Discussion questions",
+              "Primary-source activities",
+              "Historical activities"
+            ],
+            "educationalUse": [
+              "Instruction",
+              "Classroom discussion",
+              "Independent study",
+              "Historical inquiry",
+              "Critical thinking"
+            ],
+            "teaches": [
+              "Historical thinking",
+              "Artifact analysis",
+              "Primary-source analysis",
+              "Early American history",
+              "Women’s history",
+              "Geography",
+              "Letter writing",
+              "Family history and genealogy",
+              "Ethics and civic responsibility"
+            ],
+            "interactivityType": "active",
+            "inLanguage": "en-US",
+            "isAccessibleForFree": true,
+            "image": "https://www.theprescottgirls.com/assets/promo-image.jpg",
+            "mainEntity": {
+              "@id": "https://www.theprescottgirls.com/teachers.html#guides"
+            }
+          },
+          {
+            "@type": "ItemList",
+            "@id": "https://www.theprescottgirls.com/teachers.html#guides",
+            "name": "The Prescott Girls classroom study guides",
+            "numberOfItems": 15,
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "An Overview - Using the Study Guides",
+                "url": "https://www.theprescottgirls.com/teachers/An%20Overview%20-%20Using%20the%20Study%20Guides.html"
               },
-              "publisher": {
-                  "@type": "Organization",
-                  "name": "A Well-Regulated Press"
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Discussion Questions (Teachers)",
+                "url": "https://www.theprescottgirls.com/teachers/Study%20Guide%20-%20Discussion%20Questions%20(Teachers).html"
               },
-              "about": [
-                "1830s Maine",
-                "Needlework samplers",
-                "Schoolgirl samplers",
-                "Embroidery samplers",
-                "Schoolgirl needlework",
-                "Early American education",
-                "Historical fiction",
-                "Artifact analysis",
-                "Abolition movement"
-              ],
-              "isBasedOn": {
-                "@type": "Book",
-                "name": "The Prescott Girls"
+              {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Discussion Questions (Students)",
+                "url": "https://www.theprescottgirls.com/teachers/Study%20Guide%20-%20Discussion%20Questions%20(Students).html"
               },
-              "image": "https://www.theprescottgirls.com/assets/book-cover.jpg",
-              "url": "https://www.theprescottgirls.com/teachers.html"
+              {
+                "@type": "ListItem",
+                "position": 4,
+                "name": "Beckie Prescott’s Schoolgirl Sampler",
+                "url": "https://www.theprescottgirls.com/teachers/Study%20Guide%20-%20Beckie%20Prescott's%20Sampler.html"
+              },
+              {
+                "@type": "ListItem",
+                "position": 5,
+                "name": "Facts and Fiction",
+                "url": "https://www.theprescottgirls.com/teachers/The%20Prescott%20Girls%20-%20Facts%20and%20Fiction.html"
+              },
+              {
+                "@type": "ListItem",
+                "position": 6,
+                "name": "Life in 1830s Maine",
+                "url": "https://www.theprescottgirls.com/teachers/Study%20Guide%20-%20Life%20in%201830s%20Maine.html"
+              },
+              {
+                "@type": "ListItem",
+                "position": 7,
+                "name": "The Sugar Boycott",
+                "url": "https://www.theprescottgirls.com/teachers/Study%20Guide%20-%20The%20Sugar%20Boycott.html"
+              },
+              {
+                "@type": "ListItem",
+                "position": 8,
+                "name": "Needlework and Girls’ Education in Early America",
+                "url": "https://www.theprescottgirls.com/teachers/Study%20Guide%20-%20Needlework%20and%20Education.html"
+              },
+              {
+                "@type": "ListItem",
+                "position": 9,
+                "name": "The Old Pownalborough Court House",
+                "url": "https://www.theprescottgirls.com/teachers/Study%20Guide%20-%20The%20Old%20Pownalborough%20Court%20House.html"
+              },
+              {
+                "@type": "ListItem",
+                "position": 10,
+                "name": "Geography of The Prescott Girls",
+                "url": "https://www.theprescottgirls.com/teachers/Study%20Guide%20-%20Geography.html"
+              },
+              {
+                "@type": "ListItem",
+                "position": 11,
+                "name": "Printable Maine Map (1833)",
+                "url": "https://www.theprescottgirls.com/teachers/Maine_Map.html"
+              },
+              {
+                "@type": "ListItem",
+                "position": 12,
+                "name": "Letters and Communications in the 1830s",
+                "url": "https://www.theprescottgirls.com/teachers/Study%20Guide%20-%20Letters%20and%20Communications%20in%20the%201830s.html"
+              },
+              {
+                "@type": "ListItem",
+                "position": 13,
+                "name": "How Historians Trace Artifacts",
+                "url": "https://www.theprescottgirls.com/teachers/Study%20Guide%20-%20How%20Historians%20Trace%20Artifacts.html"
+              },
+              {
+                "@type": "ListItem",
+                "position": 14,
+                "name": "Family Trees",
+                "url": "https://www.theprescottgirls.com/teachers/Study%20Guide%20-%20Family%20Trees.html"
+              },
+              {
+                "@type": "ListItem",
+                "position": 15,
+                "name": "Creating the Illustrations",
+                "url": "https://www.theprescottgirls.com/teachers/Study%20Guide%20-%20Creating%20the%20Illustrations.html"
+              }
+            ]
           }
+        ]
+      }
       </script>
 
       <!-- Icons -->
