@@ -424,10 +424,23 @@ def validate_incoming(
 
         destination_md = Path.cwd() / md_path.name
         destination_pdf = OUTPUT_DIR / pdf_path.name
-        if destination_md.exists():
-            errors.append(f"Incoming Markdown would overwrite an installed source file: {destination_md.name}")
-        if destination_pdf.exists():
-            errors.append(f"Incoming PDF would overwrite a published file: {destination_pdf.name}")
+        md_exists = destination_md.exists()
+        pdf_exists = destination_pdf.exists()
+
+        # An incoming pair may either install a brand-new document or intentionally
+        # replace an existing installed/published pair. A partial collision is still
+        # treated as an error because it indicates an inconsistent library state.
+        if md_exists != pdf_exists:
+            if md_exists:
+                errors.append(
+                    f"Incoming document collides with an installed Markdown file but no "
+                    f"published PDF exists: {destination_md.name}"
+                )
+            else:
+                errors.append(
+                    f"Incoming document collides with a published PDF but no installed "
+                    f"Markdown file exists: {destination_pdf.name}"
+                )
 
         size = pdf_path.stat().st_size
         print(f"Incoming document: {stem}")
@@ -445,6 +458,18 @@ def validate_incoming(
             print()
 
             if not ask_yes_no("Continue publishing this PDF?", default=True):
+                print()
+                print("Publishing cancelled. Files remain in incoming.")
+                raise SystemExit(1)
+            print()
+
+        if md_exists and pdf_exists:
+            print("Existing document found. This update will replace:")
+            print(f"  Source Markdown: {destination_md.name}")
+            print(f"  Published PDF:   {destination_pdf.name}")
+            print("  Generated HTML will be rebuilt.")
+            print()
+            if not ask_yes_no("Replace existing document?", default=True):
                 print()
                 print("Publishing cancelled. Files remain in incoming.")
                 raise SystemExit(1)
@@ -474,10 +499,19 @@ def install_incoming(pairs: list[tuple[Path, Path]]) -> None:
         destination_md = Path.cwd() / md_path.name
         destination_pdf = OUTPUT_DIR / pdf_path.name
 
+        replacing = destination_md.exists() and destination_pdf.exists()
+
+        # Replacement was explicitly confirmed during validation. Remove the old
+        # files immediately before moving the validated incoming pair into place.
+        if replacing:
+            destination_md.unlink()
+            destination_pdf.unlink()
+
         shutil.move(str(md_path), destination_md)
         shutil.move(str(pdf_path), destination_pdf)
 
-        print(f"Installed {md_path.stem}")
+        action = "Updated" if replacing else "Installed"
+        print(f"{action} {md_path.stem}")
         print(f"  Markdown: {destination_md}")
         print(f"  PDF:      {destination_pdf}")
         print()

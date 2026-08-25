@@ -22,6 +22,7 @@ This guide was created to help readers explore that survey. Rather than simply r
 
 * Preserving America's Architectural Heritage  
 * The Great Depression and the Birth of HABS  
+* HABS in Maine  
 * The Survey of the Pownalborough Court House  
 * The Survey Team  
 * How to Read Architectural Drawings  
@@ -95,6 +96,18 @@ More than ninety years later, the Historic American Buildings Survey remains one
 ---
 
 ### 
+
+### **HABS in Maine**
+
+Maine participated in the Historic American Buildings Survey during the program's early years, creating a permanent architectural record of significant buildings throughout the state. The work undertaken by HABS architects and draftsmen documented structures ranging from early colonial buildings to examples of nineteenth-century architecture, preserving their plans, elevations, construction details, and architectural features.
+
+The scope of this work was brought together in 1974 when the Maine State Museum published Denys Peter Myers's *Historic Architecture of Maine: The Maine Catalog-HABS*. Myers placed the state's HABS records within the broader development of Maine architecture and cataloged the buildings that had been recorded by the program up to that time. His work drew upon the research of many of Maine's architectural historians and preservationists, including Earle G. Shettleworth Jr., whose studies of Maine buildings and architects appear among the sources used in the volume.
+
+Among the buildings recorded during the program's early years was the Pownalborough Court House. In July 1936, a HABS team measured the building in detail. Their fieldwork was subsequently developed into nineteen finished sheets documenting the courthouse from its foundation and floor plans to its elevations, structural framing, architectural details, and original hardware.
+
+Those nineteen drawings form the subject of this guide.
+
+---
 
 ### **The Survey of the Pownalborough Court House**
 
@@ -694,6 +707,8 @@ Nearly ninety years after these drawings were completed, they continue to fulfil
 # **References**
 
 **Historic American Buildings Survey (HABS).** *Pownalborough Court House, Cedar Grove (Dresden), Lincoln County, Maine.* Survey No. ME-42. Historic American Buildings Survey, National Park Service, U.S. Department of the Interior, 1936\.
+
+**Myers, Denys Peter.** *Historic Architecture of Maine: The Maine Catalog-HABS.* Augusta: Maine State Museum, 1974\.
 
 **Library of Congress.** *Historic American Buildings Survey/Historic American Engineering Record/Historic American Landscapes Survey Collection.* Washington, D.C.
 
