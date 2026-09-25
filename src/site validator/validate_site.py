@@ -61,9 +61,9 @@ IGNORE_DIRS = {
     "src",
 }
 
-# Keep visible search snippets from getting overly long.
-# Google often truncates around 155-160 characters, so 160 is a useful warning threshold.
-MAX_META_DESCRIPTION_LENGTH = 160
+# Flag unusually long meta descriptions for review.
+# Google has no fixed character limit, so 200 characters is a practical warning threshold.
+MAX_META_DESCRIPTION_LENGTH = 200
 
 
 class PageParser(HTMLParser):
